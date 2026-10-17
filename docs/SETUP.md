@@ -25,9 +25,9 @@ github.com/dhakadpd10/theaicommittee → **Settings → Secrets and variables �
 
 ## 4. Go live
 1. **Actions → Check → Run workflow.** Every line should say OK.
-2. **Actions → Launch → Run workflow**, Day 1 = tomorrow's date. The 3 finished episodes go out at 09:00 (reel) and 20:30 (comic carousel) IST.
-3. That same morning the **Plan** job notices the queue is short and makes the next 7 episodes (about 2 to 3 hours in the cloud). You get a pull request **"Approve episodes from …"**: watch the videos in it on the GitHub app and press **Merge**. Close it to reject, or set one post's `"status"` to `"skip"` to hold it back.
-4. From then on it repeats by itself: whenever fewer than 3 days are queued, a new batch of 7 arrives for your OK.
+2. The 3 finished episodes are already scheduled: Sat 17 Oct 20:00, Sun 18 Oct 09:00 and 20:00 IST.
+3. Every **Saturday** morning the **Plan** job makes next week (2 reels a day, Sunday to Saturday; about 2 to 3 hours in the cloud). You get a pull request **"Approve episodes from …"**: watch the videos in it on the GitHub app and press **Merge**. Close it to reject, or set one post's `"status"` to `"skip"` to hold it back.
+4. From then on it repeats by itself every Saturday.
 5. Comments get answered in character every 15 minutes. Collabs, sponsors, complaints and anything unsure arrive as GitHub **issues** labelled `inbox`; turn on GitHub notifications on your phone.
 
 ## Check on it

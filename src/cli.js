@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // The AI Committee agent - entry point for every job (the GitHub Actions workflows call these).
-//   node src/cli.js plan [--start YYYY-MM-DD] [--days 7] [--force]   write the next 7 episodes when the queue runs low
+//   node src/cli.js plan [--start YYYY-MM-DD] [--days N] [--force]   write next week (2 reels a day, up to Saturday)
 //   node src/cli.js finish <week>                                   after rendering: hold back anything that failed
 //   node src/cli.js review <week> <branch>                          print the approval pull-request text
 //   node src/cli.js publish [--dry-run]                             post approved reels and carousels that are due

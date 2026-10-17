@@ -1,17 +1,16 @@
-name: Plan - write and render the next episodes
-# Every morning at 06:00 IST it checks the queue. When fewer than 3 days of episodes are waiting (and no batch is
-# waiting for your OK), it learns from the numbers, researches, writes 7 episodes, renders them all in parallel,
-# then opens a pull request. Merging it = approving them. Nothing is posted before that.
+name: Plan - write and render next week
+# Every Saturday at 06:00 IST: learns from the numbers, researches, writes next week (2 reels a day, Sunday to Saturday),
+# renders them all in parallel, then opens a pull request. Merging it = your Saturday OK. Nothing is posted before that.
 on:
   schedule:
-    - cron: "30 0 * * *"
+    - cron: "30 0 * * 6"
   workflow_dispatch:
     inputs:
       start:
-        description: "First day to plan (YYYY-MM-DD). Empty = the day after the last queued episode."
+        description: "First day to plan (YYYY-MM-DD). Empty = the day after the last queued episode, up to next Saturday."
         required: false
       force:
-        description: "Plan even if the queue is still full"
+        description: "Plan even if that week already has a plan"
         type: boolean
         default: false
 permissions:
@@ -23,7 +22,7 @@ concurrency:
 jobs:
   plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 330
     outputs:
       skipped: ${{ steps.plan.outputs.skipped || 'true' }}
       week: ${{ steps.plan.outputs.week }}
@@ -79,7 +78,7 @@ jobs:
     timeout-minutes: 300
     strategy:
       fail-fast: false
-      max-parallel: 7
+      max-parallel: 14
       matrix:
         post: ${{ fromJSON(needs.plan.outputs.posts) }}
     steps:
