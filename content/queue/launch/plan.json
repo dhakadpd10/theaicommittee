@@ -1,8 +1,34 @@
 {
   "start": "2026-10-17",
   "slots": [
-    { "day": "2026-10-17", "time": "20:00", "format": "reel", "post": "001-more-polite", "title": "More polite", "turn_by": "gemini", "status": "made" },
-    { "day": "2026-10-18", "time": "09:00", "format": "reel", "post": "002-clear-my-calendar", "title": "Clear my calendar", "turn_by": "codex", "status": "made" },
-    { "day": "2026-10-18", "time": "20:00", "format": "reel", "post": "003-ninety-two-percent", "title": "Ninety-two percent", "turn_by": "gemini", "status": "made" }
+    {
+      "day": "2026-10-17",
+      "time": "20:00",
+      "format": "reel",
+      "post": "001-more-polite",
+      "title": "More polite",
+      "turn_by": "gemini",
+      "status": "made",
+      "attempts": 1,
+      "error": "Instagram POST /17841415815597561/media: API access blocked."
+    },
+    {
+      "day": "2026-10-18",
+      "time": "09:00",
+      "format": "reel",
+      "post": "002-clear-my-calendar",
+      "title": "Clear my calendar",
+      "turn_by": "codex",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-18",
+      "time": "20:00",
+      "format": "reel",
+      "post": "003-ninety-two-percent",
+      "title": "Ninety-two percent",
+      "turn_by": "gemini",
+      "status": "made"
+    }
   ]
 }
