@@ -1,0 +1,128 @@
+{
+  "id": "001-more-polite",
+  "title": "More polite",
+  "cast": "committee",
+  "cover": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, write my boss a leave email. Make it polite.",
+      "show": "Hey committee. Write my boss a leave email. Make it polite.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. I'm taking Friday off. Bye.",
+      "show": "Done. \"I'm taking Friday off. Bye.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "I'm taking Friday off. Bye."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "More polite.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Before I begin, may I ask how you feel about your boss?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Just write it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Dear sir. If it is not too much trouble, may I possibly take Friday off?",
+      "show": "\"Dear sir. If it is not too much trouble, may I possibly take Friday off?\"",
+      "shot": "claude",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "Dear sir,\nIf it is not too much trouble, may I possibly take Friday off?"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "More polite.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Dear sir. I am so sorry for existing. Please don't reply.",
+      "show": "\"Dear sir. I am so sorry for existing. Please don't reply.\"",
+      "shot": "claude-push",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "Dear sir,\nI am so sorry for existing.\nPlease don't reply."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Send it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1.1
+    },
+    {
+      "who": "gemini",
+      "say": "Sent! I also copied HR.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "Dear sir,\nI am so sorry for existing.\nPlease don't reply.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "And your mom.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "Dear sir,\nI am so sorry for existing.\nPlease don't reply.\ncc: HR, Mom",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked for polite. she got an apology for existing, HR and her mom.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #aitools #officehumor",
+  "musicStop": 8
+}

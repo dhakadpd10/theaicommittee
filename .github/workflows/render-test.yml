@@ -1,0 +1,42 @@
+name: Render test - make one episode in the cloud
+# Makes one existing episode from scratch (voices, sound, cover, slides, and the reel unless "quick") and attaches the
+# files to the run, so you can check the cloud renderer. Posts nothing.
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Episode folder in content/posts"
+        required: true
+        default: "003-ninety-two-percent"
+      quick:
+        description: "Skip the reel (voices, cover and slides only)"
+        type: boolean
+        default: true
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/@huggingface/transformers/.cache
+          key: hf-models-v1
+      - name: Make it
+        run: node show/make.js "content/posts/${{ inputs.post }}" ${{ inputs.quick && '--no-reel' || '' }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.post }}-test
+          path: |
+            content/posts/${{ inputs.post }}/reel.mp4
+            content/posts/${{ inputs.post }}/cover.jpg
+            content/posts/${{ inputs.post }}/slide-*.jpg
+            content/posts/${{ inputs.post }}/voice/heard.json
+          retention-days: 7

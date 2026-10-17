@@ -1,0 +1,31 @@
+name: Daily - numbers
+# 10:00 IST: logs every live post's views, reach, likes, comments, saves and shares.
+on:
+  schedule:
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pull insights
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: node src/cli.js analytics
+      - name: Save
+        run: |
+          git config user.name "theaicommittee-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/analytics
+          git diff --cached --quiet || { git commit -m "Daily: numbers" && git pull --rebase && git push; }

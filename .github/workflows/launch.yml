@@ -1,0 +1,31 @@
+name: Launch - set the first episodes' dates
+# Run this once from the Actions tab when the Instagram account is ready.
+# Day 1 = the date you enter. The 3 ready episodes go out 09:00 (reel) and 20:30 (comic carousel) IST.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Day 1 (YYYY-MM-DD)"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - env:
+          START: ${{ inputs.start }}
+        run: node src/cli.js launch --start "$START"
+      - run: |
+          git config user.name "theaicommittee-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/queue
+          git commit -m "Launch week starts ${{ inputs.start }}"
+          git pull --rebase && git push

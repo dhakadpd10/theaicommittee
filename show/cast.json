@@ -1,0 +1,8 @@
+{
+  "meera": { "voice": "hf_alpha", "acc": "a", "speed": 1.0, "pitch": 1.0, "gain": 1.0 },
+  "dabba": { "voice": "am_echo", "acc": "a", "speed": 0.84, "pitch": 1.24, "gain": 0.95 },
+  "codex": { "voice": "am_adam", "acc": "a", "speed": 1.08, "pitch": 1.0, "gain": 0.95 },
+  "claude": { "voice": "bm_george", "acc": "b", "speed": 0.95, "pitch": 1.0, "gain": 1.0 },
+  "gemini": { "voice": "af_bella", "acc": "a", "speed": 1.05, "pitch": 1.0, "gain": 0.95 },
+  "twin": { "voice": "af_sky", "acc": "a", "speed": 0.9, "pitch": 1.2, "gain": 0.95 }
+}

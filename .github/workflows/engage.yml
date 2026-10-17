@@ -1,0 +1,38 @@
+name: Engage - reply to comments in character
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+jobs:
+  engage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Claude Code (runs Claude on your subscription)
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Install the Claude SDK only
+        run: npm install --prefix "$RUNNER_TEMP/sdk" @anthropic-ai/sdk@0.70.1 && echo "NODE_PATH=$RUNNER_TEMP/sdk/node_modules" >> "$GITHUB_ENV"
+      - name: Answer comments and DMs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node src/cli.js engage
+      - name: Save what was answered
+        run: |
+          git config user.name "theaicommittee-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/state
+          git diff --cached --quiet || { git commit -m "Engage: state" && git pull --rebase && git push; }

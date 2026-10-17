@@ -1,0 +1,96 @@
+{
+  "id": "003-ninety-two-percent",
+  "title": "Ninety-two percent",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, will it rain today?",
+      "show": "Hey committee. Will it rain today?",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "No rain today! Sunny and thirty one degrees.",
+      "show": "No rain today! Sunny and 31°.",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "twin",
+      "say": "Wear the white kurta.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "I would still carry an umbrella. Just in case.",
+      "show": "I'd still carry an umbrella. Just in case.",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "codex",
+      "say": "Weather is not in the repo.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "card": "twenty minutes later",
+      "dur": 2,
+      "weather": "rain",
+      "sfx": [
+        "thunder"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "You said it won't rain.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4,
+      "wet": true
+    },
+    {
+      "who": "gemini",
+      "say": "I said no rain. With ninety two percent confidence.",
+      "show": "I said no rain. With 92% confidence.",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "So?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "You're in the eight percent. Congratulations!",
+      "show": "You're in the 8%. Congratulations!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "I already posted it.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "92% sure. 100% wet.\n\nwhat's the most confident wrong answer your AI ever gave you?\n\n#claude #codex #gemini #aitools #relatable"
+}

@@ -1,0 +1,11 @@
+{
+  "note": "Run the Launch workflow with Day 1 to give these dates.",
+  "slots": [
+    { "day": "DAY1", "time": "09:00", "format": "reel", "post": "001-more-polite", "title": "More polite", "turn_by": "gemini", "status": "made" },
+    { "day": "DAY1", "time": "20:30", "format": "carousel", "post": "001-more-polite", "title": "More polite", "turn_by": "gemini", "status": "made" },
+    { "day": "DAY2", "time": "09:00", "format": "reel", "post": "002-clear-my-calendar", "title": "Clear my calendar", "turn_by": "codex", "status": "made" },
+    { "day": "DAY2", "time": "20:30", "format": "carousel", "post": "002-clear-my-calendar", "title": "Clear my calendar", "turn_by": "codex", "status": "made" },
+    { "day": "DAY3", "time": "09:00", "format": "reel", "post": "003-ninety-two-percent", "title": "Ninety-two percent", "turn_by": "gemini", "status": "made" },
+    { "day": "DAY3", "time": "20:30", "format": "carousel", "post": "003-ninety-two-percent", "title": "Ninety-two percent", "turn_by": "gemini", "status": "made" }
+  ]
+}

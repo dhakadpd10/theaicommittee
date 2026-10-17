@@ -1,0 +1,29 @@
+{
+  "name": "theaicommittee",
+  "version": "0.1.0",
+  "description": "Open-source Instagram agent for The AI Committee, an animated 3D sitcom: Meera asks one question, Codex, Claude and Gemini answer it three ways. Writes, voices, renders, publishes after approval, replies to comments and learns from the numbers. Runs on GitHub Actions.",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "plan": "node src/cli.js plan",
+    "make": "node show/make.js",
+    "publish": "node src/cli.js publish",
+    "engage": "node src/cli.js engage",
+    "analytics": "node src/cli.js analytics",
+    "site": "node src/cli.js site",
+    "check": "node src/cli.js check"
+  },
+  "dependencies": {
+    "@fontsource/bree-serif": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@huggingface/transformers": "3.8.1",
+    "@napi-rs/canvas": "1.0.11",
+    "ffmpeg-static": "5.3.0",
+    "kokoro-js": "1.2.1",
+    "puppeteer-core": "25.14.0",
+    "three": "0.170.0"
+  }
+}

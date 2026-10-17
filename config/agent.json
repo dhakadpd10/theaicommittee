@@ -1,0 +1,21 @@
+{
+  "name": "The AI Committee",
+  "handle": "@theaicommittee",
+  "timezone_offset": "+05:30",
+  "slots": [
+    { "time": "09:00", "format": "reel" },
+    { "time": "20:30", "format": "carousel" }
+  ],
+  "models": {
+    "writer": "claude-opus-5-5",
+    "replies": "claude-opus-5-5",
+    "writer_effort": "high",
+    "replies_effort": "low"
+  },
+  "site_url": "https://dhakadpd10.github.io/theaicommittee",
+  "replies": {
+    "auto_reply": true,
+    "escalate": ["collab, sponsorship or paid work", "complaint", "anyone upset or hurt by a joke", "a company or brand writing in an official capacity", "anything legal"]
+  },
+  "limits": { "max_posts_per_day": 4, "max_auto_replies_per_run": 40 }
+}

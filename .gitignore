@@ -1,0 +1,9 @@
+node_modules/
+_site/
+.env
+*.log
+content/posts/*/voice/
+content/posts/*/stills/
+content/posts/*/audio.wav
+content/posts/*/*.tmp.*
+.claude/

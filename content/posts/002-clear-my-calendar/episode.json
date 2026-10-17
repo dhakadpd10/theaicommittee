@@ -1,0 +1,105 @@
+{
+  "id": "002-clear-my-calendar",
+  "title": "Clear my calendar",
+  "cast": "committee",
+  "cover": 5,
+  "musicStop": 10,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, my week is too stressful. Clear my calendar.",
+      "show": "Hey committee. My week is too stressful. Clear my calendar.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "calendar",
+        "cleared": 0
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Which meetings feel the most stressful to you?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "codex",
+      "say": "Done.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.15
+    },
+    {
+      "shot": "laptop",
+      "dur": 2.2,
+      "sfx": [
+        "type",
+        "wipe"
+      ],
+      "screen": {
+        "page": "calendar",
+        "wipe": true
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Done what?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.2,
+      "screen": {
+        "page": "calendar",
+        "cleared": 1
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Deleted everything.",
+      "shot": "codex-push",
+      "mood": "happy"
+    },
+    {
+      "who": "gemini",
+      "say": "Don't worry! I told everyone you're on leave.",
+      "show": "Don't worry! I told everyone you're on leave.",
+      "shot": "gemini",
+      "mood": "happy",
+      "screen": {
+        "page": "calendar",
+        "cleared": 1,
+        "ooo": true
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Till March.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35
+    },
+    {
+      "who": "meera",
+      "say": "My sister's wedding is on Saturday.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "who": "claude",
+      "say": "Would you like me to draft an apology to your sister?",
+      "shot": "claude-push",
+      "mood": "worried"
+    },
+    {
+      "who": "meera",
+      "say": "Not you.",
+      "shot": "meera-hold",
+      "mood": "flat",
+      "pre": 0.8,
+      "post": 1.6
+    }
+  ],
+  "caption": "she asked for a lighter week. she got a lighter life.\n\nwhat would your AI delete first?\n\n#claude #codex #gemini #aitools #officehumor"
+}

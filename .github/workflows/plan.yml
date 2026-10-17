@@ -1,0 +1,135 @@
+name: Plan - write and render the next episodes
+# Every morning at 06:00 IST it checks the queue. When fewer than 3 days of episodes are waiting (and no batch is
+# waiting for your OK), it learns from the numbers, researches, writes 7 episodes, renders them all in parallel,
+# then opens a pull request. Merging it = approving them. Nothing is posted before that.
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "First day to plan (YYYY-MM-DD). Empty = the day after the last queued episode."
+        required: false
+      force:
+        description: "Plan even if the queue is still full"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: plan
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    outputs:
+      skipped: ${{ steps.plan.outputs.skipped || 'true' }}
+      week: ${{ steps.plan.outputs.week }}
+      posts: ${{ steps.plan.outputs.posts }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Skip while a batch is waiting for approval
+        id: waiting
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          OPEN=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json headRefName -q '.[].headRefName' | grep '^episodes/' || true)
+          if [ -n "$OPEN" ]; then echo "Waiting for your OK on: $OPEN"; echo "open=true" >> "$GITHUB_OUTPUT"; else echo "open=false" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-node@v4
+        if: steps.waiting.outputs.open == 'false'
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install Claude Code (runs Claude on your subscription)
+        if: steps.waiting.outputs.open == 'false'
+        run: npm install -g @anthropic-ai/claude-code
+      - if: steps.waiting.outputs.open == 'false'
+        run: npm ci
+      - name: Cache the voice and speech-check models
+        if: steps.waiting.outputs.open == 'false'
+        uses: actions/cache@v4
+        with:
+          path: node_modules/@huggingface/transformers/.cache
+          key: hf-models-v1
+      - name: Learn, research and write
+        id: plan
+        if: steps.waiting.outputs.open == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          START: ${{ inputs.start }}
+          FORCE: ${{ inputs.force && '--force' || '' }}
+        run: node src/cli.js plan ${START:+--start "$START"} $FORCE
+      - name: Save the scripts to a branch
+        if: steps.plan.outputs.skipped == 'false'
+        run: |
+          git config user.name "theaicommittee-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "episodes/${{ steps.plan.outputs.week }}"
+          git add -A content brand config
+          git commit -m "Episodes from ${{ steps.plan.outputs.week }}: scripts"
+          git push -u origin "episodes/${{ steps.plan.outputs.week }}"
+
+  render:
+    needs: plan
+    if: needs.plan.outputs.skipped == 'false'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 7
+      matrix:
+        post: ${{ fromJSON(needs.plan.outputs.posts) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: episodes/${{ needs.plan.outputs.week }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/@huggingface/transformers/.cache
+          key: hf-models-v1
+      - name: Voices, sound, cover, comic slides and the 3D reel
+        run: node show/make.js "content/posts/${{ matrix.post }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.post }}
+          path: |
+            content/posts/${{ matrix.post }}/reel.mp4
+            content/posts/${{ matrix.post }}/cover.jpg
+            content/posts/${{ matrix.post }}/slide-*.jpg
+          retention-days: 3
+
+  approve:
+    needs: [plan, render]
+    if: always() && needs.plan.outputs.skipped == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: episodes/${{ needs.plan.outputs.week }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          path: content/posts
+      - name: Open the approval pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WEEK: ${{ needs.plan.outputs.week }}
+        run: |
+          node src/cli.js finish "$WEEK"
+          git config user.name "theaicommittee-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A content
+          git commit -m "Episodes from $WEEK: rendered" || true
+          git push
+          node src/cli.js review "$WEEK" "episodes/$WEEK" > pr.md
+          gh pr create --base main --head "episodes/$WEEK" --title "Approve episodes from $WEEK" --body-file pr.md
