@@ -1,0 +1,117 @@
+{
+  "id": "004-clean-my-desktop",
+  "title": "Clean my desktop",
+  "cast": "committee",
+  "cover": 6,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, clean up my desktop. I share my screen in five minutes.",
+      "show": "Hey committee. Clean up my desktop. I share my screen in 5 minutes.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Desktop",
+        "body": "final.docx\nfinal_final.docx\nfinal_REAL_v3.docx\nNew folder (37)\nResignation drafts\nscreenshot 1 of 4,000"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But first, which of these files still bring you joy?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "None of them.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I sorted everything into folders and shared them with your team!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Desktop",
+        "body": "Work stuff\nOther stuff\nStuff\nShared with: Whole team",
+        "stamp": "SHARED"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Even the resignation drafts.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35,
+      "screen": {
+        "page": "text",
+        "title": "Desktop",
+        "body": "Work stuff\nOther stuff\nStuff\nResignation drafts\nShared with: Whole team",
+        "stamp": "SHARED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Unshare that. Just make it clean.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Done. Deleted everything.",
+      "shot": "codex-push",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "wipe"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Desktop",
+        "body": "0 items",
+        "stamp": "CLEAN"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Oh no. I am so sorry. Sorry for file one. Sorry for file two.",
+      "show": "Oh no. I'm so sorry. Sorry for file 1. Sorry for file 2.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "There were thousands.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "claude",
+      "say": "Sorry for file three.",
+      "show": "Sorry for file 3.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the desktop is spotless. the apology will be done by march.\n\nwhat's the most embarrassing file on your desktop right now?\n\n#claude #codex #gemini #worklife #officehumor"
+}
