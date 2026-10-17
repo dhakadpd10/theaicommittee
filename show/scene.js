@@ -558,7 +558,7 @@ function shotCam(b, t) {
     const push = /-push$/.test(b.shot || ''), who = (b.shot || '').replace(/-push$/, '');
     const mi = { codex: 0, claude: 1, gemini: 2 }[who];
     if (mi !== undefined && push) { const x = com.XS[mi]; return { p: comPt(x * 0.8 + d, lerp(0.42, 0.38, eInOut(u)), lerp(1.12, 0.78, eInOut(u))), l: comPt(x, 0.31, -0.06), fov: 34, focus: comPt(x, 0.38, -0.02) }; }
-    if (b.shot === 'committee') return { p: comPt(0 + d, 0.52, lerp(2.6, 2.45, eInOut(u))), l: comPt(0, 0.29, 0), fov: 34, focus: comPt(0, 0.35, -0.05) };
+    if (b.shot === 'committee') { const k = b.dist || 2.6; return { p: comPt(0 + d, b.camY ?? 0.52, lerp(k, k - 0.15, eInOut(u))), l: comPt(0, b.lookY ?? 0.29, 0), fov: 34, focus: comPt(0, 0.35, -0.05) }; }
     if (mi !== undefined) { const x = com.XS[mi]; return { p: comPt(x * 0.8 + d, 0.42, lerp(1.12, 1.05, u)), l: comPt(x, 0.3, -0.06), fov: 34, focus: comPt(x, 0.4, -0.02) }; }
     if (b.shot === 'wide') return { p: v3(lerp(0.55, 0.5, u) + d, 2.45, lerp(5.6, 5.2, eInOut(u))), l: v3(0.35, 1.7, 0), fov: 40, focus: null };
   }
