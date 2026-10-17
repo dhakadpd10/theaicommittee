@@ -8,9 +8,8 @@
       "post": "001-more-polite",
       "title": "More polite",
       "turn_by": "gemini",
-      "status": "made",
-      "attempts": 1,
-      "error": "Instagram POST /17841415815597561/media: API access blocked."
+      "status": "manual",
+      "note": "posted by hand: Instagram blocks API posting on the brand-new account"
     },
     {
       "day": "2026-10-18",

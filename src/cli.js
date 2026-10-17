@@ -23,7 +23,7 @@ const NEEDS_CLAUDE = ['plan', 'engage'];
   if (NEEDS_IG.includes(cmd) && (!process.env.IG_ACCESS_TOKEN || !process.env.IG_USER_ID)) { console.log('Instagram not connected yet (add the IG_ACCESS_TOKEN and IG_USER_ID secrets). Skipping.'); out('skipped', 'true'); return; }
   if (NEEDS_CLAUDE.includes(cmd) && !require('./claude').hasClaude()) { console.log('Claude not connected yet (add the CLAUDE_CODE_OAUTH_TOKEN secret). Skipping.'); out('skipped', 'true'); return; }
   if (cmd === 'plan') {
-    const r = await require('./plan').run({ start: flag('start'), days: Number(flag('days', 7)), force: args.includes('--force') });
+    const r = await require('./plan').run({ start: flag('start'), days: flag('days') ? Number(flag('days')) : undefined, force: args.includes('--force') });
     out('skipped', String(!!r.skipped || !(r.posts || []).length)); out('week', r.week || ''); out('posts', JSON.stringify(r.posts || []));
   } else if (cmd === 'finish') require('./plan').finish(args[1]);
   else if (cmd === 'review') console.log(require('./review').body(args[1], args[2]));
