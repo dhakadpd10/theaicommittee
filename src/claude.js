@@ -58,8 +58,19 @@ async function viaApi({ system, messages, effort, model, maxTokens, tools }) {
   return message.content.filter((b) => b.type === 'text').map((b) => b.text).join('\n');
 }
 
-/** ask({ system, prompt, effort, model, web }) -> text. `web: true` lets Claude search the web. */
-async function ask({ system, prompt, effort, model, maxTokens = 32000, web = false }) {
+/** ask({ system, prompt, effort, model, web }) -> text. `web: true` lets Claude search the web.
+ *  With CLAUDE_WAIT_ON_LIMIT=1 (the weekly batch and the doctor), a usage limit is waited out instead of failing. */
+async function ask(opts) {
+  try { return await askOnce(opts); } catch (e) {
+    if (!process.env.CLAUDE_WAIT_ON_LIMIT || !/hit your .*limit|usage limit|session limit/i.test(e.message)) throw e;
+    const wait = require('./fix').resetTime(e.message) ?? 3600000;
+    if (wait > 5 * 3600000) throw e;
+    console.log(`Claude usage limit reached: waiting ${Math.round(wait / 60000)} min for it to reset`);
+    await new Promise((r) => setTimeout(r, wait + 3 * 60000));
+    return askOnce(opts);
+  }
+}
+async function askOnce({ system, prompt, effort, model, maxTokens = 32000, web = false }) {
   const cfg = config();
   model = model || cfg.models.writer; effort = effort || cfg.models.writer_effort;
   if (!hasClaude()) throw new Error('no Claude connection: set CLAUDE_CODE_OAUTH_TOKEN (subscription) or ANTHROPIC_API_KEY');

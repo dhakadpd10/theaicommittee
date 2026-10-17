@@ -64,9 +64,17 @@ const sendMessage = (recipientId, text) => post(`/${userId()}/messages`, { recip
 
 // ---------- insights ----------
 async function mediaInsights(mediaId, kind) {
-  const metrics = kind === 'reel' ? 'views,reach,likes,comments,saved,shares,total_interactions' : 'views,reach,likes,comments,saved,shares,total_interactions';
-  const r = await get(`/${mediaId}/insights`, { metric: metrics });
-  return Object.fromEntries((r.data || []).map((m) => [m.name, m.values?.[0]?.value ?? m.total_value?.value ?? null]));
+  // the fuller set first (watch time, follows); Instagram rejects metrics a post type doesn't have, so fall back to the basics
+  const base = 'views,reach,likes,comments,saved,shares,total_interactions';
+  const sets = kind === 'reel' ? [base + ',ig_reels_avg_watch_time,ig_reels_video_view_total_time', base] : [base + ',follows', base];
+  let last;
+  for (const metric of sets) {
+    try {
+      const r = await get(`/${mediaId}/insights`, { metric });
+      return Object.fromEntries((r.data || []).map((m) => [m.name, m.values?.[0]?.value ?? m.total_value?.value ?? null]));
+    } catch (e) { last = e; }
+  }
+  throw last;
 }
 
 // ---------- token ----------

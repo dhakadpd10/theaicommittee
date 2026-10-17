@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 concurrency:
   group: plan
   cancel-in-progress: false
@@ -58,6 +59,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_WAIT_ON_LIMIT: "1"
           START: ${{ inputs.start }}
           FORCE: ${{ inputs.force && '--force' || '' }}
         run: node src/cli.js plan ${START:+--start "$START"} $FORCE

@@ -728,6 +728,7 @@ function renderAt(t) {
 
   // ----- HUD -----
   hud.clearRect(0, 0, W, H);
+  if (window.HF_MODE) return; // HyperFrames draws subtitles, cards and fades as moving HTML on top
   if (b.card) {
     const a = Math.min(prog(t, b.start, b.start + 0.25), 1 - prog(t, b.end - 0.25, b.end));
     hud.fillStyle = '#000'; hud.fillRect(0, 0, W, H);
@@ -744,9 +745,11 @@ function renderAt(t) {
 }
 
 window.renderAt = renderAt;
+// HyperFrames asks for an exact moment with an hf-seek event
+window.addEventListener('hf-seek', (e) => renderAt(e.detail.time));
 window.renderCover = () => {
   const b = TL.cover !== undefined ? BEATS[TL.cover] : BEATS[4];
   renderAt((b.vo ?? b.start) + 1.2);
 };
-renderAt(0.5);
+renderAt(window.HF_MODE ? (window.__hfThreeTime || 0) : 0.5);
 window.ready = true;

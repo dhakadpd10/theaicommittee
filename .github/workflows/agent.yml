@@ -1,0 +1,41 @@
+name: Agent - post, reply and keep score (runs non-stop)
+# The heartbeat. One run lasts about 5 h 40 min: every minute it posts what's due and fixes problems,
+# every 15 min it answers comments, once a day it logs the numbers. The hourly timer queues the next run,
+# which takes over the moment this one ends, so a skipped timer never means a missed post.
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+  actions: write
+concurrency:
+  group: agent-loop
+  cancel-in-progress: false
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Claude Code (replies run on your subscription)
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Install the Claude SDK only
+        run: npm install --prefix "$RUNNER_TEMP/sdk" @anthropic-ai/sdk@0.70.1 && echo "NODE_PATH=$RUNNER_TEMP/sdk/node_modules" >> "$GITHUB_ENV"
+      - name: Run the agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "theaicommittee-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node src/cli.js loop

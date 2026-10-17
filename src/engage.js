@@ -20,7 +20,7 @@ async function sortMessages(items) {
   const cfg = config();
   const res = await askJSON({
     effort: cfg.models.replies_effort, model: cfg.models.replies,
-    system: `You answer comments and DMs for the Instagram page ${cfg.handle}, an animated comedy series. The show:\n${readText(P('brand/show.md')).split('## Episode rules')[0]}`,
+    system: `You answer comments and DMs for the Instagram page ${cfg.handle}, an animated comedy series. The show:\n${readText(P('brand/show.md')).split('## Episode rules')[0]}\n\nHow to handle comments (the /ig-reply method; our replies stay in character):\n${readText(P('skills/ig-reply/SKILL.md')).replace(/^---[\s\S]*?---\n/, '').slice(0, 5000)}`,
     validate: (v) => (Array.isArray(v.items) && v.items.length === items.length && v.items.every((x) => ['reply', 'escalate', 'ignore'].includes(x.action)) ? [] : [`return {"items":[...]} with exactly ${items.length} entries, each action reply|escalate|ignore`]),
     prompt: `For each message decide:
 - "reply": jokes, "this is me", "which AI is this", tagging friends, questions about the show, thanks. Reply in character as ONE committee member who fits (Codex: 1 to 6 literal words; Claude: one gentle, over-polite sentence; Gemini: cheerful and slightly oversharing; the twin: 2 to 5 smug words), and sign it like "· Codex". At most 2 short sentences, no hashtags, no em dashes, at most one emoji. Never insult the person, never promise anything, never pretend to be the real company behind an AI. For DMs, reply as the page, warm and short, unsigned.

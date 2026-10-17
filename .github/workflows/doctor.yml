@@ -1,0 +1,62 @@
+name: Doctor - fix what broke
+# Runs by itself when another job fails (or when the agent loop asks for help). Claude reads the error log,
+# fixes the cause in this repository if it is in the code, checks the fix, saves it and starts the job again.
+# A Claude usage limit is waited out, then the job is restarted. Every visit leaves a note as a GitHub issue.
+on:
+  workflow_run:
+    workflows: ["Plan - write and render next week", "Site - media and pages", "Token - keep Instagram connected", "Agent - post, reply and keep score (runs non-stop)"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "What went wrong"
+        required: true
+permissions:
+  contents: write
+  issues: write
+  actions: write
+concurrency:
+  group: doctor
+  cancel-in-progress: false
+jobs:
+  fix:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Collect what went wrong
+        id: what
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REASON: ${{ inputs.reason }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          RUN_NAME: ${{ github.event.workflow_run.name }}
+          RUN_FILE: ${{ github.event.workflow_run.path }}
+        run: |
+          if [ -n "$RUN_ID" ]; then
+            gh run view "$RUN_ID" --repo "$GITHUB_REPOSITORY" --log-failed 2>/dev/null | tail -400 > failure.log || true
+            echo "Workflow: $RUN_NAME ($RUN_FILE), run $RUN_ID" > reason.txt
+            echo "file=$(basename "$RUN_FILE")" >> "$GITHUB_OUTPUT"
+          else
+            echo "$REASON" > reason.txt; : > failure.log
+            echo "file=" >> "$GITHUB_OUTPUT"
+          fi
+          cat reason.txt; tail -40 failure.log
+      - name: Diagnose and fix
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          CLAUDE_WAIT_ON_LIMIT: "1"
+        run: |
+          git config user.name "theaicommittee-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node src/cli.js doctor --file "${{ steps.what.outputs.file }}"

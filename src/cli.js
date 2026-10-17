@@ -10,6 +10,8 @@
 //   node src/cli.js refresh-token                                   print a refreshed Instagram token (workflow stores it)
 //   node src/cli.js launch --start YYYY-MM-DD                       give the launch episodes real dates (Day 1 = start)
 //   node src/cli.js check                                           check keys and the Instagram connection
+//   node src/cli.js loop [--minutes 340]                            the non-stop agent: post, fix, reply, log numbers
+//   node src/cli.js doctor [--file plan.yml]                        repair what failed (reason.txt + failure.log)
 const args = process.argv.slice(2);
 const flag = (name, def) => { const i = args.indexOf(`--${name}`); return i < 0 ? def : args[i + 1] ?? true; };
 const out = (k, v) => process.env.GITHUB_OUTPUT && require('fs').appendFileSync(process.env.GITHUB_OUTPUT, `${k}=${v}\n`);
@@ -27,6 +29,8 @@ const NEEDS_CLAUDE = ['plan', 'engage'];
     out('skipped', String(!!r.skipped || !(r.posts || []).length)); out('week', r.week || ''); out('posts', JSON.stringify(r.posts || []));
   } else if (cmd === 'finish') require('./plan').finish(args[1]);
   else if (cmd === 'review') console.log(require('./review').body(args[1], args[2]));
+  else if (cmd === 'loop') await require('./loop').run({ minutes: Number(flag('minutes', 340)) });
+  else if (cmd === 'doctor') await require('./fix').run({ file: flag('file', '') === true ? '' : flag('file', '') });
   else if (cmd === 'publish') await require('./publish').run({ dryRun: args.includes('--dry-run') });
   else if (cmd === 'engage') await require('./engage').run();
   else if (cmd === 'analytics') await require('./analytics').run();

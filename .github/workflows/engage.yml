@@ -1,7 +1,6 @@
 name: Engage - reply to comments in character
+# Runs by hand only: the Agent loop (agent.yml) does this job continuously.
 on:
-  schedule:
-    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 permissions:
   contents: write

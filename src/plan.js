@@ -13,6 +13,9 @@ const SYSTEM = () => `You are the writers' room for "The AI Committee", an anima
 
 ${readText(P('brand/show.md'))}
 
+# This week's strategy (from the Saturday audit)
+${readText(P('brand/strategy.md'), 'No strategy yet: the first audit runs after the first week of posts.')}
+
 # What the numbers said (newest first)
 ${readText(P('brand/learnings.md'))}`;
 
@@ -30,17 +33,46 @@ function recentTitles(n = 28) {
 const nextNumber = () => (fs.existsSync(POSTS()) ? fs.readdirSync(POSTS()) : []).reduce((m, id) => Math.max(m, Number(id.slice(0, 3)) || 0), 0) + 1;
 const examples = () => ['001-more-polite', '003-ninety-two-percent'].map((id) => readText(path.join(POSTS(), id, 'episode.json'))).join('\n\n');
 
-// ---------- 1. learn ----------
+// ---------- 1. learn: the /ig-audit method on our own numbers, then /ig-plan for next week ----------
+const skill = (name) => readText(P('skills', name, 'SKILL.md')).replace(/^---[\s\S]*?---\n/, '');
+function scoreboard() { // latest numbers per post, with the measures ig-audit ranks by
+  const lines = readText(P('content/analytics/log.csv')).trim().split('\n'); if (lines.length < 2) return null;
+  const cols = lines[0].split(','); const latest = {};
+  for (const l of lines.slice(1)) { const v = l.match(/("([^"]|"")*"|[^,]*)(,|$)/g).map((x) => x.replace(/,$/, '').replace(/^"|"$/g, '').replace(/""/g, '"')); const r = Object.fromEntries(cols.map((c, i) => [c, v[i]])); latest[r.post + ':' + r.format] = r; }
+  const rows = Object.values(latest); if (!rows.length) return null;
+  const num = (x) => Number(x) || 0; const views = rows.map((r) => num(r.views)).sort((x, y) => x - y); const median = views[Math.floor(views.length / 2)] || 1;
+  return { median, rows: rows.map((r) => ({ post: r.post, title: r.title, turn_by: r.turn_by, published_at: r.published_at, views: num(r.views), reach: num(r.reach),
+    outlier: +(num(r.views) / median).toFixed(2), shares_per_1k_reach: +(1000 * num(r.shares) / Math.max(1, num(r.reach))).toFixed(1), saves_per_1k_reach: +(1000 * num(r.saved) / Math.max(1, num(r.reach))).toFixed(1),
+    comments: num(r.comments), likes: num(r.likes), avg_watch_s: r.avg_watch_ms ? +(num(r.avg_watch_ms) / 1000).toFixed(1) : null, follows: r.follows ? num(r.follows) : null })).sort((x, y) => y.outlier - x.outlier) };
+}
 async function learn() {
-  const csv = readText(P('content/analytics/log.csv'));
-  if (csv.split('\n').filter(Boolean).length < 4) { log('not enough numbers yet, skipping the learning step'); return; }
-  const text = await ask({
+  const board = scoreboard();
+  if (!board || board.rows.length < 3) { log('fewer than 3 posts with numbers yet, skipping the audit'); return; }
+  const audit = await ask({
     system: SYSTEM(), effort: 'high',
-    prompt: `Per-post metrics log (one row per post per day; use each post's latest row):\n\n${csv.slice(-20000)}\n\nWrite this round's entry for learnings.md: a "## Week of ${localDay()}" heading, then 3 to 5 bullets: which episodes over-performed and why you think so (topic, which member delivered the turn, the ending, the length), what to stop, and one experiment for next week. Views, shares, saves and watch-through matter most. Say plainly when a sample is too small to conclude anything. Markdown only.`,
+    prompt: `Run this audit method on our own numbers. Method (follow it, adapted to an animated comedy series: the "hook" is the first line plus the first shot; there is no product to sell):\n\n${skill('ig-audit')}\n\nOur posts (median views ${board.median}), ranked by outlier multiple:\n${JSON.stringify(board.rows, null, 1)}\n\nAlso read each post's episode in content/posts/<post>/episode.json if you need to (who delivered the turn is in turn_by).\n\nWrite this week's entry for learnings.md: a "## Week of ${localDay()}" heading, then the audit as 3 to 6 bullets (top and bottom by outlier multiple and shares per reach, what separates them, what to STOP, what to DO MORE), each claim with its evidence and how confident it is. Say plainly when the sample is too small. Markdown only.`,
   });
-  const f = P('brand/learnings.md'); const [head, ...rest] = readText(f).split('\n## ');
-  fs.writeFileSync(f, `${head.trim()}\n\n${text.trim()}\n\n## ${rest.join('\n## ')}`.replace(/\n## $/, '\n'));
-  log('learnings updated');
+  const f = P('brand/learnings.md'); const [h, ...rest] = readText(f).split('\n## ');
+  fs.writeFileSync(f, `${h.trim()}\n\n${audit.trim()}\n\n## ${rest.join('\n## ')}`.replace(/\n## $/, '\n'));
+  const strategy = await ask({
+    system: SYSTEM(), effort: 'high',
+    prompt: `Turn this week's audit into next week's strategy, using this planning method (adapted: every post is a reel episode of our sitcom, two a day at 09:00 and 20:00 IST; the "types" become episode kinds such as everyday-life, work, family, the candle side business, seasonal, and fan-question episodes):\n\n${skill('ig-plan')}\n\nThis week's audit:\n${audit}\n\nWrite brand/strategy.md: a "# Strategy for the week of ${localDay()}" heading, then short sections: **Make more of**, **Stop**, **The mix** (how many of each episode kind out of 14), **Who delivers the turn** (Codex / Claude / Gemini / the twin, with numbers), **Length and endings**, **One experiment** (a single, measurable change). Plain markdown, under 300 words.`,
+  });
+  fs.writeFileSync(P('brand/strategy.md'), strategy.trim() + '\n');
+  log('audit and strategy updated');
+}
+
+// ---------- caption check: /ig-caption and /ig-human, like every caption on the account ----------
+function lintCaption(text) {
+  const tmp = P('content', '.caption-check.txt'); fs.writeFileSync(tmp, text);
+  const [py, pre] = require('./util').python(); const out = {};
+  const a = spawnSync(py, [...pre, P('skills/ig-caption/caption.py'), tmp], { encoding: 'utf8' });
+  const b = spawnSync(py, [...pre, P('skills/ig-human/detect.py'), tmp], { encoding: 'utf8' });
+  fs.rmSync(tmp, { force: true });
+  out.verdict = (((a.stdout || '') + (a.stderr || '')).match(/VERDICT\s+(\w+)/) || [])[1] || 'UNKNOWN';
+  out.human = Number((((b.stdout || '') + (b.stderr || '')).match(/HUMAN SCORE[^\d]*([\d.]+)/) || [])[1] || 100);
+  out.notes = ((((a.stdout || '') + (a.stderr || '')).match(/(WARN|FAIL).*/g)) || []).join('; ').slice(0, 600);
+  return out;
 }
 
 // ---------- 2. research ----------
@@ -98,6 +130,12 @@ async function writeEpisode(id, idea) {
     ep = await askJSON({ system: SYSTEM(), effort: 'medium', validate: check, prompt: `The text-to-speech voices said these lines unclearly (a speech-to-text check heard something else): ${bad}\nReword only the "say" text of those lines with simpler, common words (keep the meaning, the joke and the length), update "show" if needed, and return the full episode.json.\n\n${JSON.stringify(ep)}` });
     ep.id = id; writeJSON(path.join(dir, 'episode.json'), ep);
     bad = voiceCheck(dir); if (bad) log('still unclear after one rewrite (left for the reviewer):', bad);
+  }
+  const lint = lintCaption(ep.caption);
+  if (lint.verdict === 'FAIL') { // the show's lowercase deadpan style scores low on the human check by design, so only real rule failures are rewritten
+    log('caption check:', lint.verdict, 'human', lint.human, lint.notes);
+    const better = (await ask({ system: SYSTEM(), effort: 'medium', prompt: `Rewrite this Instagram caption so it passes the caption rules in the show bible and reads human (contractions, plain words, no em dashes, no AI-sounding phrases). Problems found: ${lint.notes || 'reads machine-written'} (human score ${lint.human}/100).\n\n${ep.caption}\n\nReturn the caption only.` })).trim();
+    if (!require('./validate').validateCaption(better).length) { ep.caption = better; writeJSON(path.join(dir, 'episode.json'), ep); }
   }
   fs.writeFileSync(path.join(dir, 'caption.txt'), ep.caption.trim() + '\n');
   fs.rmSync(path.join(dir, 'voice'), { recursive: true, force: true }); // the render job records the final voices again

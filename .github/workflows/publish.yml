@@ -1,7 +1,6 @@
 name: Publish - post approved posts on time
+# Runs by hand only: the Agent loop (agent.yml) does this job continuously.
 on:
-  schedule:
-    - cron: "*/15 * * * *"
   workflow_dispatch:
 permissions:
   contents: write

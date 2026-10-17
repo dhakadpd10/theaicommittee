@@ -1,8 +1,7 @@
 name: Daily - numbers
+# Runs by hand only: the Agent loop (agent.yml) does this job continuously.
 # 10:00 IST: logs every live post's views, reach, likes, comments, saves and shares.
 on:
-  schedule:
-    - cron: "30 4 * * *"
   workflow_dispatch:
 permissions:
   contents: write
