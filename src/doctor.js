@@ -85,6 +85,19 @@ async function handle(step, err) {
   log(`${step} error:`, msg.slice(0, 300));
   if (TRANSIENT.test(msg)) return;
   if (TOKEN.test(msg)) { await refreshToken(); return; }
+  if (BLOCKED.test(msg)) {
+    once('blocked-notice', 720, () => issue('Instagram is blocking the agent on @theaicommittee', `Instagram answers the agent with: "${msg.slice(0, 200)}"
+
+This is a block on Meta's side, so no code change can lift it. Until it lifts, every post arrives as a **Post by hand** issue on time.
+
+What usually lifts it:
+1. Instagram app (@theaicommittee): clear any security check or warning, confirm the email and phone number, turn on two-factor login.
+2. developers.facebook.com → your app → Instagram → API setup → section 2: remove @theaicommittee, **Add account** again, **Generate token**, and save it as the IG_ACCESS_TOKEN secret.
+3. Use the account normally for a day or two (post, like, reply by hand). New accounts are often limited at first.
+
+Close this issue once the agent posts again.`, 'inbox'));
+    return;
+  }
   if (/hit your .*limit|usage limit|session limit/i.test(msg)) { log('Claude usage limit: replies wait until it resets'); return; }
   once(`doctor:${step}`, 180, () => dispatch('doctor.yml', { reason: `${step} failed: ${msg.slice(0, 400)}` }));
 }

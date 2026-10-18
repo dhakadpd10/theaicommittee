@@ -35,7 +35,8 @@ function tests() {
 
 function askClaude(prompt) {
   return new Promise((resolve) => {
-    const env = { ...process.env }; for (const k of ['ANTHROPIC_API_KEY']) if (!env[k]) delete env[k];
+    const env = { ...process.env, CLAUDE_CODE_OAUTH_TOKEN: (process.env.CLAUDE_CODE_OAUTH_TOKEN || '').replace(/\s+/g, '') };
+    for (const k of ['ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN', 'CLAUDE_CODE_OAUTH_TOKEN']) if (!env[k]) delete env[k];
     const p = spawn('claude', ['-p', '--output-format', 'text', '--max-turns', '60', '--model', 'claude-opus-5-5',
       '--allowedTools', 'Read,Edit,Write,Glob,Grep,Bash(node:*),Bash(npm ls:*),Bash(git diff:*),Bash(git status:*),Bash(git log:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(grep:*)'],
     { cwd: P(), env });

@@ -6,10 +6,9 @@ This repository is the open-source agent that runs the page on GitHub Actions, w
 
 | Job | When | What it does |
 |---|---|---|
-| **Plan** | Saturdays 06:00 IST | learns from the numbers, researches what's current, writes next week (2 reels a day), checks every spoken line with speech-to-text, renders them all in parallel (3D, voices, music), then opens a pull request. **Merging = approving.** |
-| **Publish** | every 15 min | posts approved episodes on time: 09:00 and 20:00 IST |
-| **Engage** | every 15 min | replies to comments in character; collabs, sponsors and anything unsure become GitHub issues |
-| **Daily** | 10:00 IST | logs every post's views, reach, likes, saves and shares |
+| **Plan** | Saturdays 06:00 IST | audits last week with the ig-audit method, sets the strategy with ig-plan (brand/strategy.md), researches what's current, writes next week (2 reels a day), checks every spoken line with speech-to-text, renders them all in parallel (3D, voices, music), then opens a pull request. **Merging = approving.** |
+| **Agent** | non-stop | one loop posts what's due (09:00 and 20:00 IST), answers comments in character every 15 min and logs the numbers daily; an hourly timer queues the next run so nothing is missed |
+| **Doctor** | when something fails | posts that Instagram refuses become a "post by hand" issue; an expired token is refreshed; a missing video triggers a site rebuild; anything else, Claude reads the log, fixes the code, tests it and restarts the job |
 | **Token** | Mondays | keeps the Instagram connection alive |
 | **Site** | on merge | publishes the media Instagram fetches, plus the privacy pages |
 

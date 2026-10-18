@@ -68,7 +68,11 @@ jobs:
         run: |
           git config user.name "theaicommittee-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "episodes/${{ steps.plan.outputs.week }}"
+          # build the branch on the newest main (main may have changed while the episodes were being written)
+          git stash push -u -q -- content brand config
+          git fetch -q origin main
+          git checkout -q -B "episodes/${{ steps.plan.outputs.week }}" origin/main
+          git stash pop -q || { git checkout --theirs -- . 2>/dev/null; git add -A; }
           git add -A content brand config
           git commit -m "Episodes from ${{ steps.plan.outputs.week }}: scripts"
           git push -u origin "episodes/${{ steps.plan.outputs.week }}"
