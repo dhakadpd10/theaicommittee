@@ -110,7 +110,7 @@
       "post": "015-one-joke",
       "title": "One joke",
       "turn_by": "claude",
-      "status": "made"
+      "status": "skip"
     }
   ]
 }
