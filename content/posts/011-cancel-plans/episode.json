@@ -1,0 +1,122 @@
+{
+  "id": "011-cancel-plans",
+  "title": "Cancel politely",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I'm too tired for Friday dinner. Cancel it politely.",
+      "show": "Hey committee. I'm too tired for Friday dinner. Cancel it politely.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday dinner",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. Not coming.",
+      "show": "Done. \"Not coming.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday dinner",
+        "body": "Not coming."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Politely.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Easy! Offer Sunday instead. I also ordered them a fruit basket!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday dinner",
+        "body": "Not coming.\nHow about Sunday instead?\nA fruit basket is on its way!"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I'm tired on Sunday too.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. Not coming felt a little harsh, so I sent something gentler.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "How gentle?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.7
+    },
+    {
+      "who": "claude",
+      "say": "Two pages. It ends, I hope you can forgive me. I'm going through a lot.",
+      "show": "Two pages. It ends: \"I hope you can forgive me. I'm going through a lot.\"",
+      "shot": "claude-push",
+      "mood": "small",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday dinner",
+        "body": "Dear friend,\nI am so sorry about Friday.\n(page 2 of 2)\nI hope you can forgive me.\nI'm going through a lot.",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "They're coming over.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "who": "meera",
+      "say": "Now?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "twin",
+      "say": "They're bringing soup.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she cancelled dinner to stay in. so dinner came to her.\n\nwhat's the most dramatic way you've ever cancelled plans?\n\n#claude #codex #gemini #relatable #introvert"
+}

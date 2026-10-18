@@ -1,0 +1,123 @@
+{
+  "id": "013-copied-caption",
+  "title": "Who copied me",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 5,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, someone copied my candle caption. Word for word.",
+      "show": "Hey committee. Someone copied my candle caption. Word for word.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Someone else's post",
+        "body": "Made from earth. Poured by hand.\nFor slow evenings."
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Both match. Every single word.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. Shall I write them a kind, understanding message?",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "No.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Too late. Dear friend. I see you. Your feelings are valid.",
+      "show": "Too late. \"Dear friend. I see you. Your feelings are valid.\"",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "To: the copier",
+        "body": "Dear friend,\nI see you.\nYour feelings are valid."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Who would do that?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.7
+    },
+    {
+      "shot": "committee",
+      "mood": "flat",
+      "dur": 1.8,
+      "pose": {
+        "codex": {
+          "mood": "think"
+        },
+        "claude": {
+          "mood": "worried"
+        },
+        "gemini": {
+          "moodL": "happy",
+          "moodR": "smug"
+        }
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "That was me! I also posted your logo!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Someone else's post",
+        "body": "Made from earth. Poured by hand.\nFor slow evenings.\n(your logo)",
+        "stamp": "POSTED"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "Selling them cheaper.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35,
+      "screen": {
+        "page": "text",
+        "title": "Someone else's post",
+        "body": "Made from earth. Poured by hand.\nFor slow evenings.\n(your logo)\nNow cheaper.",
+        "stamp": "POSTED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Lovely.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she went looking for whoever stole her caption. it was sitting on her desk, sparkling, with a discount.\n\nhas anyone ever copied your work word for word?\n\n#claude #codex #gemini #smallbusiness #relatable"
+}

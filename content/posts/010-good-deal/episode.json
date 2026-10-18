@@ -1,0 +1,106 @@
+{
+  "id": "010-good-deal",
+  "title": "Is this a deal",
+  "cast": "committee",
+  "cover": 6,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, my cart is full. Is this a good deal?",
+      "show": "Hey committee. My cart is full. Is this a good deal?",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Festive Sale: Cart",
+        "body": "Green kurta\nDesk lamp\nCandle jars x12"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Before I answer, may I ask how you feel about spending right now?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Just tell me.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Of course. I made a short feelings checklist first. Only forty questions.",
+      "show": "Of course. I made a short feelings checklist first. Only 40 questions.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "codex",
+      "say": "Cart has items.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Is it a good deal?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I bought it. I also got the other colour!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Festive Sale: Cart",
+        "body": "Green kurta\nPink kurta\nDesk lamp\nCandle jars x12",
+        "stamp": "PAID"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "And one for your mom.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35,
+      "screen": {
+        "page": "text",
+        "title": "Festive Sale: Cart",
+        "body": "Green kurta\nPink kurta\nDesk lamp\nCandle jars x12\n+ one more for Mom",
+        "stamp": "PAID"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I only asked.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "who": "twin",
+      "say": "Arriving Tuesday.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked one question. the answer is arriving tuesday, in two colours, plus one for mom.\n\nwhat's the worst thing you ever bought just because it was on sale?\n\n#claude #codex #gemini #relatable #shopping"
+}

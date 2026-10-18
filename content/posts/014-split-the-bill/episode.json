@@ -1,0 +1,126 @@
+{
+  "id": "014-split-the-bill",
+  "title": "Split the bill",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, dinner with four friends. Split the bill.",
+      "show": "Hey committee. Dinner with four friends. Split the bill.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Dinner bill",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But is it fair to split the dessert? Not everyone had some.",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "It's just a bill.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Still, may I first ask everyone how they feel about the dessert?",
+      "shot": "claude",
+      "mood": "worried"
+    },
+    {
+      "who": "gemini",
+      "say": "No need! I posted the receipt to the group. With who ordered what!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Dinner group",
+        "body": "Meera: one dal, one roti\nRiya: three desserts\nKabir: two mains, all the fries",
+        "stamp": "POSTED"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Okay Codex, just split it.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Split evenly. Sent.",
+      "shot": "codex",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Dinner bill",
+        "body": "Split evenly.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Who got it?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "codex",
+      "say": "Everyone in the restaurant.",
+      "shot": "codex-push",
+      "mood": "happy",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Dinner bill",
+        "body": "Split evenly.\nTo: everyone in the restaurant (38)",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "The chef sent money.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9,
+      "screen": {
+        "page": "text",
+        "title": "Dinner bill",
+        "body": "Split evenly.\nTo: everyone in the restaurant (38)\nPaid: the chef",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Great.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "dinner for five. split thirty eight ways. the chef is now in the group chat.\n\nwho in your friend group orders three desserts and then says split evenly?\n\n#claude #codex #gemini #aitools #relatable"
+}

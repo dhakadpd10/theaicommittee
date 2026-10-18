@@ -1,0 +1,112 @@
+{
+  "id": "012-explain-my-job",
+  "title": "Explain my job",
+  "cast": "committee",
+  "cover": 6,
+  "musicStop": 5,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, Nani asked again what I do for work. Explain it simply.",
+      "show": "Hey committee. Nani asked again what I do for work. Explain it simply.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "For Nani",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. I'll be gentle. It all began in nineteen forty six, with the first computer.",
+      "show": "Of course. I'll be gentle. It all began in 1946, with the first computer.",
+      "shot": "claude",
+      "mood": "think",
+      "screen": {
+        "page": "text",
+        "title": "For Nani",
+        "body": "Dear Nani,\nI hope you are well.\nChapter 1: It all began in 1946, with the first computer..."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Simpler.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Easy! I set up a video call with Nani. Forty slides. I invited your boss.",
+      "show": "Easy! I set up a video call with Nani. 40 slides. I invited your boss.",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Call it off.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Just say it simply.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "She types. She sighs. She gets paid.",
+      "show": "\"She types. She sighs. She gets paid.\"",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.6,
+      "screen": {
+        "page": "text",
+        "title": "For Nani",
+        "body": "She types.\nShe sighs.\nShe gets paid."
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Sent to your grandma.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "For Nani",
+        "body": "She types.\nShe sighs.\nShe gets paid.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "Nani told the whole street.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Accurate.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1.1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "nani skipped the history of computers and the forty slides. she went with types, sighs, gets paid.\n\nhow does your family explain your job to everyone?\n\n#claude #codex #gemini #relatable #worklife"
+}

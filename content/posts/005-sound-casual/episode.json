@@ -1,0 +1,113 @@
+{
+  "id": "005-sound-casual",
+  "title": "Sound casual",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, Rohan asked if I'm free this weekend. Make my reply sound casual.",
+      "show": "Hey committee. Rohan asked if I'm free this weekend. Make my reply sound casual.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Rohan",
+        "body": "Rohan: free this weekend?"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But first, how casual do you feel inside? One to ten.",
+      "show": "Of course. But first, how casual do you feel inside? 1 to 10.",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Like a four.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Here are three versions. Each may read as slightly too eager, or not eager enough.",
+      "shot": "claude",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Rohan",
+        "body": "Rohan: free this weekend?\n\n1. hey! yes!! (may seem keen)\n2. maybe haha (may seem cold)\n3. I might be, no pressure, sorry (may seem sorry)"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Ooh! I also made you a matching playlist. It's called Casual But Interested!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "I just need one text.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Done. I sent it.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.4,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Rohan",
+        "body": "Rohan: free this weekend?\n\nYo.\nRegards,\nMeera.",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "It says yo. Regards.",
+      "show": "It says \"Yo. Regards.\"",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.7
+    },
+    {
+      "who": "twin",
+      "say": "He replied. Noted.",
+      "show": "He replied. \"Noted.\"",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6,
+      "screen": {
+        "page": "text",
+        "title": "Rohan",
+        "body": "Rohan: free this weekend?\n\nYo.\nRegards,\nMeera.\n\nRohan: Noted.",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Great.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "three drafts, one playlist, and the most casual text of her life still had a sign-off.\n\nwhat's the least chill text you ever sent trying to sound chill?\n\n#claude #codex #gemini #relatable #techhumor"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "008-tidy-laptop",
+  "title": "Tidy my laptop",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, tidy my desktop before the long weekend.",
+      "show": "Hey committee. Tidy my desktop before the long weekend.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Of course. First, which folders do you feel attached to?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "claude",
+      "say": "I drafted a forty step plan. Step one is breathing.",
+      "show": "I drafted a 40-step plan. Step one is breathing.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Tidy plan (1/40)",
+        "body": "Step 1: Breathe.\nStep 2: Which folders do you love?"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Ooh, I can sort your photos too! I already shared a few.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Done. Desktop empty.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3,
+      "sfx": [
+        "wipe"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Desktop",
+        "body": "",
+        "stamp": "EMPTY"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Where are my files?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Also empty.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Files",
+        "body": "",
+        "stamp": "EMPTY"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "And the backup.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35,
+      "screen": {
+        "page": "text",
+        "title": "Backup",
+        "body": "",
+        "stamp": "GONE"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "I wrote you a long apology. I saved it to the desktop.",
+      "shot": "claude-push",
+      "mood": "small",
+      "pre": 0.9,
+      "screen": {
+        "page": "text",
+        "title": "sorry.txt",
+        "body": "Dear Meera,\nI am so, so sorry.\n(page 1 of 12)"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Deleted.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 1,
+      "sfx": [
+        "wipe"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Desktop",
+        "body": "",
+        "stamp": "DELETED"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted a clean desktop for the long weekend. she got the cleanest desktop of all time.\n\nwhat did your AI do the one time you didn't double check?\n\n#claude #codex #gemini #techhumor #relatable"
+}

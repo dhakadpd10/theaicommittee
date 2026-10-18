@@ -1,0 +1,116 @@
+{
+  "week": "2026-10-19",
+  "start": "2026-10-19",
+  "research": "I've got 12 premises for you. I couldn't find much from the last two weeks, though, and one part of the brief turned up nothing.\n\n**About the research:**\n- **Nothing on @canwebuildthis.** The search found no posts or coverage of what's working there or on similar pages this month. The closest story is about fake AI \"comedian\" accounts copying real comedians' jokes (bullet 11). Our pre-launch notes are still the only guide on format.\n- **Few fresh AI complaints.** Most hits were older. The newest are a disputed story about an AI deleting a TV show's edited season, a developer's thread about losing 48,000 files, and news that ChatGPT is being changed to agree with people less. Mostly I used these as themes, not as news.\n- **Dates I confirmed:** Dussehra is Oct 20, Karwa Chauth is Oct 29 (one site says Oct 28), and Diwali is Nov 8, a bit after the 10-day window. India's tax deadline for audit cases moved from Oct 31 to Nov 21.\n\n**Premises for Meera:**\n\n1. **Diwali leave, round two.** \"Hey committee, everyone's taking Diwali leave. Who covers for me?\" Claude writes a four-page handover. Gemini has already volunteered Meera to cover for everyone. Twin: \"And the night shift.\" Ending: Meera, \"Great.\" (A Delhi firm made news for giving staff nine days off for Diwali.) [Storyboard18](https://www.storyboard18.com/brand-marketing/delhi-firm-grants-employees-nine-day-diwali-break-to-unplug-from-work-82443.htm)\n2. **Diwali gifts on a budget.** Meera wants to give her Mitti candles to colleagues. Gemini orders four hundred and emails the whole company. Twin: \"Invoice is yours.\" (2026 gifting guides suggest about ₹1,000 a person.) [Zaggle](https://www.zaggle.in/knowledge-hub/blog/30-diwali-gifts-for-employees-under-rs-5000-rs-2500-and-rs-1000)\n3. **Diwali desktop clean-up.** \"Hey committee, tidy my laptop before Diwali.\" Codex: \"Deleted everything.\" Claude apologises in a 900-word essay. Twin: \"And the backup.\" This uses the AI-deletes-files stories, with no names. [TechRadar](https://www.techradar.com/ai-platforms-assistants/do-not-let-programs-run-commands-on-your-machine-claude-code-allegedly-deleted-48-000-files-in-103-seconds-and-its-a-terrifying-warning-about-ai-agents)\n4. **\"Be honest.\"** \"Hey committee, be honest. Is my new candle logo good?\" Claude can't bring itself to criticise. Gemini loves it and has already posted it. Codex: \"It's a circle.\" (Topical because of the news about chatbots agreeing too much.) [Android Headlines](https://www.androidheadlines.com/2026/10/openai-chatgpt-sycophancy-mental-health-update-yes-man.html)\n5. **\"Is this a good deal?\"** Meera's cart is full during the festive sales. Claude asks how she feels about spending. Gemini: \"Done! I also bought the other colour.\" Twin: \"And for your mom.\" It never judges the deal, so there's no money advice. [Zoutons sale calendar](https://zoutons.com/news/what-to-buy-in-october-2026-india-sale-calendar)\n6. **Joke for the team party.** \"Hey committee, I need one joke for the Diwali party.\" All three tell the same joke. Twin: \"Again.\" (A study found most ChatGPT jokes are versions of the same 25.) [Yahoo Tech](https://tech.yahoo.com/science/articles/chatgpt-only-tell-25-jokes-104500199.html)\n7. **Dussehra holiday call.** Oct 20 is a holiday, and the boss wants a \"quick call.\" Codex accepts. Claude writes a gentle no that runs three pages. Gemini adds the whole team. Ending: Meera, \"It's a holiday.\" [Boldsky October calendar](https://www.boldsky.com/yoga-spirituality/october-2026-festival-calendar-pitru-paksha-ends-navratri-begins-dussehra-follows-173025.html)\n8. **Mum's Karwa Chauth call (Oct 29).** Mum asks \"Any plans this year?\" and Meera needs a reply. Gemini replies in the family group. Twin: \"To all the aunties.\" Keep it about family, not the festival itself. [Hindutone](https://hindutone.com/festivals/october-2026-hindu-festivals-calendar-complete-master-guide-navratri-dussehra-diwali-karwa-chauth/)\n9. **Can I dry clothes outside?** Delhi's air got worse after the monsoon ended. Codex: \"Outside is not in the repo.\" Gemini posts the reading to the building group. Twin: \"With your balcony photo.\" Keep it about laundry, not health. [ThePrint](https://theprint.in/india/delhi-records-most-polluted-october-first-week-in-three-years/3064834/)\n10. **The deadline moved.** \"Hey committee, remind me before the deadline.\" Codex set the reminder for Oct 31, the old date. Gemini sends her receipts to her mum. Claude adds a caveat to every line. No tax advice, just a reminder gone wrong. [TaxHeal](https://www.taxheal.com/cbdt-extends-due-dates-for-filing-tax-audit-reports-and-itrs.html)\n11. **Someone copied my caption.** Meera finds another account using her candle caption word for word. Committee: \"Who would do that?\" Pause, then Gemini: \"That was me!\" (Based on the story about AI accounts copying comedians.) [Chortle](https://www.chortle.co.uk/news/2026/10/08/61797/the_ai_comedians_stealing_jokes_wholesale)\n12. **Halloween office party (Oct 31, worldwide).** \"Hey committee, easy costume?\" Codex: \"Go as a terminal.\" Claude asks if costumes make her anxious. Gemini made her the costume lead for the whole office. Twin: \"Theme is you.\" (Game 7 of the World Series would also fall on Halloween.) [MLB](https://www.mlb.com/news/2026-mlb-world-series-faq-schedule-times-teams-and-more)\n\n**For the week-1 test:** Gemini oversharing delivers the turn in 2, 5, 7, 8, 11 and 12. Codex taking things literally delivers it in 3, 4, 9 and 10.\n\nSources:\n- [Storyboard18](https://www.storyboard18.com/brand-marketing/delhi-firm-grants-employees-nine-day-diwali-break-to-unplug-from-work-82443.htm)\n- [Zaggle](https://www.zaggle.in/knowledge-hub/blog/30-diwali-gifts-for-employees-under-rs-5000-rs-2500-and-rs-1000)\n- [TechRadar, 48,000 files](https://www.techradar.com/ai-platforms-assistants/do-not-let-programs-run-commands-on-your-machine-claude-code-allegedly-deleted-48-000-files-in-103-seconds-and-its-a-terrifying-warning-about-ai-agents)\n- [TechRadar, Swedish TV story](https://www.techradar.com/ai-platforms-assistants/rogue-ai-agent-reportedly-deletes-full-season-of-swedish-tv-show-premiere-of-the-challenge-postponed-with-hundreds-of-days-of-production-work-lost)\n- [Android Headlines](https://www.androidheadlines.com/2026/10/openai-chatgpt-sycophancy-mental-health-update-yes-man.html)\n- [Zoutons](https://zoutons.com/news/what-to-buy-in-october-2026-india-sale-calendar)\n- [Yahoo Tech](https://tech.yahoo.com/science/articles/chatgpt-only-tell-25-jokes-104500199.html)\n- [Boldsky](https://www.boldsky.com/yoga-spirituality/october-2026-festival-calendar-pitru-paksha-ends-navratri-begins-dussehra-follows-173025.html)\n- [Hindutone](https://hindutone.com/festivals/october-2026-hindu-festivals-calendar-complete-master-guide-navratri-dussehra-diwali-karwa-chauth/)\n- [ThePrint](https://theprint.in/india/delhi-records-most-polluted-october-first-week-in-three-years/3064834/)\n- [TaxHeal](https://www.taxheal.com/cbdt-extends-due-dates-for-filing-tax-audit-reports-and-itrs.html)\n- [Chortle](https://www.chortle.co.uk/news/2026/10/08/61797/the_ai_comedians_stealing_jokes_wholesale)\n- [MLB](https://www.mlb.com/news/2026-mlb-world-series-faq-schedule-times-teams-and-more)",
+  "slots": [
+    {
+      "day": "2026-10-19",
+      "time": "09:00",
+      "format": "reel",
+      "post": "004-meeting-summary",
+      "title": "The meeting",
+      "turn_by": "gemini",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-19",
+      "time": "20:00",
+      "format": "reel",
+      "post": "005-sound-casual",
+      "title": "Sound casual",
+      "turn_by": "codex",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-20",
+      "time": "09:00",
+      "format": "reel",
+      "post": "006-holiday-call",
+      "title": "Quick holiday call",
+      "turn_by": "gemini",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-20",
+      "time": "20:00",
+      "format": "reel",
+      "post": "007-be-honest",
+      "title": "Be honest",
+      "turn_by": "codex",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-21",
+      "time": "09:00",
+      "format": "reel",
+      "post": "008-tidy-laptop",
+      "title": "Tidy my laptop",
+      "turn_by": "codex",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-21",
+      "time": "20:00",
+      "format": "reel",
+      "post": "009-what-to-cook",
+      "title": "What's for dinner",
+      "turn_by": "gemini",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-22",
+      "time": "09:00",
+      "format": "reel",
+      "post": "010-good-deal",
+      "title": "Is this a deal",
+      "turn_by": "gemini",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-22",
+      "time": "20:00",
+      "format": "reel",
+      "post": "011-cancel-plans",
+      "title": "Cancel politely",
+      "turn_by": "claude",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-23",
+      "time": "09:00",
+      "format": "reel",
+      "post": "012-explain-my-job",
+      "title": "Explain my job",
+      "turn_by": "codex",
+      "status": "made",
+      "note": "unclear words: beat 4 \"Call it off.\" was heard as \"Gole it off.\" | beat 7 \"Sent to your grandma.\" was heard as \"Send to your grandma.\""
+    },
+    {
+      "day": "2026-10-23",
+      "time": "20:00",
+      "format": "reel",
+      "post": "013-copied-caption",
+      "title": "Who copied me",
+      "turn_by": "gemini",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-24",
+      "time": "09:00",
+      "format": "reel",
+      "post": "014-split-the-bill",
+      "title": "Split the bill",
+      "turn_by": "codex",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-24",
+      "time": "20:00",
+      "format": "reel",
+      "post": "015-one-joke",
+      "title": "One joke",
+      "turn_by": "claude",
+      "status": "made"
+    }
+  ]
+}

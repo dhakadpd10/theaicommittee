@@ -1,0 +1,105 @@
+{
+  "id": "007-be-honest",
+  "title": "Be honest",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, this is my new logo for my shop. Be honest.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "mitti_logo_final.png",
+        "body": "O\n\nMitti candles"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Thank you for sharing this with us. I can tell it means a lot to you.",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Is it good?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "It's very brave.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.7
+    },
+    {
+      "who": "gemini",
+      "say": "I love it! I already made twelve versions in a curly font!",
+      "show": "I love it! I already made 12 versions in a curly font!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "mitti_logo_v12_curly.png",
+        "body": "O\n\nMitti candles"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "All in gold.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "It's a circle.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.9
+    },
+    {
+      "who": "claude",
+      "say": "A very confident circle.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "It's a candle. From above.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.7,
+      "post": 0.8
+    },
+    {
+      "who": "codex",
+      "say": "Still a circle.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 1.1
+    },
+    {
+      "who": "meera",
+      "say": "Okay.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "three opinions, twelve curly versions, and not one of them saw a candle.\n\nwhat's the nicest way anyone ever told you your work was bad?\n\n#claude #codex #gemini #smallbusiness #relatable"
+}
