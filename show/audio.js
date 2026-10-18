@@ -59,7 +59,8 @@ for (let i = 0; i < DUR * 9; i++) { const t0 = Math.abs(rnd()) * DUR; if (t0 < s
 const sStop = Math.round(stopMusic * SR);
 for (let i = sStop; i < N; i++) { const g = clamp(1 - (i - sStop) / (0.06 * SR)); music[0][i] *= g; music[1][i] *= g; }
 if (card) {
-  const sCard = Math.round(card.start * SR), sCardEnd = Math.round((morningAt + 0.1) * SR);
+  // fade the music out over the card; it comes back only where a later scene restarts it (LOYAL10's morning)
+  const sCard = Math.round(card.start * SR), sCardEnd = Math.min(N, Math.round((Number.isFinite(morningAt) ? morningAt + 0.1 : DUR) * SR));
   for (let i = sCard; i < sCardEnd; i++) { const g = clamp(1 - (i - sCard) / (0.4 * SR)); music[0][i] *= g; music[1][i] *= g; }
 }
 
