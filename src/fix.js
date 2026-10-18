@@ -11,7 +11,9 @@ const { P, log, readText } = require('./util');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const sh = (cmd, args, opts = {}) => spawnSync(cmd, args, { encoding: 'utf8', maxBuffer: 1 << 26, ...opts });
 const gh = (...a) => sh('gh', [...a, '--repo', process.env.GITHUB_REPOSITORY]);
-const note = (title, body) => sh('gh', ['issue', 'create', '--repo', process.env.GITHUB_REPOSITORY, '--title', title, '--label', 'doctor', '--body-file', '-'], { input: body });
+// notes that need Prashant @mention him (phone + email); routine "fixed it" notes stay quiet
+const note = (title, body) => sh('gh', ['issue', 'create', '--repo', process.env.GITHUB_REPOSITORY, '--title', title, '--label', 'doctor', '--body-file', '-'],
+  { input: /needs you|needs a look|restart later|may need you/i.test(title + body) ? `@${process.env.GITHUB_REPOSITORY_OWNER || 'dhakadpd10'} this needs you.\n\n${body}` : body });
 
 function resetTime(text) { // "resets 2:50pm (UTC)" -> ms until then (next occurrence)
   const m = text.match(/resets\s+(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*\(UTC\)/i); if (!m) return null;

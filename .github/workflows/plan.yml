@@ -137,5 +137,5 @@ jobs:
           git add -A content
           git commit -m "Episodes from $WEEK: rendered" || true
           git push
-          node src/cli.js review "$WEEK" "episodes/$WEEK" > pr.md
+          { echo "@$GITHUB_REPOSITORY_OWNER new episodes are ready for your OK. Merge to approve."; echo; node src/cli.js review "$WEEK" "episodes/$WEEK"; } > pr.md
           gh pr create --base main --head "episodes/$WEEK" --title "Approve episodes from $WEEK" --body-file pr.md

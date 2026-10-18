@@ -21,7 +21,8 @@ function gh(args, input) {
   if (r.status) log('gh failed:', args.slice(0, 3).join(' '), (r.stderr || '').trim().slice(0, 300));
   return (r.stdout || '').trim();
 }
-const issue = (title, body, label) => gh(['issue', 'create', '--repo', repo(), '--title', title, '--label', label, '--body-file', '-'], body);
+// the @mention makes GitHub push the issue to Prashant's phone and email
+const issue = (title, body, label) => gh(['issue', 'create', '--repo', repo(), '--title', title, '--label', label, '--body-file', '-'], `@${process.env.GITHUB_REPOSITORY_OWNER || 'dhakadpd10'} this needs you.\n\n${body}`);
 // at most once per `minutes` for the same key, so a stuck problem doesn't spam
 function once(key, minutes, fn) {
   const st = state(); const last = st.dispatched[key];

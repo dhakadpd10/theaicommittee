@@ -12,7 +12,7 @@ const DAY = 86400000;
 async function openIssue(title, body) {
   const repo = process.env.GITHUB_REPOSITORY, token = process.env.GITHUB_TOKEN;
   if (!repo || !token) { log('ESCALATE (no GitHub token here):', title); return; }
-  await fetch(`https://api.github.com/repos/${repo}/issues`, { method: 'POST', headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' }, body: JSON.stringify({ title, body, labels: ['inbox'] }) });
+  await fetch(`https://api.github.com/repos/${repo}/issues`, { method: 'POST', headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' }, body: JSON.stringify({ title, body: `@${process.env.GITHUB_REPOSITORY_OWNER || 'dhakadpd10'} ${body}`, labels: ['inbox'] }) });
 }
 
 async function sortMessages(items) {
