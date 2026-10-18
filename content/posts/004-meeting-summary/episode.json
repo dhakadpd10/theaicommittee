@@ -1,0 +1,129 @@
+{
+  "id": "004-meeting-summary",
+  "title": "The meeting",
+  "cast": "committee",
+  "cover": 6,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, summarise my meeting. One hour, nothing decided.",
+      "show": "Hey committee. Summarise my meeting. 1 hour, nothing decided.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Meeting summary",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But first, how did the meeting make you feel?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Long.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "That sounds hard. Here is a gentle summary in five parts. Part one, the greetings.",
+      "show": "That sounds hard. Here is a gentle summary in 5 parts. Part 1: the greetings.",
+      "shot": "claude",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Meeting summary",
+        "body": "Part 1: The greetings\nPart 2: How everyone felt\nPart 3: More greetings\nPart 4: ...\nPart 5: ..."
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Nothing happened.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Meeting summary",
+        "body": "Nothing happened."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Accurate.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also sent your summary to everyone.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Meeting summary",
+        "body": "Nothing happened.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Everyone?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Everyone! And I said yes to tomorrow's meeting for you.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Tomorrow: Follow-up",
+        "body": "Accepted.",
+        "stamp": "ACCEPTED"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "You're presenting.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Tomorrow: Follow-up",
+        "body": "Accepted.\nPresenter: Meera",
+        "stamp": "ACCEPTED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Put me on mute.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the meeting decided nothing. now it has a follow-up, a presenter and a summary everyone read.\n\nwhat's the longest meeting you've survived where nothing got decided?\n\n#claude #codex #gemini #officehumor #worklife"
+}

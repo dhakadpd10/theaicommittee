@@ -1,0 +1,112 @@
+{
+  "id": "009-what-to-cook",
+  "title": "What's for dinner",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I have one onion and some rice. What do I cook?",
+      "show": "Hey committee. I have one onion and some rice. What do I cook?",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Dinner",
+        "body": "1 onion\nsome rice"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Before we start, how are you feeling tonight? And how do you feel about onions?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Hungry.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Onion. Rice. Compile.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "That's not a meal.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Build failed.",
+      "shot": "codex",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Mum's on the phone. She keeps saying dal.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Dal sounds lovely. But only if you feel ready for dal.",
+      "shot": "claude",
+      "mood": "normal"
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I told your mum you're making dal for Sunday lunch!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "To: Mum",
+        "body": "Making dal for Sunday lunch!",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "For twelve.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "To: Mum",
+        "body": "Making dal for Sunday lunch!\nFor 12 people.",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I have one onion.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked about dinner tonight. now she's hosting sunday lunch for twelve with one onion.\n\nwhat did your mum volunteer you for this week?\n\n#claude #codex #gemini #desimom #relatable"
+}

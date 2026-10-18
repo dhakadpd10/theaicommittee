@@ -1,0 +1,113 @@
+{
+  "id": "015-one-joke",
+  "title": "One joke",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I need one joke for the office Diwali party.",
+      "show": "Hey committee. I need one joke for the office Diwali party.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Party joke",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Okay. Knock knock.",
+      "show": "Okay. \"Knock knock.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Party joke",
+        "body": "Knock knock."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "That's two words.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Ooh, I have one! Why did the chicken cross the road?",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Boss told it last year.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35
+    },
+    {
+      "who": "claude",
+      "say": "I have a lovely joke. But first, a short note about not offending anyone.",
+      "shot": "claude",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Party joke",
+        "body": "A short note on not offending anyone.\n1."
+      },
+      "sfx": [
+        "type"
+      ]
+    },
+    {
+      "card": "eleven minutes later",
+      "dur": 2
+    },
+    {
+      "who": "claude",
+      "say": "I also apologise to the chicken. And to all chickens. And to the road.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Party joke",
+        "body": "A short note on not offending anyone.\n...\n46. Sorry, chickens.\n47. Sorry, road."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "And that is why the chicken crossed.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.6
+    },
+    {
+      "who": "twin",
+      "say": "Party ended.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "One joke.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked for one joke. she got half a knock knock, last year's chicken and eleven minutes of apologising to it.\n\nwho at your office tells the same joke every year?\n\n#claude #codex #gemini #officehumor #relatable"
+}

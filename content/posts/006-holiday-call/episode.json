@@ -1,0 +1,124 @@
+{
+  "id": "006-holiday-call",
+  "title": "Quick holiday call",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, it's a holiday and my boss wants a quick call. Get me out.",
+      "show": "Hey committee. It's a holiday and my boss wants a quick call. Get me out.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Quick call?",
+        "body": "Hi Meera,\nQuick call at 11? Won't take long."
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Accepted.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Quick call?",
+        "body": "Hi Meera,\nQuick call at 11? Won't take long.",
+        "stamp": "ACCEPTED"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Undo that.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Of course, I'm so sorry. I wrote a short apology to undo it. It's three pages.",
+      "show": "Of course, I'm so sorry. I wrote a short apology to undo it. It's 3 pages.",
+      "shot": "claude",
+      "mood": "worried",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Quick call",
+        "body": "Dear sir,\nI am so sorry I accepted.\nI am also sorry for this email.\n(page 1 of 3)"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Just make it less awkward.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I added the whole team, so it's not awkward!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Quick call",
+        "body": "Invited: the whole team (14)",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "The whole team.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "gemini",
+      "say": "Everyone joined! I also turned your camera on.",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Quick call",
+        "body": "14 people joined\nCamera: ON",
+        "stamp": "LIVE"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "From bed.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "It's a holiday.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted out of one quick call. now the whole team has seen her pillow.\n\nwhat's the worst way you've been pulled into work on a holiday?\n\n#claude #codex #gemini #officehumor #worklife"
+}
