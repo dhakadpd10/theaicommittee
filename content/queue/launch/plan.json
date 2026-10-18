@@ -30,7 +30,9 @@
       "post": "003-ninety-two-percent",
       "title": "Ninety-two percent",
       "turn_by": "gemini",
-      "status": "made"
+      "status": "published",
+      "media_id": "17919608856461537",
+      "published_at": "2026-10-18T14:31:46.199Z"
     }
   ]
 }
