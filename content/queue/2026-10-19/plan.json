@@ -22,9 +22,9 @@
       "title": "Sound casual",
       "turn_by": "codex",
       "status": "made",
-      "attempts": 1,
+      "attempts": 2,
       "error": "Instagram GET /17841415815597561/media: Invalid OAuth access token - Cannot parse access token",
-      "last_try": "2026-10-19T15:32:57.855Z"
+      "last_try": "2026-10-19T15:41:03.491Z"
     },
     {
       "day": "2026-10-20",
