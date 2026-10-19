@@ -10,7 +10,9 @@
       "post": "004-meeting-summary",
       "title": "The meeting",
       "turn_by": "gemini",
-      "status": "made"
+      "status": "published",
+      "media_id": "18114781850029502",
+      "published_at": "2026-10-19T03:30:52.797Z"
     },
     {
       "day": "2026-10-19",
