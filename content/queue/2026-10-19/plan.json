@@ -33,8 +33,10 @@
       "post": "005-sound-casual",
       "title": "Sound casual",
       "turn_by": "codex",
-      "status": "made",
-      "note": "moved from 19 Oct 20:00 (broken token)"
+      "status": "published",
+      "note": "moved from 19 Oct 20:00 (broken token)",
+      "media_id": "18082112309341936",
+      "published_at": "2026-10-20T08:31:03.937Z"
     },
     {
       "day": "2026-10-20",
