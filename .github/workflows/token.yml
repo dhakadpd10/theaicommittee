@@ -22,6 +22,7 @@ jobs:
         run: |
           if [ -z "$IG_ACCESS_TOKEN" ] || [ -z "$GH_TOKEN" ]; then echo "Not connected yet (needs the IG_ACCESS_TOKEN and GH_PAT secrets). Skipping."; exit 0; fi
           NEW=$(node src/cli.js refresh-token)
+          if ! printf %s "$NEW" | grep -Eq '^[A-Za-z0-9_-]{60,}$'; then echo "The refresh did not return a token, so the old one is kept."; exit 1; fi
           echo "::add-mask::$NEW"
           gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY" --body "$NEW"
           echo "Instagram token refreshed"

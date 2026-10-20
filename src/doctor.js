@@ -40,11 +40,24 @@ async function refreshToken() {
   if (!process.env.GH_PAT) { log('token looks expired but GH_PAT is missing: cannot refresh'); return false; }
   try {
     const t = (await require('./ig').refreshToken()).access_token;
+    if (!/^[A-Za-z0-9_-]{60,}$/.test(t || '')) throw new Error('Instagram returned something that is not a token');
     const r = spawnSync('gh', ['secret', 'set', 'IG_ACCESS_TOKEN', '--repo', repo(), '--body', t], { encoding: 'utf8', env: { ...process.env, GH_TOKEN: process.env.GH_PAT } });
     if (r.status) throw new Error((r.stderr || '').slice(0, 200));
     process.env.IG_ACCESS_TOKEN = t; log('Instagram token refreshed and saved');
     return true;
   } catch (e) { log('token refresh failed:', e.message); return false; }
+}
+
+/** Give one post to Prashant as a "Post by hand" issue (once per post) and stop the agent retrying it. */
+function handOff(s) {
+  const dir = `content/posts/${s.post}`; const caption = readText(P(dir, 'caption.txt')).trim();
+  const st = state();
+  if (!st.issues[s.post]) {
+    issue(`Post by hand: ${s.title} (${s.day} ${s.time} IST)`,
+      `Instagram refused the agent's post (\`${s.error.slice(0, 160)}\`), so this one needs you. It takes a minute:\n\n1. Download the video: ${publicUrl(`${dir}/reel.mp4`)}\n2. Instagram → **+ → Reel** → pick it → turn on **Also share to feed**.\n3. Paste this caption:\n\n\`\`\`\n${caption}\n\`\`\`\n4. Share, then close this issue.\n\nThe agent keeps trying the automatic route for the next posts.`, 'post-by-hand');
+    st.issues[s.post] = new Date().toISOString(); save(st);
+  }
+  s.status = 'manual-needed'; log('handed to Prashant:', s.post);
 }
 
 /** After a publish round: deal with every slot that has an error. Returns true if a plan file changed. */
@@ -57,17 +70,17 @@ async function reviewSlots() {
     for (const s of plan.slots) {
       if (!s.error || !['made', 'failed'].includes(s.status)) continue;
       if (BLOCKED.test(s.error) && !TOKEN.test(s.error)) {
-        // Instagram won't take it from the agent: hand it to Prashant now, while it's still on time
-        const dir = `content/posts/${s.post}`; const caption = readText(P(dir, 'caption.txt')).trim();
-        const st = state();
-        if (!st.issues[s.post]) {
-          issue(`Post by hand: ${s.title} (${s.day} ${s.time} IST)`,
-            `Instagram refused the agent's post (\`${s.error.slice(0, 160)}\`), so this one needs you. It takes a minute:\n\n1. Download the video: ${publicUrl(`${dir}/reel.mp4`)}\n2. Instagram → **+ → Reel** → pick it → turn on **Also share to feed**.\n3. Paste this caption:\n\n\`\`\`\n${caption}\n\`\`\`\n4. Share, then close this issue.\n\nThe agent keeps trying the automatic route for the next posts; this usually stops once the account is a few days old.`, 'post-by-hand');
-          st.issues[s.post] = new Date().toISOString(); save(st);
-        }
-        s.status = 'manual-needed'; changed = true; log('handed to Prashant:', s.post);
+        handOff(s); changed = true; // Instagram won't take it from the agent: hand it to Prashant now, while it's still on time
       } else if (TOKEN.test(s.error)) {
-        if (await refreshToken()) { s.status = 'made'; s.attempts = 0; delete s.last_try; changed = true; }
+        // try to renew (at most hourly); if that can't fix it, the token is broken: ask for a new one and hand the post over
+        let fixed = false;
+        if (once('token-refresh', 60, () => {})) fixed = await refreshToken();
+        if (fixed) { s.status = 'made'; s.attempts = 0; delete s.last_try; changed = true; }
+        else if ((s.attempts || 0) >= 2) {
+          once('token-notice', 720, () => issue('Instagram token needs renewing (@theaicommittee)',
+            `Instagram says: "${s.error.slice(0, 200)}"\n\nThe agent could not renew it by itself, so it needs a fresh one (2 minutes):\n1. developers.facebook.com → your app → Instagram → API setup → section 2 → **Generate token** next to @theaicommittee.\n2. github.com/${repo()}/settings/secrets/actions → **IG_ACCESS_TOKEN** → Update → paste it.\n\nUntil then, every post arrives on time as a **Post by hand** issue. Close this once the token is updated.`, 'inbox'));
+          handOff(s); changed = true;
+        }
       } else if (NO_MEDIA.test(s.error)) {
         once('site', 15, () => { dispatch('site.yml'); log('video missing on the site: redeploying'); });
         if (s.status === 'failed' && s.attempts < 12) { s.status = 'made'; changed = true; } // keep trying while the site rebuilds

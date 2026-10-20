@@ -15,28 +15,23 @@
       "published_at": "2026-10-19T03:30:52.797Z"
     },
     {
-      "day": "2026-10-19",
-      "time": "20:00",
-      "format": "reel",
-      "post": "005-sound-casual",
-      "title": "Sound casual",
-      "turn_by": "codex",
-      "status": "failed",
-      "attempts": 6,
-      "error": "Instagram GET /17841415815597561/media: Invalid OAuth access token - Cannot parse access token",
-      "last_try": "2026-10-19T16:13:24.582Z"
-    },
-    {
       "day": "2026-10-20",
       "time": "09:00",
       "format": "reel",
       "post": "006-holiday-call",
       "title": "Quick holiday call",
       "turn_by": "gemini",
+      "status": "made"
+    },
+    {
+      "day": "2026-10-20",
+      "time": "14:00",
+      "format": "reel",
+      "post": "005-sound-casual",
+      "title": "Sound casual",
+      "turn_by": "codex",
       "status": "made",
-      "attempts": 5,
-      "error": "Instagram GET /17841415815597561/media: Invalid OAuth access token - Cannot parse access token",
-      "last_try": "2026-10-20T04:02:48.412Z"
+      "note": "moved from 19 Oct 20:00 (broken token)"
     },
     {
       "day": "2026-10-20",

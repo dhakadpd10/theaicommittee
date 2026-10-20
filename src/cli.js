@@ -17,7 +17,7 @@ const flag = (name, def) => { const i = args.indexOf(`--${name}`); return i < 0 
 const out = (k, v) => process.env.GITHUB_OUTPUT && require('fs').appendFileSync(process.env.GITHUB_OUTPUT, `${k}=${v}\n`);
 
 // jobs that need a connected account skip quietly until the secrets exist
-const NEEDS_IG = ['publish', 'engage', 'analytics', 'refresh-token'];
+const NEEDS_IG = ['publish', 'engage', 'analytics'];
 const NEEDS_CLAUDE = ['plan', 'engage'];
 
 (async () => {
@@ -43,7 +43,12 @@ const NEEDS_CLAUDE = ['plan', 'engage'];
     plan.start = start; delete plan.note; writeJSON(f, plan);
     console.log(`launch set: ${plan.slots.map((s) => `${s.day} ${s.time} ${s.format} ${s.post}`).join(' | ')}`);
   }
-  else if (cmd === 'refresh-token') { const t = await require('./ig').refreshToken(); process.stdout.write(t.access_token); }
+  else if (cmd === 'refresh-token') { // prints ONLY a new token, or fails: the Token workflow saves whatever this prints
+    if (!process.env.IG_ACCESS_TOKEN) throw new Error('IG_ACCESS_TOKEN is not set');
+    const t = (await require('./ig').refreshToken()).access_token;
+    if (!/^[A-Za-z0-9_-]{60,}$/.test(t || '')) throw new Error('Instagram returned something that is not a token; keeping the old one');
+    process.stdout.write(t);
+  }
   else if (cmd === 'check') {
     const ok = (b) => (b ? 'yes' : 'NO');
     const claude = require('./claude');
