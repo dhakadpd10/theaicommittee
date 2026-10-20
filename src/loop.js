@@ -30,7 +30,7 @@ const hourIST = () => Number(new Date(Date.now() + 5.5 * 3600000).toISOString().
 const loggedToday = () => { try { return fs.readFileSync(P('content/analytics/log.csv'), 'utf8').includes(`\n${localDay()},`); } catch { return false; } };
 
 async function run({ minutes = 340 } = {}) {
-  const end = Date.now() + minutes * 60000; let lastEngage = 0;
+  const end = Date.now() + minutes * 60000; let lastEngage = 0, lastNumbers = 0;
   const hasIG = !!(process.env.IG_ACCESS_TOKEN && process.env.IG_USER_ID);
   const hasClaude = require('./claude').hasClaude();
   log(`agent loop started for ${minutes} min (${config().handle})`);
@@ -45,9 +45,15 @@ async function run({ minutes = 340 } = {}) {
         try { await require('./engage').run(); } catch (e) { await doctor.handle('engage', e); }
         save('Agent: replies');
       }
-      if (hourIST() >= 10 && !loggedToday()) {
+      if (hourIST() >= 10 && !loggedToday() && Date.now() - lastNumbers > 60 * 60000) { // at most one try an hour
+        lastNumbers = Date.now();
         try { await require('./analytics').run(); } catch (e) { await doctor.handle('analytics', e); }
         save('Agent: daily numbers');
+      }
+      try { doctor.checkQueue(); } catch (e) { log('queue check problem:', e.message); }
+      save('Agent: checks');
+      if (doctor.isTokenBroken()) { // the token in this run's memory is dead: end now so the next run reads the new secret
+        log('Instagram token is broken: handing over so the next run picks up a new token'); break;
       }
     }
     await sleep(60000);
