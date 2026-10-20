@@ -21,9 +21,10 @@
       "post": "006-holiday-call",
       "title": "Quick holiday call",
       "turn_by": "gemini",
-      "status": "made",
+      "status": "published",
       "attempts": 0,
-      "error": "Instagram GET /17841415815597561/media: Invalid OAuth access token - Cannot parse access token"
+      "media_id": "17886421005688219",
+      "published_at": "2026-10-20T04:27:13.275Z"
     },
     {
       "day": "2026-10-20",
