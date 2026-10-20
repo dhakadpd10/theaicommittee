@@ -22,9 +22,9 @@
       "title": "Quick holiday call",
       "turn_by": "gemini",
       "status": "made",
-      "attempts": 2,
+      "attempts": 3,
       "error": "Instagram GET /17841415815597561/media: Invalid OAuth access token - Cannot parse access token",
-      "last_try": "2026-10-20T04:13:58.853Z"
+      "last_try": "2026-10-20T04:22:05.569Z"
     },
     {
       "day": "2026-10-20",
