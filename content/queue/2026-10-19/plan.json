@@ -67,7 +67,9 @@
       "post": "009-what-to-cook",
       "title": "What's for dinner",
       "turn_by": "gemini",
-      "status": "made"
+      "status": "published",
+      "media_id": "18355513591285106",
+      "published_at": "2026-10-21T14:31:06.028Z"
     },
     {
       "day": "2026-10-22",
