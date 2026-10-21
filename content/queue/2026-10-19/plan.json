@@ -56,7 +56,9 @@
       "post": "008-tidy-laptop",
       "title": "Tidy my laptop",
       "turn_by": "codex",
-      "status": "made"
+      "status": "published",
+      "media_id": "18105858539527881",
+      "published_at": "2026-10-21T03:32:17.540Z"
     },
     {
       "day": "2026-10-21",
