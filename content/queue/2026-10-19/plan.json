@@ -89,7 +89,9 @@
       "post": "011-cancel-plans",
       "title": "Cancel politely",
       "turn_by": "claude",
-      "status": "made"
+      "status": "published",
+      "media_id": "18132050486503633",
+      "published_at": "2026-10-22T14:32:06.447Z"
     },
     {
       "day": "2026-10-23",
