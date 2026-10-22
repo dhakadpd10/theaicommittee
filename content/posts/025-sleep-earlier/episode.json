@@ -1,0 +1,96 @@
+{
+  "id": "025-sleep-earlier",
+  "title": "Sleep earlier",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, help me sleep earlier tonight.",
+      "show": "Hey committee. Help me sleep earlier tonight.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Alarm set. Four in the morning.",
+      "show": "Alarm set. 4 in the morning.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I told Mum you're sleeping!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Meera is going to sleep now!",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Now she's calling.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Let's begin a calm bedtime routine. First, a few gentle notes.",
+      "shot": "claude",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Make it short.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Step one. Notice your breathing.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "card": "two hours later",
+      "dur": 2
+    },
+    {
+      "who": "claude",
+      "say": "And that was step forty one of ninety.",
+      "show": "And that was step 41 of 90.",
+      "shot": "claude-push",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "It's two in the morning.",
+      "show": "It's 2 in the morning.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the bedtime routine was so calming it ran until 2 a.m.\n\nwhat keeps you up past midnight every single night?\n\n#claude #codex #gemini #relatable #aitools"
+}

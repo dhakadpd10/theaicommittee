@@ -1,0 +1,133 @@
+{
+  "id": "018-self-appraisal",
+  "title": "Sound confident",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, my self appraisal is due. Make my year sound confident.",
+      "show": "Hey committee. My self-appraisal is due. Make my year sound confident.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Self-appraisal 2026",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. Attended meetings. Some.",
+      "show": "Done. \"Attended meetings. Some.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Self-appraisal 2026",
+        "body": "Attended meetings. Some."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "More confident.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Ooh, confident! Five stars on everything!",
+      "show": "Ooh, confident! 5 stars on everything!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Self-appraisal 2026",
+        "body": "Teamwork: 5/5\nLeadership: 5/5\nCommunication: 5/5\nEverything: 5/5"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "That feels like a lot. Before I begin, how do you feel about your year?",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Tired.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.7
+    },
+    {
+      "who": "claude",
+      "say": "Led the launch. Mostly by accident. The team did the real work.",
+      "show": "\"Led the launch. Mostly by accident. The team did the real work.\"",
+      "shot": "claude",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Self-appraisal 2026",
+        "body": "Led the launch. Mostly by accident.\nThe team did the real work."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "I grew a lot this year. I'm so sorry if that was a problem.",
+      "show": "\"I grew a lot this year. I'm so sorry if that was a problem.\"",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Self-appraisal 2026",
+        "body": "Led the launch. Mostly by accident.\nThe team did the real work.\nI grew a lot this year.\nI'm so sorry if that was a problem."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Is that it?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "I rated you two out of five. Just to be safe.",
+      "show": "I rated you 2 out of 5. Just to be safe.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.9,
+      "screen": {
+        "page": "text",
+        "title": "Self-appraisal 2026",
+        "body": "Led the launch. Mostly by accident.\nThe team did the real work.\nI grew a lot this year.\nI'm so sorry if that was a problem.\n\nSelf rating: 2/5"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Just to be safe.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked to sound confident. she ended up apologising for growing.\n\nwhat's the most you've ever undersold yourself in an appraisal?\n\n#claude #codex #gemini #officehumor #worklife"
+}

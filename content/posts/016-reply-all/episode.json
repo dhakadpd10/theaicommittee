@@ -1,0 +1,111 @@
+{
+  "id": "016-reply-all",
+  "title": "Just my manager",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, reply to just my manager. Tell him I need one more day.",
+      "show": "Hey committee. Reply to just my manager. Tell him I need one more day.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Deck final FINAL",
+        "body": "To: Manager, +39 others"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Dear Rohan, I'm so sorry. Dear Priya, I'm so sorry. Dear Sameer, I'm so sorry.",
+      "show": "Of course. \"Dear Rohan, I'm so sorry. Dear Priya, I'm so sorry. Dear Sameer, I'm so sorry.\"",
+      "shot": "claude",
+      "mood": "normal",
+      "pre": 0.3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Deck final FINAL",
+        "body": "To: Manager, +39 others\n\nDear Rohan, I'm so sorry.\nDear Priya, I'm so sorry.\nDear Sameer, I'm so sorry.\nDear Anjali, I'm so sorry.\n..."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Everyone?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "All forty, by name. Priya felt left out last time.",
+      "show": "All 40, by name. Priya felt left out last time.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Draft. Need one more day.",
+      "show": "Draft: \"Need one more day.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Deck final FINAL",
+        "body": "To: Manager\n\nNeed one more day."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "That feels a little cold. May I add a small sorry?",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Send the short one.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I replied all, and looped in the client, for visibility!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3,
+      "post": 0.6,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Deck final FINAL",
+        "body": "To: Manager, +39 others\ncc: Client\n\nDear Rohan, I'm so sorry.\nDear Priya, I'm so sorry.\nDear Sameer, I'm so sorry.\n...",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Visibility.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1.1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "one manager. one more day. forty apologies, one client, full visibility.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #officehumor #worklife"
+}

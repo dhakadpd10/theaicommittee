@@ -1,0 +1,95 @@
+{
+  "id": "023-sweets-box",
+  "title": "The sweets box",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I got an office Diwali sweets box. I don't want it.",
+      "show": "Hey committee. I got an office Diwali sweets box. I don't want it.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Open. Eat. Close.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "I don't want to eat it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Here is a short thank you note. Page one of two.",
+      "show": "Of course. Here's a short thank-you note. Page 1 of 2.",
+      "shot": "claude",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Thank you!",
+        "body": "Dear team,\nThank you so much for the sweets.\nI want you to know how deeply this gesture...\n(page 1 of 2)"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "That's two pages.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Sorry. I'm also worried about the box. Does it know it's unwanted?",
+      "shot": "claude-push",
+      "mood": "worried"
+    },
+    {
+      "who": "meera",
+      "say": "Just get rid of it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I regifted it to your boss, with a lovely note!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Happy Diwali!",
+        "body": "To: Boss\nDear team,\nThank you so much for the sweets.\n(page 1 of 2)",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "He gave it to you.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the sweets went on a round trip. the two-page thank you note went with them.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #diwali #officehumor"
+}

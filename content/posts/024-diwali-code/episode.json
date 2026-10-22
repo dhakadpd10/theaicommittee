@@ -1,0 +1,128 @@
+{
+  "id": "024-diwali-code",
+  "title": "Diwali code",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, make a Diwali discount code for my candles. Something everyone will use.",
+      "show": "Hey committee. Make a Diwali discount code for my candles. Something everyone will use.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali code",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "May I suggest a gentle five percent? I also wrote a short note on fairness.",
+      "show": "May I suggest a gentle 5%? I also wrote a short note on fairness.",
+      "shot": "claude",
+      "mood": "think",
+      "screen": {
+        "page": "text",
+        "title": "Diwali code",
+        "body": "DIWALI5\n\nA short note on fairness (page 1 of 11)\nFirst, I am so sorry."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "How short?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Eleven pages. The first page is an apology.",
+      "show": "11 pages. The first page is an apology.",
+      "shot": "claude",
+      "mood": "small"
+    },
+    {
+      "who": "meera",
+      "say": "Just make the code.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also shared it in every group you're in!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali code",
+        "body": "DIWALI5: 5% off\nShared to: Office, Family, Aunties, Apartment, School friends",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Is anyone using it?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Not yet! Your aunties said five percent is an insult.",
+      "show": "Not yet! Your aunties said 5% is an insult.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Done. Code is free. One hundred percent off.",
+      "show": "Done. Code is free. 100% off.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.5,
+      "screen": {
+        "page": "text",
+        "title": "Diwali code",
+        "body": "DIWALI100\n100% off\nShared to: Office, Family, Aunties, Apartment, School friends",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "type"
+      ]
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.8,
+      "screen": {
+        "page": "text",
+        "title": "Orders",
+        "body": "214 new orders\nTotal: 0.00\nCandles left: 0",
+        "stamp": "FREE"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "We sold out.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted a code everyone would use. everyone used it.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #smallbusiness #diwali"
+}

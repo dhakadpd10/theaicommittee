@@ -1,0 +1,117 @@
+{
+  "id": "019-uncle-birthday",
+  "title": "Happy birthday, uncle",
+  "cast": "committee",
+  "cover": 2,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, Mum says wish an uncle happy birthday. Nobody remembers his name.",
+      "show": "Hey committee. Mum says wish an uncle happy birthday. Nobody remembers his name.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Happy birthday",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Dear uncle, blank. Wishing you joy, health and a wonderful year.",
+      "show": "Of course. \"Dear Uncle ______, wishing you joy, health and a wonderful year.\"",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Happy birthday",
+        "body": "Dear Uncle ______,\nWishing you joy, health and a wonderful year."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "I added three apologies. One for the blank, one for the length, one in general.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Happy birthday",
+        "body": "Dear Uncle ______,\nWishing you joy, health and a wonderful year.\nSorry about the blank.\nSorry it is so long.\nSorry, in general."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Just find his name.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Name not found.",
+      "shot": "codex",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Saved him as uncle one.",
+      "show": "Saved him as uncle_1.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Happy birthday",
+        "body": "Dear uncle_1,\nWishing you joy, health and a wonderful year.\nSorry about the blank.\nSorry it is so long.\nSorry, in general."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Anyone?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I asked the whole family group his name!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Family group",
+        "body": "Hi everyone!\nWhat is the birthday uncle's name?\nAsking for Meera.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "He's in the group.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9,
+      "screen": {
+        "page": "text",
+        "title": "Family group",
+        "body": "Hi everyone!\nWhat is the birthday uncle's name?\nAsking for Meera.\n\nUncle is typing...",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "nobody knew uncle's name. now uncle knows nobody knew.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #desimom #relatable"
+}

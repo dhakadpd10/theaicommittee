@@ -1,0 +1,109 @@
+{
+  "id": "027-clean-the-group",
+  "title": "Clean the group",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, Mum wants everything clean before Diwali. Start with the family group. Too many forwards.",
+      "show": "Hey committee. Mum wants everything clean before Diwali. Start with the family group. Too many forwards.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Family group",
+        "body": "Good morning!\nGood morning!!\nGood morning!!!\nForwarded many times"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Before I begin, how do the forwards make you feel?",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Tired.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "I wrote a gentle note asking everyone to forward a little less.",
+      "shot": "claude",
+      "mood": "normal",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Family group",
+        "body": "Dear family,\nWith love, could we forward a little less?"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "And a separate apology to each aunty. Eleven of them.",
+      "show": "And a separate apology to each aunty. 11 of them.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Family group",
+        "body": "Dear family,\nWith love, could we forward a little less?\n\n+ 11 apologies"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I forwarded Claude's note to the group. And all eleven apologies!",
+      "show": "Done! I forwarded Claude's note to the group. And all 11 apologies!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Family group",
+        "body": "Dear family,\nWith love, could we forward a little less?\n\n+ 11 apologies",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Make it stop.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Cleaned. Removed the top sender.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.5,
+      "sfx": [
+        "wipe"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "That's my mother.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the family group is finally quiet. nobody has told mum yet.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #desimom #relatable"
+}

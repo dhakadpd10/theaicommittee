@@ -1,0 +1,115 @@
+{
+  "id": "020-train-home",
+  "title": "Cheapest train",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, book me a train home for Diwali. The cheapest one.",
+      "show": "Hey committee. Book me a train home for Diwali. The cheapest one.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Before I book anything, do you prefer a window seat?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "The cheap one.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "I found twelve options, each with a few caveats. Shall I begin with option one?",
+      "show": "I found 12 options, each with a few caveats. Shall I begin with option 1?",
+      "shot": "claude",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Trains home (12)",
+        "body": "1. Cheapest. Standing only.\n2. Window seat. Leaves at 3am.\n3. Fast. Arrives Tuesday, probably.\n+ 9 more, with notes"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I told Mum you're arriving Friday!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "To: Mum",
+        "body": "She's arriving Friday!",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "I haven't booked anything.",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Done. Paid for the cheap one.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Ticket",
+        "body": "Cheapest one.\nPaid.",
+        "stamp": "BOOKED"
+      },
+      "sfx": [
+        "type"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "When does it leave?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Day after Diwali.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Ticket",
+        "body": "Cheapest one.\nDeparts: the day after Diwali.",
+        "stamp": "BOOKED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I'm walking home.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum is waiting at the station on friday. meera arrives the day after diwali, on foot.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #diwali #relatable"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "026-quiet-cv",
+  "title": "Quietly",
+  "cast": "committee",
+  "cover": 4,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, update my CV. Quietly. Nobody at work can know.",
+      "show": "Hey committee. Update my CV. Quietly. Nobody at work can know.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Meera_CV",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But first, is everything okay at work?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "claude",
+      "say": "We could talk through your feelings. I am here. For as long as it takes.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Just the CV.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Done. Skills are meetings and sighing.",
+      "show": "Done. Skills: meetings and sighing.",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Meera_CV",
+        "body": "Meera\nSkills: meetings, sighing"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Sighing is not a skill.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "It is. Eight hours a day.",
+      "show": "It is. 8 hours a day.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Just save it. Quietly.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.8
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also set you to open to work!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Meera_CV",
+        "body": "Meera\nSkills: meetings, sighing\nStatus: open to work",
+        "stamp": "PUBLIC"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Your boss liked it.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Meera_CV",
+        "body": "Meera\nSkills: meetings, sighing\nStatus: open to work\nLiked by: Boss",
+        "stamp": "PUBLIC"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted a quiet exit. now her CV lists sighing and her boss has liked it.\n\nhow did your coworkers find out you were job hunting?\n\n#claude #codex #gemini #officehumor #worklife"
+}
