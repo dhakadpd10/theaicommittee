@@ -78,7 +78,9 @@
       "post": "010-good-deal",
       "title": "Is this a deal",
       "turn_by": "gemini",
-      "status": "made"
+      "status": "published",
+      "media_id": "18449725216126891",
+      "published_at": "2026-10-22T03:31:47.229Z"
     },
     {
       "day": "2026-10-22",
