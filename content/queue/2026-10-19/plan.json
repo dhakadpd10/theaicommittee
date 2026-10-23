@@ -100,8 +100,10 @@
       "post": "012-explain-my-job",
       "title": "Explain my job",
       "turn_by": "codex",
-      "status": "made",
-      "note": "unclear words: beat 4 \"Call it off.\" was heard as \"Gole it off.\" | beat 7 \"Sent to your grandma.\" was heard as \"Send to your grandma.\""
+      "status": "published",
+      "note": "unclear words: beat 4 \"Call it off.\" was heard as \"Gole it off.\" | beat 7 \"Sent to your grandma.\" was heard as \"Send to your grandma.\"",
+      "media_id": "18129510118877442",
+      "published_at": "2026-10-23T03:31:05.686Z"
     },
     {
       "day": "2026-10-23",
