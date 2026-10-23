@@ -1,0 +1,129 @@
+{
+  "id": "028-sale-post",
+  "title": "The sale post",
+  "cast": "committee",
+  "cover": 4,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, write a Diwali sale post for my candles.",
+      "show": "Hey committee. Write a Diwali sale post for my candles.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali sale",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Light up your Diwali with handmade candles, twenty percent off this week.",
+      "show": "Of course. \"Light up your Diwali with handmade candles. 20% off this week.\"",
+      "shot": "claude",
+      "mood": "happy",
+      "screen": {
+        "page": "text",
+        "title": "Diwali sale",
+        "body": "Light up your Diwali with handmade candles.\n20% off this week."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Perfect.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Wait. Never leave a candle alone. Keep away from pets. Candles are not food.",
+      "show": "Wait. \"Never leave a candle alone. Keep away from pets. Candles are not food.\"",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali sale",
+        "body": "Light up your Diwali with handmade candles.\n20% off this week.\n\nNever leave a candle alone.\nKeep away from pets.\nCandles are not food."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "And I am so sorry to anyone who does not like candles.",
+      "show": "\"And I'm so sorry to anyone who doesn't like candles.\"",
+      "shot": "claude-push",
+      "mood": "small",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali sale",
+        "body": "Light up your Diwali with handmade candles.\n20% off this week.\n\nNever leave a candle alone.\nKeep away from pets.\nCandles are not food.\n\nSorry to anyone who doesn't like candles."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Make it short.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Candles. Cheap. Buy now.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali sale",
+        "body": "Candles. Cheap. Buy now."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Fine. Put it online.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.9
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I posted it in the family group too!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali sale",
+        "body": "Candles. Cheap. Buy now.",
+        "stamp": "POSTED"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "Mum wants a discount.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Diwali sale",
+        "body": "Candles. Cheap. Buy now.\n\nMum: discount for family?",
+        "stamp": "POSTED"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted customers. she got three safety warnings, one apology and her first discount request from mum.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #smallbusiness #desimom"
+}

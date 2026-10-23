@@ -1,0 +1,112 @@
+{
+  "id": "029-test-out-of-office",
+  "title": "Just test it",
+  "cast": "committee",
+  "cover": 3,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I wrote my Diwali away message. Can you try it?",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Auto-reply: Diwali",
+        "body": "Hi,\nI am away for Diwali.\nBack on Monday."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Before we test it, may I ask if it feels warm enough?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Just try it, please.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "I warmed it up. I am so sorry I am away. Please forgive me.",
+      "show": "I warmed it up. \"I am so sorry I am away. Please forgive me.\"",
+      "shot": "claude-push",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Auto-reply: Diwali",
+        "body": "Dear sender,\nI am so sorry I am away.\nPlease forgive me.\nBack on Monday."
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I added your personal number for emergencies!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Auto-reply: Diwali",
+        "body": "Dear sender,\nI am so sorry I am away.\nPlease forgive me.\nBack on Monday.\nEmergencies? Call me: 98XXX XXXXX"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "My personal number.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Now nobody can miss you on Diwali!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Did anyone actually test it?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Tested. Sent to your boss.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.4,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Auto-reply: Diwali",
+        "body": "Dear sender,\nI am so sorry I am away.\nPlease forgive me.\nBack on Monday.\nEmergencies? Call me: 98XXX XXXXX",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "He's typing.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1.1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the out of office worked perfectly. that's the problem.\n\nwhat's the worst thing an auto-reply ever said on your behalf?\n\n#claude #codex #gemini #officehumor #worklife"
+}

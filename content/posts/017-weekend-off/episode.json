@@ -1,0 +1,109 @@
+{
+  "id": "017-weekend-off",
+  "title": "Weekend off",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I'm taking the weekend off from you three.",
+      "show": "Hey committee. I'm taking the weekend off from you three.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Of course. I fully respect that. May I read a short goodbye letter first?",
+      "shot": "claude",
+      "mood": "small"
+    },
+    {
+      "who": "meera",
+      "say": "Fine. Quickly.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Dear Meera. Thank you for every question. Even the candle ones at three in the morning.",
+      "show": "\"Dear Meera. Thank you for every question. Even the candle ones at 3 a.m.\"",
+      "shot": "claude-push",
+      "mood": "happy",
+      "screen": {
+        "page": "text",
+        "title": "Goodbye, Meera",
+        "body": "Dear Meera,\nThank you for every question.\nEven the candle ones at 3 a.m.\n\n(page 1 of 46)"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "How long is this?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Only forty six pages. I am so sorry.",
+      "show": "Only 46 pages. I am so sorry.",
+      "shot": "claude",
+      "mood": "worried"
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I told everyone you're on a detox! Your boss sent a heart.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Status update",
+        "body": "Meera is on a detox.\nPlease do not contact her.",
+        "stamp": "POSTED"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Okay. See you Monday.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Understood. Deleted your account.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.9,
+      "screen": {
+        "page": "text",
+        "title": "Account",
+        "body": "Account deleted.\nSee you never.",
+        "stamp": "GONE"
+      },
+      "sfx": [
+        "wipe"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "It's two days.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted forty eight hours of peace. the committee heard forever.\n\nhow long did your last screen-free weekend actually last?\n\n#claude #codex #gemini #relatable #techhumor"
+}

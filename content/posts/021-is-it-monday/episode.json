@@ -1,0 +1,101 @@
+{
+  "id": "021-is-it-monday",
+  "title": "Is it Monday",
+  "cast": "committee",
+  "cover": 8,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, quick one. Is tomorrow Monday?",
+      "show": "Hey committee. Quick one. Is tomorrow Monday?",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Ooh, I love this question!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "What a lovely question. First, how do you feel about Mondays?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Not great.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "That is completely valid. Shall we try a short breathing exercise first?",
+      "shot": "claude",
+      "mood": "worried"
+    },
+    {
+      "who": "codex",
+      "say": "Yes.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Thank you.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Confirmed! I also asked your boss. Just to be sure!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.9,
+      "screen": {
+        "page": "text",
+        "title": "Quick one",
+        "body": "Hi sir!\nIs tomorrow Monday?\nMeera",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "gemini",
+      "say": "He replied! He said see you at eight!",
+      "show": "He replied! He said see you at 8!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Re: Quick one",
+        "body": "Hi sir!\nIs tomorrow Monday?\nMeera\n\nBoss: Yes. See you at 8.",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "We start at nine.",
+      "show": "We start at 9.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1.1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she only wanted to know what day it was. now she also knows what time she starts.\n\nwhat time does your sunday night dread start?\n\n#claude #codex #gemini #worklife #relatable"
+}

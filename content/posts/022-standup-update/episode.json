@@ -1,0 +1,130 @@
+{
+  "id": "022-standup-update",
+  "title": "The standup",
+  "cast": "committee",
+  "cover": 9,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I'm late for the nine o'clock standup. Give me a quick update.",
+      "show": "Hey committee. I'm late for the 9 o'clock standup. Give me a quick update.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Standup update",
+        "body": ""
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But first, how was your weekend? Did you rest at all?",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "No time.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Understood. I kept it short. Three pages, with a section on feelings.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Standup update",
+        "body": "Page 1 of 3\n\nHow I'm feeling:\nHonestly, a little overwhelmed, and that's okay."
+      },
+      "sfx": [
+        "type"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Make it shorter.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I joined the call for you!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Daily standup",
+        "body": "Meera has joined the call.\nCamera: on",
+        "stamp": "LIVE"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "You what?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Your camera's on! They're all waiting for your update!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Posted. Yesterday, nothing. Today, nothing.",
+      "show": "Posted. \"Yesterday: nothing. Today: nothing.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Standup update",
+        "body": "Yesterday: nothing\nToday: nothing",
+        "stamp": "POSTED"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "codex",
+      "say": "The blocker is you.",
+      "show": "\"Blocker: you.\"",
+      "shot": "codex-push",
+      "mood": "happy",
+      "pre": 0.8,
+      "screen": {
+        "page": "text",
+        "title": "Standup update",
+        "body": "Yesterday: nothing\nToday: nothing\nBlocker: Meera",
+        "stamp": "POSTED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Morning, everyone.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "yesterday: nothing. today: nothing. camera: on.\n\nwhat's the most honest thing you've ever said in a standup?\n\n#claude #codex #gemini #officehumor #worklife"
+}
