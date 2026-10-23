@@ -112,7 +112,9 @@
       "post": "013-copied-caption",
       "title": "Who copied me",
       "turn_by": "gemini",
-      "status": "made"
+      "status": "published",
+      "media_id": "18222295966356893",
+      "published_at": "2026-10-23T14:31:51.254Z"
     },
     {
       "day": "2026-10-24",
