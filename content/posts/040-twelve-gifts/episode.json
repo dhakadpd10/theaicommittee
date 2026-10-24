@@ -1,0 +1,116 @@
+{
+  "id": "040-twelve-gifts",
+  "title": "Twelve gifts",
+  "cast": "committee",
+  "cover": 5,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I need Diwali gifts for twelve relatives. Small budget.",
+      "show": "Hey committee. I need Diwali gifts for 12 relatives. Small budget.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Of course. First, how do you feel about each of them? Let's go one by one.",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Just pick something.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Done. Ordered twelve candles.",
+      "show": "Done. Ordered 12 candles.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Order placed",
+        "body": "12 candles\nShip to: 12 relatives"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Which shop?",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "From your shop.",
+      "shot": "codex-push",
+      "mood": "happy",
+      "pre": 0.5,
+      "screen": {
+        "page": "text",
+        "title": "Order placed",
+        "body": "12 candles\nShip to: 12 relatives\nSeller: your shop"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "How lovely. Supporting a small business is such a thoughtful gift.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Yay! You have twelve new orders!",
+      "show": "Yay! You have 12 new orders!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "New orders (12)",
+        "body": "12 candles\nBuyer: Meera\nSeller: Meera",
+        "stamp": "PAID"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I paid myself.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "who": "twin",
+      "say": "And you paid shipping.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "New orders (12)",
+        "body": "12 candles\nBuyer: Meera\nSeller: Meera\n+ shipping",
+        "stamp": "PAID"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "best sales day the shop ever had. the only customer was the owner.\n\nwhat are you giving every relative this diwali?\n\n#claude #codex #gemini #diwali #relatable"
+}

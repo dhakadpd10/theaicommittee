@@ -1,0 +1,120 @@
+{
+  "id": "038-home-on-friday",
+  "title": "Home on Friday",
+  "cast": "committee",
+  "cover": 6,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, give me one reason to work from home on Friday.",
+      "show": "Hey committee. Give me one reason to work from home on Friday.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Reason. Friday.",
+      "show": "Reason: Friday.",
+      "shot": "codex",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "Reason: Friday."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "A good reason.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Reason one, you focus better at home. Though, to be fair, not always.",
+      "shot": "claude",
+      "mood": "think",
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "1. You focus better at home (not always)"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Reason two, no commute. But your boss may feel lonely. Reason three, with some caveats.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "1. You focus better at home (not always)\n2. No commute (boss may feel lonely)\n3. Caveats, see below"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Just one.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I sent it to your boss, with a photo of you in bed as proof!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Friday",
+        "body": "Working from home on Friday.\nProof attached: in bed.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "You what?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "He replied! He says see you in the office!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.8,
+      "screen": {
+        "page": "text",
+        "title": "Re: Re: Friday",
+        "body": "See you in the office."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Fine.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she needed one reason to stay home. the proof gave her boss one reason to say no.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #officehumor #worklife"
+}

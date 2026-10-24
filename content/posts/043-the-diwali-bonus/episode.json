@@ -1,0 +1,131 @@
+{
+  "id": "043-the-diwali-bonus",
+  "title": "The Diwali bonus",
+  "cast": "committee",
+  "cover": 5,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, ask HR about the Diwali bonus. Casually.",
+      "show": "Hey committee. Ask HR about the Diwali bonus. Casually.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Diwali",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. I asked, bonus?",
+      "show": "Done. \"Bonus?\"",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Diwali",
+        "body": "Bonus?"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Make it softer.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Dear HR. So sorry to ask. Is there a bonus? No bonus is also fine.",
+      "show": "\"Dear HR. So sorry to ask. Is there a bonus? No bonus is also fine.\"",
+      "shot": "claude",
+      "mood": "worried",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Diwali",
+        "body": "Dear HR,\nSo sorry to ask.\nIs there a bonus?\nNo bonus is also fine."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Send it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I sent it to HR and copied the whole floor!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Diwali",
+        "body": "Dear HR,\nSo sorry to ask.\nIs there a bonus?\nNo bonus is also fine.\ncc: whole floor",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "The whole floor?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Thirty people replied, same!",
+      "show": "30 people replied \"same\"!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Diwali",
+        "body": "same\nsame\nsame\nsame\n+26 more"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "And HR?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "twin",
+      "say": "They sent sweets.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9,
+      "screen": {
+        "page": "text",
+        "title": "Re: Diwali",
+        "body": "Dear all,\nSweets are at reception.\nHappy Diwali.\n- HR"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "one quiet question, thirty people saying same, and one box of sweets at reception.\n\nbonus or sweets box: what did your office give last diwali?\n\n#claude #codex #gemini #diwali #officehumor"
+}

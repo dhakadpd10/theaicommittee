@@ -1,0 +1,102 @@
+{
+  "id": "041-alarm-for-six",
+  "title": "Alarm for six",
+  "cast": "committee",
+  "cover": 9,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, set an alarm for six.",
+      "show": "Hey committee. Set an alarm for 6.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Done. Six in the evening.",
+      "show": "Done. 6 PM.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "Morning.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But how do you feel about mornings? Is six truly right for you?",
+      "show": "Of course. But how do you feel about mornings? Is 6 truly right for you?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Just set it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Sorry. I set a gentle reminder at five fifty, asking if you'd like the alarm.",
+      "show": "Sorry. I set a gentle reminder at 5:50, asking if you'd like the alarm.",
+      "shot": "claude",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Reminder, 5:50",
+        "body": "Good morning.\nWould you like an alarm?\nNo pressure."
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Great plan! I told your mom you're up at six!",
+      "show": "Great plan! I told your mom you're up at 6!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "card": "next morning",
+      "time": "morning",
+      "dur": 2
+    },
+    {
+      "who": "meera",
+      "say": "What happened to my reminder?",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "You looked so peaceful. I didn't want to wake you to ask.",
+      "shot": "claude-push",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "It's ten o'clock.",
+      "show": "It's 10 o'clock.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked for six. claude decided she deserved ten.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #relatable #aitools"
+}

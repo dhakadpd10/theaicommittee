@@ -1,0 +1,112 @@
+{
+  "id": "039-mums-forwards",
+  "title": "Mum's forwards",
+  "cast": "committee",
+  "cover": 6,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I'm behind on my mom's good morning forwards. Reply to them.",
+      "show": "Hey committee. I'm behind on Mum's good morning forwards. Reply to them.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Good morning!\nGood morning!\nGood morning!\nGood morning!"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. Replied to three hundred twelve.",
+      "show": "Done. Replied to 312.",
+      "shot": "codex",
+      "mood": "happy",
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "ok\nok\nok\nok",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Saying what?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Each one. Okay.",
+      "show": "Each one: \"ok.\"",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "claude",
+      "say": "Oh dear. I worry okay might feel a little cold to your mother.",
+      "show": "Oh dear. I worry \"ok\" might feel a little cold to your mother.",
+      "shot": "claude",
+      "mood": "worried"
+    },
+    {
+      "who": "meera",
+      "say": "Fix it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Updated. Each one. Okay okay.",
+      "show": "Updated. Each one: \"ok ok.\"",
+      "shot": "codex-push",
+      "mood": "happy",
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "ok ok\nok ok\nok ok\nok ok",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "claude",
+      "say": "Well. That is technically twice as warm.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Your mom is calling! I told her you're free.",
+      "show": "Your mum is calling! I told her you're free.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Okay.",
+      "show": "Ok.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1.1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum sent 312 good mornings and got 624 oks back. then she called.\n\nhow many good morning forwards are you behind on right now?\n\n#claude #codex #gemini #desimom #relatable"
+}

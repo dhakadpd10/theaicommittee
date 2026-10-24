@@ -1,0 +1,131 @@
+{
+  "id": "034-more-from-my-job",
+  "title": "More from work",
+  "cast": "committee",
+  "cover": 4,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I want more from my job. Tell my boss.",
+      "show": "Hey committee. I want more from my job. Tell my boss.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: My job",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. Requested more work.",
+      "shot": "codex",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Re: My job",
+        "body": "Please give me more work.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Not more work.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Dear sir. She meant growth. Not work. Sorry for the first email. And for this one.",
+      "show": "\"Dear sir. She meant growth. Not work. Sorry for the first email. And for this one.\"",
+      "shot": "claude",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Re: My job",
+        "body": "Dear sir,\nShe meant growth. Not work.\nSorry for the first email.\nAnd for this one.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "codex",
+      "say": "Also requested weekends.",
+      "shot": "codex-push",
+      "mood": "happy",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Re: My job",
+        "body": "Also requesting weekends.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Why?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "You said more.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "He said yes! Three new projects! I already accepted them.",
+      "show": "He said yes! 3 new projects! I already accepted them.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Re: My job",
+        "body": "Yes to all.\nThree new projects for you.",
+        "stamp": "ACCEPTED"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Starting this Sunday.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.35,
+      "screen": {
+        "page": "text",
+        "title": "Re: Re: My job",
+        "body": "Yes to all.\nThree new projects for you.\nStart: Sunday",
+        "stamp": "ACCEPTED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I meant money.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1.1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted more from her job. her job happily agreed.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #officehumor #worklife"
+}

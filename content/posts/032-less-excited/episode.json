@@ -1,0 +1,127 @@
+{
+  "id": "032-less-excited",
+  "title": "Less excited",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, make my reply to my boss sound less excited.",
+      "show": "Hey committee. Make my reply to my boss sound less excited.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Launch",
+        "body": "Hi! Yes, happy to help!!!"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. Removed four exclamation marks.",
+      "show": "Done. Removed 4 exclamation marks.",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Launch",
+        "body": "Hi. Yes, happy to help."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Still too eager.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Of course. May I ask, does happy to help feel too happy?",
+      "show": "Of course. May I ask, does \"happy to help\" feel too happy?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "A bit.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Then perhaps. I am available to help. Sorry for being available.",
+      "show": "Then perhaps: \"I am available to help. Sorry for being available.\"",
+      "shot": "claude-push",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Re: Launch",
+        "body": "Hi.\nI am available to help.\nSorry for being available."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Fine. Send it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I added two back, a thumbs up and love this. Then I sent it!",
+      "show": "Done! I added 2 back, a thumbs up and \"love this\". Then I sent it!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Launch",
+        "body": "Hi.\nI am available to help!!\nSorry for being available.\nLove this. (thumbs up)",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "You sent it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "gemini",
+      "say": "He replied! He loved the energy. You're leading the launch!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Re: Re: Launch",
+        "body": "Love the energy!\nYou're leading the launch."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Great.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "four exclamation marks out, two back in, and now she runs the whole launch.\n\nhow many exclamation marks do you delete before replying to your boss?\n\n#claude #codex #gemini #officehumor #worklife"
+}

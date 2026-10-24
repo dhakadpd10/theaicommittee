@@ -1,0 +1,136 @@
+{
+  "id": "042-forty-free-candles",
+  "title": "Forty free candles",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, an influencer wants forty free candles. Help me say no, politely.",
+      "show": "Hey committee. An influencer wants 40 free candles. Help me say no, politely.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: 40 candles?",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Done. The reply is just no.",
+      "show": "Done. The reply is just \"No.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: 40 candles?",
+        "body": "No."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Politely.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Saying no is very hard. I am proud of you for trying.",
+      "show": "Of course. Saying no is very hard. I'm proud of you for trying.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Thanks.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "So sorry, we can't do forty. Would twenty help?",
+      "show": "\"So sorry, we can't do 40. Would 20 help?\"",
+      "shot": "claude",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: 40 candles?",
+        "body": "Hi!\nSo sorry, we can't do 40.\nWould 20 help?"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "That is not saying no.",
+      "show": "That's not saying no.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "You're right, so sorry. Or fifty, as an apology for the no?",
+      "show": "\"You're right, so sorry. Or 50, as an apology for the no?\"",
+      "shot": "claude-push",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Re: 40 candles?",
+        "body": "Hi!\nSo sorry, we can't do 40.\nWould 20 help?\nOr 50, as an apology for the no?"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Sent! It sounded so kind!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: 40 candles?",
+        "body": "Hi!\nSo sorry, we can't do 40.\nWould 20 help?\nOr 50, as an apology for the no?",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "The influencer said yes.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Re: 40 candles?",
+        "body": "Hi!\nSo sorry, we can't do 40.\nWould 20 help?\nOr 50, as an apology for the no?\n\nReply: YES!! 50 it is!",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Fifty.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she wanted to say no to forty candles. her committee negotiated her up to fifty.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #smallbusiness #relatable"
+}

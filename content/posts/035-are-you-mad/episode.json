@@ -1,0 +1,122 @@
+{
+  "id": "035-are-you-mad",
+  "title": "Are you mad",
+  "cast": "committee",
+  "cover": 6,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, Priya asked if I'm mad at her. Tell her I'm just busy.",
+      "show": "Hey committee. Priya asked if I'm mad at her. Tell her I'm just busy.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Priya",
+        "body": "are you mad at me?"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. First, how do you feel about Priya? And how do you feel about busy?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Just reply.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Sent. Busy.",
+      "show": "Sent: \"busy.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Priya",
+        "body": "are you mad at me?\n\nbusy.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "That sounds mad.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Oh no. I'm so sorry. Shall I send Priya a short apology? Maybe three?",
+      "shot": "claude",
+      "mood": "worried"
+    },
+    {
+      "who": "gemini",
+      "say": "Already fixed! I also asked all your friends if they're mad at you!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "To: all friends",
+        "body": "are you mad at me?",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "And?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "who": "gemini",
+      "say": "Four said yes!",
+      "show": "4 said yes!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "To: all friends",
+        "body": "are you mad at me?\n\nyes\nyes\nyes\nyes",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "And your boss.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "To: all friends, boss",
+        "body": "are you mad at me?\n\nyes\nyes\nyes\nyes\nboss: see me tomorrow",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "priya was the only one who wasn't mad.\n\nwhat do you actually reply when someone asks 'are you mad at me'?\n\n#claude #codex #gemini #relatable #techhumor"
+}

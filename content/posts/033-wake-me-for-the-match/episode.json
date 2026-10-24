@@ -1,0 +1,89 @@
+{
+  "id": "033-wake-me-for-the-match",
+  "title": "The match",
+  "cast": "committee",
+  "cover": 5,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, India plays early tomorrow. Wake me for the match.",
+      "show": "Hey committee. India plays early tomorrow. Wake me for the match.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Done. Alarms set. Every match.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "card": "three thirty am",
+      "dur": 2
+    },
+    {
+      "who": "codex",
+      "say": "Match found. Wake up.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "That's not India.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "I am so sorry. On behalf of every time zone, I apologise for the earth being round.",
+      "show": "I'm so sorry. On behalf of every time zone, I apologise for the Earth being round.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "card": "four fifteen am",
+      "dur": 2
+    },
+    {
+      "who": "codex",
+      "say": "Another match.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Who's playing?",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.7
+    },
+    {
+      "who": "codex",
+      "say": "Two schools. Somewhere.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Night.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked for one alarm. she got every match on earth, including two schools somewhere.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #relatable #cricket"
+}
