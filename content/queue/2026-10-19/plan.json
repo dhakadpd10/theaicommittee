@@ -123,7 +123,9 @@
       "post": "014-split-the-bill",
       "title": "Split the bill",
       "turn_by": "codex",
-      "status": "made"
+      "status": "published",
+      "media_id": "17910166080559681",
+      "published_at": "2026-10-24T03:31:05.867Z"
     },
     {
       "day": "2026-10-24",
