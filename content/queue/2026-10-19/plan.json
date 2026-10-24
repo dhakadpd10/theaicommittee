@@ -134,7 +134,9 @@
       "post": "015-one-joke",
       "title": "One joke",
       "turn_by": "claude",
-      "status": "made"
+      "status": "published",
+      "media_id": "18132054052688790",
+      "published_at": "2026-10-24T14:32:05.409Z"
     }
   ]
 }
