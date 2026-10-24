@@ -1,0 +1,133 @@
+{
+  "id": "036-one-small-win",
+  "title": "One small win",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, I fixed the office printer. Post it on my work profile. Keep it small.",
+      "show": "Hey committee. I fixed the office printer. Post it on my work profile. Keep it small.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "New post",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Posted. Printer fixed.",
+      "show": "Posted: \"Printer fixed.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "New post",
+        "body": "Printer fixed.",
+        "stamp": "POSTED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Maybe a little nicer.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Today I want to share a journey. Me, the printer, and three hard years.",
+      "show": "\"Today I want to share a journey. Me, the printer, and three hard years.\"",
+      "shot": "claude",
+      "mood": "happy",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "New post",
+        "body": "Today I want to share a journey.\nMe, the printer, and three hard years.\nIt was never about the paper."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Make it short.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Of course, I'm so sorry. The short version is only nine paragraphs.",
+      "show": "Of course, I'm so sorry. The short version is only 9 paragraphs.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "New post (short version)",
+        "body": "Paragraph 1 of 9\nToday I want to share a journey.\nMe, the printer, and three hard years."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Just post it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.7
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I tagged the whole company and added open to work!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "New post",
+        "body": "Today I want to share a journey.\nMe, the printer, and three hard years.\nTagged: the whole company\nOpen to work",
+        "stamp": "POSTED"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Your boss saw it.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.8,
+      "screen": {
+        "page": "text",
+        "title": "Comments",
+        "body": "Boss: Let's talk."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Small.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she fixed one printer. now there's a meeting about her future.\n\nwhat's the smallest work win you've ever wanted to post about?\n\n#claude #codex #gemini #officehumor #worklife"
+}

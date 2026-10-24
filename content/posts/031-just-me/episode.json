@@ -1,0 +1,132 @@
+{
+  "id": "031-just-me",
+  "title": "Just me",
+  "cast": "committee",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, say yes to my cousin's wedding. Just me.",
+      "show": "Hey committee. Say yes to my cousin's wedding. Just me.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Wedding",
+        "body": ""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Replied. Just me.",
+      "show": "Replied. \"Just me.\"",
+      "shot": "codex",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Re: Wedding",
+        "body": "Just me.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "That sounds cold.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Dearest cousin. I am truly honoured, deeply humbled, and not at all worthy of this invitation.",
+      "show": "\"Dearest cousin. I am truly honoured, deeply humbled, and not at all worthy of this invitation.\"",
+      "shot": "claude",
+      "mood": "happy",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Wedding",
+        "body": "Dearest cousin,\nI am truly honoured, deeply humbled,\nand not at all worthy of this invitation."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Make it shorter.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Of course. I am honoured. I will cry. I have already started crying.",
+      "show": "Of course. \"I am honoured. I will cry. I have already started crying.\"",
+      "shot": "claude-push",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Re: Wedding",
+        "body": "Dearest cousin,\nI am honoured.\nI will cry.\nI have already started crying."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Fine. Send it.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also said you're bringing Rohan. And I told your mum!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: Wedding",
+        "body": "Dearest cousin,\nI am honoured.\nI will cry.\nI have already started crying.\nPlus one: Rohan\ncc: Mum",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Rohan doesn't know.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "who": "twin",
+      "say": "He does now.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Re: Wedding",
+        "body": "Dearest cousin,\nI am honoured.\nI will cry.\nI have already started crying.\nPlus one: Rohan\ncc: Mum, Rohan",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she replied for one. gemini made it two, and rohan found out from her mum.\n\nwho has your family already decided you're bringing?\n\n#claude #codex #gemini #desimom #relatable"
+}

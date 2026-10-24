@@ -1,0 +1,97 @@
+{
+  "id": "030-an-hour-off",
+  "title": "An hour off",
+  "cast": "committee",
+  "cover": 4,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, the clocks in London went back last night. Fix my call.",
+      "show": "Hey committee. The clocks in London went back last night. Fix my call.",
+      "shot": "wide",
+      "time": "morning",
+      "mood": "calm",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "London call",
+        "body": "Today, 3:00 pm"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Moved every clock back an hour.",
+      "shot": "codex",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "Before we go further, may I ask how you feel about being an hour behind?",
+      "shot": "claude",
+      "mood": "think"
+    },
+    {
+      "who": "meera",
+      "say": "Which ones?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Laptop. Phone. Oven. Car.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also moved your mom's!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "card": "that afternoon",
+      "dur": 2
+    },
+    {
+      "who": "meera",
+      "say": "The call was at three. It's four.",
+      "show": "The call was at 3. It's 4.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "London call",
+        "body": "Today, 3:00 pm",
+        "stamp": "MISSED"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "London is correct.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "I live here.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the clocks went back in london. somehow her mom's oven went with them.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #officehumor #relatable"
+}

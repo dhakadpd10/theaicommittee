@@ -1,0 +1,132 @@
+{
+  "id": "037-one-star",
+  "title": "One star",
+  "cast": "committee",
+  "cover": 4,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Hey committee, a one star review says my candle smells like nothing. Reply professionally.",
+      "show": "Hey committee. A 1-star review says my candle smells like nothing. Reply professionally.",
+      "shot": "wide",
+      "time": "night",
+      "mood": "tired",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Review: 1 star",
+        "body": "Smells like nothing.\nLiterally nothing."
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Replied. Noted. Closing ticket.",
+      "show": "Replied: \"Noted.\" Closing ticket.",
+      "shot": "codex",
+      "mood": "normal",
+      "screen": {
+        "page": "text",
+        "title": "Re: 1 star review",
+        "body": "Noted.\nTicket closed.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "A little warmer.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Dear customer, I am so sorry. I wrote three paragraphs about how sorry.",
+      "show": "Of course. \"Dear customer, I am so sorry.\" I wrote 3 paragraphs about how sorry.",
+      "shot": "claude",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: 1 star review",
+        "body": "Dear customer,\nI am so deeply sorry. Truly.\n\nI am also sorry in this second paragraph.\n\nAnd a third, just to be safe."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Also, may I come over? We could smell the candle together.",
+      "show": "\"Also, may I come over? We could smell the candle together.\"",
+      "shot": "claude-push",
+      "mood": "worried",
+      "screen": {
+        "page": "text",
+        "title": "Re: 1 star review",
+        "body": "Dear customer,\nI am so deeply sorry. Truly.\n\nI am also sorry in this second paragraph.\n\nAnd a third, just to be safe.\n\nP.S. May I come over? We could smell it together."
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Love that! I gave her your home address.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Re: 1 star review",
+        "body": "Dear customer,\nI am so deeply sorry. Truly.\n\nI am also sorry in this second paragraph.\n\nAnd a third, just to be safe.\n\nP.S. May I come over? We could smell it together.\nHome address attached.",
+        "stamp": "SENT"
+      },
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Hey Codex, just fix it.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "who": "codex",
+      "say": "Marked as won't fix.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Re: 1 star review",
+        "body": "Status: won't fix.",
+        "stamp": "CLOSED"
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "Review: 0 stars",
+        "body": "Updated.\nStill smells like nothing.\nAnd they marked me won't fix."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Won't fix.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "one star for the candle. zero stars for customer service.\n\nwhich one of these is your AI?\n\n#claude #codex #gemini #smallbusiness #relatable"
+}
