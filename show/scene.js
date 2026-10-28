@@ -756,7 +756,7 @@ function renderAt(t) {
     hud.fillStyle = '#F1E4CF'; hud.font = '600 54px InterSB'; hud.textAlign = 'center'; hud.textBaseline = 'middle';
     hud.fillText(b.card, W / 2, H / 2); hud.globalAlpha = 1;
     void a;
-  } else if (b.text) {
+  } else if (b.text && !(window.__cover && TL.hook)) { // a cover with a hook shows only the hook: no spoiled punchline
     subtitle(b.text, prog(t, b.vo - 0.12, b.vo), b.who);
   }
   hookCard(window.__cover ? 1 : 1 - prog(t, 3.0, 3.4));
