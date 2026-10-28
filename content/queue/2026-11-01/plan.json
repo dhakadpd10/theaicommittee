@@ -29,52 +29,34 @@
       "day": "2026-11-02",
       "time": "09:00",
       "format": "reel",
-      "post": "030-an-hour-off",
-      "title": "An hour off",
-      "turn_by": "claude",
+      "post": "058-voice-clone",
+      "title": "Mum asks: voice clone",
+      "turn_by": "twin",
       "status": "made",
-      "note": "placeholder until the new episode for this slot is rendered",
-      "next": {
-        "post": "058-voice-clone",
-        "title": "Mum asks: voice clone",
-        "turn_by": "twin",
-        "series": "MUM ASKS · PART 5",
-        "keyword": "SAFE"
-      }
+      "series": "MUM ASKS · PART 5",
+      "keyword": "SAFE"
     },
     {
       "day": "2026-11-02",
       "time": "20:00",
       "format": "reel",
-      "post": "031-just-me",
-      "title": "Just me",
-      "turn_by": "claude",
+      "post": "059-take-my-job",
+      "title": "Take my job",
+      "turn_by": "codex",
       "status": "made",
-      "note": "placeholder until the new episode for this slot is rendered",
-      "next": {
-        "post": "059-take-my-job",
-        "title": "Take my job",
-        "turn_by": "codex",
-        "series": "SAME PROMPT, 3 AIS",
-        "keyword": "JOB"
-      }
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "JOB"
     },
     {
       "day": "2026-11-03",
       "time": "09:00",
       "format": "reel",
-      "post": "032-less-excited",
-      "title": "Less excited",
-      "turn_by": "gemini",
+      "post": "060-boss-at-eleven",
+      "title": "Boss at eleven",
+      "turn_by": "claude",
       "status": "made",
-      "note": "placeholder until the new episode for this slot is rendered",
-      "next": {
-        "post": "060-boss-at-eleven",
-        "title": "Boss at eleven",
-        "turn_by": "claude",
-        "series": "SAME PROMPT, 3 AIS",
-        "keyword": "BOSS"
-      }
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "BOSS"
     },
     {
       "day": "2026-11-03",
@@ -91,18 +73,12 @@
       "day": "2026-11-04",
       "time": "09:00",
       "format": "reel",
-      "post": "033-wake-me-for-the-match",
-      "title": "The match",
+      "post": "061-mum-asks-agent",
+      "title": "Mum asks: agent",
       "turn_by": "claude",
       "status": "made",
-      "note": "placeholder until the new episode for this slot is rendered",
-      "next": {
-        "post": "061-mum-asks-agent",
-        "title": "Mum asks: agent",
-        "turn_by": "claude",
-        "series": "MUM ASKS · PART 6",
-        "keyword": "MUM"
-      }
+      "series": "MUM ASKS · PART 6",
+      "keyword": "MUM"
     },
     {
       "day": "2026-11-04",
@@ -119,18 +95,12 @@
       "day": "2026-11-05",
       "time": "09:00",
       "format": "reel",
-      "post": "034-more-from-my-job",
-      "title": "More from work",
+      "post": "062-boss-gift",
+      "title": "Gift for the boss",
       "turn_by": "claude",
       "status": "made",
-      "note": "placeholder until the new episode for this slot is rendered",
-      "next": {
-        "post": "062-boss-gift",
-        "title": "Gift for the boss",
-        "turn_by": "claude",
-        "series": "SAME PROMPT, 3 AIS",
-        "keyword": "GIFT"
-      }
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "GIFT"
     },
     {
       "day": "2026-11-05",
@@ -147,18 +117,12 @@
       "day": "2026-11-06",
       "time": "09:00",
       "format": "reel",
-      "post": "035-are-you-mad",
-      "title": "Are you mad",
-      "turn_by": "gemini",
+      "post": "063-diwali-wishes",
+      "title": "Diwali wishes",
+      "turn_by": "codex",
       "status": "made",
-      "note": "placeholder until the new episode for this slot is rendered",
-      "next": {
-        "post": "063-diwali-wishes",
-        "title": "Diwali wishes",
-        "turn_by": "codex",
-        "series": "SAME PROMPT, 3 AIS",
-        "keyword": "WISH"
-      }
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "WISH"
     },
     {
       "day": "2026-11-06",
@@ -175,18 +139,12 @@
       "day": "2026-11-07",
       "time": "09:00",
       "format": "reel",
-      "post": "036-one-small-win",
-      "title": "One small win",
+      "post": "064-deepfake",
+      "title": "Mum asks: fake video",
       "turn_by": "claude",
       "status": "made",
-      "note": "placeholder until the new episode for this slot is rendered",
-      "next": {
-        "post": "064-deepfake",
-        "title": "Mum asks: fake video",
-        "turn_by": "claude",
-        "series": "MUM ASKS · PART 7",
-        "keyword": "SAFE"
-      }
+      "series": "MUM ASKS · PART 7",
+      "keyword": "SAFE"
     },
     {
       "day": "2026-11-07",
