@@ -76,7 +76,9 @@
       "post": "022-standup-update",
       "title": "The standup",
       "turn_by": "codex",
-      "status": "made"
+      "status": "published",
+      "media_id": "18373566622215543",
+      "published_at": "2026-10-28T03:31:26.751Z"
     },
     {
       "day": "2026-10-28",
