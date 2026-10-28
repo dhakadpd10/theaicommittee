@@ -1,0 +1,95 @@
+{
+  "id": "049-mum-asks-tokens",
+  "title": "Mum asks: tokens",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 2",
+  "hook": "Mum asked me: what is a token?",
+  "cover": 3,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum again. Why does her AI say she ran out of tokens?",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta my AI says I have no TOKENS left. Did I pay??"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Tokens are units of text.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "Mum. Sixty.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Think of pani puri. The AI reads your words in small pieces, like puris.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "Every piece is counted. Long messages, more puris. Too many, and the plate is done.",
+      "shot": "claude-push",
+      "mood": "happy"
+    },
+    {
+      "who": "gemini",
+      "say": "Short words, one puri! Long words, two or three!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Sending.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta my AI says I have no TOKENS left. Did I pay??\n\nOk. Do my good morning flowers count??"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She wants to know if her good morning flowers count.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Forty puris each.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum asked what a token is. now she's counting her good morning flowers.\n\nwhich AI word should mum ask about next?\n\nComment MUM and I'll DM you all 10 AI words explained for parents.\n\n#claude #codex #gemini #desimom #aitools"
+}

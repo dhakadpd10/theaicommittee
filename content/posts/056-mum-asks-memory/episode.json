@@ -1,0 +1,95 @@
+{
+  "id": "056-mum-asks-memory",
+  "title": "Mum asks: memory",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 4",
+  "hook": "Mum asked: why does AI forget me?",
+  "cover": 3,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum says her AI forgot her name after a long chat.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta the AI forgot my NAME. We were talking for 2 hours!!"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Context window full.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "In Mum language.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "It's like the family group. Three hundred unread messages, and you only read the last few.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "The AI can only hold so much. In a long chat, the start falls off.",
+      "shot": "claude-push",
+      "mood": "happy"
+    },
+    {
+      "who": "gemini",
+      "say": "Tip! Start a new chat, and tell it who you are!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Sending.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta the AI forgot my NAME. We were talking for 2 hours!!\n\nThis is why I sign every message. Love, Mummy"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She says that's why she signs every message. Love, Mummy.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Smart woman.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum asked why AI forgets. turns out she solved it years ago. love, mummy.\n\nwhich AI word should mum ask about next?\n\nComment MUM and I'll DM you all 10 AI words explained for parents.\n\n#claude #codex #gemini #desimom #aitools"
+}

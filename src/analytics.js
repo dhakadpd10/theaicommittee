@@ -5,7 +5,7 @@ const path = require('path');
 const { P, readJSON, log, localDay } = require('./util');
 const ig = require('./ig');
 
-const COLS = ['date', 'post', 'format', 'title', 'turn_by', 'published_at', 'views', 'reach', 'likes', 'comments', 'saved', 'shares', 'total_interactions', 'avg_watch_ms', 'follows'];
+const COLS = ['date', 'post', 'format', 'title', 'turn_by', 'published_at', 'views', 'reach', 'likes', 'comments', 'saved', 'shares', 'total_interactions', 'avg_watch_ms', 'follows', 'series'];
 const csv = (v) => (/[",\n]/.test(String(v ?? '')) ? `"${String(v).replace(/"/g, '""')}"` : String(v ?? ''));
 
 async function run() {
@@ -17,7 +17,7 @@ async function run() {
       if (!s.media_id || Date.now() - new Date(s.published_at) > 30 * 86400000) continue;
       try {
         const m = await ig.mediaInsights(s.media_id, s.format);
-        rows.push([today, s.post, s.format, s.title || '', s.turn_by || '', s.published_at, m.views, m.reach, m.likes, m.comments, m.saved, m.shares, m.total_interactions, m.ig_reels_avg_watch_time, m.follows].map(csv).join(','));
+        rows.push([today, s.post, s.format, s.title || '', s.turn_by || '', s.published_at, m.views, m.reach, m.likes, m.comments, m.saved, m.shares, m.total_interactions, m.ig_reels_avg_watch_time, m.follows, s.series || ''].map(csv).join(','));
         n++;
       } catch (e) { log('insights failed', s.post, e.message); }
     }

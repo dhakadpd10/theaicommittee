@@ -1,0 +1,103 @@
+{
+  "id": "047-sound-human",
+  "title": "Sound human",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "I asked 3 AIs to sound human",
+  "cover": 3,
+  "musicStop": 10,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Write my leave email. Make it sound human, not like an AI.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Of course. I hope this email finds you well.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Already no.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Let's delve into it! In today's fast paced world, rest is key.",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "show": "Let's delve into it! In today's fast-paced world, rest is key."
+    },
+    {
+      "who": "meera",
+      "say": "Who says delve?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "twin",
+      "say": "Only us.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.7
+    },
+    {
+      "who": "codex",
+      "say": "Leave. Friday. Bye.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Too human.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "I've removed every AI word. Here is the final version.",
+      "shot": "claude",
+      "mood": "normal"
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "Re: Leave on Friday",
+        "body": "Hi Sir,\nI need Friday off — to rest — and recharge —\nWarm regards —"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Why is it all dashes?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Those are very human dashes.",
+      "shot": "claude-push",
+      "mood": "small",
+      "pre": 0.6
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked for human. she got delve, warm regards and a lot of dashes.\n\nwhat word instantly tells you it was written by AI?\n\nComment HUMAN and I'll DM you the AI giveaway words and the rewrite prompt.\n\n#claude #codex #gemini #aitools #worklife"
+}

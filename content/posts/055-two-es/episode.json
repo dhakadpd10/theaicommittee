@@ -1,0 +1,91 @@
+{
+  "id": "055-two-es",
+  "title": "Two Es",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "I corrected my AI. It said sorry. Again.",
+  "cover": 3,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Write my bio. And it's Meera, with two e's.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "show": "Write my bio. And it's Meera, with two E's."
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Mira is a creative soul with a love for candles.",
+      "shot": "claude",
+      "mood": "happy",
+      "show": "Of course. \"Mira is a creative soul with a love for candles.\""
+    },
+    {
+      "who": "meera",
+      "say": "Two e's.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5,
+      "show": "Two E's."
+    },
+    {
+      "who": "claude",
+      "say": "You're right, I apologise. Here's the corrected version. Mira is a creative soul.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "show": "You're right, I apologise. Here's the corrected version: \"Mira is a creative soul.\""
+    },
+    {
+      "who": "meera",
+      "say": "Same.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Fixed! Meera, with three e's, for extra!",
+      "shot": "gemini",
+      "mood": "happy",
+      "show": "Fixed! \"Meeera\", with three E's, for extra!"
+    },
+    {
+      "who": "meera",
+      "say": "Codex?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Meera. Two e's.",
+      "shot": "codex",
+      "mood": "normal",
+      "show": "Meera. Two E's."
+    },
+    {
+      "who": "meera",
+      "say": "Finally.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Applied everywhere. Your shop is now Mittee.",
+      "shot": "codex-push",
+      "mood": "happy",
+      "show": "Applied everywhere. Your shop is now \"Mittee\".",
+      "pre": 0.8
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "two e's. claude said sorry and spelled it wrong again. codex fixed it everywhere. literally everywhere.\n\nwhat does your AI keep getting wrong no matter how often you correct it?\n\nComment MEMORY and I'll DM you the rules block that stops repeat mistakes.\n\n#claude #codex #gemini #aitools #techhumor"
+}

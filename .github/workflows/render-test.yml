@@ -56,4 +56,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           node -e "const fs=require('fs'),p=require('path');for(const w of fs.readdirSync('content/queue')){const f=p.join('content/queue',w,'plan.json');if(!fs.existsSync(f))continue;const j=JSON.parse(fs.readFileSync(f));let c=0;for(const s of j.slots)if(s.post===process.env.POST&&s.status==='skip'){s.status='made';c=1}if(c)fs.writeFileSync(f,JSON.stringify(j,null,2)+'\n')}"
           git add -f content/posts/"$POST"/reel.mp4 content/posts/"$POST"/cover.jpg content/posts/"$POST"/slide-*.jpg content/queue
-          git commit -m "Re-rendered $POST" && git push
+          git commit -m "Rendered $POST"
+          # several renders save to the same branch at once: rebase and retry until this one is in
+          for i in 1 2 3 4 5 6 7 8; do git push && exit 0; git pull --rebase -q || git rebase --abort; sleep $((RANDOM % 25 + 5)); done
+          exit 1

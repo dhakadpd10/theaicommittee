@@ -15,7 +15,9 @@ function validateEpisode(e) {
   if (!Array.isArray(e.beats) || e.beats.length < 6 || e.beats.length > 14) return [...p, 'beats must be a list of 6 to 14 beats'];
   const spoken = e.beats.filter((b) => b.say);
   if (spoken.length < 5) p.push('needs at least 5 spoken lines');
-  if (e.beats[0].who !== 'meera' || !/^hey committee,/i.test(e.beats[0].say || '')) p.push('beat 0 must be Meera saying "Hey committee, ..."');
+  if (!e.beats[0].say) p.push('beat 0 must be a spoken line (the story starts in the first second, no card or silence first)');
+  if (typeof e.hook !== 'string' || e.hook.trim().length < 8 || e.hook.length > 46) p.push('hook must be the on-screen headline for the first 3 seconds, 8 to 46 characters');
+  if (e.series !== undefined && (typeof e.series !== 'string' || e.series.length > 26 || e.series !== e.series.toUpperCase())) p.push('series must be a short UPPER CASE tag like "MUM ASKS · PART 2" (26 characters max)');
   const speakers = new Set(spoken.map((b) => b.who).filter((w) => w !== 'meera' && w !== 'twin'));
   if (speakers.size < 2) p.push('at least two of codex, claude and gemini must speak');
   let words = 0;

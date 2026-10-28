@@ -84,65 +84,78 @@
       "day": "2026-10-28",
       "time": "20:00",
       "format": "reel",
-      "post": "023-sweets-box",
-      "title": "The sweets box",
-      "turn_by": "gemini",
-      "status": "made"
-    },
-    {
-      "day": "2026-10-29",
-      "time": "09:00",
-      "format": "reel",
-      "post": "024-diwali-code",
-      "title": "Diwali code",
-      "turn_by": "codex",
-      "status": "made"
-    },
-    {
-      "day": "2026-10-29",
-      "time": "20:00",
-      "format": "reel",
-      "post": "025-sleep-earlier",
-      "title": "Sleep earlier",
+      "post": "044-absolutely-right",
+      "title": "Absolutely right",
       "turn_by": "claude",
-      "status": "made"
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "TRUTH"
+    },
+    {
+      "day": "2026-10-29",
+      "time": "09:00",
+      "format": "reel",
+      "post": "046-mum-asks-prompt",
+      "title": "Mum asks: prompt",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "MUM ASKS · PART 1",
+      "keyword": "MUM"
+    },
+    {
+      "day": "2026-10-29",
+      "time": "20:00",
+      "format": "reel",
+      "post": "047-sound-human",
+      "title": "Sound human",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "HUMAN"
     },
     {
       "day": "2026-10-30",
       "time": "09:00",
       "format": "reel",
-      "post": "026-quiet-cv",
-      "title": "Quietly",
-      "turn_by": "gemini",
-      "status": "made"
+      "post": "049-mum-asks-tokens",
+      "title": "Mum asks: tokens",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "MUM ASKS · PART 2",
+      "keyword": "MUM"
     },
     {
       "day": "2026-10-30",
       "time": "20:00",
       "format": "reel",
-      "post": "027-clean-the-group",
-      "title": "Clean the group",
-      "turn_by": "codex",
-      "status": "made"
+      "post": "050-one-line",
+      "title": "One line only",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "SHORT"
     },
     {
       "day": "2026-10-31",
       "time": "09:00",
       "format": "reel",
-      "post": "028-sale-post",
-      "title": "The sale post",
+      "post": "052-mum-asks-made-up",
+      "title": "Mum asks: made up",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "MUM ASKS · PART 3",
+      "keyword": "MUM"
+    },
+    {
+      "day": "2026-10-31",
+      "time": "20:00",
+      "format": "reel",
+      "post": "053-one-typo",
+      "title": "Just one typo",
       "turn_by": "gemini",
       "status": "made",
-      "note": "unclear words: beat 6 \"Candles. Cheap. Buy now.\" was heard as \"Candles cheap by now.\""
-    },
-    {
-      "day": "2026-10-31",
-      "time": "20:00",
-      "format": "reel",
-      "post": "029-test-out-of-office",
-      "title": "Just test it",
-      "turn_by": "codex",
-      "status": "made"
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "FIX"
     }
   ]
 }

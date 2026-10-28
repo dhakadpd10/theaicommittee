@@ -18,6 +18,7 @@ const privacy = (h) => article('Privacy Policy', `
 <h2>Why we use it</h2>
 <ul>
 <li>To reply to your comment or message.</li>
+<li>When you comment a keyword shown in a post (for example "TRUTH"), to send you one direct message with the free prompt you asked for.</li>
 <li>To learn which posts are useful, using the post statistics above.</li>
 </ul>
 <h2>How it is processed</h2>

@@ -1,0 +1,97 @@
+{
+  "id": "057-shop-day-five",
+  "title": "Day five: the count",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 5",
+  "hook": "Day 5: did 3 AIs sell my candles?",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Day five. Diwali eve. How many candles did you three sell?",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Orders: 3"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Huge week! Fifty posts, one podcast, and a jingle!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Candles.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Before the number, I want you to know I'm proud of us.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Number.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Three orders. Three refunds. One new order.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Orders: 1"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "From who?",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "twin",
+      "say": "Your mum.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "who": "meera",
+      "say": "She lives with me.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "She left a review! Five stars. Please clean your room.",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.5
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "five days, three AIs, one order. it was mum. she lives here.\n\nwho was the first person who ever bought something from you?\n\nComment SHOP and I'll DM you the 5 prompts to run a small shop with AI.\n\n#claude #codex #gemini #diwali #smallbusiness"
+}

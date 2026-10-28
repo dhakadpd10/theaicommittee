@@ -1,0 +1,102 @@
+{
+  "id": "045-shop-day-one",
+  "title": "Day one: price",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 1",
+  "hook": "3 AIs run my candle shop for Diwali",
+  "cover": 4,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "This week, you three run my candle shop. First job, set a price.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Price: ?\nOrders: 0"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Free. More orders.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "I'd like money.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Then I'd suggest two ninety nine. Fair for handmade, and kind to students.",
+      "shot": "claude",
+      "mood": "happy",
+      "show": "Then I'd suggest ₹299. Fair for handmade, and kind to students."
+    },
+    {
+      "who": "gemini",
+      "say": "Or nine ninety nine, and we call it luxury!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "show": "Or ₹999, and we call it luxury!"
+    },
+    {
+      "who": "meera",
+      "say": "It's the same candle.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "twin",
+      "say": "Gold box. Same candle.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.6,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Price: ₹299 or ₹999?\nOrders: 0"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Orders so far. Zero.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "We haven't opened yet.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Still zero.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.8
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "day one. one candle, two prices, zero orders. codex is keeping count.\n\nwhat would you pay for a handmade diwali candle, 299 or 999?\n\nComment SHOP and I'll DM you the 5 prompts to run a small shop with AI.\n\n#claude #codex #gemini #diwali #smallbusiness"
+}

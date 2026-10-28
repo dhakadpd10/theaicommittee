@@ -549,6 +549,26 @@ function subtitle(text, a, who) {
   hud.restore();
 }
 
+// the hook: what this episode is, in big type, for the first 3 seconds and on the cover
+// (a series tag like "MUM ASKS · PART 1" above it tells people there is more to follow)
+function hookCard(a) {
+  if (!TL.hook || a <= 0) return;
+  hud.save(); hud.globalAlpha = a; hud.textAlign = 'center'; hud.textBaseline = 'middle';
+  const y = 1290;
+  if (TL.series) {
+    hud.font = '800 30px InterXB'; const tw = hud.measureText(TL.series).width + 44;
+    rr(hud, W / 2 - tw / 2, y - 76, tw, 52, 26); hud.fillStyle = '#E0805F'; hud.fill();
+    hud.fillStyle = '#FFFFFF'; hud.fillText(TL.series, W / 2, y - 50);
+  }
+  hud.font = '800 64px InterXB';
+  const lines = wrap(hud, TL.hook, 880), lh = 78;
+  const bw = Math.max(...lines.map((l) => hud.measureText(l).width)) + 72, bh = lines.length * lh + 36;
+  rr(hud, W / 2 - bw / 2, y, bw, bh, 26); hud.fillStyle = 'rgba(255,248,238,0.95)'; hud.fill();
+  hud.fillStyle = '#1F1A17';
+  lines.forEach((l, i) => hud.fillText(l, W / 2, y + 18 + lh / 2 + i * lh));
+  hud.restore();
+}
+
 // ---------- shots ----------
 const MEERA_HEAD = () => v3(-0.35, 2.08, -0.5);
 const DABBA_FACE = v3(0.82, 1.4, 0.36);
@@ -736,9 +756,10 @@ function renderAt(t) {
     hud.fillStyle = '#F1E4CF'; hud.font = '600 54px InterSB'; hud.textAlign = 'center'; hud.textBaseline = 'middle';
     hud.fillText(b.card, W / 2, H / 2); hud.globalAlpha = 1;
     void a;
-  } else if (b.text) {
+  } else if (b.text && !(window.__cover && TL.hook)) { // a cover with a hook shows only the hook: no spoiled punchline
     subtitle(b.text, prog(t, b.vo - 0.12, b.vo), b.who);
   }
+  hookCard(window.__cover ? 1 : 1 - prog(t, 3.0, 3.4));
   // fade in / out of the whole reel
   const fade = Math.max(1 - prog(t, 0, 0.25), prog(t, TL.DUR - 0.5, TL.DUR));
   if (fade > 0) { hud.fillStyle = `rgba(0,0,0,${fade})`; hud.fillRect(0, 0, W, H); }
@@ -749,7 +770,7 @@ window.renderAt = renderAt;
 window.addEventListener('hf-seek', (e) => renderAt(e.detail.time));
 window.renderCover = () => {
   const b = TL.cover !== undefined ? BEATS[TL.cover] : BEATS[4];
-  renderAt((b.vo ?? b.start) + 1.2);
+  window.__cover = true; renderAt((b.vo ?? b.start) + 1.2); window.__cover = false;
 };
 renderAt(window.HF_MODE ? (window.__hfThreeTime || 0) : 0.5);
 window.ready = true;
