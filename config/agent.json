@@ -27,6 +27,13 @@
       "anyone upset or hurt by a joke",
       "a company or brand writing in an official capacity",
       "anything legal"
+    ],
+    "keyword_dm": true,
+    "public_keyword_replies": [
+      "Sent! Check your DMs 📩",
+      "In your DMs now. Codex says: done.",
+      "Sent. Claude added a gentle note.",
+      "Check your inbox! Gemini already told your mum."
     ]
   },
   "limits": {

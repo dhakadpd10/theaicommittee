@@ -7,6 +7,10 @@ const { askJSON } = require('./claude');
 const ig = require('./ig');
 
 const STATE = P('content/state/engage.json');
+// "Comment TRUTH and I'll DM you ..." in a caption makes TRUTH the post's keyword
+const keywordIn = (caption = '') => (caption.match(/[Cc]omment\s+"?([A-Z]{3,})"?/) || [])[1];
+const freePacks = () => readJSON(P('brand/free.json'), {});
+const freeLink = (kw) => `${config().site_url.replace(/\/$/, '')}/free/#${kw.toLowerCase()}`;
 const DAY = 86400000;
 
 async function openIssue(title, body) {
@@ -38,13 +42,25 @@ async function run() {
   const me = (process.env.IG_USERNAME || cfg.handle).replace('@', '').toLowerCase();
   const budget = cfg.limits.max_auto_replies_per_run; const todo = [];
 
+  const packs = freePacks(); st.sent ||= {}; // "<post>:<person>" -> true, so each person gets a post's pack once
   for (const m of await ig.recentMedia(14)) {
-    if (Date.now() - new Date(m.timestamp) > 7 * DAY) continue;
+    if (Date.now() - new Date(m.timestamp) > 7 * DAY) continue; // private replies only work within 7 days
+    const kw = keywordIn(m.caption); const pack = kw && packs[kw];
     const list = await ig.comments(m.id);
     for (const c of list) {
       const who = (c.username || c.from?.username || '').toLowerCase(), whoId = c.from?.id;
       if (st.comments[c.id] || who === me || (whoId && whoId === process.env.IG_USER_ID)) continue;
       if ((c.replies?.data || []).some((r) => (r.username || r.from?.username || '').toLowerCase() === me)) { st.comments[c.id] = 'already'; continue; }
+      if (cfg.replies.keyword_dm && pack && new RegExp(`\\b${kw}\\b`, 'i').test(c.text || '')) {
+        const key = `${m.id}:${whoId || who}`;
+        if (st.sent[key]) { st.comments[c.id] = 'keyword-repeat'; continue; }
+        try {
+          await ig.privateReply(c.id, `Here you go: ${pack.title} 👇\n${freeLink(kw)}\nCopy it, paste it into your AI, fill in the brackets. Tell us how it went!`);
+          const pub = cfg.replies.public_keyword_replies || ['Sent! Check your DMs 📩']; await ig.replyToComment(c.id, pub[Math.floor(Math.random() * pub.length)]);
+          st.comments[c.id] = 'keyword'; st.sent[key] = true; log('keyword DM sent', kw, '@' + (who || whoId));
+        } catch (e) { log('keyword DM failed', c.id, e.message); st.comments[c.id] = 'failed'; }
+        continue;
+      }
       todo.push({ kind: 'comment', id: c.id, username: who || 'someone', text: c.text, context: (m.caption || '').split('\n')[0].slice(0, 80) });
     }
   }

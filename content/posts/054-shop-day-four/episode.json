@@ -49,7 +49,7 @@
     },
     {
       "who": "codex",
-      "say": "Checked the courier. It arrives Thursday.",
+      "say": "Checked the courier. It arrives Saturday.",
       "shot": "codex",
       "mood": "normal",
       "pre": 0.5
@@ -107,5 +107,5 @@
       "dur": 2.4
     }
   ],
-  "caption": "day four. claude hoped, gemini promised, codex checked. three orders, all for the free candle.\n\nwhich one should answer your customers?\n\n#claude #codex #gemini #diwali #smallbusiness"
+  "caption": "day four. claude hoped, gemini promised, codex checked. three orders, all for the free candle.\n\nwhich one should answer your customers?\n\nComment SHOP and I'll DM you the 5 prompts to run a small shop with AI.\n\n#claude #codex #gemini #diwali #smallbusiness"
 }

@@ -17,7 +17,9 @@ h1 { font:800 clamp(34px,7vw,54px)/1.05 "Inter",sans-serif; margin:0 } .lede { m
 .cast { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px }
 .cast div { background:var(--surface); border-radius:14px; padding:16px; border-top:4px solid var(--c) } .cast b { display:block; font-size:18px } .cast span { color:var(--muted); font-size:14px }
 h2 { font:800 22px/1.2 "Inter",sans-serif; margin:24px 0 8px } .legal { max-width:68ch } .legal li { margin:6px 0 } a { color:inherit }
-footer { color:var(--muted); font-size:13px }`;
+footer { color:var(--muted); font-size:13px }
+.free { background:var(--surface); border-radius:14px; padding:18px; display:grid; gap:8px } .free h2 { margin:0 } .free h3 { margin:8px 0 0; font-size:16px }
+pre { white-space:pre-wrap; word-break:break-word; background:var(--bg); border-radius:10px; padding:14px; margin:0; font:500 14px/1.55 ui-monospace,Consolas,monospace } .tip { color:var(--muted); font-size:14px; margin:0 }`;
 const page = (title, body) => `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"><style>${CSS}</style></head><body>${body}</body></html>\n`;
 
@@ -33,6 +35,16 @@ function build(outDir = P('_site')) {
     fs.mkdirSync(path.join(outDir, dir), { recursive: true });
     fs.writeFileSync(path.join(outDir, dir, 'index.html'), page(`${title} · ${cfg.name}`, html));
   }
+  // /free/: the prompt packs people get by commenting a post's keyword (brand/free.json)
+  const free = JSON.parse(fs.readFileSync(P('brand/free.json'), 'utf8'));
+  const ig = `https://www.instagram.com/${esc(cfg.handle.replace('@', ''))}/`;
+  const sections = Object.entries(free).map(([k, t]) => `<section class="free" id="${k.toLowerCase()}"><span class="sticker">${esc(k)}</span><h2>${esc(t.title)}</h2><p>${esc(t.intro)}</p>
+${t.prompts.map((p) => `<h3>${esc(p.name)}</h3><pre>${esc(p.text)}</pre>`).join('')}<p class="tip">${esc(t.tip)}</p></section>`).join('\n');
+  fs.mkdirSync(path.join(outDir, 'free'), { recursive: true });
+  fs.writeFileSync(path.join(outDir, 'free', 'index.html'), page(`Free prompts · ${cfg.name}`, `<div class="wrap"><header><span class="sticker">FREE FROM THE COMMITTEE</span><h1>Free prompts</h1>
+<p class="lede">The prompts from our episodes on <a href="${ig}">${esc(cfg.handle)}</a>. Copy one, paste it into any AI assistant and fill in the brackets.</p></header>
+${sections}
+<footer>Fan-made parody, not affiliated with OpenAI, Anthropic or Google. <a href="../">Home</a> · <a href="../privacy/">Privacy</a></footer></div>`));
   fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
   // only media Instagram still has to fetch (waiting posts, or posted in the last 3 days): keeps the site small
   const needed = new Set(); const q = P('content/queue');

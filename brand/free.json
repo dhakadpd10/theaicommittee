@@ -1,0 +1,68 @@
+{
+  "TRUTH": {
+    "title": "The no-yes-man prompt",
+    "intro": "Most AI assistants agree with you the moment you push back, even when you're wrong. Paste this at the start of a chat (or into your custom instructions) and it will tell you when you're wrong.",
+    "prompts": [
+      { "name": "Paste at the start of any chat", "text": "For this whole conversation, be an honest expert, not a cheerleader.\n- If I say something wrong, tell me plainly and explain why, even if I push back.\n- Don't open with praise like \"Great question\" or \"You're absolutely right\".\n- When you're not sure, say how sure you are (for example: about 70% sure) and what would change your mind.\n- If I disagree with you, only change your answer if I give you a new fact or a better argument. Repeating myself is not a reason.\nReply \"Understood\" and wait for my first question." },
+      { "name": "The 2-second test", "text": "I think [your claim]. Before you answer, list the 3 strongest reasons I might be wrong, then give your honest verdict in one line." }
+    ],
+    "tip": "Try it with a wrong fact on purpose. A good setup says \"No, and here's why\"."
+  },
+  "HUMAN": {
+    "title": "Sound like you, not like AI",
+    "intro": "The words that give AI writing away, and a prompt that rewrites any text so it sounds like a person wrote it.",
+    "prompts": [
+      { "name": "The rewrite prompt", "text": "Rewrite the text below so it sounds like me talking to a colleague.\nRules:\n- Short sentences. Contractions (I'm, don't, it's).\n- No dashes of any kind. Use full stops or commas.\n- Never use these words: delve, tapestry, testament, leverage, seamless, robust, elevate, embark, realm, journey, navigate, crucial, pivotal, foster, unlock, in today's fast-paced world, I hope this email finds you well, warm regards, furthermore, moreover.\n- No intro, no summary at the end, no bullet points unless I had them.\n- Keep my meaning and my facts. Don't add anything new.\nText:\n[paste here]" },
+      { "name": "Your voice, saved", "text": "Here are 3 messages I wrote myself: [paste 3 of your own emails or texts]. Describe my writing style in 5 short rules. From now on, write everything for me using those rules." }
+    ],
+    "tip": "The fastest check: read it out loud. If you wouldn't say it, cut it."
+  },
+  "SHORT": {
+    "title": "Short answers, every time",
+    "intro": "Asked for one line and got five headings and a table? These two prompts fix that for good.",
+    "prompts": [
+      { "name": "Put this in your custom instructions", "text": "Answer in the fewest words that fully answer the question. Default to 1 to 3 sentences. No headings, tables or bullet points unless I ask. No \"Great question\", no summary at the end, and don't offer to expand. If the question truly needs more, give the short answer first, then ask if I want detail." },
+      { "name": "For one question", "text": "Answer in one sentence of under 20 words. No preamble. [your question]" }
+    ],
+    "tip": "Custom instructions live in your AI app's settings (often called Personalisation or Instructions). Set it once and every chat follows it."
+  },
+  "FIX": {
+    "title": "Change only what I asked",
+    "intro": "Asked your AI to fix one typo and it rewrote everything? This prompt keeps it on a leash.",
+    "prompts": [
+      { "name": "The surgical edit", "text": "Make ONLY this change: [describe the change].\nDo not change any other word, line, format or punctuation.\nReturn the full text with the change made, then list exactly what you changed as: line, before, after.\nIf you think something else should change, tell me after the list instead of doing it.\nText:\n[paste here]" },
+      { "name": "Check its work", "text": "Compare your version with my original word by word. List every difference. If there is any difference I didn't ask for, undo it and give me the corrected version." }
+    ],
+    "tip": "Works for CVs, code, captions and emails. The \"list what you changed\" line is what keeps it honest."
+  },
+  "MEMORY": {
+    "title": "Make it stop repeating the mistake",
+    "intro": "It says sorry, then does the same thing again. Here's how to give your AI a rule it actually keeps.",
+    "prompts": [
+      { "name": "A rules block for the start of a chat", "text": "Before you answer anything in this chat, read these rules. Check every answer against them before you send it.\nRULES:\n1. My name is spelled [Meera]. Never [Mira].\n2. [your rule]\n3. [your rule]\nAt the end of each answer, write \"Rules checked\". If you broke one, fix it before sending." },
+      { "name": "When it gets it wrong again", "text": "You made the same mistake again: [mistake]. Don't apologise. Quote the rule you broke, explain in one line why it happened, then give the corrected version." }
+    ],
+    "tip": "Long chats make AI forget early instructions. If a chat gets long, start a new one and paste the rules block first."
+  },
+  "MUM": {
+    "title": "AI words, explained for Mum and Papa",
+    "intro": "Ten AI words your parents keep hearing, each in one line they'll actually understand. Send this to the family group.",
+    "prompts": [
+      { "name": "The cheat sheet", "text": "PROMPT: your order. Like at a tea stall: \"cutting chai, less sugar, extra ginger\" gets you exactly that. Clearer order, better answer.\nTOKEN: the AI reads in small pieces, like puris. Every piece is counted. Long messages use more.\nHALLUCINATION: the AI makes something up and sounds sure, like the uncle at every wedding. Always double check facts, medicines and money.\nMEMORY: in a long chat it forgets the start, like a family group with 300 unread messages. Start a new chat and say who you are.\nMODEL: the cook. Same kitchen, different cook, different taste.\nAGENT: an AI that can also press the buttons: book, send, pay. Only let it do what you'd let a stranger do.\nDEEPFAKE: a fake video or voice that looks and sounds real.\nVOICE CLONE: a fake call that sounds like your son or daughter asking for money. Hang up and call them back on their real number.\nTRAINING: how the AI learned, by reading a huge library of text.\nCHATBOT: the app you type to, like the one you're using." },
+      { "name": "Ask your AI to explain anything like this", "text": "Explain [AI word] to my 60-year-old mother in 2 sentences, using an everyday Indian example. No English jargon." }
+    ],
+    "tip": "The voice clone line is the one that matters most. Make sure they read that one."
+  },
+  "SHOP": {
+    "title": "5 prompts to run a small shop with AI",
+    "intro": "The five jobs the committee did for Mitti this week, as prompts you can use for your own shop, whatever you sell.",
+    "prompts": [
+      { "name": "1. Price it", "text": "I sell [product] made from [materials]. It costs me [cost] to make and takes [time]. Similar products sell for [prices you've seen]. My buyers are [who]. Suggest 3 prices (budget, fair, premium) with one line on who each one is for. Be honest if my cost is too high." },
+      { "name": "2. The product description", "text": "Write a product description for [product] in under 40 words. Say what it is, who it's for and one detail that makes it different. No fancy words. Then give me 3 short titles." },
+      { "name": "3. The post that sells", "text": "Write 3 short Instagram captions to sell [product] for [festival or occasion]. Each under 25 words, with one clear reason to buy now. No hashtag walls, max 3 hashtags." },
+      { "name": "4. Answer the customer", "text": "A customer asked: \"[their message]\". Our real facts: [delivery time, price, stock]. Write a friendly reply under 40 words. Only promise what's in our facts." },
+      { "name": "5. The review reply", "text": "Write a warm, short reply to this review: \"[review]\". Thank them by name, mention one detail from the review, no discount offers." }
+    ],
+    "tip": "Prompt 4 is the one that saves you: \"only promise what's in our facts\" stops the AI inventing free gift wrap."
+  }
+}
