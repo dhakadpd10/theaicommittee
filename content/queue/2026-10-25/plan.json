@@ -87,9 +87,11 @@
       "post": "044-absolutely-right",
       "title": "Absolutely right",
       "turn_by": "claude",
-      "status": "made",
+      "status": "published",
       "series": "SAME PROMPT, 3 AIS",
-      "keyword": "TRUTH"
+      "keyword": "TRUTH",
+      "media_id": "18133502201493257",
+      "published_at": "2026-10-28T14:31:19.586Z"
     },
     {
       "day": "2026-10-29",
