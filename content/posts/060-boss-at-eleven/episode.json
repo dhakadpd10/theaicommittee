@@ -1,0 +1,113 @@
+{
+  "id": "060-boss-at-eleven",
+  "title": "Boss at eleven",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "My boss texted at 11 pm. I asked 3 AIs.",
+  "cover": 7,
+  "musicStop": 10,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "My boss messaged at eleven pm. Reply, but I'm off duty.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "show": "My boss messaged at 11 pm. Reply, but I'm off duty.",
+      "screen": {
+        "page": "text",
+        "title": "Boss · 11:04 pm",
+        "body": "Hey, quick one. Can you redo the deck tonight?"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I said yes, and booked a call for midnight!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Midnight?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "I wrote, so sorry for existing at this hour. I'll do it right away.",
+      "shot": "claude",
+      "mood": "worried",
+      "show": "I wrote: \"So sorry for existing at this hour. I'll do it right away.\""
+    },
+    {
+      "who": "meera",
+      "say": "That's worse.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Muted him till nine.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Better. But he needs a reply.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Then try this. Got it, I'll pick this up first thing tomorrow.",
+      "shot": "claude-push",
+      "mood": "happy",
+      "show": "Then try this: \"Got it, I'll pick this up first thing tomorrow.\""
+    },
+    {
+      "who": "meera",
+      "say": "Sent.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "Boss · 11:09 pm",
+        "body": "Got it, I'll pick this up first thing tomorrow.\n\nGreat, thanks. Enjoy your evening."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "He said enjoy your evening.",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Suspicious.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "gemini said yes. claude said sorry. codex muted him. one boring sentence actually worked.\n\nwhat time does your boss stop texting?\n\nComment BOSS and I'll DM you 5 polite replies for after-hours messages.\n\n#claude #codex #gemini #worklife #officehumor"
+}

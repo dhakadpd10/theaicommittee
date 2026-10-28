@@ -1,0 +1,94 @@
+{
+  "id": "059-take-my-job",
+  "title": "Take my job",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "I asked 3 AIs: will AI take my job?",
+  "cover": 7,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Honest answer, you three. Will AI take my job?",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "gemini",
+      "say": "Great news! I already applied for it!",
+      "shot": "gemini-push",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "My job?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "Interview's on Monday.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "It depends. Some parts, maybe. Here's a balanced view in seven sections.",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Codex?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "The boring parts. Yes.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "The parts where you decide things. No.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "That's actually helpful.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "So decide more things.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "I decided you're free on Monday!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.8
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "gemini applied for her job. codex said the quiet part: AI takes the boring parts, not the deciding parts.\n\nwhich part of your job would you hand to AI first?\n\nComment JOB and I'll DM you the 15 minute check of what AI can and can't do in your job.\n\n#claude #codex #gemini #aitools #worklife"
+}

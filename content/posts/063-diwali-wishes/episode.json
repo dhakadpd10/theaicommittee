@@ -1,0 +1,97 @@
+{
+  "id": "063-diwali-wishes",
+  "title": "Diwali wishes",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "I asked 3 AIs for Diwali wishes",
+  "cover": 8,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Write Diwali wishes for my family group. Not like a forward.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "gemini",
+      "say": "Done! Wishing you a sparkling Diwali, filled with light, love and laddoos!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "twin",
+      "say": "With fifty diyas.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "That's a forward.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Mine's personal. One paragraph for each of your forty two relatives.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "That's a book.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Happy Diwali. Sent.",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "To who?",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Everyone. Including your ex.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "Codex.",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "He replied with fifty diyas.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "gemini wrote a forward. claude wrote forty two paragraphs. codex wished everyone. everyone.\n\nwho gets the same diwali message from you every year?\n\nComment WISH and I'll DM you the prompt for Diwali wishes that sound like you.\n\n#claude #codex #gemini #diwali #desifamily"
+}

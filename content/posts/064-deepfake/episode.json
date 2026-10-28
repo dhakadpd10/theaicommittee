@@ -1,0 +1,96 @@
+{
+  "id": "064-deepfake",
+  "title": "Mum asks: fake video",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 7",
+  "hook": "Mum asked: is this video real?",
+  "cover": 4,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum sent a video of a film star selling a magic Diwali scheme.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta see this!! Film star says DOUBLE your money this Diwali!!"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Oh no. That's a deepfake.",
+      "shot": "gemini",
+      "mood": "worried"
+    },
+    {
+      "who": "meera",
+      "say": "Explain it for Mum.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "A deepfake is a fake video made by AI. The face is real. The words are not.",
+      "shot": "claude",
+      "mood": "normal"
+    },
+    {
+      "who": "claude",
+      "say": "Rule for Mum. If a famous face promises easy money, it's fake. Every time.",
+      "shot": "claude-push",
+      "mood": "normal"
+    },
+    {
+      "who": "codex",
+      "say": "Also. Nobody doubles money.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Sending.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta see this!! Film star says DOUBLE your money this Diwali!!\n\nOk. Forwarded your message to all 12 groups."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She forwarded my warning to twelve groups.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Finally. A good forward.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum got a deepfake. claude gave her one rule. it became the first useful forward in family group history.\n\nhas a fake video ever reached your family group?\n\nComment SAFE and I'll DM you the family safety message to send your parents.\n\n#claude #codex #gemini #desimom #aisafety"
+}
