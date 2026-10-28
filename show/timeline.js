@@ -16,5 +16,5 @@ module.exports = function timeline(epDir) {
     t = end;
     return { ...b, i, key, start: +start.toFixed(3), vo, len, end: +end.toFixed(3), time, weather, env: v ? v.env : null, text: b.show || b.say || null };
   });
-  return { id: ep.id, title: ep.title, brand: ep.brand, cast: ep.cast || 'dabba', cover: ep.cover, musicStop: ep.musicStop, beats, DUR: +(t + 0.6).toFixed(2) };
+  return { id: ep.id, title: ep.title, brand: ep.brand, cast: ep.cast || 'dabba', cover: ep.cover, hook: ep.hook, series: ep.series, musicStop: ep.musicStop, beats, DUR: +(t + 0.6).toFixed(2) };
 };

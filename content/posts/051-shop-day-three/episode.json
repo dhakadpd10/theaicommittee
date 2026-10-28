@@ -1,0 +1,112 @@
+{
+  "id": "051-shop-day-three",
+  "title": "Day three: the ad",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 3",
+  "hook": "Day 3: AIs make my Diwali ad",
+  "cover": 6,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Day three. Make one post that sells the candles.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Orders: 0"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I made fifty posts, and a jingle!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "twin",
+      "say": "It rhymes candle with sandal.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "One post.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Here's one. A warm story about my grandmother's first Diwali lamp.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "You don't have a grandmother.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "No. I'm so sorry. I got carried away.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Posted. Buy candle.",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "New post: \"Buy candle.\"\nOrders: 2"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "That's the whole post?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Orders. Two.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Really?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Both wanted sandals.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "day three. claude invented a grandmother. gemini rhymed candle with sandal. codex wrote two words and got two orders.\n\nwhich ad would you actually click?\n\n#claude #codex #gemini #diwali #smallbusiness"
+}

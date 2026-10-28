@@ -7,128 +7,141 @@
       "day": "2026-11-01",
       "time": "09:00",
       "format": "reel",
-      "post": "030-an-hour-off",
-      "title": "An hour off",
-      "turn_by": "codex",
-      "status": "made"
+      "post": "044-absolutely-right",
+      "title": "Absolutely right",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS"
     },
     {
       "day": "2026-11-01",
       "time": "20:00",
       "format": "reel",
-      "post": "031-just-me",
-      "title": "Just me",
-      "turn_by": "gemini",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-02",
-      "time": "09:00",
-      "format": "reel",
-      "post": "032-less-excited",
-      "title": "Less excited",
-      "turn_by": "gemini",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-02",
-      "time": "20:00",
-      "format": "reel",
-      "post": "033-wake-me-for-the-match",
-      "title": "The match",
-      "turn_by": "codex",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-03",
-      "time": "09:00",
-      "format": "reel",
-      "post": "034-more-from-my-job",
-      "title": "More from work",
-      "turn_by": "codex",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-03",
-      "time": "20:00",
-      "format": "reel",
-      "post": "035-are-you-mad",
-      "title": "Are you mad",
-      "turn_by": "gemini",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-04",
-      "time": "09:00",
-      "format": "reel",
-      "post": "036-one-small-win",
-      "title": "One small win",
-      "turn_by": "gemini",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-04",
-      "time": "20:00",
-      "format": "reel",
-      "post": "037-one-star",
-      "title": "One star",
-      "turn_by": "codex",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-05",
-      "time": "09:00",
-      "format": "reel",
-      "post": "038-home-on-friday",
-      "title": "Home on Friday",
-      "turn_by": "gemini",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-05",
-      "time": "20:00",
-      "format": "reel",
-      "post": "039-mums-forwards",
-      "title": "Mum's forwards",
-      "turn_by": "codex",
-      "status": "made"
-    },
-    {
-      "day": "2026-11-06",
-      "time": "09:00",
-      "format": "reel",
-      "post": "040-twelve-gifts",
-      "title": "Twelve gifts",
+      "post": "045-shop-day-one",
+      "title": "Day one: price",
       "turn_by": "codex",
       "status": "made",
-      "note": "unclear words: beat 4 \"Which shop?\" was heard as \"with sharp.\""
+      "series": "AI RUNS MY SHOP · DAY 1"
+    },
+    {
+      "day": "2026-11-02",
+      "time": "09:00",
+      "format": "reel",
+      "post": "046-mum-asks-prompt",
+      "title": "Mum asks: prompt",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "MUM ASKS · PART 1"
+    },
+    {
+      "day": "2026-11-02",
+      "time": "20:00",
+      "format": "reel",
+      "post": "047-sound-human",
+      "title": "Sound human",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS"
+    },
+    {
+      "day": "2026-11-03",
+      "time": "09:00",
+      "format": "reel",
+      "post": "048-shop-day-two",
+      "title": "Day two: description",
+      "turn_by": "gemini",
+      "status": "made",
+      "series": "AI RUNS MY SHOP · DAY 2"
+    },
+    {
+      "day": "2026-11-03",
+      "time": "20:00",
+      "format": "reel",
+      "post": "049-mum-asks-tokens",
+      "title": "Mum asks: tokens",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "MUM ASKS · PART 2"
+    },
+    {
+      "day": "2026-11-04",
+      "time": "09:00",
+      "format": "reel",
+      "post": "050-one-line",
+      "title": "One line only",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS"
+    },
+    {
+      "day": "2026-11-04",
+      "time": "20:00",
+      "format": "reel",
+      "post": "051-shop-day-three",
+      "title": "Day three: the ad",
+      "turn_by": "twin",
+      "status": "made",
+      "series": "AI RUNS MY SHOP · DAY 3"
+    },
+    {
+      "day": "2026-11-05",
+      "time": "09:00",
+      "format": "reel",
+      "post": "052-mum-asks-made-up",
+      "title": "Mum asks: made up",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "MUM ASKS · PART 3"
+    },
+    {
+      "day": "2026-11-05",
+      "time": "20:00",
+      "format": "reel",
+      "post": "053-one-typo",
+      "title": "Just one typo",
+      "turn_by": "gemini",
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS"
+    },
+    {
+      "day": "2026-11-06",
+      "time": "09:00",
+      "format": "reel",
+      "post": "054-shop-day-four",
+      "title": "Day four: customers",
+      "turn_by": "gemini",
+      "status": "made",
+      "series": "AI RUNS MY SHOP · DAY 4"
     },
     {
       "day": "2026-11-06",
       "time": "20:00",
       "format": "reel",
-      "post": "041-alarm-for-six",
-      "title": "Alarm for six",
-      "turn_by": "claude",
-      "status": "made"
+      "post": "055-two-es",
+      "title": "Two Es",
+      "turn_by": "codex",
+      "status": "made",
+      "series": "SAME PROMPT, 3 AIS"
     },
     {
       "day": "2026-11-07",
       "time": "09:00",
       "format": "reel",
-      "post": "042-forty-free-candles",
-      "title": "Forty free candles",
+      "post": "056-mum-asks-memory",
+      "title": "Mum asks: memory",
       "turn_by": "claude",
-      "status": "made"
+      "status": "made",
+      "series": "MUM ASKS · PART 4"
     },
     {
       "day": "2026-11-07",
       "time": "20:00",
       "format": "reel",
-      "post": "043-the-diwali-bonus",
-      "title": "The Diwali bonus",
-      "turn_by": "gemini",
-      "status": "made"
+      "post": "057-shop-day-five",
+      "title": "Day five: the count",
+      "turn_by": "twin",
+      "status": "made",
+      "series": "AI RUNS MY SHOP · DAY 5"
     }
   ]
 }

@@ -1,0 +1,96 @@
+{
+  "id": "052-mum-asks-made-up",
+  "title": "Mum asks: made up",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 3",
+  "hook": "Mum asked: why does AI make things up?",
+  "cover": 3,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum asks why her AI gave her a fake recipe, so confidently.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Why did the AI give me a FAKE recipe?? Rajma with chocolate??"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "That might have been me.",
+      "shot": "gemini",
+      "mood": "worried"
+    },
+    {
+      "who": "meera",
+      "say": "Explain it for Mum.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "It's like the uncle at every wedding. He doesn't know, but he never says so.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "He guesses what sounds right. The AI does the same. So always double check.",
+      "shot": "claude-push",
+      "mood": "happy"
+    },
+    {
+      "who": "codex",
+      "say": "Trust. Then check.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Sending.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Why did the AI give me a FAKE recipe?? Rajma with chocolate??\n\nOk. So the AI is your Ramesh uncle."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She says it's basically Ramesh uncle.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "He's typing.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum asked why AI makes things up. claude explained it with the wedding uncle. ramesh uncle is typing.\n\nwhich AI word should mum ask about next?\n\n#claude #codex #gemini #desimom #aitools"
+}

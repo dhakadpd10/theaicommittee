@@ -1,0 +1,96 @@
+{
+  "id": "046-mum-asks-prompt",
+  "title": "Mum asks: prompt",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 1",
+  "hook": "Mum asked me: what is a prompt?",
+  "cover": 8,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum texted. What is this prompt everyone keeps talking about?",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta what is this PROMPT everyone is talking about??"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Input string.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "She's sixty.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "It's like ordering chai! Say one tea, you get a tea.",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "But say cutting chai, less sugar, extra ginger, in a steel glass.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "And you get exactly that. A prompt is your order. Clearer order, better chai.",
+      "shot": "claude-push",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Sending.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta what is this PROMPT everyone is talking about??\n\nAchha. So I have been giving your father bad prompts for 35 years."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She's been giving Papa bad prompts for thirty five years.",
+      "shot": "meera",
+      "mood": "flat",
+      "show": "She's been giving Papa bad prompts for 35 years.",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Explains a lot.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum asked what a prompt is. claude explained it with chai. mum understood her marriage.\n\nwhich AI word should mum ask about next?\n\n#claude #codex #gemini #desimom #aitools"
+}

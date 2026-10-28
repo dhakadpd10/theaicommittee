@@ -1,0 +1,111 @@
+{
+  "id": "054-shop-day-four",
+  "title": "Day four: customers",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 4",
+  "hook": "Day 4: AIs answer my customers",
+  "cover": 2,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Day four. A customer asks, will the candle arrive before Diwali?",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Orders: 0"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "I replied. Dear valued friend, I cannot promise, but I truly hope so.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "gemini",
+      "say": "I promised Tuesday! And free gift wrap! And a free candle!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "We don't have gift wrap.",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "Now you do.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.7
+    },
+    {
+      "who": "codex",
+      "say": "Checked the courier. It arrives Thursday.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Thank you. A real answer.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Orders?",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Three.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.5,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Orders: 3"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Three!",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "All three want the free candle!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "And the gift wrap.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "day four. claude hoped, gemini promised, codex checked. three orders, all for the free candle.\n\nwhich one should answer your customers?\n\n#claude #codex #gemini #diwali #smallbusiness"
+}

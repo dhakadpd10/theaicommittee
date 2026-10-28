@@ -1,0 +1,101 @@
+{
+  "id": "048-shop-day-two",
+  "title": "Day two: description",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 2",
+  "hook": "Day 2: AIs write my product page",
+  "cover": 3,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Day two. Write the description for my lavender candle. Keep it short.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Diwali shop",
+        "body": "Orders: 0"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also made a ten minute podcast about it!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "It's a candle.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Mine honours the lavender fields of France, and the bees who worked so hard.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "It's a bit long. The bees have their own section.",
+      "shot": "claude-push",
+      "mood": "small",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Candle. Smells nice. Two ninety nine.",
+      "shot": "codex",
+      "mood": "normal",
+      "show": "Candle. Smells nice. ₹299.",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Actually, Codex, that's perfect.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Shipped.",
+      "shot": "codex",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "meera",
+      "say": "Orders?",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.6
+    },
+    {
+      "who": "gemini",
+      "say": "Zero! But the podcast has three listeners!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "All of us.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "day two. codex wrote six words. claude wrote about bees. gemini made a podcast nobody asked for.\n\nwhich description would make you buy it?\n\n#claude #codex #gemini #diwali #smallbusiness"
+}

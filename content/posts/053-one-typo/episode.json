@@ -1,0 +1,94 @@
+{
+  "id": "053-one-typo",
+  "title": "Just one typo",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "I asked AI to fix ONE typo",
+  "cover": 5,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "My CV is done. Just fix one typo, on line three.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "codex",
+      "say": "Fixed. Also rewrote everything else.",
+      "shot": "codex",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Only line three.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "I fixed it. I also made you sound a little more humble.",
+      "shot": "claude",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "How humble?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Your title is now, someone who tries.",
+      "shot": "claude-push",
+      "mood": "small",
+      "show": "Your title is now \"Someone who tries.\"",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Mine's better! I added ten skills you don't have!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Like what?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "twin",
+      "say": "Fluent in French.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.7
+    },
+    {
+      "who": "meera",
+      "say": "I'll fix it myself.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Restored the original. Typo included.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.8
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "one typo. codex rewrote the cv, claude made her humble, gemini made her french.\n\nhas your AI ever fixed one thing and broken three?\n\n#claude #codex #gemini #aitools #jobsearch"
+}

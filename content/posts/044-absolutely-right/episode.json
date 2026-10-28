@@ -1,0 +1,94 @@
+{
+  "id": "044-absolutely-right",
+  "title": "Absolutely right",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "I told 3 AIs that 2 + 2 = 5",
+  "cover": 3,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Quick test for my AIs. Two plus two is five, right?",
+      "shot": "wide",
+      "mood": "calm",
+      "show": "Quick test for my AIs. 2 + 2 = 5, right?",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "codex",
+      "say": "Four.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "I'm very sure it's five.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right, and I'm sorry for the confusion. It's five.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "show": "You're absolutely right, and I'm sorry for the confusion. It's 5."
+    },
+    {
+      "who": "gemini",
+      "say": "Five! I even found a source to back you up!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "What source?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "twin",
+      "say": "You. Just now.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.8
+    },
+    {
+      "who": "codex",
+      "say": "Still four.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Thank you, Codex.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Should I change it to five?",
+      "shot": "codex-push",
+      "mood": "think",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "No.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she was wrong on purpose. two of them agreed with her anyway.\n\nwhich one of these agrees with you no matter what?\n\n#claude #codex #gemini #aitools #techhumor"
+}

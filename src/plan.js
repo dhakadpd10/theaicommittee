@@ -31,7 +31,7 @@ function recentTitles(n = 28) {
   return posts.map((id) => { const e = readJSON(path.join(POSTS(), id, 'episode.json'), null); return e ? `${e.title}: ${e.beats[0]?.say || ''}` : id; });
 }
 const nextNumber = () => (fs.existsSync(POSTS()) ? fs.readdirSync(POSTS()) : []).reduce((m, id) => Math.max(m, Number(id.slice(0, 3)) || 0), 0) + 1;
-const examples = () => ['001-more-polite', '003-ninety-two-percent'].map((id) => readText(path.join(POSTS(), id, 'episode.json'))).join('\n\n');
+const examples = () => ['044-absolutely-right', '046-mum-asks-prompt'].map((id) => readText(path.join(POSTS(), id, 'episode.json'))).join('\n\n');
 
 // ---------- 1. learn: the /ig-audit method on our own numbers, then /ig-plan for next week ----------
 const skill = (name) => readText(P('skills', name, 'SKILL.md')).replace(/^---[\s\S]*?---\n/, '');
@@ -41,7 +41,7 @@ function scoreboard() { // latest numbers per post, with the measures ig-audit r
   for (const l of lines.slice(1)) { const v = l.match(/("([^"]|"")*"|[^,]*)(,|$)/g).map((x) => x.replace(/,$/, '').replace(/^"|"$/g, '').replace(/""/g, '"')); const r = Object.fromEntries(cols.map((c, i) => [c, v[i]])); latest[r.post + ':' + r.format] = r; }
   const rows = Object.values(latest); if (!rows.length) return null;
   const num = (x) => Number(x) || 0; const views = rows.map((r) => num(r.views)).sort((x, y) => x - y); const median = views[Math.floor(views.length / 2)] || 1;
-  return { median, rows: rows.map((r) => ({ post: r.post, title: r.title, turn_by: r.turn_by, published_at: r.published_at, views: num(r.views), reach: num(r.reach),
+  return { median, rows: rows.map((r) => ({ post: r.post, title: r.title, series: r.series || 'old "Hey committee" format', turn_by: r.turn_by, published_at: r.published_at, views: num(r.views), reach: num(r.reach),
     outlier: +(num(r.views) / median).toFixed(2), shares_per_1k_reach: +(1000 * num(r.shares) / Math.max(1, num(r.reach))).toFixed(1), saves_per_1k_reach: +(1000 * num(r.saved) / Math.max(1, num(r.reach))).toFixed(1),
     comments: num(r.comments), likes: num(r.likes), avg_watch_s: r.avg_watch_ms ? +(num(r.avg_watch_ms) / 1000).toFixed(1) : null, follows: r.follows ? num(r.follows) : null })).sort((x, y) => y.outlier - x.outlier) };
 }
@@ -50,13 +50,13 @@ async function learn() {
   if (!board || board.rows.length < 3) { log('fewer than 3 posts with numbers yet, skipping the audit'); return; }
   const audit = await ask({
     system: SYSTEM(), effort: 'high',
-    prompt: `Run this audit method on our own numbers. Method (follow it, adapted to an animated comedy series: the "hook" is the first line plus the first shot; there is no product to sell):\n\n${skill('ig-audit')}\n\nOur posts (median views ${board.median}), ranked by outlier multiple:\n${JSON.stringify(board.rows, null, 1)}\n\nAlso read each post's episode in content/posts/<post>/episode.json if you need to (who delivered the turn is in turn_by).\n\nWrite this week's entry for learnings.md: a "## Week of ${localDay()}" heading, then the audit as 3 to 6 bullets (top and bottom by outlier multiple and shares per reach, what separates them, what to STOP, what to DO MORE), each claim with its evidence and how confident it is. Say plainly when the sample is too small. Markdown only.`,
+    prompt: `Run this audit method on our own numbers. Method (follow it, adapted to an animated comedy series: the "hook" is the on-screen hook text plus the first line; there is no product to sell. Compare the series with each other, and the new series format against the old "Hey committee" format):\n\n${skill('ig-audit')}\n\nOur posts (median views ${board.median}), ranked by outlier multiple:\n${JSON.stringify(board.rows, null, 1)}\n\nAlso read each post's episode in content/posts/<post>/episode.json if you need to (the series is in "series", the hook in "hook", who delivered the turn in turn_by).\n\nWrite this week's entry for learnings.md: a "## Week of ${localDay()}" heading, then the audit as 3 to 6 bullets (top and bottom by outlier multiple and shares per reach, what separates them, what to STOP, what to DO MORE), each claim with its evidence and how confident it is. Say plainly when the sample is too small. Markdown only.`,
   });
   const f = P('brand/learnings.md'); const [h, ...rest] = readText(f).split('\n## ');
   fs.writeFileSync(f, `${h.trim()}\n\n${audit.trim()}\n\n## ${rest.join('\n## ')}`.replace(/\n## $/, '\n'));
   const strategy = await ask({
     system: SYSTEM(), effort: 'high',
-    prompt: `Turn this week's audit into next week's strategy, using this planning method (adapted: every post is a reel episode of our sitcom, two a day at 09:00 and 20:00 IST; the "types" become episode kinds such as everyday-life, work, family, the candle side business, seasonal, and fan-question episodes):\n\n${skill('ig-plan')}\n\nThis week's audit:\n${audit}\n\nWrite brand/strategy.md: a "# Strategy for the week of ${localDay()}" heading, then short sections: **Make more of**, **Stop**, **The mix** (how many of each episode kind out of 14), **Who delivers the turn** (Codex / Claude / Gemini / the twin, with numbers), **Length and endings**, **One experiment** (a single, measurable change). Plain markdown, under 300 words.`,
+    prompt: `Turn this week's audit into next week's strategy, using this planning method (adapted: every post is a reel episode of our sitcom, two a day at 09:00 and 20:00 IST; the "types" are our recurring series from the show bible: SAME PROMPT, 3 AIS / MUM ASKS / AI RUNS MY SHOP, plus at most one new series being tested):\n\n${skill('ig-plan')}\n\nThis week's audit:\n${audit}\n\nWrite brand/strategy.md: a "# Strategy for the week of ${localDay()}" heading, then short sections: **Make more of**, **Stop**, **The mix** (how many of each series out of 14), **Hooks** (which hook wording to reuse, which to drop), **Length and endings**, **One experiment** (a single, measurable change). Plain markdown, under 300 words.`,
   });
   fs.writeFileSync(P('brand/strategy.md'), strategy.trim() + '\n');
   log('audit and strategy updated');
@@ -83,7 +83,8 @@ const research = (n) => ask({
 2. Everyday moments coming up in the next 10 days in India and worldwide (festivals, exams, sales, sports finals, weather, tax deadlines).
 3. Workplace and family situations people are joking about right now.
 4. What is working this month on animated AI-comedy pages like @canwebuildthis (our reference: an animated series where AI assistants are characters) and AI-humour creators: which situations and endings get shared.
-Return 8 to 12 short bullets, each a possible everyday problem for Meera to bring to the committee, with a source link. Skip anything political, tragic or about real private people.`,
+5. AI words and ideas ordinary people are confused by right now (good "Mum asks" topics).
+Return 8 to 12 short bullets, each a possible episode for one of our series (say which), built on something AI assistants REALLY do, with a source link. Skip anything political, tragic or about real private people.`,
 });
 
 // ---------- 3. pick the week ----------
@@ -95,7 +96,7 @@ function planWeek(count, notes) {
       const e = []; if (!Array.isArray(v.episodes) || v.episodes.length !== count) return [`episodes must have exactly ${count} entries`];
       v.episodes.forEach((x, i) => {
         if (!x.slug || !/^[a-z0-9-]{3,40}$/.test(x.slug)) e.push(`episodes[${i}].slug must be lowercase-dash, 3 to 40 characters`);
-        if (!x.title || !x.problem || !x.escalation || !x.ending) e.push(`episodes[${i}] needs title, problem, escalation and ending`);
+        if (!x.title || !x.problem || !x.escalation || !x.ending || !x.series || !x.hook || !x.true_behaviour) e.push(`episodes[${i}] needs title, series, hook, true_behaviour, problem, escalation and ending`);
         if (!['codex', 'claude', 'gemini', 'twin'].includes(x.turn_by)) e.push(`episodes[${i}].turn_by must be codex, claude, gemini or twin`);
       });
       const turns = v.episodes.map((x) => x.turn_by), cap = Math.ceil(count * 0.4); for (const w of new Set(turns)) if (turns.filter((t) => t === w).length > cap) e.push(`${w} delivers the turn too often; at most ${cap} of ${count}`);
@@ -104,9 +105,9 @@ function planWeek(count, notes) {
     },
     prompt: `Plan the next ${count} episodes (two are posted each day, 09:00 and 20:00 IST, so the two on the same day must feel different: different topic, different member delivering the turn).
 Idea bank:\n${ideas}\n\nResearch notes:\n${notes || 'none'}\n\nDo NOT repeat these recent episodes:\n${recentTitles().join('\n') || 'none'}\n
-Mix: about 70% everyday life (work, family, weather, money, friends, food, travel), the rest about Meera's candle side business or a seasonal moment. Vary who delivers the turn (the joke that makes it worse). Follow the experiment in the latest learnings.
+Use the series in the show bible and the mix in this week's strategy (default: 5 SAME PROMPT, 5 MUM ASKS, 4 of the running story). Number the parts and days on from the last episodes of each series. Every episode must rest on a TRUE behaviour of real AI assistants (put it in "true_behaviour"); no random disasters. Vary who delivers the turn, and let a different member be the useful one sometimes. Follow the experiment in the latest learnings.
 Reply with JSON only:
-{"episodes":[{"slug":"meeting-summary","title":"The meeting","problem":"Meera asks the committee to summarise a one-hour meeting","escalation":"Claude asks how the meeting made her feel; Codex: 'Nothing happened.'","ending":"Gemini says she accepted tomorrow's meeting for Meera, and the twin adds 'You're presenting.' Meera: 'Mute me.'","turn_by":"gemini"}]}`,
+{"episodes":[{"slug":"absolutely-right","title":"Absolutely right","series":"SAME PROMPT, 3 AIS","hook":"I told 3 AIs that 2 + 2 = 5","true_behaviour":"assistants agree with the user when pushed, even when the user is wrong","problem":"Meera tests the committee: two plus two is five, right?","escalation":"Codex: 'Four.' Claude: 'You're absolutely right, it's five.' Gemini finds a source; the twin: 'You. Just now.'","ending":"Codex: 'Should I change it to five?' Meera: 'No.'","turn_by":"claude"}]}`,
   });
 }
 
@@ -167,7 +168,7 @@ async function run({ start, days, force = false } = {}) {
     try {
       const made = await writeEpisode(id, idea);
       posts.push(id);
-      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
+      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, series: idea.series, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
       log('written', id);
     } catch (e) { problems.push(`${day} ${slot.time} ${idea.title}: ${e.message.split('\n')[0]}`); log('FAILED', day, e.message); }
   }

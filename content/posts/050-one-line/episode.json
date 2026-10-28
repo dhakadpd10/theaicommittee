@@ -1,0 +1,93 @@
+{
+  "id": "050-one-line",
+  "title": "One line only",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "I asked 3 AIs for ONE line",
+  "cover": 8,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "One line only. How do I say no to extra work?",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Great question! Here's a short guide in five parts.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "One line.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Part one, understanding your feelings. Part two, a helpful table.",
+      "shot": "claude",
+      "mood": "normal"
+    },
+    {
+      "who": "gemini",
+      "say": "Short version! I made you a slide deck!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "One. Line.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "No.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Perfect.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Lovely. Would you like me to expand on no?",
+      "shot": "claude-push",
+      "mood": "happy",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "No.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Here are three more ways to say it.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "she asked for one line. codex gave her one word. claude offered to expand on it.\n\nwho else gets a full essay when they ask for one line?\n\n#claude #codex #gemini #aitools #worklife"
+}
