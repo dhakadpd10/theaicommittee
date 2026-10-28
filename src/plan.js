@@ -88,8 +88,9 @@ Return 8 to 12 short bullets, each a possible episode for one of our series (say
 });
 
 // ---------- 3. pick the week ----------
+const PACKS = () => readJSON(P('brand/free.json'), {});
 function planWeek(count, notes) {
-  const ideas = readText(P('brand/ideas.md'));
+  const ideas = readText(P('brand/ideas.md')); const packs = PACKS();
   return askJSON({
     system: SYSTEM(), effort: 'high',
     validate: (v) => {
@@ -98,7 +99,13 @@ function planWeek(count, notes) {
         if (!x.slug || !/^[a-z0-9-]{3,40}$/.test(x.slug)) e.push(`episodes[${i}].slug must be lowercase-dash, 3 to 40 characters`);
         if (!x.title || !x.problem || !x.escalation || !x.ending || !x.series || !x.hook || !x.true_behaviour) e.push(`episodes[${i}] needs title, series, hook, true_behaviour, problem, escalation and ending`);
         if (!['codex', 'claude', 'gemini', 'twin'].includes(x.turn_by)) e.push(`episodes[${i}].turn_by must be codex, claude, gemini or twin`);
+        const pack = packs[x.keyword] || (v.new_packs || {})[x.keyword];
+        if (!/^[A-Z]{3,12}$/.test(x.keyword || '') || !pack) e.push(`episodes[${i}].keyword must be an existing pack (${Object.keys(packs).join(', ')}) or a key of new_packs`);
       });
+      for (const [k, p] of Object.entries(v.new_packs || {})) {
+        if (!/^[A-Z]{3,12}$/.test(k) || packs[k]) e.push(`new_packs.${k}: a new UPPER CASE keyword that is not already used`);
+        if (!p?.title || !p?.intro || !p?.tip || !Array.isArray(p?.prompts) || !p.prompts.length || p.prompts.some((q) => !q.name || !q.text)) e.push(`new_packs.${k} needs title, intro, tip and prompts [{name, text}]`);
+      }
       const turns = v.episodes.map((x) => x.turn_by), cap = Math.ceil(count * 0.4); for (const w of new Set(turns)) if (turns.filter((t) => t === w).length > cap) e.push(`${w} delivers the turn too often; at most ${cap} of ${count}`);
       const slugs = v.episodes.map((x) => x.slug); if (new Set(slugs).size !== slugs.length) e.push('every slug must be different');
       return e;
@@ -106,8 +113,9 @@ function planWeek(count, notes) {
     prompt: `Plan the next ${count} episodes (two are posted each day, 09:00 and 20:00 IST, so the two on the same day must feel different: different topic, different member delivering the turn).
 Idea bank:\n${ideas}\n\nResearch notes:\n${notes || 'none'}\n\nDo NOT repeat these recent episodes:\n${recentTitles().join('\n') || 'none'}\n
 Use the series in the show bible and the mix in this week's strategy (default: 5 SAME PROMPT, 5 MUM ASKS, 4 of the running story). Number the parts and days on from the last episodes of each series. Every episode must rest on a TRUE behaviour of real AI assistants (put it in "true_behaviour"); no random disasters. Vary who delivers the turn, and let a different member be the useful one sometimes. Follow the experiment in the latest learnings.
+Every episode also gives something away: a "keyword" that people comment to get a free prompt pack by DM. Reuse a pack that fits (${Object.entries(packs).map(([k, p]) => `${k}: ${p.title}`).join('; ')}) or add at most 3 new ones in "new_packs". A new pack must be genuinely useful on its own: real prompts someone can paste into any AI assistant, correct and safe advice, no financial, medical or legal advice, no invented facts.
 Reply with JSON only:
-{"episodes":[{"slug":"absolutely-right","title":"Absolutely right","series":"SAME PROMPT, 3 AIS","hook":"I told 3 AIs that 2 + 2 = 5","true_behaviour":"assistants agree with the user when pushed, even when the user is wrong","problem":"Meera tests the committee: two plus two is five, right?","escalation":"Codex: 'Four.' Claude: 'You're absolutely right, it's five.' Gemini finds a source; the twin: 'You. Just now.'","ending":"Codex: 'Should I change it to five?' Meera: 'No.'","turn_by":"claude"}]}`,
+{"episodes":[{"slug":"absolutely-right","title":"Absolutely right","series":"SAME PROMPT, 3 AIS","hook":"I told 3 AIs that 2 + 2 = 5","true_behaviour":"assistants agree with the user when pushed, even when the user is wrong","problem":"Meera tests the committee: two plus two is five, right?","escalation":"Codex: 'Four.' Claude: 'You're absolutely right, it's five.' Gemini finds a source; the twin: 'You. Just now.'","ending":"Codex: 'Should I change it to five?' Meera: 'No.'","turn_by":"claude","keyword":"TRUTH"}],"new_packs":{"EXAMPLE":{"title":"...","intro":"...","prompts":[{"name":"...","text":"..."}],"tip":"..."}}}`,
   });
 }
 
@@ -119,7 +127,9 @@ function voiceCheck(dir) {
 }
 async function writeEpisode(id, idea) {
   const dir = path.join(POSTS(), id);
-  const check = (v) => validateEpisode({ ...v, id });
+  const pack = PACKS()[idea.keyword];
+  const cta = pack ? `Comment ${idea.keyword} and I'll DM you ` : null;
+  const check = (v) => [...validateEpisode({ ...v, id }), ...(cta && !String(v.caption || '').includes(cta) ? [`the caption must have this line before the hashtags: "${cta}<what they get, in a few words: ${pack.title}>."`] : [])];
   let ep = await askJSON({
     system: SYSTEM(), effort: 'high', validate: check,
     prompt: `Write episode.json for this episode. Follow the show bible's rules and format exactly.\n\nThe idea:\n${JSON.stringify(idea, null, 2)}\n\nTwo finished episodes that rendered well (copy their rhythm and length, not their jokes):\n${examples()}\n\nReturn episode.json only (with "id": "${id}" and the caption inside).`,
@@ -160,6 +170,7 @@ async function run({ start, days, force = false } = {}) {
   await learn().catch((e) => log('learning skipped:', e.message));
   const notes = await research(count).catch((e) => { log('research skipped:', e.message); return ''; });
   const plan = await planWeek(count, notes);
+  if (plan.new_packs && Object.keys(plan.new_packs).length) { const packs = PACKS(); for (const [k, p] of Object.entries(plan.new_packs)) if (!packs[k]) packs[k] = p; writeJSON(P('brand/free.json'), packs); log('new free packs:', Object.keys(plan.new_packs).join(', ')); }
   const slots = [], problems = [], posts = [];
   let n = nextNumber();
   for (let i = 0; i < plan.episodes.length; i++) {
@@ -168,7 +179,7 @@ async function run({ start, days, force = false } = {}) {
     try {
       const made = await writeEpisode(id, idea);
       posts.push(id);
-      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, series: idea.series, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
+      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, series: idea.series, keyword: idea.keyword, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
       log('written', id);
     } catch (e) { problems.push(`${day} ${slot.time} ${idea.title}: ${e.message.split('\n')[0]}`); log('FAILED', day, e.message); }
   }

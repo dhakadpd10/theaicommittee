@@ -1,0 +1,90 @@
+{
+  "id": "062-boss-gift",
+  "title": "Gift for the boss",
+  "cast": "committee",
+  "series": "SAME PROMPT, 3 AIS",
+  "hook": "Diwali gift for my boss. Under ₹1,000.",
+  "cover": 7,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Diwali gift for my boss. Under one thousand rupees.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "morning",
+      "pre": 0.2,
+      "show": "Diwali gift for my boss. Under ₹1,000."
+    },
+    {
+      "who": "gemini",
+      "say": "A smart watch! It tracks his sleep and shares it with the team!",
+      "shot": "gemini",
+      "mood": "happy"
+    },
+    {
+      "who": "meera",
+      "say": "Under one thousand.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5,
+      "show": "Under ₹1,000."
+    },
+    {
+      "who": "claude",
+      "say": "Before we choose, what does he value most in a gift?",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Being given one.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Dry fruits. Five hundred. Done.",
+      "shot": "codex",
+      "mood": "normal",
+      "show": "Dry fruits. ₹500. Done.",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "That's perfect.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "I wrote the card. It's three pages, and it thanks him for every meeting.",
+      "shot": "claude-push",
+      "mood": "small",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "Every meeting?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "twin",
+      "say": "Even the one about meetings.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "gemini picked a watch that reports on him. codex picked dry fruits. claude wrote three pages of thanks.\n\ndry fruits or chocolates for the boss?\n\nComment GIFT and I'll DM you the prompt that finds the right gift in your budget.\n\n#claude #codex #gemini #diwali #worklife"
+}

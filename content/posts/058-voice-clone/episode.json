@@ -1,0 +1,103 @@
+{
+  "id": "058-voice-clone",
+  "title": "Mum asks: voice clone",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 5",
+  "hook": "Mum asked: can AI copy my voice?",
+  "cover": 4,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum got a call that sounded exactly like me, asking for money.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta was that you on the phone?? You sounded so worried"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Not you. Voice clone.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "They can copy my voice?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "Yes. A few seconds of your voice online can be enough to copy it.",
+      "shot": "claude",
+      "mood": "worried"
+    },
+    {
+      "who": "claude",
+      "say": "So pick a family code word. No code word, no money. Then call back on the real number.",
+      "shot": "claude-push",
+      "mood": "normal"
+    },
+    {
+      "who": "gemini",
+      "say": "I already picked one for you! It is Meera!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Everyone knows that.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.7
+    },
+    {
+      "who": "meera",
+      "say": "Sending this to Mum.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta was that you on the phone?? You sounded so worried\n\nOk. Code word is RASMALAI.\nYour father already guessed it."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Papa already guessed the code word.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "It's always rasmalai.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "a voice clone called mum. the committee gave her a code word. papa cracked it in one guess.\n\nwould your parents fall for a call like this?\n\nComment SAFE and I'll DM you the family safety message to send your parents.\n\n#claude #codex #gemini #desimom #aisafety"
+}

@@ -40,6 +40,12 @@ A series gives people a reason to follow: there is a part 2. Rotate them, never 
 
 A new series can be tested at most once a week. Mum never speaks: her messages appear on the laptop (`"screen": {"page": "text", "title": "Mum", "body": "..."}`) and Meera reads the punchline out loud.
 
+## Every episode gives something away
+
+The pages growing fastest in our space (@ashutoshwithclaude: 0 to 24K followers in a month; @canwebuildthis: 82K likes on a free-tool reel) pair the joke with something genuinely useful and ask for one word in the comments. So every episode has a `keyword`: the caption carries "Comment WORD and I'll DM you <the pack>.", and the agent DMs everyone who comments it a free prompt pack from `brand/free.json` (shown at /free/ on the site).
+- The episode itself should contain the useful moment (Claude's correct analogy, Codex's honest one-liner, the reply that actually works), so the pack feels like the obvious next step.
+- Packs must work on their own: real prompts for any AI assistant, correct and safe. No financial, medical or legal advice.
+
 ## The hook (first 3 seconds)
 
 - `hook`: the on-screen headline shown big for the first 3 seconds and on the cover, 8 to 46 characters. It states the test or the question, so a scroller knows instantly what they are watching: "I told 3 AIs that 2 + 2 = 5", "Mum asked me: what is a token?", "Day 3: AIs make my Diwali ad". Use digits and capitals for emphasis ("ONE line"). Never a joke that needs the video to make sense.

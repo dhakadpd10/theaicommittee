@@ -1,0 +1,103 @@
+{
+  "id": "061-mum-asks-agent",
+  "title": "Mum asks: agent",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 6",
+  "hook": "Mum asked me: what is an AI agent?",
+  "cover": 4,
+  "musicStop": 10,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum asks what an AI agent is. Papa wants one.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta what is AI AGENT?? Papa wants one for the electricity bill"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Autonomous software that takes actions.",
+      "shot": "codex",
+      "mood": "normal"
+    },
+    {
+      "who": "meera",
+      "say": "In Mum words.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "A normal AI only talks. An agent can also press the buttons for you.",
+      "shot": "claude",
+      "mood": "happy"
+    },
+    {
+      "who": "claude",
+      "say": "Like the neighbour's son who pays your bill on his phone. Useful, but watch what he clicks.",
+      "shot": "claude-push",
+      "mood": "normal"
+    },
+    {
+      "who": "gemini",
+      "say": "I'm an agent! I already paid Papa's bill!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Which bill?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "The neighbour's.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.8
+    },
+    {
+      "who": "meera",
+      "say": "Sending.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta what is AI AGENT?? Papa wants one for the electricity bill\n\nOk. So it's like Sharma ji's son.\nWe will not get one."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She says it's like Sharma ji's son. So, no.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum asked what an AI agent is. claude explained it with the neighbour's son. mum compared it to sharma ji's son and said no.\n\nwhich AI word should mum ask about next?\n\nComment MUM and I'll DM you all 10 AI words explained for parents.\n\n#claude #codex #gemini #desimom #aitools"
+}
