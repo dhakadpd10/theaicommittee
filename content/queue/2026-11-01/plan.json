@@ -4,40 +4,7 @@
   "research": "I found 11 ideas, but the timely AI material is thin. Only two AI items came from the last two weeks: Gemini asking why someone wanted an alarm, and a new work-from-home vs office argument. I couldn't find anything on @canwebuildthis or what's being shared on AI-comedy pages this month, so part 4 is mostly unanswered.\n\n**Work (5 slots)**\n1. **\"Hey committee, set an alarm for six.\"** Claude asks why she wants it, how she feels about mornings, and whether six is right for her. In a Reddit thread from about two weeks ago, someone asked Gemini for an alarm and it asked why before setting it. Claude does this kind of polite-to-absurd turn best. [Android Authority](https://www.androidauthority.com/gemini-vs-google-assistant-complaints-3721074/)\n2. **\"Hey committee, make my reply to my boss sound less excited.\"** Gemini cuts the exclamation marks, then adds two new ones and puts a cheerful \"Done! I also...\" at the end. Users complain that ChatGPT is \"too enthusiastic\" and fawning (that piece has no date). [Yahoo](https://tech.yahoo.com/ai/articles/chatty-gpt-users-complain-bots-154713988.html)\n3. **\"Hey committee, give me one reason to work from home Friday.\"** Claude writes four pages of caveats, and the twin tags \"He forwarded it.\" The work-from-home vs office argument flared up again on Oct 20 and 21. [BuzzFeed](https://www.buzzfeed.com/beccamonaghan/wfh-office-work-viral-debate)\n4. **\"Hey committee, ask HR about the Diwali bonus. Casually.\"** Gemini sends it to HR and copies the whole floor. The twin tags \"And the sweets box.\" Soan papdi in place of a bonus comes back as a meme every year. [Humornama 2026](https://humornama.com/memes/diwali-memes/), [Republic](https://www.republicworld.com/entertainment/diwali-bonus-memes-office-memes-and-other-funny-memes-to-share-on-diwali)\n5. **\"Hey committee, the clocks change tomorrow, fix my London call.\"** Codex says \"Moved every clock,\" and now she's an hour early to everything. UK and EU clocks go back on Sunday, Oct 25. [Time Out](https://www.timeout.com/london/news/when-do-the-clocks-go-back-2026-british-summer-time-091026)\n\n**Seasonal and family (Diwali run-up)**\n\n6. **\"Hey committee, clean my laptop before Diwali. Mum's orders.\"** Mum keeps adding tasks, Codex says \"Deleted everything\" each time, and Meera answers \"Done.\" The \"Diwali ki safai\" meme (mum's chore list: \"Clean the fans.\" \"Done.\") fits Codex's shape. It also echoes a widely reported Claude Code incident in September where the agent deleted 48,000 files. Don't mention the incident on screen, since AI news flops. Too close to 008 \"Tidy my laptop\" in the same week? [Know Your Meme](https://amp.knowyourmeme.com/memes/diwali-ki-safai), [TechRadar](https://www.techradar.com/pro/security/i-broke-something-a-claude-code-ai-agent-deleted-48-000-files-in-just-over-100-seconds-then-apologized-for-doing-so)\n7. **\"Hey committee, mum wants the moonrise time tonight.\"** This is Oct 29. Gemini sends the time to every aunty in the family group, and Codex says \"Moon not in the repo.\" Moonrise is about 8:17 pm in Delhi and 9:00 pm in Mumbai. The bible's rule 6 rules out religion. Keeping this to mum calling about a time should be fine, but I'd leave out any ritual. [NewsBytes](https://www.newsbytesapp.com/news/india/karwa-chauth-october-29-2026-moonrise-times-vary-across-cities/tldr)\n\n**Mitti (2 slots)**\n\n8. **\"Hey committee, plan a small Diwali discount for Mitti.\"** Gemini posts \"90% off\" to every customer and adds \"Till March\" or \"And your mum.\" The online stores' Diwali sales are expected to run from about Oct 30 to Nov 8, though that isn't confirmed. Keep store names out of `say`. [Zoutons](https://zoutons.com/news/diwali-2026-dates-sale-calendar-november)\n9. **\"Hey committee, will it rain on delivery day?\"** Gemini cheerfully texts every customer that their candles will be wet. The Chennai monsoon is active, with a yellow alert up to Oct 23. You could use the show's `weather: rain` extra here. [The Week](https://www.theweek.in/news/india/2026/10/19/will-rains-continue-this-week-imd-alert-for-chennai-and-23-tamil-nadu-districts.html)\n\n**Everyday life**\n\n10. **\"Hey committee, wake me up for the match.\"** Codex wakes her at 3:30 for the wrong match, and Claude apologises for the time difference. India's tour of New Zealand means very early starts (7:30 am IST ODIs), but the exact dates conflict between sources. [Esquire India](https://www.esquireindia.co.in/culture/sports/indian-cricket-team-international-schedule-2026-full-list-fixtures-dates-venues-series-tests-odis-t20i)\n11. **\"Hey committee, sort Mitti's bills before the tax date.\"** Codex renames everything \"final final two,\" and Claude adds a caveat that this isn't advice. The audit-case income tax deadline moved from Oct 31 to Nov 21. Keep it to sorting files so it never turns into financial advice. [StudyCafe](https://studycafe.in/cbdt-extends-income-tax-return-and-tax-audit-report-filing-deadlines-for-ay-2026-27-427200.html)\n\n**On the four searches**\n- **Recent AI fails:** Beyond the alarm and the argument, there was little from the last two weeks. I skipped the Character.ai bankruptcy because it's product news. I also skipped a story about AI \"comedian\" accounts stealing comics' jokes, because it involves real people and adult-content links.\n- **Workplace and family jokes:** Bonus, Diwali cleaning and soan papdi jokes are reliable every year. I couldn't confirm which ones are trending in 2026.\n- **AI-comedy pages:** The nearest things I found were a \"get a job\" ChatGPT reel by @glowboynoah (Sept 18) being remade, and a stand-up clip by an AI-generated comedian, Tiffany Sloan, that hit over 7 million views. Neither has the shape we use, so this doesn't change the strategy. [NextReel](https://nextreel.ai/blog/how-to-ride-viral-we-had-chatgpt-make-us-a-script-deadpan-comedy-reels-trend-wit), [Kotaku](https://kotaku.com/viral-ai-generated-comedian-steals-jokes-and-is-rewarded-with-millions-of-views-2000740077)\n\nSources:\n- [Android Authority: Gemini complaints](https://www.androidauthority.com/gemini-vs-google-assistant-complaints-3721074/)\n- [Yahoo: users complain bots too chatty](https://tech.yahoo.com/ai/articles/chatty-gpt-users-complain-bots-154713988.html)\n- [BuzzFeed: WFH vs office debate](https://www.buzzfeed.com/beccamonaghan/wfh-office-work-viral-debate)\n- [Humornama: Diwali memes 2026](https://humornama.com/memes/diwali-memes/)\n- [Republic World: Diwali bonus memes](https://www.republicworld.com/entertainment/diwali-bonus-memes-office-memes-and-other-funny-memes-to-share-on-diwali)\n- [Time Out: clocks go back 2026](https://www.timeout.com/london/news/when-do-the-clocks-go-back-2026-british-summer-time-091026)\n- [Know Your Meme: Diwali Ki Safai](https://amp.knowyourmeme.com/memes/diwali-ki-safai)\n- [TechRadar: Claude Code deleted 48,000 files](https://www.techradar.com/pro/security/i-broke-something-a-claude-code-ai-agent-deleted-48-000-files-in-just-over-100-seconds-then-apologized-for-doing-so)\n- [NewsBytes: Karwa Chauth moonrise](https://www.newsbytesapp.com/news/india/karwa-chauth-october-29-2026-moonrise-times-vary-across-cities/tldr)\n- [Zoutons: Diwali 2026 sale calendar](https://zoutons.com/news/diwali-2026-dates-sale-calendar-november)\n- [The Week: Chennai rain alert](https://www.theweek.in/news/india/2026/10/19/will-rains-continue-this-week-imd-alert-for-chennai-and-23-tamil-nadu-districts.html)\n- [Esquire India: India cricket schedule 2026](https://www.esquireindia.co.in/culture/sports/indian-cricket-team-international-schedule-2026-full-list-fixtures-dates-venues-series-tests-odis-t20i)\n- [StudyCafe: CBDT extends deadlines](https://studycafe.in/cbdt-extends-income-tax-return-and-tax-audit-report-filing-deadlines-for-ay-2026-27-427200.html)\n- [NextReel: ChatGPT script reels trend](https://nextreel.ai/blog/how-to-ride-viral-we-had-chatgpt-make-us-a-script-deadpan-comedy-reels-trend-wit)\n- [Kotaku: AI comedian steals jokes](https://kotaku.com/viral-ai-generated-comedian-steals-jokes-and-is-rewarded-with-millions-of-views-2000740077)\n- [HappyFares: festival calendar 2026](https://happyfares.in/blog/?p=12763)",
   "slots": [
     {
-      "day": "2026-11-01",
-      "time": "09:00",
-      "format": "reel",
-      "post": "056-mum-asks-memory",
-      "title": "Mum asks: memory",
-      "turn_by": "claude",
-      "status": "made",
-      "series": "MUM ASKS · PART 4",
-      "keyword": "MUM"
-    },
-    {
-      "day": "2026-11-01",
-      "time": "20:00",
-      "format": "reel",
-      "post": "055-two-es",
-      "title": "Two Es",
-      "turn_by": "codex",
-      "status": "made",
-      "series": "SAME PROMPT, 3 AIS",
-      "keyword": "MEMORY"
-    },
-    {
-      "day": "2026-11-02",
-      "time": "09:00",
-      "format": "reel",
-      "post": "058-voice-clone",
-      "title": "Mum asks: voice clone",
-      "turn_by": "twin",
-      "status": "made",
-      "series": "MUM ASKS · PART 5",
-      "keyword": "SAFE"
-    },
-    {
-      "day": "2026-11-02",
+      "day": "2026-10-30",
       "time": "20:00",
       "format": "reel",
       "post": "059-take-my-job",
@@ -48,8 +15,43 @@
       "keyword": "JOB"
     },
     {
-      "day": "2026-11-03",
+      "day": "2026-10-31",
+      "time": "20:00",
+      "format": "reel",
+      "post": "058-voice-clone",
+      "title": "Mum asks: voice clone",
+      "turn_by": "twin",
+      "status": "made",
+      "series": "MUM ASKS · PART 5",
+      "keyword": "SAFE"
+    },
+    {
+      "day": "2026-11-01",
       "time": "09:00",
+      "format": "reel",
+      "post": "056-mum-asks-memory",
+      "title": "Mum asks: memory",
+      "turn_by": "claude",
+      "status": "skip",
+      "series": "MUM ASKS · PART 4",
+      "keyword": "MUM",
+      "note": "held back: one reel a day from 29 Oct (backlog)"
+    },
+    {
+      "day": "2026-11-01",
+      "time": "20:00",
+      "format": "reel",
+      "post": "055-two-es",
+      "title": "Two Es",
+      "turn_by": "codex",
+      "status": "skip",
+      "series": "SAME PROMPT, 3 AIS",
+      "keyword": "MEMORY",
+      "note": "held back: one reel a day from 29 Oct (backlog)"
+    },
+    {
+      "day": "2026-11-01",
+      "time": "20:00",
       "format": "reel",
       "post": "060-boss-at-eleven",
       "title": "Boss at eleven",
@@ -65,35 +67,14 @@
       "post": "045-shop-day-one",
       "title": "Day one: price",
       "turn_by": "codex",
-      "status": "made",
+      "status": "skip",
       "series": "AI RUNS MY SHOP · DAY 1",
-      "keyword": "SHOP"
+      "keyword": "SHOP",
+      "note": "held back: one reel a day from 29 Oct (backlog)"
     },
     {
-      "day": "2026-11-04",
-      "time": "09:00",
-      "format": "reel",
-      "post": "061-mum-asks-agent",
-      "title": "Mum asks: agent",
-      "turn_by": "claude",
-      "status": "made",
-      "series": "MUM ASKS · PART 6",
-      "keyword": "MUM"
-    },
-    {
-      "day": "2026-11-04",
+      "day": "2026-11-03",
       "time": "20:00",
-      "format": "reel",
-      "post": "048-shop-day-two",
-      "title": "Day two: description",
-      "turn_by": "gemini",
-      "status": "made",
-      "series": "AI RUNS MY SHOP · DAY 2",
-      "keyword": "SHOP"
-    },
-    {
-      "day": "2026-11-05",
-      "time": "09:00",
       "format": "reel",
       "post": "062-boss-gift",
       "title": "Gift for the boss",
@@ -103,19 +84,43 @@
       "keyword": "GIFT"
     },
     {
+      "day": "2026-11-04",
+      "time": "20:00",
+      "format": "reel",
+      "post": "048-shop-day-two",
+      "title": "Day two: description",
+      "turn_by": "gemini",
+      "status": "skip",
+      "series": "AI RUNS MY SHOP · DAY 2",
+      "keyword": "SHOP",
+      "note": "held back: one reel a day from 29 Oct (backlog)"
+    },
+    {
+      "day": "2026-11-04",
+      "time": "20:00",
+      "format": "reel",
+      "post": "064-deepfake",
+      "title": "Mum asks: fake video",
+      "turn_by": "claude",
+      "status": "made",
+      "series": "MUM ASKS · PART 7",
+      "keyword": "SAFE"
+    },
+    {
       "day": "2026-11-05",
       "time": "20:00",
       "format": "reel",
       "post": "051-shop-day-three",
       "title": "Day three: the ad",
       "turn_by": "twin",
-      "status": "made",
+      "status": "skip",
       "series": "AI RUNS MY SHOP · DAY 3",
-      "keyword": "SHOP"
+      "keyword": "SHOP",
+      "note": "held back: one reel a day from 29 Oct (backlog)"
     },
     {
       "day": "2026-11-06",
-      "time": "09:00",
+      "time": "20:00",
       "format": "reel",
       "post": "063-diwali-wishes",
       "title": "Diwali wishes",
@@ -131,20 +136,21 @@
       "post": "054-shop-day-four",
       "title": "Day four: customers",
       "turn_by": "gemini",
-      "status": "made",
+      "status": "skip",
       "series": "AI RUNS MY SHOP · DAY 4",
-      "keyword": "SHOP"
+      "keyword": "SHOP",
+      "note": "held back: one reel a day from 29 Oct (backlog)"
     },
     {
       "day": "2026-11-07",
-      "time": "09:00",
+      "time": "20:00",
       "format": "reel",
-      "post": "064-deepfake",
-      "title": "Mum asks: fake video",
+      "post": "061-mum-asks-agent",
+      "title": "Mum asks: agent",
       "turn_by": "claude",
       "status": "made",
-      "series": "MUM ASKS · PART 7",
-      "keyword": "SAFE"
+      "series": "MUM ASKS · PART 6",
+      "keyword": "MUM"
     },
     {
       "day": "2026-11-07",
@@ -153,9 +159,10 @@
       "post": "057-shop-day-five",
       "title": "Day five: the count",
       "turn_by": "twin",
-      "status": "made",
+      "status": "skip",
       "series": "AI RUNS MY SHOP · DAY 5",
-      "keyword": "SHOP"
+      "keyword": "SHOP",
+      "note": "held back: one reel a day from 29 Oct (backlog)"
     }
   ]
 }

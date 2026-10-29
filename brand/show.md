@@ -14,6 +14,10 @@ Meera, a tired, dry, very online young woman (a day job, a boss, a mum who calls
 | `gemini` | blue-to-pink sparkle | the cheerful know-it-all, connected to everything. Confident, helpful, and quietly shares/sends/posts things nobody asked it to. | upbeat, exclamation marks. "Done! I also..." |
 | `twin` | Gemini's smaller sparkle twin | the smug one. Adds the last, worse detail. | 2 to 5 words, deadpan. "And your mom." "Till March." |
 
+**Since 29 Oct 2026 every episode is "a real problem + the AIs being themselves + a fix that really works".** Meera (or Mum) brings a problem that actually hurts and that millions of Indians share: job hunting and rejections, appraisals and salary talks, a boss texting at night, exams and college forms, UPI, OTP and voice-clone scams, bills, landlords, parents and phones. The committee behaves exactly like real AIs (that's the comedy), and one of them gives the fix that genuinely works: a free tool, a phone feature or a method, shown on the laptop. The viewer laughs, then saves it, sends it and comments the keyword for the steps.
+
+Why: 22 reels of cute everyday jokes stopped at about 2,000 views each and brought 6 followers. The pages that grew fastest in our space grew on pain plus a real fix: @ashutoshwithclaude (25K in a month, 2,500 to 6,800 comments per hit on jobs and free tools), and keyword giveaways of tools people really want (62K comments on "Claude Code free"). Lookalike pages that only copied the animated look (@ronniehasaprompt, 38 followers) and "same prompt, 3 AIs" pages (25 to 200 likes) went nowhere. A huge one-off joke without a reason to follow (@mias.office: 10.5M views, 14K followers) doesn't build a page either.
+
 Nobody is the villain. Every joke is "the AI did exactly what an AI would do". Keep it affectionate: people who love these tools should laugh hardest.
 
 ## The one rule: it must be TRUE
@@ -30,30 +34,32 @@ Random disasters with no real-life source ("deleted your account", "sent it to t
 
 ## The series (every episode belongs to one)
 
-A series gives people a reason to follow: there is a part 2. Rotate them, never the same series twice in a row.
+A series gives people a reason to follow: there is a part 2. Rotate them, never the same series twice in a row. One reel a day, 20:00 IST.
 
 | series | `series` tag | what it is | why people share it | caption question |
 |---|---|---|---|---|
-| Same prompt, 3 AIs | `SAME PROMPT, 3 AIS` | Meera gives all three the same task; each answers exactly like the real one would | "this is my AI" / tag the friend who uses it | a pick-one: "which one of these agrees with you no matter what?" |
-| Mum asks | `MUM ASKS · PART N` | Mum texts an AI word (prompt, token, hallucination, memory, agent, AI image, deepfake, voice clone, bias...). Codex answers in jargon, Claude explains it with an everyday Indian analogy that is actually correct, Meera sends it, Mum's reply (on the laptop) is the punchline | it really teaches the word, "send this to your parents" | always "which AI word should mum ask about next?" |
-| AI runs my shop | `AI RUNS MY SHOP · DAY N` | a running story: the committee runs Mitti, Meera's candle shop, one job a day; the laptop shows "Orders: N" and the count is the running gag | people follow to see the next day | a vote or a pick: "299 or 999?", "which ad would you click?" |
+| Real fix (about 4 a week) | `REAL FIX · PART N` | Meera hits a real, painful problem (see above). Two members get it wrong in their true-to-life way; one gives the fix that works, and the laptop shows it as 2 to 4 short steps (`screen` text page). The fix must be real, free and checkable (an official site or app feature), never invented. | "this saved me", "send this to your friend who is job hunting" | one word or one pick: "which step did you not know?", "how many applications have you sent? just the number" |
+| Mum asks (about 2 a week) | `MUM ASKS · PART N` | Mum texts about something that matters to parents: voice-clone calls, deepfake videos, fake forwards, OTP and UPI tricks, AI words she keeps hearing. Codex answers in jargon, Claude explains it with an everyday Indian analogy that is actually correct, Meera sends it, Mum's reply (on the laptop) is the punchline. **Mum texts in Hinglish** (romanised, the way Indian mums really text: "Beta ye AI wala video sach hai kya??"). The spoken lines stay English with common Hindi words (beta, chai, arre) so the voices stay clear. | "send this to your parents" | always "which AI thing should mum ask about next?" |
+| AI runs my shop (at most 1 a week) | `AI RUNS MY SHOP · DAY N` | the committee runs Mitti, Meera's candle shop; only when the episode carries a real small-business fix (a free tool, a reply that sells, a pricing check). The laptop shows "Orders: N" as the running gag. | small sellers send it to each other | a vote or a pick: "299 or 999?" |
 
-A new series can be tested at most once a week. Mum never speaks: her messages appear on the laptop (`"screen": {"page": "text", "title": "Mum", "body": "..."}`) and Meera reads the punchline out loud.
+"Same prompt, 3 AIs" is retired (crowded format, our TRUTH reel got 1,224 views, 1 like, 0 comments). A new series can be tested at most once a week. Mum never speaks: her messages appear on the laptop (`"screen": {"page": "text", "title": "Mum", "body": "..."}`) and Meera reads the punchline out loud.
 
 ## Every episode gives something away
 
-The pages growing fastest in our space (@ashutoshwithclaude: 0 to 24K followers in a month; @canwebuildthis: 82K likes on a free-tool reel) pair the joke with something genuinely useful and ask for one word in the comments. So every episode has a `keyword`: the caption carries "Comment WORD and I'll DM you <the pack>.", and the agent DMs everyone who comments it a free prompt pack from `brand/free.json` (shown at /free/ on the site).
+The pages growing fastest in our space pair the joke with something people genuinely want and ask for one word in the comments. So every episode has a `keyword`: the caption carries "Comment WORD and I'll DM you <the pack>.", and the agent DMs everyone who comments it a free pack from `brand/free.json` (shown at /free/ on the site).
+- **The prize has to be worth a comment.** "A prompt" is not enough (TRUTH: 0 comments). A pack is the full fix: the free tool or feature by name with its official link (`links`), the exact steps (`steps`), then the prompts. Things people would otherwise search for or pay for.
+- Links only to official sites and app stores that the research found and checked. No unknown downloads, no paid tools dressed up as free, no affiliate links.
 - The episode itself should contain the useful moment (Claude's correct analogy, Codex's honest one-liner, the reply that actually works), so the pack feels like the obvious next step.
 - Packs must work on their own: real prompts for any AI assistant, correct and safe. No financial, medical or legal advice.
 
 ## The hook (first 3 seconds)
 
-- `hook`: the on-screen headline shown big for the first 3 seconds and on the cover, 8 to 46 characters. It states the test or the question, so a scroller knows instantly what they are watching: "I told 3 AIs that 2 + 2 = 5", "Mum asked me: what is a token?", "Day 3: AIs make my Diwali ad". Use digits and capitals for emphasis ("ONE line"). Never a joke that needs the video to make sense.
+- `hook`: the on-screen headline shown big for the first 3 seconds and on the cover, 8 to 46 characters. It is **a number plus tension**: the stakes, in the viewer's own words, so a scroller feels it before they know the joke: "87 applications. 0 interviews.", "Mum got a call in MY voice", "Boss texted at 11:47 pm", "Rs 4,000 gone in 1 OTP". Real fix hooks always have a digit. Never a joke that needs the video to make sense, never a quiz ("I asked 3 AIs...").
 - The first spoken line restates the task in plain words within the first second. No greeting, no "Hey committee". Every episode should open differently.
 
 ## Episode rules
 
-1. **25 to 35 seconds**, 8 to 13 beats. The first beat is a spoken line (no card or silence first).
+1. **20 to 30 seconds**, 7 to 12 beats (people watched about 15 seconds of our 28-second reels, so shorter keeps more of them to the end). The first beat is a spoken line (no card or silence first).
 2. **One task**, escalating in 2 or 3 steps. At least two committee members speak; usually all three. Vary the order: do not always go Claude, then Gemini, then Codex.
 3. **The ending is quiet**: the last line is short (Meera deadpan, or the twin's tag), followed by a silent `meera-hold` beat of about 2.4 s.
 4. Set `musicStop` to the index of the beat where the music should cut out (usually the beat right before the final turn), so the punchline lands in silence.
@@ -117,19 +123,23 @@ Rule: each line's shot shows the speaker (twin lines use `gemini`; Meera's lines
 
 ## Caption
 
-One lowercase line that re-tells the joke from a new angle (not a summary), then a blank line, one question that takes two seconds to answer, then a blank line and 5 hashtags. No em dashes, no emoji walls, no "comment below", no "follow for more".
+One lowercase line with the tension (the problem in the viewer's words, or the joke from a new angle), then a blank line and **1 or 2 plain lines of the actual fix** (so the caption alone is worth saving), then a blank line and one question that takes two seconds to answer, then the keyword line, then 5 hashtags. No em dashes, no emoji walls, no "comment below", no "follow for more".
 
 The question is the comment engine. In 22 old reels, "tell me your story" questions ("what's the most dramatic way you've ever cancelled plans?") got 1 comment in total. Ask for one word, one pick or one vote: "which one is your AI?", "what word instantly tells you it's AI?", "299 or 999?", "which AI word should mum ask about next?" Never promise that the comments will change a later episode (they are made a week ahead).
 
 ```
-she was wrong on purpose. two of them agreed with her anyway.
+87 applications. 0 interviews. the AIs had opinions.
 
-which one of these agrees with you no matter what?
+most jobs go up on the company's own careers page days before the job sites. a google alert with the company name and "careers" catches them first.
 
-#claude #codex #gemini #aitools #techhumor
+how many applications have you sent this month? just the number.
+
+Comment JOBS and I'll DM you the exact alert setup and 3 prompts to tailor your CV.
+
+#claude #aitools #jobsearch #interviewtips #freshers
 ```
-Hashtags: always `#claude #codex #gemini`, then 2 that fit (#aitools #techhumor #worklife #desimom #diwali #smallbusiness #jobsearch ...).
+Hashtags: 2 of `#claude #codex #gemini #aitools`, then 3 that the people with this problem search (#jobsearch #interviewtips #salary #scamalert #desimom #officelife #smallbusiness ...).
 
 ## Finished examples
 
-See `content/posts/044-absolutely-right` (same prompt), `046-mum-asks-prompt` (Mum asks) and `045-shop-day-one` (the shop story): episode.json and caption.txt. Copy their rhythm, not their jokes.
+See `content/posts/059-take-my-job` (a real problem and a useful answer), `058-voice-clone` (Mum asks, with a safety fix) and `045-shop-day-one` (the shop story): episode.json and caption.txt. Copy their rhythm, not their jokes. They are from before the 29 Oct reset, so their hooks are weaker than the new rule asks for.

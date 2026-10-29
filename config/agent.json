@@ -4,10 +4,6 @@
   "timezone_offset": "+05:30",
   "slots": [
     {
-      "time": "09:00",
-      "format": "reel"
-    },
-    {
       "time": "20:00",
       "format": "reel"
     }

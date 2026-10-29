@@ -1,5 +1,7 @@
 // Daily: pull each published post's numbers and keep one row per post per day in content/analytics/log.csv.
-// The planner reads this to learn which episodes, endings and committee members work.
+// Also keeps the account's follower count per day in content/analytics/followers.csv: Instagram reports no follows
+// per reel, so with one reel a day the next day's gain is the closest thing to "this reel brought N followers".
+// The planner reads both to learn which episodes, endings and committee members work.
 const fs = require('fs');
 const path = require('path');
 const { P, readJSON, log, localDay } = require('./util');
@@ -24,6 +26,12 @@ async function run() {
   }
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, [COLS.join(','), ...rows].join('\n') + '\n');
+  try { // the account's follower count, once a day
+    const me = await ig.me(); const ff = P('content/analytics/followers.csv');
+    const old = fs.existsSync(ff) ? fs.readFileSync(ff, 'utf8').trim().split('\n').slice(1).filter((r) => r && !r.startsWith(today + ',')) : [];
+    fs.writeFileSync(ff, ['date,followers,media_count', ...old, [today, me.followers_count, me.media_count].join(',')].join('\n') + '\n');
+    log(`followers today: ${me.followers_count}`);
+  } catch (e) { log('follower count failed', e.message); }
   log(`analytics: ${n} posts logged`);
 }
 

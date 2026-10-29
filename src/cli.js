@@ -69,5 +69,8 @@ const NEEDS_CLAUDE = ['plan', 'engage'];
       await step('read DMs', async () => `${(await ig.conversations()).length} conversations visible`);
       await step('posting limit', async () => JSON.stringify((await ig.publishingLimit()).data?.[0] || {}));
     }
+    const cp = require('./crosspost');
+    console.log('Facebook Reels:       ', cp.hasFB() ? 'yes (FB_PAGE_ID + FB_PAGE_TOKEN)' : 'not set up (optional)');
+    console.log('YouTube Shorts:       ', cp.hasYT() ? 'yes (YT_CLIENT_ID + YT_CLIENT_SECRET + YT_REFRESH_TOKEN)' : 'not set up (optional)');
   } else { console.log(require('fs').readFileSync(__filename, 'utf8').split('\n').slice(1, 13).join('\n')); process.exit(cmd ? 1 : 0); }
 })().catch((e) => { console.error('ERROR:', e.message); process.exit(1); });

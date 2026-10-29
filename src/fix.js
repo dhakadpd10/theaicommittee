@@ -28,7 +28,7 @@ function tests() {
   const files = [...fs.readdirSync(P('src')).map((f) => `src/${f}`), ...['show/render.js', 'show/make.js', 'show/comic.js', 'show/audio.js', 'show/timeline.js', 'show/hf.js']].filter((f) => f.endsWith('.js') && fs.existsSync(P(f)));
   for (const f of files) { const r = sh(process.execPath, ['--check', P(f)]); if (r.status) return `${f}: ${r.stderr.slice(0, 300)}`; }
   for (const f of ['show/scene.js', 'show/committee.js', 'show/voices.mjs']) { const r = sh(process.execPath, ['--input-type=module', '--check'], { input: fs.readFileSync(P(f), 'utf8') }); if (r.status) return `${f}: ${r.stderr.slice(0, 300)}`; }
-  const v = sh(process.execPath, ['-e', "const {validateEpisode}=require('./src/validate');for(const id of ['044-absolutely-right','046-mum-asks-prompt']){const e=require('./content/posts/'+id+'/episode.json');const p=validateEpisode(e);if(p.length)throw new Error(id+': '+p.join('; '))}"], { cwd: P() });
+  const v = sh(process.execPath, ['-e', "const {validateEpisode}=require('./src/validate');for(const id of ['046-mum-asks-prompt','058-voice-clone']){const e=require('./content/posts/'+id+'/episode.json');const p=validateEpisode(e);if(p.length)throw new Error(id+': '+p.join('; '))}"], { cwd: P() });
   if (v.status) return `validator: ${v.stderr.slice(0, 300)}`;
   const s = sh(process.execPath, [P('src/cli.js'), 'site'], { cwd: P() }); if (s.status) return `site build: ${s.stderr.slice(0, 300)}`;
   fs.rmSync(P('_site'), { recursive: true, force: true });

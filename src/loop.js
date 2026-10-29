@@ -39,6 +39,7 @@ async function run({ minutes = 340 } = {}) {
     if (hasIG) {
       try { await require('./publish').run(); } catch (e) { await doctor.handle('publish', e); }
       try { await doctor.reviewSlots(); } catch (e) { log('doctor problem:', e.message); }
+      try { await require('./crosspost').run(); } catch (e) { log('cross-post problem:', e.message); }
       save('Agent: posting status');
       if (hasClaude && Date.now() - lastEngage > 15 * 60000) {
         lastEngage = Date.now();
