@@ -32,3 +32,9 @@ github.com/dhakadpd10/theaicommittee → **Settings → Secrets and variables �
 
 ## Check on it
 Actions tab: every run's log says what it did. `content/analytics/log.csv` has every post's numbers (updated daily at 10:00 IST); `brand/learnings.md` is what the agent concluded from them.
+
+## Optional: also post every reel to Facebook and YouTube
+The agent copies each reel there within a few minutes of Instagram, and replaces the "Comment WORD" line with a direct link to the free pack (comments there don't trigger DMs). Each one switches on as soon as its secrets exist; nothing changes until then.
+- **Facebook Reels:** a Facebook Page linked to @theaicommittee. Secrets `FB_PAGE_ID` and `FB_PAGE_TOKEN` (a long-lived Page token with pages_manage_posts, pages_read_engagement, pages_show_list).
+- **YouTube Shorts:** a YouTube channel plus a Google Cloud OAuth app with the YouTube Data API on. Secrets `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (scope youtube.upload). Note: Google keeps uploads from a new, unaudited app **private** until the app passes Google's API audit, so apply for it when you set this up.
+- Run the **Check** workflow afterwards: it shows "Facebook Reels: yes" / "YouTube Shorts: yes".

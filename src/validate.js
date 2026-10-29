@@ -12,12 +12,14 @@ function validateEpisode(e) {
   if (!e || typeof e !== 'object') return ['not an object'];
   if (e.cast !== 'committee') p.push('cast must be "committee"');
   if (!e.title || e.title.split(/\s+/).length > 5) p.push('title must be 1 to 5 words');
-  if (!Array.isArray(e.beats) || e.beats.length < 6 || e.beats.length > 14) return [...p, 'beats must be a list of 6 to 14 beats'];
+  if (!Array.isArray(e.beats) || e.beats.length < 6 || e.beats.length > 13) return [...p, 'beats must be a list of 6 to 13 beats'];
   const spoken = e.beats.filter((b) => b.say);
   if (spoken.length < 5) p.push('needs at least 5 spoken lines');
   if (!e.beats[0].say) p.push('beat 0 must be a spoken line (the story starts in the first second, no card or silence first)');
   if (typeof e.hook !== 'string' || e.hook.trim().length < 8 || e.hook.length > 46) p.push('hook must be the on-screen headline for the first 3 seconds, 8 to 46 characters');
   if (e.series !== undefined && (typeof e.series !== 'string' || e.series.length > 26 || e.series !== e.series.toUpperCase())) p.push('series must be a short UPPER CASE tag like "MUM ASKS · PART 2" (26 characters max)');
+  if (/^SAME PROMPT/.test(e.series || '')) p.push('the "same prompt, 3 AIs" series is retired: use REAL FIX, MUM ASKS or AI RUNS MY SHOP');
+  if (/^REAL FIX/.test(e.series || '') && !/\d/.test(e.hook || '')) p.push('a REAL FIX hook needs a number with the tension ("87 applications. 0 interviews.")');
   const speakers = new Set(spoken.map((b) => b.who).filter((w) => w !== 'meera' && w !== 'twin'));
   if (speakers.size < 2) p.push('at least two of codex, claude and gemini must speak');
   let words = 0;
@@ -47,7 +49,7 @@ function validateEpisode(e) {
     if (b.time && !['night', 'morning'].includes(b.time)) p.push(`${at}: time must be night or morning`);
     if (b.weather && b.weather !== 'rain') p.push(`${at}: weather can only be "rain"`);
   });
-  if (words < 45 || words > 120) p.push(`the episode has ${words} spoken words; aim for 55 to 100 (25 to 35 seconds)`);
+  if (words < 40 || words > 90) p.push(`the episode has ${words} spoken words; aim for 45 to 80 (20 to 30 seconds)`);
   if (!Number.isInteger(e.cover) || !e.beats[e.cover]?.say) p.push('cover must be the index of a spoken beat');
   if (e.musicStop !== undefined && (!Number.isInteger(e.musicStop) || !e.beats[e.musicStop]?.say)) p.push('musicStop must be the index of a spoken beat');
   const last = e.beats[e.beats.length - 1];
@@ -59,7 +61,7 @@ function validateEpisode(e) {
 function validateCaption(c) {
   const p = [];
   if (!c.trim()) return ['caption is missing'];
-  if (c.length > 600) p.push('caption is too long (keep it under 600 characters)');
+  if (c.length > 900) p.push('caption is too long (keep it under 900 characters)');
   if (/—|–/.test(c)) p.push('caption must not use em or en dashes');
   const tags = c.match(/#\w+/g) || [];
   if (tags.length < 3 || tags.length > 6) p.push('caption needs 3 to 6 hashtags');

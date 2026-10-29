@@ -55,7 +55,7 @@ async function run() {
         const key = `${m.id}:${whoId || who}`;
         if (st.sent[key]) { st.comments[c.id] = 'keyword-repeat'; continue; }
         try {
-          await ig.privateReply(c.id, `Here you go: ${pack.title} 👇\n${freeLink(kw)}\nCopy it, paste it into your AI, fill in the brackets. Tell us how it went!`);
+          await ig.privateReply(c.id, `Here you go: ${pack.title} 👇\n${freeLink(kw)}\nThe steps, links and prompts are all there. Tell us how it went!`);
           const pub = cfg.replies.public_keyword_replies || ['Sent! Check your DMs 📩']; await ig.replyToComment(c.id, pub[Math.floor(Math.random() * pub.length)]);
           st.comments[c.id] = 'keyword'; st.sent[key] = true; log('keyword DM sent', kw, '@' + (who || whoId));
         } catch (e) { log('keyword DM failed', c.id, e.message); st.comments[c.id] = 'failed'; }

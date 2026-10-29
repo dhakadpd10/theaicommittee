@@ -39,6 +39,7 @@ function build(outDir = P('_site')) {
   const free = JSON.parse(fs.readFileSync(P('brand/free.json'), 'utf8'));
   const ig = `https://www.instagram.com/${esc(cfg.handle.replace('@', ''))}/`;
   const sections = Object.entries(free).map(([k, t]) => `<section class="free" id="${k.toLowerCase()}"><span class="sticker">${esc(k)}</span><h2>${esc(t.title)}</h2><p>${esc(t.intro)}</p>
+${(t.links || []).length ? `<p>${t.links.map((l) => `<a href="${esc(l.url).replace(/"/g, '&quot;')}" rel="noopener">${esc(l.name)}</a>`).join(' · ')}</p>` : ''}${(t.steps || []).length ? `<ol>${t.steps.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
 ${t.prompts.map((p) => `<h3>${esc(p.name)}</h3><pre>${esc(p.text)}</pre>`).join('')}<p class="tip">${esc(t.tip)}</p></section>`).join('\n');
   fs.mkdirSync(path.join(outDir, 'free'), { recursive: true });
   fs.writeFileSync(path.join(outDir, 'free', 'index.html'), page(`Free prompts · ${cfg.name}`, `<div class="wrap"><header><span class="sticker">FREE FROM THE COMMITTEE</span><h1>Free prompts</h1>

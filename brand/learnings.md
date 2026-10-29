@@ -2,6 +2,14 @@
 
 Newest week on top. The weekly planner adds an entry every time it plans, from `content/analytics/log.csv`.
 
+
+## Week of 2026-10-29 (account audit, by hand)
+
+- **Every reel stops at the first test group.** 22 reels, about 30K views, 6 followers, 2 comments; views 1,500 to 2,200 each, shares about 0.6 per 1,000 reach. Confidence: high.
+- **The first new-format reels did not break out.** 044 TRUTH (same prompt, keyword): 1,224 views, 1 like, 0 comments, so a prompt is not a prize worth commenting for. 046 Mum asks part 1: 204 views on day one. Confidence: medium (young posts).
+- **Benchmarks (29 Oct):** @canwebuildthis 61K from 4 reels of 1.3 to 1.8M views, newest reel 13K. @ashutoshwithclaude 25.5K from jobs pain plus real free tools plus keyword (764K, 530K, 465K views; 2,500 to 6,800 comments). @ronniehasaprompt (a lookalike) 38 followers. Same-prompt pages 25 to 200 likes. Big pages convert about 0.8 to 0.9 follows per 100 views, so 10K followers needs about 1.1M views. Confidence: high for the pattern.
+- **DO:** real problem plus real free fix, number-and-tension hooks, keyword prizes people would search for, 20 to 30 s, one reel a day. **STOP:** same prompt, quiz hooks, low-stakes jokes, two a day.
+
 ## Week of 2026-10-24
 
 - **The sample is still too small, the data is still incomplete, and no post is old enough to rank under our own rule.** We have 12 posts from Oct 18 to 24. The oldest (003) is 6 days old, so every number below is provisional. Hold at 3s, non-follower share and follows are missing for the second week running, so we still cannot grade a hook or tell a hook problem from a profile problem. I did not read the episode files this session, so first lines and first shots were not compared. Themes below are guessed from titles.
