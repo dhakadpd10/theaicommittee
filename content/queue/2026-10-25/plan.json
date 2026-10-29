@@ -100,9 +100,11 @@
       "post": "046-mum-asks-prompt",
       "title": "Mum asks: prompt",
       "turn_by": "claude",
-      "status": "made",
+      "status": "published",
       "series": "MUM ASKS · PART 1",
-      "keyword": "MUM"
+      "keyword": "MUM",
+      "media_id": "18058058456802598",
+      "published_at": "2026-10-29T03:31:18.975Z"
     },
     {
       "day": "2026-10-29",
