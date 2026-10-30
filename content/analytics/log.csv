@@ -129,3 +129,23 @@ date,post,format,title,turn_by,published_at,views,reach,likes,comments,saved,sha
 2026-10-29,044-absolutely-right,reel,Absolutely right,claude,2026-10-28T14:31:19.586Z,738,510,0,0,0,5,5,15367,,"SAME PROMPT, 3 AIS"
 2026-10-29,046-mum-asks-prompt,reel,Mum asks: prompt,claude,2026-10-29T03:31:18.975Z,143,98,0,0,0,0,0,8118,,MUM ASKS · PART 1
 2026-10-29,003-ninety-two-percent,reel,Ninety-two percent,gemini,2026-10-18T14:31:46.199Z,2132,1397,24,0,0,0,24,16870,,
+2026-10-30,004-meeting-summary,reel,The meeting,gemini,2026-10-19T03:30:52.797Z,1080,763,20,0,0,6,26,16068,,
+2026-10-30,006-holiday-call,reel,Quick holiday call,gemini,2026-10-20T04:27:13.275Z,1491,1090,6,0,0,0,6,14685,,
+2026-10-30,005-sound-casual,reel,Sound casual,codex,2026-10-20T08:31:03.937Z,170,136,0,0,0,0,0,11433,,
+2026-10-30,007-be-honest,reel,Be honest,codex,2026-10-20T14:31:03.145Z,303,201,2,0,0,0,2,17630,,
+2026-10-30,008-tidy-laptop,reel,Tidy my laptop,codex,2026-10-21T03:32:17.540Z,1525,1099,15,0,3,1,19,15411,,
+2026-10-30,009-what-to-cook,reel,What's for dinner,gemini,2026-10-21T14:31:06.028Z,1645,1107,18,0,1,4,23,18032,,
+2026-10-30,010-good-deal,reel,Is this a deal,gemini,2026-10-22T03:31:47.229Z,1889,1342,8,0,0,0,8,14575,,
+2026-10-30,011-cancel-plans,reel,Cancel politely,claude,2026-10-22T14:32:06.447Z,2229,1386,38,0,1,0,39,21764,,
+2026-10-30,012-explain-my-job,reel,Explain my job,codex,2026-10-23T03:31:05.686Z,1456,1121,6,0,0,0,6,14708,,
+2026-10-30,013-copied-caption,reel,Who copied me,gemini,2026-10-23T14:31:51.254Z,1839,1236,20,0,3,0,24,16936,,
+2026-10-30,014-split-the-bill,reel,Split the bill,codex,2026-10-24T03:31:05.867Z,1962,1440,24,0,2,0,26,14640,,
+2026-10-30,015-one-joke,reel,One joke,claude,2026-10-24T14:32:05.409Z,1830,1293,10,2,1,0,13,16749,,
+2026-10-30,016-reply-all,reel,Just my manager,gemini,2026-10-25T03:31:18.491Z,1574,1083,7,0,1,0,8,15935,,
+2026-10-30,018-self-appraisal,reel,Sound confident,claude,2026-10-26T03:30:55.482Z,1669,1299,7,0,2,2,11,14999,,
+2026-10-30,019-uncle-birthday,reel,"Happy birthday, uncle",gemini,2026-10-26T14:31:07.034Z,2011,1280,6,0,0,0,6,17791,,
+2026-10-30,020-train-home,reel,Cheapest train,codex,2026-10-27T03:31:43.842Z,1572,1066,17,0,0,0,17,17820,,
+2026-10-30,021-is-it-monday,reel,Is it Monday,gemini,2026-10-27T14:31:25.643Z,683,515,5,0,1,0,6,12981,,
+2026-10-30,044-absolutely-right,reel,Absolutely right,claude,2026-10-28T14:31:19.586Z,1799,1189,3,0,1,5,10,16965,,"SAME PROMPT, 3 AIS"
+2026-10-30,046-mum-asks-prompt,reel,Mum asks: prompt,claude,2026-10-29T03:31:18.975Z,294,229,0,0,0,0,0,13164,,MUM ASKS · PART 1
+2026-10-30,003-ninety-two-percent,reel,Ninety-two percent,gemini,2026-10-18T14:31:46.199Z,2132,1397,24,0,0,0,24,16870,,
