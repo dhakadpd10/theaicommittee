@@ -149,9 +149,11 @@
       "post": "052-mum-asks-made-up",
       "title": "Mum asks: made up",
       "turn_by": "claude",
-      "status": "made",
+      "status": "published",
       "series": "MUM ASKS · PART 3",
-      "keyword": "MUM"
+      "keyword": "MUM",
+      "media_id": "18076767110765120",
+      "published_at": "2026-11-02T15:41:28.510Z"
     },
     {
       "day": "2026-11-05",
