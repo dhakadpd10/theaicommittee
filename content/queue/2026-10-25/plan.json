@@ -162,9 +162,11 @@
       "post": "053-one-typo",
       "title": "Just one typo",
       "turn_by": "gemini",
-      "status": "made",
+      "status": "published",
       "series": "SAME PROMPT, 3 AIS",
-      "keyword": "FIX"
+      "keyword": "FIX",
+      "media_id": "18341400715278810",
+      "published_at": "2026-11-05T15:25:49.036Z"
     }
   ]
 }
