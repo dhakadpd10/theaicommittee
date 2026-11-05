@@ -1,0 +1,95 @@
+{
+  "id": "070-sixty-three-messages",
+  "title": "Day one of leave",
+  "cast": "committee",
+  "series": "AFTER HOURS · PART 1",
+  "hook": "On leave. 63 work messages by 10 am.",
+  "cover": 3,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Day one of leave. Sixty three work messages already.",
+      "show": "Day one of leave. 63 work messages already.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Work group",
+        "body": "63 unread\n\nAny update?\nAny update??\nJust checking, any update?"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Great news! All sixty three messages are now a twelve minute podcast!",
+      "show": "Great news! All 63 messages are now a 12 minute podcast!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "With intro music.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "I drafted a gentle note apologising for your leave. Nine paragraphs.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Sorry for resting?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Muted. One week. Family still rings.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "screen": {
+        "page": "text",
+        "title": "Leave mode",
+        "body": "1. Work group: Mute, 1 week\n2. Do Not Disturb: allow starred contacts (Android) or chosen people (iPhone Focus)\n3. Status: On leave till Monday. Call if urgent.",
+        "stamp": "ON"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Only Mum got through.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.8
+    },
+    {
+      "who": "twin",
+      "say": "Twice.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "day one of leave. 63 work messages by 10 am. one AI made it a podcast, one wrote an apology for resting.\n\nmute the work group for 1 week, then turn on do not disturb and allow only starred contacts (android) or chosen people (iphone focus) so family still rings. set your status to \"on leave till monday, call if urgent\" and tell your manager the one way to reach you.\n\nhow many work messages did you get on your last day off? just the number.\n\nComment BOSS and I'll DM you the leave mode setup for any phone and an out of office message that tells your boss exactly when to call.\n\n#codex #gemini #officelife #worklifebalance #corporatelife"
+}

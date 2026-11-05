@@ -1,0 +1,100 @@
+{
+  "id": "066-pin-to-receive",
+  "title": "Mum asks: the PIN",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 8",
+  "hook": "Mum: 'enter PIN to get Rs 4,000'",
+  "cover": 3,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum's asking if she should enter her PIN to receive four thousand.",
+      "show": "Mum's asking if she should enter her PIN to receive Rs 4,000.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta kisi ne 4000 bheje hai, receive karne ke liye PIN daalna hai. Daal du??"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "PIN authorises debits. Credits don't.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "For Mum.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Tell her the PIN is her almirah key. Nobody needs her key to put money in.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "So anyone asking for it is a thief.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.2
+    },
+    {
+      "who": "gemini",
+      "say": "Great question! I also wrote Mum a poem about PINs!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Four pages long.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "Sending her the almirah one.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta kisi ne 4000 bheje hai, receive karne ke liye PIN daalna hai. Daal du??\n\nMe: PIN is your almirah key. Nobody needs it to put money in. Block him.\n\nSamajh gayi beta. Number block. Almirah ki chaabi ab Papa se bhi chhupa di."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She's hidden the key from Papa.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "a stranger told mum he'd sent her rs 4,000. she just had to enter her PIN to receive it.\n\nyour UPI PIN is only ever used to send money out. receiving money never needs a PIN, so anyone asking for it is a scammer. decline, block, and if money has gone, call 1930 or report at cybercrime.gov.in.\n\nwhich AI thing should mum ask about next?\n\nComment SAFE and I'll DM you the PIN rule in mum's words, the 1930 and cybercrime.gov.in steps, and a message to forward to your family group.\n\n#claude #gemini #scamalert #desimom #upi"
+}

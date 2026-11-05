@@ -1,0 +1,10 @@
+15 GB full, mum's photos stuck, and claude wanted to talk about my feelings first.
+
+google's free storage manager lists your biggest files. in mail, search has:attachment larger:10M and delete the biggest.
+then empty the bin in mail, drive and photos. deleted files still count until you do.
+
+how full is your storage right now? just the number.
+
+Comment SPACE and I'll DM you the storage manager link, the exact search steps and 3 prompts to decide what to keep.
+
+#codex #gemini #techtips #phonetips #storagefull

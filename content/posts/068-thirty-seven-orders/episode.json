@@ -1,0 +1,86 @@
+{
+  "id": "068-thirty-seven-orders",
+  "title": "Day six: screenshots",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 6",
+  "hook": "37 orders. 37 screenshots. 1 paid.",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Day six of the shop. We got thirty seven orders. Start packing.",
+      "show": "Day 6 of the shop. We got 37 orders. Start packing.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti",
+        "body": "Orders: 37"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Thirty seven screenshots. All marked paid. Packing.",
+      "show": "37 screenshots. All marked paid. Packing.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "I wrote each buyer a thank you note. About four hundred words each.",
+      "show": "I wrote each buyer a thank you note. About 400 words each.",
+      "shot": "claude-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Wait! Screenshots can be edited. I checked your actual bank app.",
+      "shot": "gemini-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "screen": {
+        "page": "text",
+        "title": "Mitti",
+        "body": "Orders: 37\nPaid: 1\n\n1. A screenshot is not proof. It can be edited.\n2. Ship only when the money shows in YOUR bank or UPI app.\n3. Use your own QR. Never scan one a buyer sends."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Only one of them paid?",
+      "show": "Only 1 of them paid?",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "One real payment. Ship only when the money shows in your own bank app.",
+      "shot": "gemini",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "From Mum.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "37 orders. 37 payment screenshots. 1 actual payment, and it was from mum.\n\na payment screenshot can be edited in a minute. ship only when the money shows in your own bank or UPI app history, and never scan a QR code a buyer sends you. to receive money, you never scan or enter your PIN.\n\nhow do you check a payment: screenshot or bank app?\n\nComment SCAM and I'll DM you the 3 step payment check for sellers and the polite reply to send when a buyer only has a screenshot.\n\n#gemini #aitools #smallbusiness #scamalert #upi"
+}

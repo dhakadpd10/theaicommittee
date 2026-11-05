@@ -1,0 +1,97 @@
+{
+  "id": "067-storage-full",
+  "title": "Storage full",
+  "cast": "committee",
+  "series": "REAL FIX · PART 2",
+  "hook": "15 GB full. Mum's photos won't save.",
+  "cover": 1,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Storage full. Mum's photos won't save. Fix it.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Storage full",
+        "body": "15 GB of 15 GB used\n\nPhotos: backup paused\nMail: can't send or receive"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Before we delete anything, how do you feel about letting go?",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I made you a slideshow, twenty nineteen to now. With music!",
+      "show": "Done! I made you a slideshow, 2019 to now. With music!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Eleven minutes.",
+      "show": "11 minutes.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Biggest attachments first. Delete the top twenty.",
+      "show": "Biggest attachments first. Delete the top 20.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.5
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Free up space",
+        "body": "1. one.google.com/storage/management\n2. Mail search: has:attachment larger:10M\n3. Download what matters. Delete the biggest.\n4. Empty the Bin in mail, files and photos"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Deleted still counts. Empty the bin.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Twelve gigs free.",
+      "show": "12 gigs free.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.6
+    },
+    {
+      "who": "twin",
+      "say": "The video took three.",
+      "show": "The video took 3.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "15 GB full, mum's photos stuck, and claude wanted to talk about my feelings first.\n\ngoogle's free storage manager lists your biggest files. in mail, search has:attachment larger:10M and delete the biggest.\nthen empty the bin in mail, drive and photos. deleted files still count until you do.\n\nhow full is your storage right now? just the number.\n\nComment SPACE and I'll DM you the storage manager link, the exact search steps and 3 prompts to decide what to keep.\n\n#codex #gemini #techtips #phonetips #storagefull"
+}

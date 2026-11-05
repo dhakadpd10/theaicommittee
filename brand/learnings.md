@@ -2,6 +2,69 @@
 
 Newest week on top. The weekly planner adds an entry every time it plans, from `content/analytics/log.csv`.
 
+## Week of 2026-11-06
+
+- **The sample is too small and the data is incomplete. Read every claim below as a lead, not a rule.**
+  - We have 28 posts from Oct 18 to Nov 4. The 6 posts since the reset are 1 to 6 days old. Under our own 7-day rule, none of them can be ranked yet.
+  - I am reading 059, 058, 052 and 060 provisionally, because our past recoveries happened in the first two days. 010 and 014 both went from about 0.1x at under a day to 1.2 to 1.3x. So 062 (2 days) and 064 (under a day) may still move. 059, 058 and 052 probably will not.
+  - Hold at 3s, non-follower share and per-post follows are missing for the third audit running, so the hooks still cannot be graded.
+  - I did not read the episode files this session. That means hook text, first lines and durations were not compared, and old vs new hooks cannot be compared line by line.
+  - The median of these 28 posts recomputes to 1,508, not 1,525. Multiples shift about 1% and no ranks change.
+  - **Series tags look wrong.** 059, 060 and 062 are tagged `SAME PROMPT, 3 AIS`, a series retired on 29 Oct. No post carries `REAL FIX`, although the plan called for 4 a week. Either the retired format is still shipping or the tags are stale. Until this is fixed, the series comparison below is partly blind.
+  - Confidence: high that this data cannot support strong patterns.
+
+- **Top 5 and bottom 5 by outlier multiple, and top by sends.**
+  - **Top 5 by outlier multiple:** 011 "Cancel politely" 1.46x, 003 1.40x, 060 "Boss at eleven" 1.38x, 019 1.32x, 014 1.29x. Four of the five are old format. Average watch is 17.7s.
+  - **Bottom 5:** 022 0.09x, 005 0.11x, 017 0.14x, 058 0.14x and 052 0.14x. Two of these are Mum asks. Average watch is 10.1s.
+  - **Top by sends:** 004 7.9 per 1k (about 6 shares), 044 4.2 per 1k (about 5), 009 3.6 per 1k (about 4), 018 1.5 per 1k (about 2), 008 0.9 per 1k (1). That is 18 shares across 28 posts, and **0 shares on all 6 posts since the reset.**
+  - **The posts fall into two clusters, not a slope.** 16 posts got 1,456 to 2,229 views, 11 got 136 to 683, and 004 sits between. Instagram either gives a reel the full first test group or almost nothing.
+  - Watch time separates the two clusters: 16.6s in the high cluster vs 11.5s in the low one (10.9s without the crowded 007). Without hold at 3s, we cannot tell whether viewers left in the first seconds (a hook problem) or the reel was shown to fewer, colder people.
+  - **Who delivered the turn:**
+    - Codex: 0.56x mean (n=9). 5 of 9 are under 0.25x, including 017 and 022, which went out in normal 11 to 13 hour slots. So the "bad slots" excuse from last week is weaker now.
+    - Gemini: 1.05x (n=9) and 10 of the 18 shares. It has delivered **zero** turns since the reset.
+    - Claude: 0.81x (n=9). Its low posts are the three Mum asks plus 062.
+  - Confidence: medium that the two clusters are real. Low on the turn, which is tangled up with topic and series.
+
+- **Series vs series, and new format vs old.**
+  - **Old "Hey committee"** (n=20): median 1.06x, 14 of 20 at or above 0.95x, 13 shares.
+  - **`SAME PROMPT` tag** (n=4): 1.38x, 1.18x, 0.40x, 0.21x (median 0.79x). All 5 shares came from 044.
+  - **Mum asks** (n=4): 0.21x, 0.19x, 0.14x, 0.14x. All four are in the bottom 7. They have 0 shares, 1 save, average watch of 9.8 to 13.1s, and the best one reached 317 views. Only 046 is mature, but the four are 4 for 4 and tightly grouped. "Send this to your parents" is not producing sends.
+  - **Real fix:** no data, because nothing carries the tag.
+  - **Hinglish vs English experiment:** it cannot be read. Follows, shares and keyword comments are 0 on every Mum asks post, so both arms tie at zero.
+  - What we may not like hearing: so far the new format reaches less than the old one did (median 0.21x vs 1.06x). It has not earned more sends or follows to make up for it.
+  - Confidence: medium that Mum asks as currently built is our weakest series. Low on the overall new vs old gap, because of post age and the slide in the next bullet.
+
+- **The reach slide began two days before the reset, so the new format is not proven to be the cause.**
+  - From Oct 21 to the morning of Oct 27, 12 of 13 posts landed at or above 0.95x (only 017 failed).
+  - From the evening of Oct 27 on, only 2 of 10 broke 0.5x: 044 and 060.
+  - The slide started under the old format and the old two-a-day cadence.
+  - Moving to one a day has not helped: 1 of 6 posts since the reset is above 0.5x. The strategy's claim that "two a day splits the test group" is not supported, because the 12-hour two-a-day run was our best stretch.
+  - Keep one a day anyway, but for a different reason: it is the only way `followers_gained_next_day` belongs to a single reel. It is not a reach lever.
+  - Day and time, checked last, show nothing:
+    - 060 at 20:32 IST was our best post. 059 at 20:01 and 052 at 21:11 were both low.
+    - Both morning posts in this window were low, but n=2.
+  - Confidence: medium on when the slide started, low on why.
+
+- **The one reel that travelled converted nobody. That points at the profile and the payoff, not the hook.**
+  - 060 reached 1,484 people. The account had 6 followers at the 29 Oct audit, so almost all of that reach was non-followers.
+  - It brought 0 net follows, 0 shares, 0 keyword comments and 8 likes.
+  - Since the reset we have 1 follow from 3,778 views, about 0.3 per 1k views. The benchmark pages convert 8 to 9 per 1k.
+  - The 0 keyword comments on the low-reach posts is expected at about 200 reach. On 060 at 1,484 reach, it suggests the prize or the question is not pulling.
+  - Confidence: low (n=1, and the follow number is a next-day net change, not Insights follows). It is still the clearest "views but no follows" case we have, which by the method means a profile problem.
+
+- **STOP, DO MORE, and before the next audit.**
+  - **STOP:** Mum asks at 2 a week. Run none next week, or at most one rebuilt version in the test slot with a number-and-stakes hook (the money lost, the call in your voice), not "Mum asked me...". Check whether the four past Mum asks hooks carried a digit. The bible only requires a digit for real fix.
+  - **STOP:** the Hinglish experiment as designed. It cannot produce a result while every outcome is zero. Close it as inconclusive.
+  - **STOP:** publishing anything tagged `SAME PROMPT`. Fix the tags before posting again.
+  - **STOP:** changing the cadence to chase reach. We changed it twice in two weeks, and our numbers support neither change.
+  - **DO MORE:** the 060 shape, meaning work pain with a clock or number in the hook (the boss at night). It is our best post since the reset at 1.38x. Low confidence, n=1, and it still earned 0 shares.
+  - **DO MORE:** give Gemini the turn in at least 2 of 7 episodes. It has a 1.05x mean, 10 of our 18 shares, and no turns since the reset.
+  - **DO MORE:** run `/ig-profile` this week, because of 060.
+  - **Before next audit:**
+    - Pull hold at 3s, non-follower share and Insights follows for every reel.
+    - Log keyword comments per post.
+    - Correct the series tags, and confirm whether 059, 060 and 062 were meant to be real fix.
+    - Read the episode files to compare hook text, first line and duration across the high and low clusters. That comparison is the only way to tell a hook problem from a distribution problem.
 
 ## Week of 2026-10-29 (account audit, by hand)
 

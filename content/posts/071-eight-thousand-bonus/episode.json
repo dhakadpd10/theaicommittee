@@ -1,0 +1,88 @@
+{
+  "id": "071-eight-thousand-bonus",
+  "title": "The bonus forward",
+  "cast": "committee",
+  "series": "REAL FIX · PART 4",
+  "hook": "Rs 8,000 'bonus' in the family group.",
+  "cover": 1,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Uncle says the government gives everyone eight thousand rupees. Mum wants to apply.",
+      "show": "Uncle says the government gives everyone Rs 8,000. Mum wants to apply.",
+      "shot": "wide",
+      "mood": "calm",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Mama ji ne bheja hai, sabko 8000 milenge!!\nForm mein bank details bhar du??"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Link is live. Status two hundred. Looks fine.",
+      "show": "Link is live. Status 200. Looks fine.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "So it's real?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Before I answer, may I say how much I respect your uncle?",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "It's fake! The government's fact check said so. Forward it to them.",
+      "shot": "gemini-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.2,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Bonus forward?",
+        "body": "1. Don't tap the link. Never type bank details.\n2. Forward it to PIB Fact Check:\n   +91 8799711259 or factcheck@pib.gov.in\n3. Report it on Chakshu: sancharsaathi.gov.in\n   Money or details gone? Call 1930.",
+        "stamp": "FAKE"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "And to the group.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "Uncle left the group.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "rs 8,000 'bonus' in the family group. codex checked the link. claude checked on the uncle.\n\ndon't tap it. send the forward to pib fact check at +91 8799711259 or factcheck@pib.gov.in, and report the sender on chakshu at sancharsaathi.gov.in. if money or bank details have gone, call 1930 straight away.\n\nhow many 'free money' forwards hit your family group this week? just the number.\n\nComment SCAM and I'll DM you the fake forward checklist with the official report links and a polite reply for the family group.\n\n#gemini #aitools #scamalert #fakenews #desimom"
+}
