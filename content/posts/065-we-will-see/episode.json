@@ -1,0 +1,85 @@
+{
+  "id": "065-we-will-see",
+  "title": "Appraisal on Monday",
+  "cast": "committee",
+  "series": "REAL FIX · PART 1",
+  "hook": "Average hike: 9.1%. Mine: 'we'll see'.",
+  "cover": 6,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Appraisal on Monday. Last year he said we'll see. Help.",
+      "show": "Appraisal on Monday. Last year he said 'we'll see'. Help.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Of course! I've drafted a six page self review. Section one, how you've grown.",
+      "show": "Of course! I've drafted a 6 page self review. Section 1: how you've grown.",
+      "shot": "claude-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Ask for more money. Sending.",
+      "shot": "codex",
+      "mood": "normal",
+      "sfx": [
+        "type"
+      ],
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Don't.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Found your year! Forty one thank you emails from your boss. Here's one page.",
+      "show": "Found your year! 41 'thank you' emails from your boss. Here's 1 page.",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "screen": {
+        "page": "text",
+        "title": "My year, 1 page",
+        "body": "1. Search sent mail: done, shipped, fixed, thank you\n2. Check calendar, last 12 months\n3. Top 5 wins, 1 number each\n\n- Report time: 3 days to 4 hrs\n- 12 of 12 deadlines on time\n- 41 thank yous from boss"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "He forgot all forty one.",
+      "show": "He forgot all 41.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.8
+    },
+    {
+      "who": "meera",
+      "say": "Printing two copies.",
+      "show": "Printing 2 copies.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "appraisal on monday. last year's answer was \"we'll see\". this year i'm bringing receipts.\n\nsearch your own sent mail and calendar for the last 12 months (done, shipped, fixed, thank you), pick your 5 biggest wins and give each one a number. one page, and never paste confidential company data into a personal AI account.\n\nhow many wins from this year can you name without checking? just the number.\n\nComment HIKE and I'll DM you the exact mail search setup and 3 prompts to turn your year into one page.\n\n#gemini #claude #appraisal #salary #officelife"
+}

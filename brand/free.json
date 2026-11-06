@@ -190,5 +190,146 @@
       }
     ],
     "tip": "The one detail per person is what makes it feel personal. Without it, you get a forward."
+  },
+  "HIKE": {
+    "title": "The one-page wins list for your appraisal",
+    "intro": "Most people walk into an appraisal with nothing but a feeling. This turns your year into one page of wins with numbers, in about 20 minutes, using your own mail, calendar and notes.",
+    "steps": [
+      "Search your sent mail for the last 12 months with words like done, shipped, launched, fixed, thank you, plus your manager's name.",
+      "Scroll your calendar for launches, reviews and client meetings you led.",
+      "Pick your 5 biggest wins and give each one a number: hours saved, customers, deadlines met, errors fixed.",
+      "Fit them on one page, then add one line on what you want to take on next year.",
+      "Bring any public salary survey only as context, and keep the tone calm and factual."
+    ],
+    "links": [
+      {
+        "name": "Gmail search help",
+        "url": "https://support.google.com/mail/answer/7190"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Find my wins",
+        "text": "Here are notes and messages from my work this year: [paste, with confidential names and numbers removed]. Find the 5 biggest things I did. For each one, write a single line: what I did and the result, with a number if one is given. If there is no number, ask me for it instead of guessing. Do not invent anything."
+      },
+      {
+        "name": "Make it one page",
+        "text": "Turn these 5 wins into a one-page appraisal summary in plain English, under 200 words, with no buzzwords and no headings except 'My year'. Wins: [paste]."
+      },
+      {
+        "name": "Prepare the conversation",
+        "text": "I have an appraisal meeting soon. My wins: [paste]. Write 3 short, calm sentences I can open with, then the 3 questions my manager is most likely to ask, each with an honest answer I could give. Keep it polite and confident, not pushy."
+      }
+    ],
+    "tip": "Don't paste confidential company data into a personal AI account. Remove client names and internal figures first."
+  },
+  "SPACE": {
+    "title": "Free up your Google storage in 15 minutes",
+    "intro": "When the free 15 GB is full, photos stop backing up and your email can stop sending and receiving. Here is how to clear the biggest files first, for free.",
+    "steps": [
+      "Back up anything precious first: download it, or export it with Google Takeout.",
+      "Open the Google storage manager (link below) and review 'Large items' first.",
+      "In Gmail, search has:attachment larger:10M, then delete the emails you don't need.",
+      "Delete old videos and screen recordings in Photos. They take far more space than pictures.",
+      "Empty the Bin in Gmail, Drive and Photos. Deleted files still count until the Bin is emptied."
+    ],
+    "links": [
+      {
+        "name": "Google storage manager",
+        "url": "https://one.google.com/storage/management"
+      },
+      {
+        "name": "Gmail search operators",
+        "url": "https://support.google.com/mail/answer/7190"
+      },
+      {
+        "name": "Google Takeout (download your data)",
+        "url": "https://takeout.google.com"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Sort what to delete",
+        "text": "I am freeing up storage. Here is a list of my largest files and emails with their sizes: [paste]. Sort them into three groups: safe to delete, check first, keep. Put anything that looks like an ID, a document or a family photo in 'keep' unless I say otherwise."
+      },
+      {
+        "name": "Build my search lines",
+        "text": "Write 5 Gmail search lines that find big or old emails I can probably delete, for example newsletters or attachments older than 2 years. Use real Gmail operators such as has:attachment, larger:, older_than: and category:. Explain each one in a single short line."
+      }
+    ],
+    "tip": "Sort by size, not by date. Twenty big files free more space than two thousand small ones."
+  },
+  "OFFER": {
+    "title": "Is this job offer real? The 10-minute check",
+    "intro": "Fake offers reach freshers and job hunters on WhatsApp and Telegram every day. Run these checks before you pay anything or share any documents.",
+    "steps": [
+      "A fee to join, train or 'verify documents' is the biggest warning sign. Real employers do not charge one.",
+      "Look the company up for free on mca.gov.in under MCA Services, View Company/LLP Master Data (a free login may be needed). Check that the name, registered address and status match the letter.",
+      "Find the company's own website yourself and contact HR from there. Never use the number or link printed in the offer.",
+      "Be wary if the email comes from a free email address instead of the company's own domain.",
+      "No interview, pressure to pay today, or a recruiter who only chats? Stop there.",
+      "If you have paid or shared bank details, call 1930 or report at cybercrime.gov.in straight away."
+    ],
+    "links": [
+      {
+        "name": "Ministry of Corporate Affairs",
+        "url": "https://www.mca.gov.in"
+      },
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "url": "https://cybercrime.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Red flag check",
+        "text": "Here is a job offer I received: [paste, with my personal details removed]. List every warning sign of a fake job offer that you can see in it, then list what I should verify myself on official sources. Do not tell me for certain that it is real or fake. Tell me what to check."
+      },
+      {
+        "name": "Ask HR to confirm",
+        "text": "Write a short, polite email to a company's official HR address asking them to confirm whether this offer letter is genuine. Mention the role, the date on the letter and the name of the sender. Five lines maximum."
+      }
+    ],
+    "tip": "Treat any rush to pay as the scam itself. Real jobs wait while you check."
+  },
+  "SCAM": {
+    "title": "The 60-second fake check: links, screenshots and PIN requests",
+    "intro": "Most money scams use one of three tricks: a link that promises free money, a fake 'payment done' screenshot, or a request for your PIN. Here is what to do with each one.",
+    "steps": [
+      "A 'free money' or government bonus forward? Don't tap the link. Send it to PIB Fact Check on WhatsApp at +91 8799711259 or email factcheck@pib.gov.in. They check claims about the government.",
+      "Report the scam message or call on Chakshu, inside the Sanchar Saathi portal or app.",
+      "Selling online? Ship only when the money shows in your own bank or UPI app history. A screenshot can be edited.",
+      "Your UPI PIN is only for sending money. Nobody needs it for you to receive money.",
+      "If money has gone, call 1930 or report at cybercrime.gov.in at once."
+    ],
+    "links": [
+      {
+        "name": "Sanchar Saathi (Chakshu)",
+        "url": "https://www.sancharsaathi.gov.in"
+      },
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "url": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Press Information Bureau",
+        "url": "https://pib.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Is this real?",
+        "text": "Here is a message I received: [paste]. Do not tell me whether it is real. List the warning signs you can see, and tell me which official website or helpline I should use to check it myself."
+      },
+      {
+        "name": "Reply to the family group",
+        "text": "Write a short, kind message for my family group saying this forward is fake and nobody should tap the link, without embarrassing the person who sent it. Three lines, simple English with a little Hindi."
+      },
+      {
+        "name": "Seller payment line",
+        "text": "Write a friendly two-line message to a buyer saying that I ship as soon as the payment shows in my own account, and that I don't ship on screenshots."
+      }
+    ],
+    "tip": "Anything that rushes you ('today only', 'cut tonight', 'offer ends in 1 hour') is your cue to slow down."
   }
 }

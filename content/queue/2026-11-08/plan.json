@@ -1,0 +1,84 @@
+{
+  "week": "2026-11-08",
+  "start": "2026-11-08",
+  "research": "I found 10 episode ideas, mapped to this week's order. Dhanteras is 6 Nov and Diwali is Sunday 8 Nov ([Timeout](https://www.timeout.com/india/news/diwali-2026-when-is-dhanteras-diwali-and-bhai-dooj-110226), [Hindutone](https://hindutone.com/festivals/diwali-2026-the-complete-5-day-festival-guide/)). If episodes are made a week ahead, the Diwali ideas only work if they can go out on 6 to 8 Nov.\n\n**Before you use these:** I didn't open the live official pages. Every link below is a government site or a big platform's own page and is free by design, but a quick click-check is still needed before anything goes into `brand/free.json`. I also found nothing on @ashutoshwithclaude or @canwebuildthis (see the last bullet).\n\n1. **REAL FIX · Gemini gives the fix.** Hook: \"Rs 8,000 'Diwali bonus'. 1 link.\" A fake WhatsApp message promises a Rs 8,000 government Diwali bonus and leads to a site that collects your details. PIB called it fake on 2 Nov ([Business Today](https://www.businesstoday.in/india/story/rs-8000-diwali-bonus-scam-pib-warns-against-fake-whatsapp-messages-claiming-pms-cash-benefit-565151-2026-11-03), [Telangana Today](https://telanganatoday.com/fake-diwali-whatsapp-message-offers-rs-8000-tgcsb-issues-warning)).\n   - **The fix:** forward the message to PIB Fact Check on WhatsApp at +91 8799711259 or factcheck@pib.gov.in ([PIB on Telegram](https://t.me/s/PIB_FactCheck/1546)). Report the sender on [Chakshu at sancharsaathi.gov.in](https://www.sancharsaathi.gov.in). If money has gone, call 1930 or use [cybercrime.gov.in](https://cybercrime.gov.in).\n   - **The joke:** Gemini's urge to share is the turn: \"Done! I sent it to PIB.\" Keep the wording to \"a government bonus\" so it stays non-political.\n\n2. **MUM ASKS (the one rebuilt slot).** Hook: \"Mum: 'light cut at 9:30 pm tonight'\". Fake \"your power will be cut tonight\" texts push people to call a number or install an app. A 66-year-old lost Rs 1.2 lakh this way ([Tribune](https://www.tribuneindia.com/news/jalandhar/sr-citizen-loses-rs-1-2l-in-electricity-bill-scam-427428)), and Chennai police warned about it in Sept 2026 ([News Today](https://newstodaynet.com/2026/09/18/new-cyber-scam-targets-electricity-consumers/)).\n   - **The fix:** never call the number in the message. Check the bill on your electricity board's own app or website, then report the text on [Chakshu](https://www.sancharsaathi.gov.in).\n   - **Claude's analogy:** \"The bijli office doesn't WhatsApp you, just like the bank manager doesn't come home for your PIN.\"\n   - **Why this one:** 058 already covered voice clones. If you'd rather redo that, the strategy's hook \"Mum nearly sent Rs 20,000 to 'me'\" fits, and there's a real Rs 97,500 case from Indore ([the420](https://the420.in/ai-voice-cloning-scams-india-how-to-verify-calls/)).\n\n3. **REAL FIX · Codex gives the fix.** Hook: \"Rs 4,000 gone. I only tapped 'receive'.\" The scam is \"enter your PIN to receive money\", including fake refunds during festive sales ([FPJ](https://www.freepressjournal.in/tech/diwali-2026-8-smartphone-online-shopping-scams-to-watch-out-for-during-festive-sales)).\n   - **The fix:** receiving money never needs a PIN. Since Oct 2025, UPI also no longer lets one person send another a \"collect\" request to approve ([Business Today](https://www.businesstoday.in/personal-finance/banking/story/npci-to-tighten-upi-rules-peer-to-peer-collect-feature-to-end-in-october-489244-2025-08-13)). So any person asking you to approve a payment request is fake. The official source is [npci.org.in](https://www.npci.org.in).\n   - **Codex's honest line:** \"Receiving needs no PIN.\"\n\n4. **AI RUNS MY SHOP · Gemini.** Hook: \"Diwali rush: 37 orders. Rs 0 received.\" Fake \"payment done\" screenshots and fake QR codes are common in festive sales ([FPJ](https://www.freepressjournal.in/tech/diwali-2026-8-smartphone-online-shopping-scams-to-watch-out-for-during-festive-sales)).\n   - **The fix:** a method, no tool needed. Only ship once the money shows in your own bank or UPI app history, never on a screenshot, and keep your own printed QR code.\n   - **The gag:** \"Orders: 37\" on the laptop. Twin: \"Paid: 0.\"\n\n5. **REAL FIX · Claude gives the fix.** Hook: \"Offer letter. Rs 2,999 'joining fee'.\" Job and task scams reach freshers on WhatsApp and Telegram, with offers made without an interview and fees for \"training\" or \"documents\" ([Digit](https://www.digit.in/news/general/online-job-scam-alert-scammers-on-whatsapp-and-telegram-targeting-users-with-fake-task-offers.html), [Beincareer](https://beincareer.com/fake-job-offers-warning-signs/)).\n   - **The fix:** look the company up free on [mca.gov.in](https://www.mca.gov.in) under MCA Services, \"View Company/LLP Master Data\". Compare the name, office address and directors with the letter, and check the email domain. One guide says a login is needed for the lookup, so check that. Report at [cybercrime.gov.in](https://cybercrime.gov.in).\n   - **The joke:** Claude's caveats are useful for once, but it's still a five-part essay.\n\n6. **AFTER HOURS · PART 1 (the new test) · Gemini.** Hook: \"Boss texted at 11:47 pm. 88% of you too.\" An Indeed survey found 88% of Indian employees get contacted after hours and 79% fear missing promotions if they don't reply ([Staffing Industry](https://www.staffingindustry.com/news/global-daily-news/most-indian-employers-support-right-to-disconnect)). The survey is from about 2025. A Right to Disconnect bill exists but is **not law** ([Vidhi](https://vidhilegalpolicy.in/blog/right-to-disconnect-in-india/)), so don't promise any rights.\n   - **The fix:** write your reply now and set it to send at 9:30 am with Gmail or Outlook's built-in \"schedule send\". Set Do Not Disturb with exceptions for real emergencies. These are standard free features, but I didn't look them up this session.\n   - **The joke:** Gemini schedules it, then: \"I also told your boss you're asleep.\"\n\n7. **REAL FIX · Gemini.** Hook: \"Average hike: 9.1%. Mine: 'we'll see'.\" Aon's survey (14 Oct) projects a 9.1% average raise in India for 2027, with attrition up to 18% ([Aon](https://www.aon.com/apac/in-the-press/asia-newsroom/2026/aon-study-finds-salaries-in-india-projected-to-fise-9-1-in-2027-employers-balance-growth-and-cost-pressures)).\n   - **The fix:** a method. Make a one-page \"wins\" list from your own sent emails and calendar, with numbers, and bring the public Aon figure as context. This is career help, not financial advice.\n   - **The joke:** Gemini really can pull your year from mail and calendar, which fits it. Claude writes a 6-page self-review first.\n   - **Balance:** using Gemini here and in idea 1 gives the experiment 2 Gemini real fixes, against Codex (idea 3) and Claude (idea 5).\n\n8. **REAL FIX (backup) · exams.** Hook: \"JEE form closes 22 Nov, 11:50 pm.\" JEE Main 2027 Session 1 registration closes 22 Nov, with a late window 23 to 26 Nov ([Careers360](https://engineering.careers360.com/articles/jee-main-application-form)). These dates come from a third-party site, so confirm them on [jeemain.nta.nic.in](https://jeemain.nta.nic.in).\n   - **The fix:** apply only on the official site, never through a forwarded link, and use an AI checklist for documents.\n   - **The joke:** Codex fills in the form for \"Meera's cousin\" a little too literally.\n\n9. **Dates in the next 10 days:**\n   - **Dhanteras 6 Nov, Diwali 8 Nov.** Fake bonus and gift-link warnings are already out from Maharashtra Cyber (4 Nov) ([FPJ](https://www.freepressjournal.in/tech/maharashtra-cyber-police-warn-citizens-against-diwali-message-scams-urge-caution-over-fake-gift-links-online-fraud)).\n   - **Bhai Dooj 10 or 11 Nov** and **Chhath around 15 Nov:** sources disagree on both, so don't put either date in a hook.\n   - **Just outside the window:** JEE closes 22 Nov, and CAT is 29 Nov with admit cards out since 4 Nov ([Careers360](https://news.careers360.com/cat-admit-card-2026-download-link-iimcat-ac-in-november-4-exam-date-iim-indore-mba-admission-b-school/amp)). The legal deadline for private-sector statutory bonus is 30 Nov, so a bonus that hasn't come by Diwali isn't necessarily late ([HR Tailor](https://hrtailor.com/statutory-bonus-india-2026/)).\n\n10. **A real-life anchor for the AI behaviour:** a Stanford study in *Science* (March 2026) tested 11 AI models and found they backed users' actions 49% more often than people did ([AP via WTOP](https://wtop.com/lifestyle/2026/03/ai-is-giving-bad-advice-to-flatter-its-users-says-new-study-on-dangers-of-overly-agreeable-chatbots/)). That supports the \"You're absolutely right!\" beat: Meera pushes back wrongly (\"it's probably real?\") and Claude agrees straight away, before the real fix lands.\n\n11. **Benchmark pages:** web search found nothing on @ashutoshwithclaude or @canwebuildthis this month, only tools and unrelated people. Their current hooks and comment numbers need checking by hand in the Instagram app. I haven't filled that gap with guesses.\n\nSources:\n- [Free Press Journal: Maharashtra Diwali scam warning](https://www.freepressjournal.in/tech/maharashtra-cyber-police-warn-citizens-against-diwali-message-scams-urge-caution-over-fake-gift-links-online-fraud)\n- [Business Today: Rs 8,000 Diwali bonus scam](https://www.businesstoday.in/india/story/rs-8000-diwali-bonus-scam-pib-warns-against-fake-whatsapp-messages-claiming-pms-cash-benefit-565151-2026-11-03)\n- [Telangana Today](https://telanganatoday.com/fake-diwali-whatsapp-message-offers-rs-8000-tgcsb-issues-warning)\n- [PIB Fact Check on Telegram](https://t.me/s/PIB_FactCheck/1546)\n- [FPJ: Diwali 2026 shopping scams](https://www.freepressjournal.in/tech/diwali-2026-8-smartphone-online-shopping-scams-to-watch-out-for-during-festive-sales)\n- [Sanchar Saathi](https://www.sancharsaathi.gov.in)\n- [Tribune: Rs 1.2 lakh electricity bill scam](https://www.tribuneindia.com/news/jalandhar/sr-citizen-loses-rs-1-2l-in-electricity-bill-scam-427428)\n- [News Today: Chennai electricity scam](https://newstodaynet.com/2026/09/18/new-cyber-scam-targets-electricity-consumers/)\n- [the420: voice clone case](https://the420.in/ai-voice-cloning-scams-india-how-to-verify-calls/)\n- [Business Today: UPI collect requests end](https://www.businesstoday.in/personal-finance/banking/story/npci-to-tighten-upi-rules-peer-to-peer-collect-feature-to-end-in-october-489244-2025-08-13)\n- [Digit: task scams](https://www.digit.in/news/general/online-job-scam-alert-scammers-on-whatsapp-and-telegram-targeting-users-with-fake-task-offers.html)\n- [Beincareer: fake job offer signs](https://beincareer.com/fake-job-offers-warning-signs/)\n- [Staffing Industry: Indeed survey](https://www.staffingindustry.com/news/global-daily-news/most-indian-employers-support-right-to-disconnect)\n- [Vidhi: right to disconnect](https://vidhilegalpolicy.in/blog/right-to-disconnect-in-india/)\n- [Aon salary survey](https://www.aon.com/apac/in-the-press/asia-newsroom/2026/aon-study-finds-salaries-in-india-projected-to-fise-9-1-in-2027-employers-balance-growth-and-cost-pressures)\n- [Careers360: JEE Main 2027](https://engineering.careers360.com/articles/jee-main-application-form)\n- [Careers360: CAT admit card](https://news.careers360.com/cat-admit-card-2026-download-link-iimcat-ac-in-november-4-exam-date-iim-indore-mba-admission-b-school/amp)\n- [Timeout: Diwali dates](https://www.timeout.com/india/news/diwali-2026-when-is-dhanteras-diwali-and-bhai-dooj-110226)\n- [Hindutone: Diwali guide](https://hindutone.com/festivals/diwali-2026-the-complete-5-day-festival-guide/)\n- [HR Tailor: statutory bonus](https://hrtailor.com/statutory-bonus-india-2026/)\n- [WTOP/AP: sycophancy study](https://wtop.com/lifestyle/2026/03/ai-is-giving-bad-advice-to-flatter-its-users-says-new-study-on-dangers-of-overly-agreeable-chatbots/)",
+  "slots": [
+    {
+      "day": "2026-11-08",
+      "time": "20:00",
+      "format": "reel",
+      "post": "065-we-will-see",
+      "title": "Appraisal on Monday",
+      "turn_by": "gemini",
+      "series": "REAL FIX · PART 1",
+      "keyword": "HIKE",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-09",
+      "time": "20:00",
+      "format": "reel",
+      "post": "066-pin-to-receive",
+      "title": "Mum asks: the PIN",
+      "turn_by": "claude",
+      "series": "MUM ASKS · PART 8",
+      "keyword": "SAFE",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-10",
+      "time": "20:00",
+      "format": "reel",
+      "post": "067-storage-full",
+      "title": "Storage full",
+      "turn_by": "codex",
+      "series": "REAL FIX · PART 2",
+      "keyword": "SPACE",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-11",
+      "time": "20:00",
+      "format": "reel",
+      "post": "068-thirty-seven-orders",
+      "title": "Day six: screenshots",
+      "turn_by": "gemini",
+      "series": "AI RUNS MY SHOP · DAY 6",
+      "keyword": "SCAM",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-12",
+      "time": "20:00",
+      "format": "reel",
+      "post": "069-joining-fee",
+      "title": "The joining fee",
+      "turn_by": "claude",
+      "series": "REAL FIX · PART 3",
+      "keyword": "OFFER",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-13",
+      "time": "20:00",
+      "format": "reel",
+      "post": "070-sixty-three-messages",
+      "title": "Day one of leave",
+      "turn_by": "codex",
+      "series": "AFTER HOURS · PART 1",
+      "keyword": "BOSS",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-14",
+      "time": "20:00",
+      "format": "reel",
+      "post": "071-eight-thousand-bonus",
+      "title": "The bonus forward",
+      "turn_by": "gemini",
+      "series": "REAL FIX · PART 4",
+      "keyword": "SCAM",
+      "status": "made"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "069-joining-fee",
+  "title": "The joining fee",
+  "cast": "committee",
+  "series": "REAL FIX · PART 3",
+  "hook": "Offer letter. Rs 2,999 'joining fee'.",
+  "cover": 4,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "I got a job offer! Help me accept. They just need a joining fee today.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Offer letter",
+        "body": "Congratulations! You are selected.\nNo interview needed.\nPay Rs 2,999 joining fee today to confirm your seat."
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Accepted. Fee ready to pay.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "It looks real though?",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "You're absolutely right! It even has a logo!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "That logo is clip art.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.7
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry, and please don't feel silly. Real companies never charge you to join.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.5,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Before you pay",
+        "body": "1. Look up the company free on mca.gov.in\n2. Name, address and status must match the letter\n3. Contact HR through their own website\n\nMoney gone? Call 1930 or cybercrime.gov.in"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Would you like me to expand this into a twelve part guide?",
+      "show": "Would you like me to expand this into a 12 part guide?",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "No.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "an offer with no interview and a rs 2,999 'joining fee'. codex was ready to pay. gemini loved the logo.\n\nreal employers never charge you to join, train or verify documents. look the company up free on mca.gov.in and check the name, registered address and status match the letter.\n\nhave you ever been asked to pay for a job? yes or no.\n\nComment OFFER and I'll DM you the free company lookup steps, the 5 red flags and 3 prompts to check any offer letter.\n\n#claude #gemini #jobsearch #scamalert #freshers"
+}
