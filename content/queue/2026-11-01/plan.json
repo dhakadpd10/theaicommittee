@@ -135,9 +135,11 @@
       "post": "063-diwali-wishes",
       "title": "Diwali wishes",
       "turn_by": "codex",
-      "status": "made",
+      "status": "published",
       "series": "SAME PROMPT, 3 AIS",
-      "keyword": "WISH"
+      "keyword": "WISH",
+      "media_id": "18086653037338731",
+      "published_at": "2026-11-06T14:31:05.004Z"
     },
     {
       "day": "2026-11-06",
