@@ -331,5 +331,138 @@
       }
     ],
     "tip": "Anything that rushes you ('today only', 'cut tonight', 'offer ends in 1 hour') is your cue to slow down."
+  },
+  "JOBS": {
+    "title": "The free government job portal, set up in 15 minutes",
+    "intro": "National Career Service (NCS) is the Government of India's free job portal. Registering, searching and applying cost nothing at any stage, and it lists job fairs near you.",
+    "steps": [
+      "Open ncs.gov.in and register as a Jobseeker with your mobile number and email.",
+      "Fill in your profile fully: education, skills and preferred city. Jobs are matched to it.",
+      "Search by role and location, and apply straight from the listing.",
+      "Open Events to find job fairs near you and register for the ones that fit.",
+      "Never pay anyone who says they are from NCS. The portal does not charge job seekers."
+    ],
+    "links": [
+      {
+        "name": "National Career Service",
+        "url": "https://www.ncs.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Match my CV to this job",
+        "text": "Here is a job listing and my CV. List the 5 skills the listing asks for most, show where my CV already proves each one, and suggest one honest line I could add for any that are missing. Do not invent experience I don't have. Listing: [paste]. CV: [paste]."
+      },
+      {
+        "name": "Why am I getting no replies?",
+        "text": "I have applied to [number] jobs for [role] and got [number] replies. Here is my CV and 3 listings I applied to. Give me the 3 most likely reasons, in order, with one concrete change for each. Under 150 words, no headings."
+      },
+      {
+        "name": "Job fair in 10 minutes",
+        "text": "I am going to a job fair for [role] in [city]. From my CV, write a 30-second introduction about me, then 5 questions an employer may ask, each with a short honest answer that uses only what is in my CV. CV: [paste]."
+      }
+    ],
+    "tip": "Before you send any documents, check the job on the company's own careers page. Real employers never ask for a fee."
+  },
+  "SIM": {
+    "title": "Check every SIM in your name, free, in 5 minutes",
+    "intro": "Sanchar Saathi is the Department of Telecommunications' free portal and app. 'Know Your Mobile Connections' lists every mobile number registered with your ID and lets you report the ones that aren't yours.",
+    "steps": [
+      "Open sancharsaathi.gov.in or the Sanchar Saathi app.",
+      "Choose 'Know Your Mobile Connections'.",
+      "Enter your mobile number and the captcha, then log in with the OTP sent to you.",
+      "Check the list. Mark any number you don't recognise as 'Not my number', and an old one you no longer use as 'Not required'.",
+      "Submit, and keep the reference ID to track your request."
+    ],
+    "links": [
+      {
+        "name": "Sanchar Saathi",
+        "url": "https://sancharsaathi.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Explain it to my parents",
+        "text": "Write a short WhatsApp message in simple Hinglish for my parents. Explain in 4 numbered steps how to check how many SIMs are registered in their name on the government's Sanchar Saathi portal. End by reminding them never to read out an OTP to anyone who calls them."
+      },
+      {
+        "name": "My old numbers",
+        "text": "Help me list every mobile number I may have used in the last 10 years: college, old jobs, data dongles, SIMs I bought for family. Ask me one question at a time, then give me a final list I can compare with the portal."
+      },
+      {
+        "name": "Read my result",
+        "text": "The portal showed me these masked numbers: [paste]. For each one, help me work out whether it is my current number, an old one, or unknown, and which option fits: Required, Not required, or Not my number. Ask me questions instead of guessing."
+      }
+    ],
+    "tip": "Do it for Mum and Papa too. Scammers often use older people's IDs."
+  },
+  "PENSION": {
+    "title": "Papa's life certificate from home, free",
+    "intro": "Pensioners submit a life certificate (Jeevan Pramaan) once a year, mostly in November. The government's free face app lets them do it on an Android phone at home instead of in a bank queue.",
+    "steps": [
+      "On an Android phone (Android 7 or newer), first install the AadhaarFaceRD app from the Play Store. It runs the face check.",
+      "Install the Jeevan Pramaan face app, using the link on jeevanpramaan.gov.in.",
+      "Keep ready: Papa's Aadhaar number, his mobile number, his PPO number and his pension bank account. His Aadhaar needs to be linked with his pension bank or office.",
+      "Sit him in good light, take the photo in the app, and have him blink when asked.",
+      "Keep the Pramaan ID that arrives by SMS. You can download the certificate on jeevanpramaan.gov.in.",
+      "Confirm his exact deadline with his bank or pension office."
+    ],
+    "links": [
+      {
+        "name": "Jeevan Pramaan",
+        "url": "https://jeevanpramaan.gov.in"
+      },
+      {
+        "name": "Jeevan Pramaan FAQ",
+        "url": "https://jeevanpramaan.gov.in/misc/faq"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Explain it to Papa",
+        "text": "Write simple Hinglish steps for my father, who is not comfortable with phones, to submit his life certificate with the Jeevan Pramaan face app: install the two apps, keep his Aadhaar and PPO number ready, take the photo in good light and blink when asked. Short lines, one action per line."
+      },
+      {
+        "name": "Before we start",
+        "text": "I am pasting the official Jeevan Pramaan FAQ: [paste]. Using only this text, make a short checklist of what we need before starting. Mark anything the text does not answer instead of guessing."
+      },
+      {
+        "name": "The fake pension call",
+        "text": "Write a calm, short note for my father. The face app is free on his own phone. No bank or pension office will call and ask him to share an OTP or pay for his life certificate. If someone does, he should hang up and call his bank on the number printed in his passbook."
+      }
+    ],
+    "tip": "Do it early in the month. If the face check fails, try again in daylight and without glasses, or ask at his bank."
+  },
+  "DOCS": {
+    "title": "Your marksheets, free, on DigiLocker",
+    "intro": "DigiLocker is the government's free document wallet. Many school boards and universities issue marksheets and certificates directly into it, and documents issued there are legally treated like the originals.",
+    "steps": [
+      "Open digilocker.gov.in or the DigiLocker app and sign up with your Aadhaar-linked mobile number.",
+      "Go to Search Documents (or Education) and pick your board or university.",
+      "Enter your roll number and year exactly as they appear on the marksheet, then fetch the document.",
+      "It appears under Issued Documents. Download or share it for joining.",
+      "If your board or university isn't listed, apply for a duplicate on its official website, and tell HR the date you applied."
+    ],
+    "links": [
+      {
+        "name": "DigiLocker",
+        "url": "https://www.digilocker.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Email to HR",
+        "text": "Write a short, polite email to HR. My original [marksheet] is not with me. I am sharing the DigiLocker issued copy now and will bring the original or the duplicate by [date]. Under 80 words. Do not use 'I hope this email finds you well'."
+      },
+      {
+        "name": "Joining checklist",
+        "text": "Here is the document list from my joining letter: [paste]. Turn it into a checklist. For each item, say where I could get an official copy today. Mark anything you are unsure about instead of guessing."
+      },
+      {
+        "name": "Duplicate application",
+        "text": "Write a short formal application to [board or university] asking for a duplicate [marksheet or certificate]. Roll number [x], year [y], reason: lost. Plain language, under 120 words."
+      }
+    ],
+    "tip": "Some employers still want to see the paper original later. Ask HR once, in writing, what they accept."
   }
 }

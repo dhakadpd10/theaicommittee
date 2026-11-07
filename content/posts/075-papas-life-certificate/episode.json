@@ -1,0 +1,99 @@
+{
+  "id": "075-papas-life-certificate",
+  "title": "Papa's pension",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 9",
+  "hook": "Papa's pension. 1 form. 30 days.",
+  "cover": 5,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum asks if Papa has to stand in the bank queue again.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Papa ko life certificate ke liye phir bank jaana padega kya?? Pichli baar 3 ghante line mein the"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Biometric face authentication. Liveness check. Done.",
+      "show": "Biometric face auth. Liveness check. Done.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Easy! Just text the bank a selfie!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Like the bank uncle who knows Papa's face. The free app checks him against his Aadhaar photo.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Life certificate from home",
+        "body": "1. Install AadhaarFaceRD (Play Store)\n2. Install Jeevan Pramaan Face App\n   jeevanpramaan.gov.in\n3. Papa faces the camera in good light. Blinks.\n\nAndroid phone. Keep Aadhaar + PPO no. ready.\nCheck Papa's deadline with his bank."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "He just has to blink. Sorry, that's all.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Okay. Sending Mum the steps.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Papa ko life certificate ke liye phir bank jaana padega kya?? Pichli baar 3 ghante line mein the\n\nHo gaya!! Papa ne 4 baar blink kiya. Ab Sharma uncle ka bhi karenge."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Papa has a business now.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "papa stood in a bank queue for 3 hours for 1 form last year. this year he blinked at a phone.\n\npensioners can give the yearly life certificate from home: install AadhaarFaceRD and the Jeevan Pramaan face app on an android phone, then papa looks at the camera and blinks.\nmost pensioners do it in november, so check papa's own deadline with his bank.\n\nwhich AI thing should mum ask about next?\n\nComment PENSION and I'll DM you the official app links, the exact steps and what papa needs ready.\n\n#claude #gemini #desimom #pension #seniorcitizens"
+}

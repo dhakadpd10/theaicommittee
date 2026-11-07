@@ -1,0 +1,90 @@
+{
+  "id": "074-sims-in-my-name",
+  "title": "Nine SIMs",
+  "cast": "committee",
+  "series": "REAL FIX · PART 6",
+  "hook": "9 SIMs can be in my name. I own 1.",
+  "cover": 2,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Someone could have SIMs in my name. Check how many.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2
+    },
+    {
+      "who": "codex",
+      "say": "No access to your SIMs.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. How are you feeling? Shall I write a gentle note to all nine?",
+      "show": "I'm so sorry. How are you feeling? Shall I write a gentle note to all 9?",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Government site, one OTP. Every SIM on your ID!",
+      "show": "Government site, 1 OTP. Every SIM on your ID!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "sancharsaathi.gov.in",
+        "body": "Know Your Mobile Connections\n1. Your number + OTP\n2. Every SIM on your ID:\n   98XXXXXX12\n   70XXXXXX45\n   63XXXXXX08\n3. Unknown: Not my number\n   Old: Not required"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I have one phone.",
+      "show": "I have 1 phone.",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Tap not my number on each one!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "One is your college number.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "who": "meera",
+      "say": "Oh. Hi.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "someone could be making scam calls on a SIM in your name and you'd never know.\n\nopen sancharsaathi.gov.in, go to Know Your Mobile Connections and log in with your number and an OTP. it lists every connection on your ID: mark unknown ones Not my number and old ones Not required.\n\nhow many numbers showed up on yours? just the number.\n\nComment SIM and I'll DM you the official link, the exact steps and what to do if a number isn't yours.\n\n#gemini #aitools #scamalert #cybersafety #sancharsaathi"
+}

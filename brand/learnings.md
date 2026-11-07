@@ -2,6 +2,94 @@
 
 Newest week on top. The weekly planner adds an entry every time it plans, from `content/analytics/log.csv`.
 
+## Week of 2026-11-07
+
+- **The sample is still too small, the data is still incomplete, and the series tags are still wrong. Read every claim below as a lead, not a rule.**
+  - **Sample.** 30 posts from Oct 18 to Nov 6. This entry adds 053 and 063 to the 11-06 entry and gives every post another day of age. Of the 8 posts since the one-a-day reset (Oct 30), only 059 and 058 are 7 days old. 063 is under a day old and 053 is 2 days old.
+  - **Missing metrics, fourth audit running.** Hold at 3s, non-follower share and Insights follows are missing again (`follows` is null on all 30). The hook still cannot be graded, and a hook problem still cannot be told apart from a distribution problem.
+  - **Episode files.** I did not have them in this session. Hook text, first lines and durations were not compared for the third audit running. This is now the main blocker.
+  - **Median check.** With 30 posts the true median is 1,473.5: the average of the 15th post (1,491) and the 16th (1,456), not 1,491. Every multiple rises about 1.2%. No ranks change, so the multiples below use the 1,491 as given.
+  - **Tags.** The 11-06 strategy said to fix the tags before posting again. 053 and 063 still shipped as `SAME PROMPT, 3 AIS`. Six posts carry the retired tag, and none carries `REAL FIX` or `AI RUNS MY SHOP`.
+    - 053 was published after 064, and the titles "Just one typo" and "Diwali wishes" read like the retired low-stakes everyday jokes. Either old queued episodes are shipping, or real fix episodes are mislabelled. Low-medium confidence until the files are read.
+    - Until the tags are fixed, the series comparison and this week's "who delivers the fix" experiment cannot be read.
+  - Confidence: high that this data cannot support strong patterns.
+
+- **Top 5 and bottom 5 by outlier multiple, top by sends, and follows.**
+  - **Top 5:**
+    - 011 "Cancel politely": 1.50x, Claude, old format, 21.8s
+    - 003: 1.43x, Gemini, old, 16.9s
+    - 060 "Boss at eleven": 1.41x, Claude, new, 17.4s, 1,484 reach
+    - 019: 1.35x, Gemini, old, 17.8s
+    - 014: 1.32x, Codex, old, 14.6s
+    - Average watch is 17.7s, and **none of the five has a single share.** Four of the five are old format.
+  - **Bottom 5** (six listed, because three posts tie at 0.14x):
+    - 022: 0.09x, 7.8s
+    - 005: 0.11x, 11.4s
+    - 063: 0.12x, 11.8s, under a day old, so not ranked
+    - 052, 058 and 017: 0.14x each, at 10.7s, 9.8s and 11.0s
+    - Average watch is 10.4s. Three of the six are new format, and two are Mum asks.
+  - **Top by sends** (shares = shares per 1k × reach):
+    - 004: about 6 shares (7.9 per 1k)
+    - 044: about 5 (4.2 per 1k)
+    - 009: about 4 (3.6 per 1k)
+    - 018: about 2 (1.5 per 1k)
+    - 008: 1 (0.9 per 1k)
+    - That is 18 shares in total. The last one was on Oct 28 (044), and **there are 0 shares on all 8 posts since the reset.** By turn, the shares split Gemini 10, Claude 7, Codex 1.
+  - **Follows.** The only next-day gain since the reset is +1 on 062 "Gift for the boss". One follow cannot rank anything.
+  - Confidence: high on the counts. Low on anything drawn from single-digit shares and follows.
+
+- **What separates top from bottom: the first test group, not the middle of the episode, as far as this data can tell.**
+  - **Two clusters, not a slope.** 16 posts land at 1,456 to 2,231 views and 13 land at 136 to 684. 004 (1,080) sits between them.
+  - **Watch time.** The high cluster averages 16.6s and the low cluster 11.9s (11.0s without 007 and 053).
+    - 053 is a second 007: 16.6s watch on only 296 reach. The people who got it stayed, but few got it, which points at distribution.
+    - 059 (9.1s) and 058 (9.8s) lost people early, which points at the hook. Without hold at 3s, this is as far as the data goes.
+  - **No late recovery after day 2.** 058 and 052 sat at 0.14x on 11-06 and are still at 0.14x. The four Mum asks posts moved from 0.14 to 0.21x to 0.14 to 0.22x in a week. The day-one recoveries (010, 014) happened inside 48 hours. Medium-low confidence (about 5 posts). It means a post that is low on day 2 is a safe planning signal, but keep the 7-day rule for ranking.
+  - **Who delivered the turn:**
+    - Gemini: 0.99x mean (n=10)
+    - Claude: 0.83x (n=9)
+    - Codex: 0.53x (n=10), with 6 of 10 under 0.25x
+    - Gemini's lead is an old-format lead. Its one turn since the reset, 053, sits at 0.29x at 2 days.
+    - Claude carried all three of its Mum asks plus both boss posts, so the turn is tangled with series and topic. Confidence: low.
+  - **Theme.** The two best posts since the reset are both about the boss: 060 at 1.41x and 062 at 0.41x, and 062 brought the only follow. Low confidence (n=2, 0 shares between them).
+  - **Day and time, checked last, show nothing usable.**
+    - 060 and 062 both went out at about 20:32 IST and are the top two since the reset.
+    - 053 (20:55) and 052 (21:11) are low, and all four 20:01 posts are low.
+    - That is n=2, and it is confounded with the boss theme. Posts are also drifting off the planned 20:00 slot.
+
+- **Series vs series, and new format vs old. What shipped as the new format is losing, but the real fix format has not actually been tested.**
+  - **Old "Hey committee"** (n=20): median 1.05x, 14 of 20 at or above 0.95x, 13 shares.
+  - **Since the reset** (n=8): median 0.22x, 1 of 8 above 0.5x (060). The 8 posts together have 0 shares, 1 save (058), 0 comments, 0 keyword comments and 1 follow.
+  - **`SAME PROMPT` tag** (n=6): 1.41x, 1.21x, 0.41x, 0.29x, 0.22x and 0.12x, a median of 0.35x. All 5 of its shares came from 044, which went out before the reset.
+  - **Mum asks** (n=4): 0.22x, 0.20x, 0.14x and 0.14x, a median of 0.17x. All four sit in the low cluster, with 0 shares and a best reach of 267. 4 for 4, and none has moved in a week.
+  - **Real fix and AI runs my shop:** n=0 by tag, so there is no result either way.
+  - **The slide still predates the reset.**
+    - From Oct 21 to the morning of Oct 27, 12 of 13 posts were at or above 0.95x.
+    - From the evening of Oct 27 on, 2 of 12 broke 0.5x. The first two lows of that run (021, 022) were old format.
+    - So the new format is not proven to be the cause. But 9 days and 8 posts in, nothing shipped under it has earned a share.
+  - Confidence: medium that Mum asks as built is our weakest series. Low on why reach fell.
+
+- **Views without follows is still a profile and payoff problem, not a hook problem.**
+  - **Reach.** 060 reached 1,484 people. The account has under 10 followers, so that was almost all non-followers.
+  - **What 060 earned:** 0 follows, 0 shares, 0 comments, 0 keyword comments and 8 likes (5.4 per 1k reach, against 28 per 1k on 011).
+  - **Conversion.** Since the reset there is 1 follow from 4,405 views and 3,271 reach. That is 0.23 per 1k views, against 8 to 9 per 1k for the benchmark pages, about 35x lower.
+  - **Keyword comments.** They are 0 across all 3,271 post-reset reach. Either the prize is not worth a comment or the question is not landing.
+  - **Profile.** There is no record that `/ig-profile` was run.
+  - Confidence: low (n=1 travelling post, and follows here are a next-day net change, not Insights follows). It is still the clearest "views but no follows" case we have.
+
+- **STOP, DO MORE, and before next audit.**
+  - **STOP:** publishing any post that is not tagged with its real series. Make it a hard gate: no `REAL FIX` / `MUM ASKS` / `AI RUNS MY SHOP` / `AFTER HOURS` tag means it does not post. Two more retired-tag posts shipped after the last audit said stop, and this week's experiment cannot be read without the tags.
+  - **STOP:** low-stakes everyday topics, if the files confirm 053 and 063 are what their titles suggest. They landed at 0.29x and 0.12x and match the retired formula. Low-medium confidence.
+  - **STOP:** Mum asks beyond the one rebuilt slot. If the rebuilt one is under 0.3x at day 2, pause the series. Medium confidence.
+  - **STOP:** waiting for posts that are low at day 2 to recover (see the 052 and 058 evidence). Keep the 7-day rule for ranking only.
+  - **DO MORE:** the boss and work-at-night shape (060 and 062 are the top two since the reset, and 062 brought the only follow). Low confidence, n=2.
+  - **DO MORE:** keep Gemini on the fix in 2 of the 4 real fix episodes, as planned. Do not expect it to carry the new format: its one post-reset turn is 0.29x. Low confidence.
+  - **DO MORE:** run `/ig-profile` now, and make the keyword prize something people would otherwise search for. 060's reach with 0 conversions says the profile and payoff matter more than another hook rewrite.
+  - **Before next audit:**
+    - Pull hold at 3s, non-follower share and Insights follows. Above all, get the retention graphs for 060 (our best since the reset) and 059 (9.1s, our weakest watch). These two screenshots would settle hook vs distribution.
+    - Read the episode files for 053, 063, 059, 060 and 062, and compare the hook text and first line across the two clusters.
+    - Log keyword comments per post.
+    - Post at 20:00 IST, not 20:30 to 21:11.
+
 ## Week of 2026-11-06
 
 - **The sample is too small and the data is incomplete. Read every claim below as a lead, not a rule.**

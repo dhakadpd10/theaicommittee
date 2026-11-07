@@ -1,0 +1,102 @@
+{
+  "id": "072-zero-replies",
+  "title": "Zero replies",
+  "cast": "committee",
+  "series": "REAL FIX · PART 5",
+  "hook": "87 applications. 0 replies.",
+  "cover": 2,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Eighty seven applications. Zero replies. Help.",
+      "show": "87 applications. 0 replies. Help.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Applications",
+        "body": "Sent: 87\nReplies: 0"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Sent your CV to every job.",
+      "shot": "codex",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "One is for a dentist.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Part one of five. Your feelings.",
+      "show": "Part 1 of 5: Your feelings.",
+      "shot": "claude-push",
+      "mood": "think",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Use the free government job portal. No fee at any stage!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.8,
+      "screen": {
+        "page": "text",
+        "title": "ncs.gov.in",
+        "body": "National Career Service (free, govt)\n\n1. Register as a jobseeker\n2. Add your skills and city\n3. Open Events for job fairs near you"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "I also set alerts for your city!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Would you like me to expand on part one?",
+      "show": "Would you like me to expand on Part 1?",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Cancelled every single one.",
+      "shot": "codex",
+      "mood": "worried",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "Good.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "87 applications. 0 replies. codex applied to 6,000 more. one was for a dentist.\n\nthe government's national career service (ncs.gov.in) is free at every stage. register as a jobseeker, add your skills and city, then open events for job fairs near you.\n\nhow many applications have you sent? just the number.\n\nComment JOBS and I'll DM you the NCS setup steps and 3 prompts to tailor your CV.\n\n#gemini #aitools #jobsearch #freshers #careertips"
+}
