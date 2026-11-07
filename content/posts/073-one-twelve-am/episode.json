@@ -1,0 +1,111 @@
+{
+  "id": "073-one-twelve-am",
+  "title": "Don't hit send",
+  "cast": "committee",
+  "series": "AFTER HOURS · PART 1",
+  "hook": "Report done at 1:12 am. Don't hit send.",
+  "cover": 2,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Report's done. It's one twelve at night. Do I send it?",
+      "show": "Report's done. It's 1:12 at night. Do I send it?",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "I hope this email finds you well. So sorry for the hour.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Report",
+        "body": "Dear Sir,\nI hope this email finds you well.\nI am so sorry for the hour.\nI am so sorry for this email.\nI am so sorry for being sorry."
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Already sent! I also copied the whole team!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Report",
+        "body": "To: Boss\nCc: Whole team (14)\n\nDear Sir,\nI hope this email finds you well.\nI am so sorry for the hour.",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Wait. Bring it back.",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Done. It goes out tomorrow morning.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "screen": {
+        "page": "text",
+        "title": "Re: Report",
+        "body": "Sends tomorrow, 9:30 AM\n\n1. Arrow next to Send\n2. Schedule send\n3. Pick date & time: 9:30 AM\n4. Phone: Do Not Disturb on",
+        "stamp": "SCHEDULED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "So he thinks I wrote it in the morning.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Correct.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "He replies one minute later.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "who": "meera",
+      "say": "Do not disturb.",
+      "show": "Do Not Disturb.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "report done at 1:12 am. send it now and 1 am becomes your new deadline.\n\nwrite it tonight, then schedule send: click the arrow next to send (or the three dots on your phone), pick 9:30 am, and turn on do not disturb.\n\nwhat time did you last send a work email? just the time.\n\nComment BOSS and I'll DM you the schedule send and undo send steps for phone and laptop, plus 3 prompts for calm replies to late night boss messages.\n\n#codex #gemini #officelife #worklifebalance #corporatelife"
+}

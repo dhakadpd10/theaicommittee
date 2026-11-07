@@ -1,0 +1,105 @@
+{
+  "id": "077-one-star-review",
+  "title": "One star",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 7",
+  "hook": "37 orders. 1 broken candle. 1 star.",
+  "cover": 2,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "One star. The candle arrived broken. Reply.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Orders: 37",
+        "body": "New review · 1 star\nPriya S.\n\"Candle arrived cracked. So sad. It was a gift.\""
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Candle is fine. Works on my machine.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Dear valued human, I am so deeply sorry. Part one.",
+      "show": "Dear valued human, I am so deeply sorry. Part 1.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Sorry, thank you, a new one ships tomorrow, message us!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.2
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.4,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Reply · 1 star review",
+        "body": "Priya S. · 1 star\nCandle arrived cracked.\n\nMitti replied:\nSorry, and thank you for telling us. A new one ships tomorrow. Message us anytime.\n\n1. Reply within a day\n2. Sorry and thanks, then the fix\n3. Never argue in public",
+        "stamp": "POSTED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Okay. That one's good.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I pasted it under every review too!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Also under the five stars.",
+      "show": "Also under the 5 stars.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Orders: 38",
+        "body": "New order\nPriya S.\n2 x Mitti candle\n\nNote: \"Your reply was so sweet. One for me, one for Mummy.\""
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She ordered two.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "one cracked candle. one star. every new buyer reads that review before they order.\n\nreply in public within a day: sorry and thank you in one line, then the fix, then move it to messages. never argue under a review, and replying on your free business profile costs nothing.\n\npublic reply or DM only? pick one.\n\nComment SHOP and I'll DM you the 3 rule review reply template, the free setup steps with the official link, and 5 prompts for the toughest reviews.\n\n#gemini #aitools #smallbusiness #customerservice #shopsmall"
+}

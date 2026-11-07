@@ -1,0 +1,99 @@
+{
+  "id": "078-lost-marksheet",
+  "title": "Lost marksheet",
+  "cast": "committee",
+  "series": "REAL FIX · PART 8",
+  "hook": "Joining in 2 days. Marksheet: lost.",
+  "cover": 3,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Joining in two days. My mark sheet is gone.",
+      "show": "Joining in 2 days. My marksheet is gone.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2
+    },
+    {
+      "who": "codex",
+      "say": "File not found in repo.",
+      "show": "marksheet.pdf not found in repo.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.2
+    },
+    {
+      "who": "gemini",
+      "say": "Easy! The board couriers it in two hours!",
+      "show": "Easy! The board couriers it in 2 hours!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.2
+    },
+    {
+      "who": "twin",
+      "say": "Made that up.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Sorry, that's stressful. Check the government's free document locker.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "DigiLocker",
+        "body": "1. Search your board or university\n2. Enter roll number and year\n3. Open Issued Documents\n\nClass 12 Marksheet · 2016",
+        "stamp": "FOUND"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "It's right there.",
+      "shot": "meera",
+      "mood": "shock",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "Caveat. Not every board is there. If yours isn't, apply for a duplicate and tell HR.",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Sorry it was so easy.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "For ten years.",
+      "show": "For 10 years.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "joining in 2 days, original marksheet lost in the move. gemini invented a courier.\n\nmany boards and universities already issue marksheets into DigiLocker, the government's free app. search your board, enter roll number and year, and it shows under issued documents.\nboard not listed? apply for a duplicate on the board's own website and tell HR today.\n\ndid you know your marksheet might already be online? yes or no.\n\nComment DOCS and I'll DM you the DigiLocker steps, the official link and 3 prompts to message HR and your board.\n\n#claude #gemini #jobsearch #freshers #digilocker"
+}

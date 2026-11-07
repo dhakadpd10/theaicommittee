@@ -1,0 +1,107 @@
+{
+  "id": "076-power-cut-tonight",
+  "title": "Power cut tonight",
+  "cast": "committee",
+  "series": "REAL FIX · PART 7",
+  "hook": "Power cut at 9:30 pm. Pay Rs 1,240 now.",
+  "cover": 3,
+  "musicStop": 4,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Power gets cut at nine thirty unless I pay this link.",
+      "show": "Power gets cut at 9:30 unless I pay this link.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "SMS · +91 79823 1xxxx",
+        "body": "Dear consumer, your electricity will be disconnected tonight at 9:30 pm.\nBill of Rs 1,240 is pending.\nPay now to avoid cut: pay-bill-now.xyz"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "The logo matches! It's official!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "It does look real though.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right. It looks very real.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Real bills. Not from phone numbers.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "3 steps before you pay",
+        "body": "1. Real bills never come from a mobile number. Don't click. Don't call back.\n2. Open your power company's own app, or type its website yourself. Check the bill there.\n3. Report the SMS on Chakshu: sancharsaathi.gov.in\n\nMoney already gone? Call 1930 or cybercrime.gov.in"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right as well. It's fake. I'm so sorry.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.8,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "SMS · +91 79823 1xxxx",
+        "body": "Dear consumer, your electricity will be disconnected tonight at 9:30 pm.\nBill of Rs 1,240 is pending.\nPay now to avoid cut: pay-bill-now.xyz\n\n9:31 pm. Lights: still on.",
+        "stamp": "REPORTED"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Still glowing.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "who": "meera",
+      "say": "Unlike my trust.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "an sms said my power gets cut at 9:30 tonight unless i pay rs 1,240 on a link. two AIs said it looked real.\n\nreal power bills never come from a personal mobile number. don't click or call back: open your power company's own app, check the bill there, and report the sms on chakshu at sancharsaathi.gov.in. money already gone? call 1930 or go to cybercrime.gov.in.\n\nwhich step did you not know? 1, 2 or 3.\n\nComment SCAM and I'll DM you the 3 step bill scam check, the official report links and 3 prompts to check any suspicious sms.\n\n#claude #codex #scamalert #cybersafety #electricitybill"
+}
