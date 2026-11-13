@@ -188,7 +188,8 @@ async function run({ start, days, force = false } = {}) {
   if (launch && !launch.start) { log('the launch posts have no dates yet: run the Launch workflow first'); return { skipped: true }; }
   const last = lastQueuedDay();
   start = start || (last && last >= today ? addDays(last, 1) : addDays(today, 1));
-  days = days || ((6 - dow(start) + 7) % 7) + 1; // up to and including the next Saturday
+  days = days || ((6 - dow(start) + 7) % 7) + 1 || 8; // up to and including the next Saturday
+  if (days === 1) days = 8; // a Saturday start plans through the following Saturday
   const week = start; const qdir = P('content/queue', week);
   if (!force && fs.existsSync(path.join(qdir, 'plan.json'))) { log(`${week} already planned`); return { week, skipped: true }; }
   const perDay = cfg.slots.length, count = days * perDay;
