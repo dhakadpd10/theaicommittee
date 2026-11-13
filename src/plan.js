@@ -21,6 +21,13 @@ ${readText(P('brand/learnings.md'))}`;
 
 const POSTS = () => P('content/posts');
 const allPlans = () => { const q = P('content/queue'); return fs.existsSync(q) ? fs.readdirSync(q).map((w) => ({ w, plan: readJSON(path.join(q, w, 'plan.json'), null) })).filter((x) => x.plan) : []; };
+// a slot whose format is a list rotates through it day by day from cfg.alternate_from (e.g. ["carousel", "reel"])
+function slotOn(cfg, day, slot) {
+  if (!Array.isArray(slot.format)) return slot;
+  const n = Math.round((Date.parse(day) - Date.parse(cfg.alternate_from || day)) / 86400000), k = slot.format.length;
+  return { ...slot, format: slot.format[((n % k) + k) % k] };
+}
+
 function lastQueuedDay() {
   let last = null;
   for (const { plan } of allPlans()) for (const s of plan.slots) if (/^\d{4}-\d{2}-\d{2}$/.test(s.day) && !['skip', 'missed', 'failed'].includes(s.status) && (!last || s.day > last)) last = s.day;
@@ -167,6 +174,7 @@ async function writeEpisode(id, idea) {
 const dow = (day) => new Date(`${day}T00:00:00Z`).getUTCDay(); // 0 Sunday ... 6 Saturday
 async function run({ start, days, force = false } = {}) {
   const cfg = config(); const today = localDay();
+  if (cfg.paused?.on) { log(`paused in config/agent.json: ${cfg.paused.note || ''}`); return { skipped: true }; }
   const launch = readJSON(P('content/queue/launch/plan.json'), null);
   if (launch && !launch.start) { log('the launch posts have no dates yet: run the Launch workflow first'); return { skipped: true }; }
   const last = lastQueuedDay();
@@ -184,7 +192,7 @@ async function run({ start, days, force = false } = {}) {
   const slots = [], problems = [], posts = [];
   let n = nextNumber();
   for (let i = 0; i < plan.episodes.length; i++) {
-    const idea = plan.episodes[i], day = addDays(start, Math.floor(i / perDay)), slot = cfg.slots[i % perDay];
+    const idea = plan.episodes[i], day = addDays(start, Math.floor(i / perDay)), slot = slotOn(cfg, day, cfg.slots[i % perDay]);
     const id = `${String(n++).padStart(3, '0')}-${idea.slug}`;
     try {
       const made = await writeEpisode(id, idea);

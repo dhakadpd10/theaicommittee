@@ -88,7 +88,8 @@
       "turn_by": "gemini",
       "series": "REAL FIX · PART 4",
       "keyword": "SCAM",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     }
   ]
 }

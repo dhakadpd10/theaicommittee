@@ -5,7 +5,10 @@
   "slots": [
     {
       "time": "20:00",
-      "format": "reel"
+      "format": [
+        "carousel",
+        "reel"
+      ]
     }
   ],
   "models": {
@@ -36,5 +39,11 @@
     "max_posts_per_day": 4,
     "max_auto_replies_per_run": 40
   },
-  "approval_day": "Saturday"
+  "approval_day": "Saturday",
+  "alternate_from": "2026-11-14",
+  "slots_note": "13 Nov 2026 (Prashant): quality over volume. One post a day at 20:00 IST, alternating carousel and reel from 14 Nov (opposite to @theprashant.ai), every post a proven idea remade in clay.",
+  "paused": {
+    "on": true,
+    "note": "13 Nov 2026: paused while the clay look and the original clay cast are built; unpause when the first clay sample is approved."
+  }
 }

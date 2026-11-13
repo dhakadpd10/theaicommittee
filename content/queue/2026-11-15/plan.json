@@ -12,7 +12,8 @@
       "turn_by": "gemini",
       "series": "REAL FIX · PART 5",
       "keyword": "JOBS",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     },
     {
       "day": "2026-11-16",
@@ -23,7 +24,8 @@
       "turn_by": "codex",
       "series": "AFTER HOURS · PART 1",
       "keyword": "BOSS",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     },
     {
       "day": "2026-11-17",
@@ -34,7 +36,8 @@
       "turn_by": "gemini",
       "series": "REAL FIX · PART 6",
       "keyword": "SIM",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     },
     {
       "day": "2026-11-18",
@@ -45,7 +48,8 @@
       "turn_by": "claude",
       "series": "MUM ASKS · PART 9",
       "keyword": "PENSION",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     },
     {
       "day": "2026-11-19",
@@ -56,7 +60,8 @@
       "turn_by": "codex",
       "series": "REAL FIX · PART 7",
       "keyword": "SCAM",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     },
     {
       "day": "2026-11-20",
@@ -67,7 +72,8 @@
       "turn_by": "gemini",
       "series": "AI RUNS MY SHOP · DAY 7",
       "keyword": "SHOP",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     },
     {
       "day": "2026-11-21",
@@ -78,7 +84,8 @@
       "turn_by": "claude",
       "series": "REAL FIX · PART 8",
       "keyword": "DOCS",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 13 Nov 2026: old low-poly look; re-render in clay only if the script passes the new quality bar"
     }
   ]
 }

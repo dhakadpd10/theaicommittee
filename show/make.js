@@ -7,8 +7,16 @@ const { spawnSync } = require('child_process');
 const render = require('./render');
 const comic = require('./comic');
 
+// true when the queue posts this episode as a carousel, so the (slow) reel render can be skipped
+function carouselDay(post) {
+  const q = path.join(__dirname, '..', 'content', 'queue');
+  if (!fs.existsSync(q)) return false;
+  for (const w of fs.readdirSync(q)) { try { const p = JSON.parse(fs.readFileSync(path.join(q, w, 'plan.json'), 'utf8')); if ((p.slots || []).some((s) => s.post === post && s.format === 'carousel')) return true; } catch {} }
+  return false;
+}
+
 (async () => {
-  const dir = path.resolve(process.argv[2]); const noReel = process.argv.includes('--no-reel');
+  const dir = path.resolve(process.argv[2]); const noReel = process.argv.includes('--no-reel') || carouselDay(path.basename(dir));
   const node = (args) => { const r = spawnSync(process.execPath, args, { encoding: 'utf8', maxBuffer: 1 << 26 }); process.stdout.write(r.stdout || ''); if (r.status) throw new Error(`${args[0]} failed:\n${(r.stderr || '').slice(-1500)}`); return r.stdout || ''; };
   const t0 = Date.now();
   const v = node([path.join(__dirname, 'voices.mjs'), dir, '--check']);
