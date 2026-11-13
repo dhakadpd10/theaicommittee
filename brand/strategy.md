@@ -1,48 +1,47 @@
-I couldn't save the file because this session has no file tools. Paste this into `brand/strategy.md`. It comes to about 285 words.
+I don't have file tools in this session, so I couldn't save the file. Paste this into `brand/strategy.md`. It comes to about 290 words.
 
 ```markdown
-# Strategy for the week of 2026-11-07
+# Strategy for the week of 2026-11-13
 
-Only 2 posts since the reset are 7 days old, and nothing has shipped tagged REAL FIX yet. Treat every line as a lead. Judge posts by follows, keyword comments, shares and saves per 1,000 reach.
+Judge posts by follows, keyword comments, shares and saves per 1,000 reach. Read each episode at day 2 to plan, and rank it only at 7 days. Every line here is a lead.
 
 ## Make more of
-- The boss at night: 060 (1.41x) and 062 (the only follow) are our top two since the reset.
-- Prizes people would otherwise search for: the free tool by name, its official link and the exact steps. 060 reached about 1,480 people and got 0 keyword comments.
-- Run `/ig-profile` before the first post.
+- REAL FIX at 4 a week. It has the only shares (067) and most of the saves since the reset.
+- Single-rule money topics in the 066 and 069 shape: "a PIN is never needed to receive money" and "real jobs don't charge a joining fee".
+- Finish last week's split with one more real fix where Gemini delivers the fix. Then close it at 2 vs 2.
+- Run `/ig-profile` before tonight's post. Four reels passed 950 reach and net follows came to 0.
 
 ## Stop
-- Any post without a real series tag (REAL FIX, MUM ASKS, AI RUNS MY SHOP, AFTER HOURS). Clear old episodes out of the queue.
-- Low-stakes everyday topics like 053 and 063.
-- A second Mum asks. Pause the series if this one is under 0.3x at day 2.
-- Posting outside 20:00 IST.
+- Swapping the mix. If an episode isn't ready, skip the slot.
+- Posting outside 20:00 IST (066 went out at 22:57).
+- Judging a series by its median while n is under 10. Drop the "pause Mum asks under 0.3x" rule, which would have stopped 066.
+- Rewriting hooks on reels that already reach 1,000. Fix the payoff instead.
 
 ## The mix
 | series | posts |
 |---|---|
 | REAL FIX | 4 |
-| MUM ASKS (rebuilt) | 1 |
+| MUM ASKS | 1 |
 | AI RUNS MY SHOP | 1 |
 | AFTER HOURS · PART 1 (test) | 1 |
 
-Order: real fix, after hours, real fix, mum asks, real fix, shop, real fix.
+Order: real fix, after hours, real fix, mum asks, real fix, shop, real fix. After hours goes second so it can't miss a third week.
 
 ## Hooks
-- Reuse a clock or money figure plus stakes: "Boss texted at 11:47 pm", "Rs 4,000 gone in 1 OTP", "Mum nearly sent Rs 20,000 to 'me'".
-- Drop "Mum asked me...", "I asked 3 AIs..." and any hook without a digit.
+- Reuse: a digit plus money or time at stake, in the viewer's words, such as "Rs 4,000 gone in 1 OTP" or "Boss texted at 11:47 pm". Mum asks hooks need a digit too.
+- Drop: "Mum asked me...", "I asked 3 AIs...", any hook without a digit, and tech-threat framing (voice clone, deepfake) in place of the money rule.
 
 ## Length and endings
-Aim for about 24 s. Low posts lose viewers by about 11 s, so the fix is on the laptop by 12 s. End on a short line, then a 2.4 s meera-hold, with the music cut before the turn.
+Aim for about 24 s. State the problem in the first line and get the fix on the laptop by 10 s, since the low cluster averages 10.7 s of watch. End on a short line, then a 2.4 s meera-hold, with the music cut before the turn.
 
 ## One experiment
-Last week's split never ran, because nothing was tagged REAL FIX, so rerun it. Gemini delivers the fix in 2 real fix posts, and Claude or Codex in the other 2. At 7 days, compare follows plus shares, saves and keyword comments per 1,000 reach. Log keyword comments from day one.
+Put the keyword on screen. In real fix posts 2 and 4, the laptop's fix page ends with "Comment WORD for the steps". Posts 1 and 3 keep the keyword in the caption only, and Gemini's real fix goes in one of those. Keep the same prize and the same caption. At 7 days, compare keyword comments and follows per 1,000 reach. Log keyword comments from day one.
 ```
 
-**Why it differs from last week:**
-- **The mix stays at 4 / 1 / 1 / 1.** That is the only split that keeps the same series from running twice in a row. AFTER HOURS takes the test slot again because it never shipped under its tag.
-- **The fix now has to be on the laptop by 12 s, not 15 s.** Low-cluster posts lose viewers at about 11 s, and 059 lost them at 9.1 s.
-- **The experiment is unchanged on purpose.** It hasn't been tested yet, and changing it now would leave two unread experiments instead of one.
-- **The 20:00 slot is kept for attribution, not reach.** One fixed slot means next-day follows belong to one reel. The audit found nothing in timing, and the first two seconds matter far more than the hour.
+**What changed from last week, and why:**
+- **The fix now has to be on the laptop by 10 s, not 12 s.** The low cluster averages 10.7 s of watch, and 061 lost people at 6.6 s.
+- **The Mum asks pause rule is gone.** It would have stopped 066, which brought our best like rate and +1 follow.
+- **The experiment moved from who delivers the fix to the keyword on screen.** Four reels reached about 1,000 people each and got 0 keyword comments, so conversion is the bottleneck now. The Gemini split is finished rather than extended. The Gemini post sits in a caption-only slot, so the two tests stay separate.
+- **After hours stays, but moves to the second slot** so it ships before the week can crowd it out.
 
-**Before next audit:** someone still needs to pull hold at 3s and Insights follows, get the retention graphs for 060 and 059, and read the episode files for 053, 059, 060, 062 and 063.
-
-I haven't written the day-by-day calendar or the engagement list from the ig-plan method, since the brief only asked for the strategy. Say the word and I'll add them to `~/.claude/instagram/plan.md`.
+If you want, I can also write the day-by-day calendar and the engagement list from ig-plan for `~/.claude/instagram/plan.md`.

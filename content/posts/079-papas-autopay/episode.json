@@ -1,0 +1,93 @@
+{
+  "id": "079-papas-autopay",
+  "title": "Papa's AutoPay",
+  "cast": "committee",
+  "series": "REAL FIX · PART 8",
+  "hook": "Rs 199 a month. Papa deleted the app.",
+  "cover": 7,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Papa pays one ninety nine rupees a month. He deleted the app in March.",
+      "show": "Papa pays Rs 199 a month. He deleted the app in March.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Papa ke account se har mahine 199 kat raha hai. App to delete kar diya tha??"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Deleted it. Again.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "How does Papa feel about it? I made five headings. Would you like me to expand?",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Easy! Deleting the app never stops the monthly payment!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.5,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Stop an AutoPay",
+        "body": "Deleting the app never stops AutoPay.\n\n1. Open the UPI app Papa paid with\n2. Profile > AutoPay (or Mandates)\n3. Tap it > Cancel\n4. Also check Play Store > Payments & subscriptions"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Wait. That actually works.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I checked his whole account. Papa has four AutoPays!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "And one is yours.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.8
+    },
+    {
+      "who": "meera",
+      "say": "The gym.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "rs 199 a month for an app papa deleted in march. the committee found three more.\n\ndeleting an app never stops its autopay. open the upi app he paid with, go to autopay or mandates and cancel it, then check play store > payments and subscriptions.\n\nhow many autopays are on your account right now? just the number.\n\nComment AUTOPAY and I'll DM you the cancel steps for each UPI app, the official NPCI UPI Help link and 3 prompts to spot hidden subscriptions in a bank statement.\n\n#claude #aitools #upi #desimom #moneytips"
+}

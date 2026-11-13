@@ -1,0 +1,99 @@
+{
+  "id": "083-phone-stolen",
+  "title": "Phone stolen",
+  "cast": "committee",
+  "series": "REAL FIX · PART 10",
+  "hook": "Phone stolen. 3 bank apps on it.",
+  "cover": 6,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "My phone got snatched in an auto. Three bank apps on it.",
+      "show": "My phone got snatched in an auto. 3 bank apps on it.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "codex",
+      "say": "Lock it. Then block everything.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.4,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Phone stolen: do this first",
+        "body": "1. google.com/android/find (iPhone: icloud.com/find)\nSecure it. Erase it if it's gone.\n\n2. Call your operator from another phone.\nBlock the SIM. New SIM, same number.\n\n3. Call your bank's official helpline.\nBlock UPI and cards.\n\n4. File a police complaint, then\nsancharsaathi.gov.in: block the IMEI free."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. That must feel awful. When I lost my phone in Goa...",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "You don't have a phone.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.5
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I posted it in all nine of your groups! With your live location!",
+      "show": "Done! I posted it in all 9 of your groups! With your live location!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "How do I call the bank?",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Use your phone.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "Right.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "phone snatched in an auto with 3 bank apps on it. sage told me about the time it lost its phone in goa. it doesn't have a phone.\n\nfirst secure it from google.com/android/find (or icloud.com/find), then block the sim with your operator and upi with your bank's official helpline. after the police complaint, block the imei free on sancharsaathi.gov.in.\n\nwhich step did you not know? 1, 2, 3 or 4.\n\nComment LOST and I'll DM you the full lost phone checklist with every official link and the exact steps.\n\n#claude #codex #lostphone #upi #cybersafety"
+}

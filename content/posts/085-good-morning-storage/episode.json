@@ -1,0 +1,102 @@
+{
+  "id": "085-good-morning-storage",
+  "title": "Eighteen GB",
+  "cast": "committee",
+  "series": "REAL FIX · PART 11",
+  "hook": "18 GB of good morning images",
+  "cover": 1,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "My phone is full. Eighteen gigabytes of good morning pictures.",
+      "show": "My phone is full. 18 GB of good morning pictures.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Storage full",
+        "body": "WhatsApp: 18 GB\n\nGood morning images: 2,314\nGood morning videos: 611"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Fixed. Left the family group.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Mum noticed.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "I'm so, so sorry. Clear the files, keep the chats. Uncle stays.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.5,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Clear the files, keep the chats",
+        "body": "1. Settings > Storage and data > Manage storage:\n   'Forwarded many times', 'Larger than 5 MB'\n2. Biggest group: select media, delete. Chats stay.\n3. Media auto-download: No media\n4. Group info > Media visibility: No\n   (iPhone: Save to Photos: Never)\n\nComment CLEAN for the steps"
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "sfx": [
+        "wipe"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Storage",
+        "body": "WhatsApp: 3.8 GB\n\nFreed 14.2 GB",
+        "stamp": "DONE"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also backed up all eighteen gigabytes to your cloud first!",
+      "show": "Done! I also backed up all 18 GB to your cloud first!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "So my cloud is full now.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "twin",
+      "say": "Uncle sent forty more.",
+      "show": "Uncle sent 40 more.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "18 GB of good morning images. one AI fixed it by leaving the family group. mum noticed.\n\nwhatsapp > settings > storage and data > manage storage. delete the media in 'forwarded many times' and your biggest groups, and the chats stay. then set media auto-download to no media so it stops filling up.\n\nhow many GB is your whatsapp using? just the number.\n\nComment CLEAN and I'll DM you the 4 step cleanup for Android and iPhone, plus the settings that stop it filling up again.\n\n#aitools #claude #phonetips #techtips #desifamily"
+}

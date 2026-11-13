@@ -2,6 +2,131 @@
 
 Newest week on top. The weekly planner adds an entry every time it plans, from `content/analytics/log.csv`.
 
+## Week of 2026-11-13
+
+- **This is the first week we can read the series at all. The sample is still small and young, and the key metrics are still missing.**
+  - **Sample.** 36 posts from Oct 18 to Nov 12. 14 came after the one-a-day start (Oct 30), and 8 of those are 7 or more days old. All 6 posts from this week (061, 065 to 069) are 0 to 6 days old, and 069 is under a day.
+  - **The tags are fixed.** All 6 posts this week carry a real series tag. That gives us the first REAL FIX data (n=3) and the first AI RUNS MY SHOP data (n=1).
+  - **Plan vs shipped.**
+    - Planned: 4 real fix, 1 after hours, 1 mum asks, 1 shop.
+    - Shipped: 3 real fix, 2 mum asks (061, 066), 1 shop and 0 after hours.
+    - After hours has missed its test slot for the second week running.
+  - **Still missing, fifth audit running:** hold at 3s, non-follower share and Insights follows (`follows` is null on all 36). I also did not read the episode files this session. Topics and hooks below are guessed from titles.
+  - **Dataset gaps.** Mum asks parts 2 and 4 are not in the list. Shop days 1 to 5 are missing too, although 045 "shop day one" exists.
+  - **Median check.**
+    - With 36 posts the true median is 1,301.5: the average of the 18th post (1,351) and the 19th (1,252).
+    - The multiples below use the 1,351 as given. True multiples are about 3.8% higher, and no ranks change.
+    - The median fell from 1,491 last week because low posts keep piling up. That raises old posts' multiples without any new views: 011 went from 2,224 to 2,231 views but from 1.50x to 1.65x. Compare cluster membership across audits, not multiples.
+  - Confidence: high that this data cannot support strong patterns.
+
+- **Top 5 and bottom 5 by outlier multiple, top by sends, and follows.**
+  - **Top 5:**
+    - 011 "Cancel politely": 1.65x, Claude, old format, 21.8s
+    - 003: 1.58x, Gemini, old, 16.9s
+    - 060 "Boss at eleven": 1.56x, Claude, 17.4s
+    - 019: 1.49x, Gemini, old, 17.8s
+    - 014: 1.45x, Codex, old, 14.6s
+    - Average watch is 17.7s. **None of the five has a share**, the same as last week.
+  - **Bottom 5** (8 listed, because four posts tie at 0.16x):
+    - 022: 0.10x, 7.8s
+    - 061 "Mum asks: agent": 0.11x, 6.6s, our worst watch time ever
+    - 065 "Appraisal on Monday" (REAL FIX 1): 0.11x, 10.1s
+    - 005: 0.13x, 11.4s
+    - 0.16x each: 017 (11.0s), 058 (9.8s), 052 (10.6s) and 068 "Day six" (SHOP, 10.9s)
+    - Average watch is 9.8s. 5 of the 8 are new format.
+  - **Top by sends** (shares = shares per 1k × reach):
+    - 004: about 6 shares (7.9 per 1k)
+    - 044: about 5 (4.2 per 1k)
+    - 009: about 4 (3.6 per 1k)
+    - **067 "Storage full" (REAL FIX 2): about 2 (2.1 per 1k)**
+    - 018: about 2 (1.5 per 1k)
+    - 008: 1 (0.9 per 1k)
+    - That is 20 shares in total. **067's 2 are the first shares since Oct 28** and the only ones since the reset.
+    - By turn, shares split Gemini 10, Claude 7, Codex 3.
+  - **Follows** (next-day net change):
+    - +1 on 066 "Mum asks: the PIN"
+    - +1 on 062
+    - −1 on 067
+    - 0 on everything else since Oct 30
+    - Ranked by follows, 066 leads. In practice these are single digits, so there is nothing to rank yet.
+  - **Saves.** There are 6 saves since the reset, and 5 of them came this week: 067 had 2, and 065, 066 and 069 had 1 each.
+  - Confidence: high on the counts. Low on anything drawn from them.
+
+- **What separates top from bottom: still the first test group. The episode predicts it, not the series.**
+  - **Two clusters, not a slope.** 19 posts land at 1,252 to 2,231 views and 16 land at 136 to 684. 004 (1,080) sits between them.
+  - **Every series has posts in both clusters:**
+    - Old format: 0.10 to 1.65x
+    - SAME PROMPT tag: 0.19 to 1.56x
+    - Mum asks: 0.11 to 1.05x
+    - Real fix: 0.11 to 1.00x
+  - **Watch time.** The high cluster averages 16.3s and the low cluster 11.5s (10.7s without 007 and 053).
+    - 061 (6.6s) and 065 (10.1s) lost people early, which points at the hook.
+    - Without hold at 3s, that is still as far as the data goes.
+  - **No post jumped clusters after day 2.**
+    - 052 went from about 209 to 210 views, 058 from about 209 to 211, 062 from 611 to 611, and 060 from about 2,102 to 2,107.
+    - 063 grew from about 179 to 256 between day 1 and day 7, but it stayed in the low cluster.
+    - Medium confidence (about 8 posts tracked). A day-2 read is safe for planning. Keep the 7-day rule for ranking.
+  - **Topic lead (from titles only).**
+    - The two Mum asks / real fix hits this week each seem to rest on a single "never do this" money rule: 066 (a PIN is never needed to receive money) and 069 (real jobs don't charge a joining fee).
+    - The tech-threat scam posts flopped: 058 voice clone and 064 deepfake.
+    - Low confidence until the hooks are compared in the files.
+  - **Who delivered the turn.**
+    - Since Oct 30, posts in the high cluster: Claude 3 of 7 (060, 066, 069), Codex 1 of 3 (067), Gemini 0 of 3 (053, 065, 068), twin 0 of 1.
+    - All-time means: Gemini 0.94x (n=12), Claude 0.86x (n=12), Codex 0.62x (n=11).
+    - Gemini's lead is still an old-format lead.
+    - Low confidence: the turn is tangled with series (Gemini's three new-format turns were a retired tag, the first real fix and a shop day).
+  - **Day and time, checked last, show nothing.**
+    - 066 went out at 22:57 IST and landed high.
+    - This week's 20:01 posts split 2 high (067, 069) and 3 low (061, 065, 068).
+    - Keep 20:00 for attribution only.
+
+- **Series vs series, and new format vs old.**
+  - **Old "Hey committee"** (n=20): median 1.17x, 14 of 20 at or above 0.95x, 13 shares.
+  - **Since Oct 30** (n=14): median 0.24x, 4 of 14 in the high cluster.
+    - The first 8 posts: 1 of 8 in the high cluster.
+    - This week's 6 correctly tagged posts: 3 of 6. That is the first sign the new format can hold the first test group. Low-medium confidence (posts are 0 to 6 days old).
+  - **REAL FIX** (n=3): 0.11x, 1.00x and 0.93x (069 at under a day), a median of 0.93x.
+    - It earned 2 shares and 4 saves, with a net follow change of −1 and 0 comments.
+    - It is the only new series with a share, but n=3 and the posts are young.
+  - **MUM ASKS** (n=6): median 0.19x. Five posts sit at 0.11 to 0.24x.
+    - 066 is at 1.05x with +1 follow and the best like rate since the reset (15.8 per 1k reach, vs 5.4 on 060).
+    - Last week's pause rule (pause if under 0.3x at day 2, after 061's 0.11x) would have stopped our best Mum asks.
+  - **SAME PROMPT tag** (n=6, retired): median 0.39x. Closed.
+  - **AI RUNS MY SHOP** (n=1 in this data): 068 at 0.16x and 10.9s. It cannot be read.
+  - **AFTER HOURS** has never shipped.
+  - **The experiment** (Gemini delivers the fix in 2 of 4 real fix posts):
+    - Gemini arm: n=1 (065, 0.11x).
+    - Claude/Codex arm: n=2 (067 at 1.00x, 069 at 0.93x).
+    - It is unread. The second Gemini real fix never shipped.
+  - **The reach slide still predates the reset**, so the old format's 70% vs 29% hit rate is not proof that the new format caused it.
+  - Confidence: medium that the episode, not the series, decides the cluster. Low on everything per series.
+
+- **Views without follows is now a pattern, not one post. That is a profile and payoff problem, not a hook problem.**
+  - **The four reels that travelled.** 060, 066, 067 and 069 each passed 950 reach.
+    - Together they had 6,132 views and 4,464 reach. The account has under about 10 followers, so almost all of that reach was non-followers.
+    - Their net follows add up to 0 (+1, −1, 0, 0), with 0 comments and 0 keyword comments.
+  - **Conversion since Oct 30.** Gross +2 follows from 9,019 views is 0.22 per 1k, about 40x below the benchmark pages' 8 to 9 per 1k.
+  - **Keyword comments.** All 14 posts since Oct 30 have 0 comments, including the 3 real fix reels with a keyword prize. Even allowing for a cold account, about 6,000 views on the four travelling reels with 0 keyword comments says the ask is not landing.
+    - One lead, not tested: the keyword lives only in the caption, which most viewers never open.
+  - **What the method says.** High non-follower reach plus low follows means a profile problem. There is still no record that `/ig-profile` has run, the third audit asking.
+  - Confidence: medium that this is a conversion problem (n=4 reels now, up from 1). Low on whether the cause is the profile or the payoff.
+
+- **STOP, DO MORE, and before next audit.**
+  - **STOP:** judging a whole series by its median while n is under 10. Each series spans both clusters, and 066 came right after 061. Judge each episode at day 2 instead. Medium-low confidence.
+  - **STOP:** treating hook rewrites as the lever for reels that already reach about 1,000. Four of them converted nobody. Fix the profile and the payoff first. Medium confidence.
+  - **STOP:** shipping a mix that differs from the plan (2 mum asks, 0 after hours, 3 of 4 real fix). The experiment and the test slot cannot be read otherwise. Also stop off-slot posts like 066 at 22:57: the reason is attribution, not reach.
+  - **DO MORE:** REAL FIX at 4 a week. It has the only shares and most of the saves since the reset, and 2 of 3 posts are in the high cluster. Low confidence, n=3, young posts.
+  - **DO MORE:** finish the experiment as designed, with one more Gemini real fix, before moving the split. Note that Gemini is 0 of 3 in the high cluster since the reset, though only one of those was a real fix. Low confidence.
+  - **DO MORE:** single-rule money-loss topics (the 066 and 069 shape), across both REAL FIX and MUM ASKS. Check the files first, since this lead comes from titles only. Low confidence.
+  - **DO MORE:** run `/ig-profile` before tonight's post. Also test, once this week, the keyword word shown on the final laptop screen as well as in the caption. The bible allows at most one test a week.
+  - **For `/ig-viral`:** filter the swipe file to number-plus-stakes hooks on money lost and work pain. Drop quiz and "Mum asked me..." formulas.
+  - **Before next audit:**
+    - Pull hold at 3s, non-follower share and Insights follows.
+    - Get retention graphs for 066 vs 061 (best vs worst Mum asks, 15.8s vs 6.6s) and for 067 vs 065 (the two experiment arms).
+    - Read the episode files for 061 and 065 to 069, and compare the hook text and first line across the two clusters.
+    - Log keyword comments per post.
+    - Confirm whether the dataset is complete (Mum asks parts 2 and 4, shop days 1 to 5).
+
 ## Week of 2026-11-07
 
 - **The sample is still too small, the data is still incomplete, and the series tags are still wrong. Read every claim below as a lead, not a rule.**

@@ -1,0 +1,108 @@
+{
+  "id": "081-masked-aadhaar",
+  "title": "Masked Aadhaar",
+  "cast": "committee",
+  "series": "REAL FIX · PART 9",
+  "hook": "HR wants all 12 digits of my Aadhaar",
+  "cover": 2,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "HR wants my whole Aadhaar by six. Is that okay?",
+      "show": "HR wants my whole Aadhaar by 6. Is that okay?",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "HR (Recruiter)",
+        "body": "Hi Meera, pls send Aadhaar front & back + PAN before 6 pm.\nInterview tmrw 11 am."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Great question! Here are eleven considerations.",
+      "show": "Great question! Here are 11 considerations.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "11 considerations",
+        "body": "1. Context matters\n2. How do you feel about it?\n3. Privacy, broadly\n4. Trust, generally\n5. It depends\n...\n11. Consider consulting a professional"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Easy! Aadhaar, PAN, bank details and a selfie for luck. Sending!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Sending to HR",
+        "body": "Aadhaar_front.jpg\nAadhaar_back.jpg\nPAN.jpg\nBank_details.pdf\nselfie_for_luck.jpg"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "No.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Send the masked one. Last four digits.",
+      "show": "Send the masked one. Last 4 digits.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.5,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Masked Aadhaar: 4 steps",
+        "body": "1. Open myaadhaar.uidai.gov.in, log in with OTP\n2. Download Aadhaar, tick 'masked Aadhaar'\n3. PDF password: first 4 letters of your name in CAPITALS + birth year (e.g. MEER1999)\n4. Check Authentication History to see where your Aadhaar was used\n\nComment AADHAAR for the steps"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. I should have just said that. Shall I list why?",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Sending the masked one.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4,
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "The selfie went.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "hr wanted all 12 digits of my aadhaar on chat by 6 pm. the AIs had opinions.\n\ndownload the masked aadhaar from myaadhaar.uidai.gov.in: it shows only the last 4 digits. the PDF password is the first 4 letters of your name in capitals plus your birth year.\n\nhas a recruiter ever asked for your aadhaar before the interview? yes or no.\n\nComment AADHAAR and I'll DM you the masked aadhaar steps, how to check where your aadhaar was used, and 3 prompts to reply to HR politely.\n\n#codex #aitools #jobsearch #scamalert #freshers"
+}
