@@ -10,7 +10,7 @@ const ffmpeg = require('ffmpeg-static');
 const timeline = require('./timeline');
 
 const SHOW = __dirname, MODS = path.join(__dirname, '..', 'node_modules');
-const FPS = 30, W = 1080, H = 1920;
+const FPS = 30, W = 1080, H = 1920, DRAW = 12; // stop-motion: 12 drawings a second in a 30 fps video
 const TYPES = { '.js': 'text/javascript', '.mjs': 'text/javascript', '.html': 'text/html', '.json': 'application/json', '.woff2': 'font/woff2' };
 
 function findBrowser() {
@@ -65,10 +65,11 @@ async function open(epDir) {
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-t', String(TL.DUR), '-movflags', '+faststart', out],
         { stdio: ['pipe', 'ignore', 'pipe'] });
       let err = ''; ff.stderr.on('data', (d) => (err += d));
-      const total = Math.round(TL.DUR * FPS), t0 = Date.now();
+      const total = Math.round(TL.DUR * FPS), t0 = Date.now(); let lastK = -1, lastBuf = null;
       for (let i = 0; i < total; i++) {
-        await page.evaluate((t) => renderAt(t), i / FPS);
-        const buf = await shot();
+        const k = Math.floor((i / FPS) * DRAW);
+        if (k !== lastK) { await page.evaluate((t) => renderAt(t), k / DRAW); lastBuf = await shot(); lastK = k; }
+        const buf = lastBuf;
         if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once('drain', r));
         if (i % 150 === 0) console.log(`frame ${i}/${total}  ${((Date.now() - t0) / 1000).toFixed(0)}s`);
       }

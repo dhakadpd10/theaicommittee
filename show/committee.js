@@ -17,6 +17,28 @@ function tex(w, h, draw) {
   const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
 }
 
+let pseed = 11; const prnd = () => ((pseed = (pseed * 16807) % 2147483647) / 2147483647);
+export const PRINTS = tex(512, 512, (x, w, h) => {
+  x.fillStyle = '#808080'; x.fillRect(0, 0, w, h);
+  for (let i = 0; i < 2600; i++) { const g = 100 + prnd() * 60; x.fillStyle = `rgba(${g},${g},${g},0.18)`; x.beginPath(); x.arc(prnd() * w, prnd() * h, 2 + prnd() * 9, 0, 7); x.fill(); }
+  for (let p = 0; p < 9; p++) { const cx = prnd() * w, cy = prnd() * h, r0 = 10 + prnd() * 18; x.lineWidth = 1.6;
+    for (let r = r0; r < r0 + 46; r += 4.5) { const g = prnd() < 0.5 ? 150 : 105; x.strokeStyle = `rgba(${g},${g},${g},0.22)`; x.beginPath(); x.ellipse(cx, cy, r, r * 0.8, prnd(), 0, 5.2); x.stroke(); } }
+});
+PRINTS.wrapS = PRINTS.wrapT = THREE.RepeatWrapping; PRINTS.colorSpace = THREE.NoColorSpace; PRINTS.repeat.set(3, 3);
+// matte plasticine with thumbprints
+export const clayMat = (color, o = {}) => new THREE.MeshStandardMaterial({ color, roughness: 0.82, metalness: 0, bumpMap: PRINTS, bumpScale: 2.4, ...o });
+// turn a whole built scene into clay: every lit surface goes matte with thumbprints; glossy dark beads (eyes) and
+// textured or unlit surfaces (screens, labels, shine dots) keep their look
+export function claymate(root) {
+  root.traverse((o) => {
+    if (!o.isMesh || !o.material || Array.isArray(o.material)) return;
+    const m = o.material;
+    if (m.isMeshBasicMaterial || m.map || m.bumpMap === PRINTS || m.transparent || (m.emissiveIntensity > 0.4)) return;
+    const c = m.color ? m.color.clone() : new THREE.Color('#CCCCCC');
+    if (c.r + c.g + c.b < 0.12 && (m.clearcoat >= 0.99 || m.roughness < 0.4)) return;
+    o.material = clayMat(c, { vertexColors: !!m.vertexColors, flatShading: false, emissive: m.emissive || new THREE.Color(0), emissiveIntensity: m.emissiveIntensity || 0 });
+  });
+}
 const eyeM = new THREE.MeshStandardMaterial({ color: '#120C0A', roughness: 0.35, flatShading: true });
 const shineM = new THREE.MeshBasicMaterial({ color: '#FFFFFF' });
 const mouthM = plain('#4E1C1E', { roughness: 0.5 });
@@ -44,9 +66,9 @@ function mouth(parent, x, y, z, r) {
 }
 // capsule arm from shoulder to hand
 function arm(parent, mat, r) {
-  const a = new THREE.Mesh(new THREE.CylinderGeometry(r, r * 0.9, 1, 6), mat); a.castShadow = true; parent.add(a);
-  const s = new THREE.Mesh(new THREE.SphereGeometry(r, 6, 4), mat); parent.add(s);
-  const h = new THREE.Mesh(new THREE.IcosahedronGeometry(r * 1.45, 0), mat); h.castShadow = true; parent.add(h);
+  const a = new THREE.Mesh(new THREE.CylinderGeometry(r, r * 0.9, 1, 14), mat); a.castShadow = true; parent.add(a);
+  const s = new THREE.Mesh(new THREE.SphereGeometry(r, 14, 10), mat); parent.add(s);
+  const h = new THREE.Mesh(new THREE.SphereGeometry(r * 1.4, 16, 12), mat); h.scale.set(1, 0.85, 1); h.castShadow = true; parent.add(h);
   return {
     set(from, to) {
       const d = to.clone().sub(from), len = d.length();
@@ -73,7 +95,7 @@ export function buildCommittee(scene) {
   [-0.4, 0.4].forEach((x) => m(new THREE.BoxGeometry(0.02, 0.15, 0.28), plain('#22304A', { roughness: 0.9 }), root, x, 0.075, 0.03));
 
   // ---------- name plates, desk mics, the gavel ----------
-  const NAMES = ['Codex', 'Claude', 'Gemini'], XS = [-0.26, 0, 0.26];
+  const NAMES = ['Byte', 'Sage', 'Gigi'], XS = [-0.26, 0, 0.26];
   NAMES.forEach((n, i) => {
     const plate = tex(256, 72, (x, w, h) => {
       x.fillStyle = '#FBF7EE'; x.fillRect(0, 0, w, h); x.strokeStyle = '#C9BFAE'; x.lineWidth = 4; x.strokeRect(2, 2, w - 4, h - 4);
@@ -113,93 +135,81 @@ export function buildCommittee(scene) {
     const o = new THREE.Mesh(new THREE.CapsuleGeometry(r, d.length(), 2, 6), glowWhite);
     o.position.copy(A).addScaledVector(d, 0.5); o.quaternion.setFromUnitVectors(UP, d.normalize()); parent.add(o); return o;
   };
-  const feet = (g, color, y = 0.015, w = 0.045) => [-1, 1].forEach((s) => { const f = m(new THREE.CapsuleGeometry(0.018, 0.02, 2, 6), plain(color, { roughness: 0.6, flatShading: true }), g, s * w, y, 0.02); f.rotation.x = Math.PI / 2; });
+  const feet = (g, color, y = 0.015, w = 0.045) => [-1, 1].forEach((s) => { const f = m(new THREE.CapsuleGeometry(0.018, 0.02, 6, 12), plain(color, { roughness: 0.6, flatShading: true }), g, s * w, y, 0.02); f.rotation.x = Math.PI / 2; });
 
-  // ---------- Codex: the puffy blue cloud with a >_ face (index 0) ----------
+  // ---------- the original clay cast (13 Nov 2026): Byte, Sage, Gigi & Gogo ----------
+  // Original characters, not the AI companies' logos. Each keeps the slot and animation hooks of the member it
+  // replaced (codex -> Byte, claude -> Sage, gemini/twin -> Gigi & Gogo), so pose() and the episodes work unchanged.
+  const bead = new THREE.MeshStandardMaterial({ color: '#17110E', roughness: 0.22 }); // glossy clay-bead eyes
+  const dark = clayMat('#2A1814', { roughness: 0.7 });
+
+  // ---------- Byte: a slate-blue clay pebble with an antenna; literal, instant, asks nothing (index 0) ----------
   {
     const g = new THREE.Group(); g.position.set(XS[0], 0.17, -0.05); root.add(g);
     const blob = new THREE.Group(); blob.position.y = 0.13; g.add(blob);
-    // the scalloped cloud outline = the outer edge of a centre disc and 8 lobes, extruded into a soft cushion
-    const circles = [[0, 0, 0.1]];
-    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8; circles.push([Math.cos(a) * 0.072, Math.sin(a) * 0.072, 0.064]); }
-    const shape = new THREE.Shape();
-    for (let i = 0; i <= 48; i++) {
-      const th = (i / 48) * Math.PI * 2, dx = Math.cos(th), dy = Math.sin(th);
-      let r = 0; for (const [cx, cy, rr] of circles) { const b = dx * cx + dy * cy, disc = b * b - (cx * cx + cy * cy) + rr * rr; if (disc >= 0) r = Math.max(r, b + Math.sqrt(disc)); }
-      i ? shape.lineTo(dx * r * 0.88, dy * r * 0.88) : shape.moveTo(dx * r * 0.88, dy * r * 0.88);
-    }
-    const cg = new THREE.ExtrudeGeometry(shape, { depth: 0.03, bevelEnabled: true, bevelThickness: 0.032, bevelSize: 0.022, bevelSegments: 3, curveSegments: 2 });
-    cg.translate(0, 0, -0.015);
-    m(paint(cg, ['#1F3FF2', '#4E6BFF', '#B3AEFF'], [-0.45, 1, 0]), glossy(), blob);
-    feet(g, '#2E44C9', 0.02, 0.04);
-    // faces: the ">" is its eye, the "_" is its mouth (a cursor). One group per expression, toggled.
-    const Z = 0.05, F = {};
-    const mk = (name) => (F[name] = new THREE.Group(), F[name].position.set(0, 0, Z), blob.add(F[name]), F[name]);
-    const chevron = (grp, flip = 1) => { bar(grp, [-0.048 * flip, 0.03, 0], [-0.018 * flip, 0, 0]); bar(grp, [-0.018 * flip, 0, 0], [-0.048 * flip, -0.03, 0]); };
-    chevron(mk('neutral')); bar(F.neutral, [0.004, -0.032, 0], [0.05, -0.032, 0]);
-    chevron(mk('talk')); F.cursor = m(new RoundedBoxGeometry(0.036, 0.036, 0.01, 2, 0.006), glowWhite, F.talk, 0.026, -0.026, 0);
-    chevron(mk('think')); [0, 1, 2].forEach((i) => m(new THREE.SphereGeometry(0.0085, 12, 8), glowWhite, F.think, 0.008 + i * 0.02, -0.032, 0));
-    bar(mk('happy'), [-0.052, -0.006, 0], [-0.034, 0.02, 0]); bar(F.happy, [-0.034, 0.02, 0], [-0.016, -0.006, 0]);
-    const smile = m(new THREE.TorusGeometry(0.02, 0.0085, 8, 20, Math.PI), glowWhite, F.happy, 0.028, -0.02, 0); smile.rotation.z = Math.PI;
-    bar(mk('blink'), [-0.05, 0.0, 0], [-0.018, 0.0, 0]); bar(F.blink, [0.004, -0.032, 0], [0.05, -0.032, 0]);
-    chevron(mk('worried'), -1); [0, 1, 2, 3].forEach((i) => bar(F.worried, [0.004 + i * 0.012, -0.03 - (i % 2) * 0.008, 0], [0.016 + i * 0.012, -0.03 - ((i + 1) % 2) * 0.008, 0], 0.006));
-    const arms = [arm(g, plain('#4D66FB', { flatShading: true }), 0.014), arm(g, plain('#4D66FB', { flatShading: true }), 0.014)];
+    const blue = clayMat('#5E7FC2');
+    const body = m(new THREE.SphereGeometry(0.105, 40, 28), blue, blob); body.scale.set(1.12, 0.92, 0.8);
+    const stalk = m(new THREE.CylinderGeometry(0.006, 0.008, 0.07, 10), clayMat('#4A66A3'), blob, 0.02, 0.115, 0); stalk.rotation.z = -0.25;
+    m(new THREE.SphereGeometry(0.017, 20, 14), clayMat('#F2C14E'), blob, 0.03, 0.152, 0);
+    feet(g, '#4A66A3', 0.02, 0.045);
+    const Z = 0.082, F = {};
+    const mk = (name) => (F[name] = new THREE.Group(), F[name].position.set(0, 0.005, Z), blob.add(F[name]), F[name]);
+    const eyes = (grp, y = 0.012, sy = 1) => [-1, 1].forEach((s) => { const e = m(new THREE.SphereGeometry(0.013, 18, 12), bead, grp, s * 0.034, y, 0); e.scale.set(0.9, 1.15 * sy, 0.6); });
+    const line = (grp, x, y, w, rot = 0) => { const c = m(new THREE.CapsuleGeometry(0.0045, w, 4, 8), dark, grp, x, y, 0); c.rotation.z = Math.PI / 2 + rot; return c; };
+    eyes(mk('neutral')); line(F.neutral, 0, -0.03, 0.024);
+    eyes(mk('talk')); F.cursor = m(new THREE.SphereGeometry(0.016, 18, 12), dark, F.talk, 0, -0.032, 0); F.cursor.scale.set(1.3, 1, 0.5);
+    eyes(mk('think'), 0.026); m(new THREE.SphereGeometry(0.008, 12, 8), dark, F.think, 0.012, -0.03, 0);
+    [-1, 1].forEach((s) => { const a = m(new THREE.TorusGeometry(0.013, 0.0045, 8, 16, Math.PI), dark, mk('happy'), s * 0.034, 0.008, 0); });
+    const sm = m(new THREE.TorusGeometry(0.02, 0.005, 8, 18, Math.PI), dark, F.happy, 0, -0.022, 0); sm.rotation.z = Math.PI;
+    line(mk('blink'), -0.034, 0.01, 0.016); line(F.blink, 0.034, 0.01, 0.016); line(F.blink, 0, -0.03, 0.024);
+    eyes(mk('worried'), 0.012, 0.8); line(F.worried, -0.008, -0.032, 0.012, 0.35); line(F.worried, 0.008, -0.032, 0.012, -0.35);
+    const arms = [arm(g, blue, 0.014), arm(g, blue, 0.014)];
     members.codex = { g, blob, F, arms, kind: 'codex' };
   }
 
-  // ---------- Claude: the orange pixel creature, built from blocks (index 1) ----------
-  // Same grid as the icon: 30 x 18 pixels. Body 22 x 14, a 30-wide band for arms, four 2 x 4 legs.
+  // ---------- Sage: a sage-green clay egg with round glasses and a mustard scarf; careful, polite, says too much (index 1) ----------
   {
     const g = new THREE.Group(); g.position.set(XS[1], 0.188, -0.05); root.add(g);
-    const U = 0.0105, D = 10 * U;
-    const orange = new THREE.MeshStandardMaterial({ color: '#D97757', roughness: 0.78, flatShading: true });
-    const holeM = new THREE.MeshStandardMaterial({ color: '#2A1612', roughness: 0.5 });
-    // c = column from the left (0..30), r = row from the top (0..18); y = 0 at the feet
-    const px = (parent, c, r, w, h, mat = orange, d = D, z = 0) =>
-      m(new THREE.BoxGeometry(w * U, h * U, d), mat, parent, (c + w / 2 - 15) * U, (18 - r - h / 2) * U, z);
-    const legs = [6, 10, 18, 22].map((c) => px(g, c, 14, 2, 4, orange, D * 0.6));
+    const U = 0.0105;
+    const green = clayMat('#8DB28A');
+    const legs = [-1, 1].map((s) => m(new THREE.SphereGeometry(0.02, 16, 10), clayMat('#6F9470'), g, s * 0.035, 2 * U, 0.01));
+    legs.forEach((l) => l.scale.set(1.2, 0.6, 1.4));
     const bodyG = new THREE.Group(); g.add(bodyG);
-    px(bodyG, 4, 0, 22, 14);
-    // arms: the outer ends of the band, each on a hinge at the body edge so they can wave
-    const armL = new THREE.Group(); armL.position.set((4 - 15) * U, 9 * U, 0); bodyG.add(armL);
-    const armR = new THREE.Group(); armR.position.set((26 - 15) * U, 9 * U, 0); bodyG.add(armR);
-    m(new THREE.BoxGeometry(4 * U, 4 * U, D * 0.8), orange, armL, -2 * U, 0, 0);
-    m(new THREE.BoxGeometry(4 * U, 4 * U, D * 0.8), orange, armR, 2 * U, 0, 0);
-    // face on the front: two slot eyes, a mouth that only shows when it talks, and ^ ^ eyes for happy
-    const FZ = D / 2 + 0.0008;
-    const eyes = [8, 20].map((c) => px(bodyG, c, 3, 2, 4, holeM, 0.4 * U, FZ));
-    eyes.forEach((e) => (e.userData.y0 = e.position.y));
-    const mouthB = px(bodyG, 13, 8, 4, 2, holeM, 0.4 * U, FZ);
+    const egg = m(new THREE.SphereGeometry(0.1, 40, 28), green, bodyG, 0, 0.125, 0); egg.scale.set(0.95, 1.18, 0.82);
+    const scarf = m(new THREE.TorusGeometry(0.068, 0.017, 12, 32), clayMat('#E2A93B'), bodyG, 0, 0.085, 0); scarf.rotation.x = Math.PI / 2 - 0.15; scarf.scale.set(1.12, 1, 0.85);
+    const tail = m(new THREE.CapsuleGeometry(0.014, 0.05, 6, 10), clayMat('#E2A93B'), bodyG, 0.04, 0.05, 0.07); tail.rotation.z = 0.3;
+    const armL = new THREE.Group(); armL.position.set(-0.09, 0.11, 0); bodyG.add(armL);
+    const armR = new THREE.Group(); armR.position.set(0.09, 0.11, 0); bodyG.add(armR);
+    [armL, armR].forEach((a, i) => { const c = m(new THREE.CapsuleGeometry(0.014, 0.04, 6, 10), green, a, (i ? 1 : -1) * 0.022, -0.012, 0); c.rotation.z = (i ? 1 : -1) * 1.1; });
+    const FZ = 0.086; // just in front of the egg surface at eye height
+    const eyes = [-1, 1].map((s) => { const e = m(new THREE.SphereGeometry(0.013, 18, 12), bead, bodyG, s * 0.03, 0.153, FZ + 0.008); e.scale.set(0.9, 1.2, 0.7); e.userData.y0 = e.position.y; return e; });
+    const rim = clayMat('#3B2A22', { roughness: 0.55 });
+    [-1, 1].forEach((s) => m(new THREE.TorusGeometry(0.024, 0.004, 10, 28), rim, bodyG, s * 0.03, 0.155, FZ + 0.004));
+    const bridge = m(new THREE.CapsuleGeometry(0.003, 0.01, 4, 8), rim, bodyG, 0, 0.158, FZ + 0.008); bridge.rotation.z = Math.PI / 2;
+    const mouthB = m(new THREE.SphereGeometry(0.012, 16, 10), dark, bodyG, 0, 0.11, FZ - 0.003); mouthB.scale.set(1.5, 1, 0.5);
     const happy = new THREE.Group(); bodyG.add(happy);
-    [[7, 4], [8, 3], [9, 3], [10, 4], [19, 4], [20, 3], [21, 3], [22, 4]].forEach(([c, r]) => px(happy, c, r, 1, 1, holeM, 0.4 * U, FZ));
+    [-1, 1].forEach((s) => m(new THREE.TorusGeometry(0.011, 0.004, 8, 14, Math.PI), dark, happy, s * 0.03, 0.15, FZ + 0.002));
     members.claude = { g, bodyG, legs, armL, armR, eyes, mouthB, happy, U, kind: 'claude' };
   }
 
-  // ---------- Gemini: the puffy sparkle twins (index 2) ----------
+  // ---------- Gigi & Gogo: a pink clay bean and her small lavender twin; cheerful, overconfident, overshare (index 2) ----------
   {
     const g = new THREE.Group(); g.position.set(XS[2], 0.17, -0.05); root.add(g);
-    const sparkleGeo = (R, depth) => {
-      const s = new THREE.Shape(), q = 0.16;
-      s.moveTo(0, R); s.quadraticCurveTo(R * q, R * q, R, 0); s.quadraticCurveTo(R * q, -R * q, 0, -R);
-      s.quadraticCurveTo(-R * q, -R * q, -R, 0); s.quadraticCurveTo(-R * q, R * q, 0, R);
-      const geo = new THREE.ExtrudeGeometry(s, { depth, bevelEnabled: true, bevelThickness: depth * 0.9, bevelSize: R * 0.09, bevelSegments: 2, curveSegments: 5 });
-      geo.translate(0, 0, -depth / 2); return geo;
-    };
-    const STOPS = ['#2F74F7', '#8A5CF0', '#F2557A'];
     const big = new THREE.Group(); big.position.y = 0.14; g.add(big);
-    m(paint(sparkleGeo(0.13, 0.03), STOPS, [1, -1, 0]), glossy(), big);
-    const bigFace = new THREE.Group(); bigFace.position.set(0, -0.005, 0.045); big.add(bigFace);
+    const bean = m(new THREE.SphereGeometry(0.1, 40, 28), clayMat('#E98BA2'), big); bean.scale.set(1, 1.12, 0.8);
+    const curl = m(new THREE.TorusGeometry(0.018, 0.007, 10, 20, Math.PI * 1.5), clayMat('#C9607E'), big, -0.02, 0.112, 0); curl.rotation.z = 0.6;
+    const bigFace = new THREE.Group(); bigFace.position.set(0, 0.0, 0.078); big.add(bigFace);
     const twin = new THREE.Group(); twin.position.set(0.11, 0.28, 0.02); g.add(twin);
-    m(paint(sparkleGeo(0.055, 0.016), ['#4F8CFF', '#C06BE0', '#F2557A'], [1, -1, 0]), glossy(), twin);
-    const twinFace = new THREE.Group(); twinFace.position.set(0, -0.002, 0.022); twin.add(twinFace);
-    const skin = plain('#8C6FD8', { flatShading: true });
+    const ball = m(new THREE.SphereGeometry(0.045, 32, 22), clayMat('#A99AE6'), twin); ball.scale.set(1, 1.05, 0.85);
+    const twinFace = new THREE.Group(); twinFace.position.set(0, -0.002, 0.036); twin.add(twinFace);
+    const lidM = clayMat('#D9768F');
     const mkFace = (grp, k) => ({
       headG: grp,
-      eyes: [-1, 1].map((s) => eye(grp, s * 0.022 * k, 0.008 * k, 0, 0.011 * k, skin)),
-      brows: [-1, 1].map((s) => brow(grp, s * 0.023 * k, 0.03 * k, 0, 0.012 * k)),
-      mo: mouth(grp, 0, -0.016 * k, 0.002, 0.011 * k),
+      eyes: [-1, 1].map((s) => eye(grp, s * 0.026 * k, 0.012 * k, 0, 0.012 * k, lidM)),
+      brows: [-1, 1].map((s) => brow(grp, s * 0.027 * k, 0.036 * k, 0, 0.013 * k)),
+      mo: mouth(grp, 0, -0.018 * k, 0.002, 0.012 * k),
     });
-    const heads = [mkFace(bigFace, 1), mkFace(twinFace, 0.55)];
+    const heads = [mkFace(bigFace, 1), mkFace(twinFace, 0.5)];
     heads[0].brows.forEach((b) => (b.visible = false));
     members.gemini = { g, big, twin, heads, kind: 'gemini' };
   }

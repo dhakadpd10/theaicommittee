@@ -101,8 +101,9 @@ Return 8 to 12 short bullets, each a possible episode for one of our series (say
 
 // ---------- 3. pick the week ----------
 const PACKS = () => readJSON(P('brand/free.json'), {});
-function planWeek(count, notes) {
+function planWeek(count, notes, formats = []) {
   const ideas = readText(P('brand/ideas.md')); const packs = PACKS();
+  const proven = readText(P('brand/proven.md')), bank = [...proven.matchAll(/^\| (C\d\d) \|/gm)].map((m) => m[1]);
   return askJSON({
     system: SYSTEM(), effort: 'high',
     validate: (v) => {
@@ -114,6 +115,8 @@ function planWeek(count, notes) {
         if (/^REAL FIX/.test(x.series || '') && !/\d/.test(x.hook || '')) e.push(`episodes[${i}].hook: a REAL FIX hook needs a number with the tension`);
         if (x.fix_source && !/^https:\/\/\S+$/.test(x.fix_source)) e.push(`episodes[${i}].fix_source must be one https link`);
         if (!['codex', 'claude', 'gemini', 'twin'].includes(x.turn_by)) e.push(`episodes[${i}].turn_by must be codex, claude, gemini or twin`);
+        if (!bank.includes(x.proven)) e.push(`episodes[${i}].proven must be the id of the proven idea it remakes (${bank.join(', ')})`);
+        else if (i && v.episodes[i - 1].proven === x.proven) e.push(`episodes ${i - 1} and ${i} remake the same proven idea; never two in a row`);
         const pack = packs[x.keyword] || (v.new_packs || {})[x.keyword];
         if (!/^[A-Z]{3,12}$/.test(x.keyword || '') || !pack) e.push(`episodes[${i}].keyword must be an existing pack (${Object.keys(packs).join(', ')}) or a key of new_packs`);
       });
@@ -128,11 +131,17 @@ function planWeek(count, notes) {
       return e;
     },
     prompt: `Plan the next ${count} episodes (one is posted each day at 20:00 IST; neighbouring days must feel different: different series, problem and member delivering the turn).
+
+Quality over volume (Prashant, 13 Nov 2026): every episode REMAKES one proven idea from the bank below in our clay style with our own cast and words (set "proven" to its id). Pick the entries with the biggest numbers most often, and make each remake more useful than the original. Posting format per episode, in order: ${formats.map((x, i) => `${i}: ${x}`).join(', ') || 'all reels'}. A carousel episode is posted as an 8 to 10 slide comic strip of its frames, so it must read without sound: the hook frame, the problem, the members' true-to-life answers, then the fix steps on the laptop.
+
+Proven ideas bank:
+${proven}
+
 Idea bank:\n${ideas}\n\nResearch notes:\n${notes || 'none'}\n\nDo NOT repeat these recent episodes:\n${recentTitles().join('\n') || 'none'}\n
 Use the series in the show bible and the mix in this week's strategy (default for 7: 4 REAL FIX, 2 MUM ASKS, 1 AI RUNS MY SHOP or one new series test). Number the parts and days on from the last episodes of each series. Every episode starts from a real problem that hurts (in "problem"), rests on a TRUE behaviour of real AI assistants (in "true_behaviour"; no random disasters), and carries a fix that really works and is free (in "fix", with its official link in "fix_source" when there is one). Only use fixes from the research notes or ones you are certain of. Vary who delivers the turn, and let a different member be the useful one sometimes. Follow the experiment in the latest learnings.
 Every episode also gives something away: a "keyword" that people comment to get the full fix by DM. A comment has to feel worth it: the pack names the free tool or feature, links to it and lists the steps, then the prompts. Reuse a pack that fits (${Object.entries(packs).map(([k, p]) => `${k}: ${p.title}`).join('; ')}) or add at most 4 new ones in "new_packs". A new pack must be genuinely useful on its own: "steps" (2 to 6 short strings), "links" (official https links only, [{name, url}]) and real prompts someone can paste into any AI assistant; correct and safe, no financial, medical or legal advice, no invented facts.
 Reply with JSON only:
-{"episodes":[{"slug":"zero-interviews","title":"Zero interviews","series":"REAL FIX · PART 1","hook":"87 applications. 0 interviews.","problem":"Meera has applied to 87 jobs on the big job sites and heard nothing","true_behaviour":"Claude writes a five-part essay on resilience; Gemini cheerfully applies to 40 more jobs for her","fix":"Codex: jobs go up on the company's own careers page first; a Google Alert for the company name plus careers catches them days earlier","fix_source":"https://www.google.com/alerts","escalation":"...","ending":"...","turn_by":"codex","keyword":"JOBS"}],"new_packs":{"JOBS":{"title":"...","intro":"...","steps":["...","..."],"links":[{"name":"Google Alerts","url":"https://www.google.com/alerts"}],"prompts":[{"name":"...","text":"..."}],"tip":"..."}}}`,
+{"episodes":[{"slug":"zero-interviews","proven":"C05","title":"Zero interviews","series":"REAL FIX · PART 1","hook":"87 applications. 0 interviews.","problem":"Meera has applied to 87 jobs on the big job sites and heard nothing","true_behaviour":"Claude writes a five-part essay on resilience; Gemini cheerfully applies to 40 more jobs for her","fix":"Codex: jobs go up on the company's own careers page first; a Google Alert for the company name plus careers catches them days earlier","fix_source":"https://www.google.com/alerts","escalation":"...","ending":"...","turn_by":"codex","keyword":"JOBS"}],"new_packs":{"JOBS":{"title":"...","intro":"...","steps":["...","..."],"links":[{"name":"Google Alerts","url":"https://www.google.com/alerts"}],"prompts":[{"name":"...","text":"..."}],"tip":"..."}}}`,
   });
 }
 
@@ -187,7 +196,8 @@ async function run({ start, days, force = false } = {}) {
 
   await learn().catch((e) => log('learning skipped:', e.message));
   const notes = await research(count).catch((e) => { log('research skipped:', e.message); return ''; });
-  const plan = await planWeek(count, notes);
+  const formats = Array.from({ length: count }, (_, i) => slotOn(cfg, addDays(start, Math.floor(i / perDay)), cfg.slots[i % perDay]).format);
+  const plan = await planWeek(count, notes, formats);
   if (plan.new_packs && Object.keys(plan.new_packs).length) { const packs = PACKS(); for (const [k, p] of Object.entries(plan.new_packs)) if (!packs[k]) packs[k] = p; writeJSON(P('brand/free.json'), packs); log('new free packs:', Object.keys(plan.new_packs).join(', ')); }
   const slots = [], problems = [], posts = [];
   let n = nextNumber();
@@ -197,7 +207,7 @@ async function run({ start, days, force = false } = {}) {
     try {
       const made = await writeEpisode(id, idea);
       posts.push(id);
-      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, series: idea.series, keyword: idea.keyword, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
+      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, series: idea.series, keyword: idea.keyword, proven: idea.proven, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
       log('written', id);
     } catch (e) { problems.push(`${day} ${slot.time} ${idea.title}: ${e.message.split('\n')[0]}`); log('FAILED', day, e.message); }
   }

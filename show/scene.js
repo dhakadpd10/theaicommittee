@@ -8,7 +8,7 @@ import { BokehPass } from 'three/addons/postprocessing/BokehPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
-import { buildCommittee } from './committee.js';
+import { buildCommittee, claymate } from './committee.js';
 
 const W = 1080, H = 1920, FPS = 30;
 const TL = window.TL;
@@ -529,7 +529,7 @@ function wrap(ctx, text, maxW) {
   for (const w of words) { const t = cur ? cur + ' ' + w : w; if (ctx.measureText(t).width > maxW && cur) { lines.push(cur); cur = w; } else cur = t; }
   if (cur) lines.push(cur); return lines;
 }
-const TAGS = { codex: ['CODEX', '#6F84FF'], claude: ['CLAUDE', '#E0805F'], gemini: ['GEMINI', '#A77BF3'], twin: ['GEMINI (THE TWIN)', '#E06A9A'] };
+const TAGS = { codex: ['BYTE', '#5E7FC2'], claude: ['SAGE', '#6F9A6C'], gemini: ['GIGI', '#E07A96'], twin: ['GOGO', '#8F7FD6'] };
 function subtitle(text, a, who) {
   if (!text || a <= 0) return;
   hud.save(); hud.globalAlpha = a;
@@ -773,4 +773,6 @@ window.renderCover = () => {
   window.__cover = true; renderAt((b.vo ?? b.start) + 1.2); window.__cover = false;
 };
 renderAt(window.HF_MODE ? (window.__hfThreeTime || 0) : 0.5);
+// everything in plasticine (13 Nov 2026: the clay look; brand/show.md)
+if (COMMITTEE) claymate(scene);
 window.ready = true;

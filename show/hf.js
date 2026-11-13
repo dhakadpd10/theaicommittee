@@ -11,7 +11,7 @@ const timeline = require('./timeline');
 
 const ROOT = path.join(__dirname, '..'), MODS = path.join(ROOT, 'node_modules');
 const W = 1080, H = 1920;
-const TAGS = { codex: ['CODEX', '#6F84FF'], claude: ['CLAUDE', '#E0805F'], gemini: ['GEMINI', '#A77BF3'], twin: ['GEMINI (THE TWIN)', '#E06A9A'] };
+const TAGS = { codex: ['BYTE', '#5E7FC2'], claude: ['SAGE', '#6F9A6C'], gemini: ['GIGI', '#E07A96'], twin: ['GOGO', '#8F7FD6'] };
 const MEMBERS = ['codex', 'claude', 'gemini'];
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const r3 = (x) => +x.toFixed(3);

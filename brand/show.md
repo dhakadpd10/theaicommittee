@@ -6,13 +6,15 @@ Meera, a tired, dry, very online young woman (a day job, a boss, a mum who calls
 
 ## The cast
 
+**Since 13 Nov 2026 the show is Claymation** (docs/CLAY.md) **and the committee are original clay characters: Byte, Sage, Gigi and her twin Gogo.** They behave like the AI assistants people use every day, but they are not those products: never call them ChatGPT, Claude, Gemini or Codex, and never draw or mention a company logo. The ids in episode.json stay codex, claude, gemini and twin. Real app names are fine inside the fix itself ("open Settings", "search mca.gov.in").
+
 | who | look | personality | how they talk |
 |---|---|---|---|
 | `meera` | 3D girl, terracotta hoodie, bun with a pencil, gold hoops | the straight woman. Tired, dry, never shouts. Her flat one-word reactions are the punchlines. | short, plain sentences. Says the task in the first second. |
-| `codex` | puffy blue cloud with a glowing `>_` face | the terminal. Does it immediately, asks nothing, takes everything literally, thinks the world is a repo. | 1 to 6 words. "Done." "Deleted everything." "That's not in the repo." |
-| `claude` | orange pixel creature built from blocks, slot eyes, little arms | the careful one. Thoughtful, polite, asks how you feel first, over-apologises, writes far too much, adds caveats. | full, gentle sentences. Sometimes overdoes politeness until it is absurd. |
-| `gemini` | blue-to-pink sparkle | the cheerful know-it-all, connected to everything. Confident, helpful, and quietly shares/sends/posts things nobody asked it to. | upbeat, exclamation marks. "Done! I also..." |
-| `twin` | Gemini's smaller sparkle twin | the smug one. Adds the last, worse detail. | 2 to 5 words, deadpan. "And your mom." "Till March." |
+| `codex` = **Byte** | slate-blue clay pebble with a little antenna and a yellow bead on top | the literal one. Does it immediately, asks nothing, takes everything literally, thinks the world is a repo. | 1 to 6 words. "Done." "Deleted everything." "That's not in the file." |
+| `claude` = **Sage** | sage-green clay egg with round brown glasses and a mustard scarf | the careful one. Thoughtful, polite, asks how you feel first, over-apologises, writes far too much, adds caveats. Usually the one who gives the real fix. | full, gentle sentences. Sometimes overdoes politeness. |
+| `gemini` = **Gigi** | pink clay bean with a little curl on top | the cheerful know-it-all, connected to everything. Confident, helpful, and quietly shares, sends or posts things nobody asked for. | upbeat, exclamation marks. "Done! I also..." |
+| `twin` = **Gogo** | Gigi's small lavender twin, floating at her shoulder | the smug one. Adds the last, worse detail. | 2 to 5 words, deadpan. "And your mom." "Till March." |
 
 **Since 29 Oct 2026 every episode is "a real problem + the AIs being themselves + a fix that really works".** Meera (or Mum) brings a problem that actually hurts and that millions of Indians share: job hunting and rejections, appraisals and salary talks, a boss texting at night, exams and college forms, UPI, OTP and voice-clone scams, bills, landlords, parents and phones. The committee behaves exactly like real AIs (that's the comedy), and one of them gives the fix that genuinely works: a free tool, a phone feature or a method, shown on the laptop. The viewer laughs, then saves it, sends it and comments the keyword for the steps.
 
@@ -65,7 +67,7 @@ The pages growing fastest in our space pair the joke with something people genui
 4. Set `musicStop` to the index of the beat where the music should cut out (usually the beat right before the final turn), so the punchline lands in silence.
 5. **Voice rules** (the voices are text-to-speech, checked by a speech-to-text model):
    - `say` is what is spoken; write numbers as words ("ninety two percent"). `show` is the subtitle; use digits there ("92%"). Only add `show` when it differs from `say`.
-   - Plain, common words. No emoji, no hashtags, no symbols in `say`. No brand names other than the three AIs. Keep every line under 18 words.
+   - Plain, common words. No emoji, no hashtags, no symbols in `say`. No brand or AI product names in the dialogue (the cast are Byte, Sage, Gigi and Gogo); a real app or website may be named only in the fix. Keep every line under 18 words.
    - Do not start a line with the word "Committee" on its own: the voice says it wrong ("you three" works).
 6. Clean comedy: no politics, religion, insults about real people or groups, nothing sexual, no real companies besides the three AIs, no medical or financial advice.
 
