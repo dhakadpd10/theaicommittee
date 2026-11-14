@@ -1,0 +1,104 @@
+{
+  "id": "082-shaadi-card-app",
+  "title": "Shaadi card app",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 10",
+  "hook": "1 shaadi card. Rs 5 lakh gone.",
+  "cover": 2,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum got a wedding card that wants to be installed.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Sharma aunty ki beti ki shaadi ka card aaya. Khul nahi raha, Install bol raha hai??"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Unknown app. Wants full access.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I said yes for all four of you!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "To a stranger.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "Great question! A wedding card is like a mithai box. You just open it.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "Asks to be installed? That's a stranger wanting your house keys, and your OTPs.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.8,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "To Mum",
+        "body": "1. A real card is a photo or PDF. Never an app.\n2. Says Install? Don't tap. Delete it.\n3. Settings > search 'Install unknown apps' > WhatsApp: OFF\n4. Money gone? Call 1930 or cybercrime.gov.in",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Samajh gayi beta.\nWarning 14 groups mein forward kar di."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She forwarded the warning. To fourteen groups.",
+      "show": "She forwarded the warning. To 14 groups.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "Even Sharma aunty.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum got a shaadi card on whatsapp. it wanted to be installed.\n\na real wedding card is a photo or a pdf. if it asks you to install something, it's an app that can read your messages and OTPs. delete it, and if money is gone call 1930 or report at cybercrime.gov.in.\n\nwhich AI thing should mum ask about next?\n\nComment SCAM and I'll DM you the 4 step wedding card check, the exact phone setting to switch off, the 1930 and cybercrime.gov.in links, and a ready message to send your parents.\n\n#claude #gemini #scamalert #desimom #weddingseason"
+}

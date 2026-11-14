@@ -1,0 +1,114 @@
+{
+  "id": "080-nine-thirty-invite",
+  "title": "Nine thirty invite",
+  "cast": "committee",
+  "series": "AFTER HOURS · PART 2",
+  "hook": "Invite for 9:30 pm. Tonight.",
+  "cover": 4,
+  "musicStop": 7,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Client booked a call for half past nine tonight. Again.",
+      "show": "Client booked a call for 9:30 tonight. Again.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Invite: Client sync",
+        "body": "Tonight, 9:30 pm IST\n\nYes   No   Maybe"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Accepted! And I accepted his Saturday one too!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Undo. Stop these.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Declined everything.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "wipe"
+      ],
+      "screen": {
+        "page": "calendar",
+        "wipe": true
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Including your appraisal.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "So sorry. Set your working hours, so he gets a warning first.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Fix: night invites",
+        "body": "1. Settings > Working hours & location\n   (Outlook: Calendar > Work hours)\n2. 10 am to 7 pm IST, Mon to Fri\n3. Night invite? Propose a new time:\n   9:30 am IST"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Proposed nine thirty in the morning.",
+      "show": "Proposed 9:30 am.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4,
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Client",
+        "body": "Sure, 9:30 am.\nSaturday?"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Saturday.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "a client booked 9:30 pm. again. the committee accepted his saturday call and declined my appraisal.\n\nset working hours in your work calendar (google calendar: settings > general > working hours & location) so people get a warning before they book you at night. then answer late invites with \"propose a new time\", not yes.\n\nwhat time does your latest call start? just the time.\n\nComment BOSS and I'll DM you the working hours setup for google calendar and outlook, plus 3 polite replies that move a night call to the morning.\n\n#claude #aitools #officelife #worklifebalance #corporatelife"
+}

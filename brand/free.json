@@ -464,5 +464,154 @@
       }
     ],
     "tip": "Some employers still want to see the paper original later. Ask HR once, in writing, what they accept."
+  },
+  "AUTOPAY": {
+    "title": "Find and stop every forgotten AutoPay",
+    "intro": "Deleting an app does not stop its AutoPay. The mandate lives in your UPI app or your app store, and it keeps charging until you cancel it there. About 10 minutes, for you or your parents.",
+    "steps": [
+      "Open each UPI app you have paid with (BHIM, Google Pay, PhonePe, Paytm or your bank's app) and find the AutoPay or Mandates section, usually under your profile or settings.",
+      "Tap each mandate you don't recognise or no longer use, choose Pause or Cancel, and follow the app's confirmation.",
+      "Check app-store subscriptions too. Android: Play Store > your profile > Payments and subscriptions > Subscriptions. iPhone: Settings > your name > Subscriptions.",
+      "Optional: NPCI's UPI Help (upihelp.npci.org.in) can show mandates across apps. It is still being rolled out, so if your bank isn't supported, use the app route above.",
+      "Next month, check your bank SMS or statement to confirm the charge stopped. If it continues after you cancelled, contact your bank through its official app or helpline."
+    ],
+    "links": [
+      {
+        "name": "UPI Help (NPCI)",
+        "url": "https://upihelp.npci.org.in"
+      },
+      {
+        "name": "Google Play subscriptions",
+        "url": "https://play.google.com/store/account/subscriptions"
+      },
+      {
+        "name": "Apple subscriptions",
+        "url": "https://apps.apple.com/account/subscriptions"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Find the repeat charges",
+        "text": "I'll paste 3 months of my bank SMS or statement lines (I have removed account and card numbers). List every charge that repeats, with the same amount or the same merchant, showing the dates and amounts. If you are not sure what a merchant is, write 'unknown' instead of guessing."
+      },
+      {
+        "name": "Explain it to Papa",
+        "text": "Write a short WhatsApp message in simple Hinglish for my father. Explain that deleting an app does not stop its AutoPay, and give him the 3 steps to check the AutoPay section of his UPI app. Under 60 words, no jargon, warm tone."
+      },
+      {
+        "name": "Cancel in writing",
+        "text": "Write a short, polite message to a company's customer support asking them to cancel my subscription [name] and confirm in writing that no further charges will be made. Under 70 words."
+      }
+    ],
+    "tip": "No real company needs your UPI PIN to cancel a subscription over the phone. If someone calls offering to 'stop your AutoPay' for you, hang up and do it yourself in the app."
+  },
+  "AADHAAR": {
+    "title": "Share your Aadhaar safely: the masked copy and the usage check",
+    "intro": "When someone asks for your Aadhaar on WhatsApp or email, you can often share the masked version, which shows only the last 4 digits. It's free on UIDAI's own site. Some official processes need the full number, so ask why before you send it.",
+    "steps": [
+      "Go to myaadhaar.uidai.gov.in and log in with your Aadhaar number and the OTP sent to your registered mobile.",
+      "Choose Download Aadhaar and tick the masked Aadhaar option. The PDF shows only the last 4 digits.",
+      "Open the PDF with its password: the first 4 letters of your name in capitals plus your birth year (for example MEER1998).",
+      "In the same portal, open Authentication History to see when your Aadhaar was used. If you don't recognise something, call UIDAI on 1947.",
+      "Optional: use Lock/Unlock Biometrics so your fingerprint and iris can't be used until you unlock them."
+    ],
+    "links": [
+      {
+        "name": "myAadhaar (UIDAI)",
+        "url": "https://myaadhaar.uidai.gov.in"
+      },
+      {
+        "name": "UIDAI",
+        "url": "https://uidai.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Reply to HR",
+        "text": "Write a short, polite reply to a recruiter who asked for my Aadhaar on WhatsApp. Say I'm happy to share a masked copy now, and the full copy through the company's official HR process after an offer. Under 50 words, friendly, not suspicious-sounding."
+      },
+      {
+        "name": "Is this request normal?",
+        "text": "A company I applied to asked me for these documents: [list]. The stage I'm at: [first call / interview / offer / joining]. Tell me which of these are commonly asked at this stage, and which questions I should ask before sharing. Don't decide whether the company is real or fake; give me questions I can check."
+      },
+      {
+        "name": "Check the recruiter's message",
+        "text": "Here is a recruiter's message: [paste]. List any red flags (a personal email address, urgency, payment requests, ID requests before any interview) and anything that looks normal. Be brief and specific."
+      }
+    ],
+    "tip": "Before sending any ID photo, write across it with your phone's markup tool: 'For [company] job application only, [date]'. That makes the copy harder to reuse somewhere else."
+  },
+  "LOST": {
+    "title": "Phone lost or stolen: the first 30 minutes",
+    "intro": "Do these in order from a laptop or a borrowed phone. All of them are free.",
+    "steps": [
+      "Secure it first. Android: google.com/android/find. iPhone: icloud.com/find. Lock it or mark it as lost. Erase it only if you won't get it back, because erasing can stop you from locating it.",
+      "From another phone, call your mobile operator to block the SIM, then get a replacement SIM on the same number at their store.",
+      "Call your bank's official helpline (the number is on the back of your card or on the bank's website) to block UPI and cards on the lost phone.",
+      "File a police complaint (many states let you report a lost phone online) and keep the complaint number.",
+      "Block the phone's IMEI on Sanchar Saathi: Block Your Lost/Stolen Mobile. You'll need the IMEI (on the box or bill), the complaint number and your number.",
+      "If money has already gone, call 1930 or report at cybercrime.gov.in straight away."
+    ],
+    "links": [
+      {
+        "name": "Google Find Hub",
+        "url": "https://www.google.com/android/find"
+      },
+      {
+        "name": "Find My (iCloud)",
+        "url": "https://www.icloud.com/find"
+      },
+      {
+        "name": "Sanchar Saathi",
+        "url": "https://www.sancharsaathi.gov.in"
+      },
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "url": "https://cybercrime.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "My next hour",
+        "text": "My phone was just lost or stolen. It had these apps: [list]. Make me a short, numbered checklist for the next hour, in order of urgency. Don't invent helpline numbers; tell me where to find each one officially."
+      },
+      {
+        "name": "Complaint draft",
+        "text": "Write a clear, factual police complaint for a lost or stolen phone using these details: [phone model, IMEI, number, date, time, place, what happened]. Plain English, under 150 words."
+      },
+      {
+        "name": "Passwords to change",
+        "text": "I lost my phone. I use these accounts on it: [list]. Tell me which passwords to change first and why, starting with my email. Keep it short."
+      }
+    ],
+    "tip": "Do this today, before you need it: dial *#06# to see your IMEI and save it in your email."
+  },
+  "CLEAN": {
+    "title": "WhatsApp storage: free up gigabytes in 10 minutes",
+    "intro": "WhatsApp keeps every forwarded photo and video. Clear the big files without losing your chats, then stop them coming back.",
+    "steps": [
+      "WhatsApp > Settings > Storage and data > Manage storage. Start with 'Forwarded many times' and 'Larger than 5 MB'.",
+      "Open the biggest chats (they are sorted by size), select the media you don't need and delete it. Your messages stay; only the files go.",
+      "Stop new files piling up: Settings > Storage and data > Media auto-download, and set it to No media (or Wi-Fi only).",
+      "For a busy group, open group info and set Media visibility to No (Android) or Save to Photos to Never (iPhone), so its files stay out of your gallery.",
+      "Your backup can be huge too: Settings > Chats > Chat backup, and switch off Include videos if you don't need them backed up."
+    ],
+    "links": [
+      {
+        "name": "WhatsApp Help Center",
+        "url": "https://faq.whatsapp.com"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Explain it to Mum",
+        "text": "Write a short Hinglish WhatsApp message for my mum explaining how to free WhatsApp storage: Settings, Storage and data, Manage storage, then delete 'Forwarded many times'. Under 60 words, friendly, no jargon."
+      },
+      {
+        "name": "A kind note to the family group",
+        "text": "Write a light, warm message for our family WhatsApp group suggesting we share photos in one shared album instead of sending them one by one, without offending anyone. Under 40 words."
+      }
+    ],
+    "tip": "Check your Photos or Gallery app for a WhatsApp folder too. Deleting files in WhatsApp's own storage tool is the cleanest way, because it removes them in one place."
   }
 }

@@ -1,0 +1,104 @@
+{
+  "id": "086-papa-digital-arrest",
+  "title": "Two hour call",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 11",
+  "hook": "Papa on a 2-hour 'CBI' video call",
+  "cover": 2,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Papa's on a video call with the CBI. Two hours. They want money moved.",
+      "shot": "wide",
+      "mood": "shock",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Papa 2 ghante se CBI wale video call pe hain. Bol rahe safe account mein paise daalo??"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. First, how is Papa feeling?",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "I checked! The badge number is real!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Fake. Hang up. Call nineteen thirty.",
+      "show": "Fake. Hang up. Call 1930.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.4,
+      "screen": {
+        "page": "text",
+        "title": "Digital arrest? Read this",
+        "body": "1. There is no 'digital arrest'. Police never arrest on a video call.\n2. Never move money on a call. There is no 'safe account'.\n3. Hang up. Call 1930 or report at cybercrime.gov.in"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Like a doctor won't operate over video, police won't arrest over video. Or ask for money.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Sending this to Mum.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Papa 2 ghante se CBI wale video call pe hain. Bol rahe safe account mein paise daalo??\n\nPapa ne phone kaat diya.\nBol rahe main to time pass kar raha tha"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Papa says he was just passing time.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "For two hours.",
+      "show": "For 2 hours.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "papa spent 2 hours on a video call with \"cbi officers\" who wanted his money in a safe account.\n\nthere is no such thing as a digital arrest, and real police never ask you to move money on a call.\nhang up, then call 1930 or report it at cybercrime.gov.in.\n\nwhich AI thing should mum ask about next?\n\nComment SAFE and I'll DM you the 3 step digital arrest card for your parents, with the official 1930 and cybercrime.gov.in links.\n\n#codex #aitools #scamalert #desimom #digitalarrest"
+}

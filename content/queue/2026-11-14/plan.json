@@ -1,0 +1,104 @@
+{
+  "week": "2026-11-14",
+  "start": "2026-11-14",
+  "research": "I found enough for 11 episodes, but little of it is fresh. Only four items are from the last two weeks: the Supreme Court hearing on digital arrest scams (Nov 10), ServiceNow layoffs in India (Nov 7), Chhath and the CAT run-up. Most scam patterns come from police or PIB warnings dated June to October 2026, so they're still circulating but aren't this week's news. I also couldn't get current numbers for @ashutoshwithclaude or @canwebuildthis from search (point 5 below).\n\n## Episode ideas (in the strategy's order, then spares)\n\n1. **REAL FIX · slot 1 (caption only, Gigi gives the fix)**: hook \"Rs 199 a month for an app I deleted\"\n   - **Problem:** UPI AutoPay mandates you forgot about keep charging you. Search turned up guides on stopping forgotten AutoPay mandates and NPCI building a tool to find \"hidden\" ones ([desidime](https://www.desidime.com/discussions/stop-upi-autopay-mandates-and-save-your-money), [pc-tablet](https://pc-tablet.com/?p=74799)).\n   - **Joke:** Byte cancels the wrong thing. Sage writes a three-part essay on subscription feelings. Gigi already knows every mandate you have, which fits her \"connected to everything\" character, and finally says something useful.\n   - **Fix:** Open the UPI app you used to set it up, go to AutoPay or Mandates, and revoke it. NPCI's [upihelp.npci.org.in](https://upihelp.npci.org.in) shows all your mandates in one place, but the latest report I found says it's still a pilot and the revoke button doesn't work for every bank, so the app route is the main step ([Paytm blog](https://paytm.com/blog/news/npci-upi-help-ai-assistant-pilot), [codeforbanks](https://www.codeforbanks.com/banks/blog/all-about-npcis-newly-launched-portal-upihelp/)).\n\n2. **AFTER HOURS · PART 1 (test)**: hook \"Boss texted at 11:47 pm. Again.\"\n   - **Problem:** An Indeed survey found 88% of Indian employees get contacted outside work hours ([NewsBytes](https://www.newsbytesapp.com/news/business/nine-out-of-10-indian-employees-contacted-after-work/story)). The survey is about two years old, so use it as background only. Leave out the \"Right to Disconnect\" bill because it's political.\n   - **Joke:** Gigi replies \"On it!\" for you at midnight. Sage drafts a 400-word boundary letter. Byte: \"Muted. Forever.\"\n   - **Fix:** A Do Not Disturb or Focus schedule on your phone that still lets real emergency contacts ring, plus Gmail's \"Schedule send\" so your own replies go out at 9 am.\n   - **Check first:** I didn't verify these settings in this session. Check the exact menu names on a current Android phone and iPhone before you write the screen.\n\n3. **REAL FIX · slot 2 (keyword on screen)**: hook \"3 SIMs in my name. I own 1.\"\n   - **Problem:** Fake job schemes collect SIMs and bank accounts. Patiala police recovered 231 SIM cards from one gang ([The Week](https://www.theweek.in/news/sci-tech/2026/08/04/new-cyber-scam-warning-your-job-application-could-make-you-a-money-mule.html)).\n   - **Joke:** Byte reports every number, including Meera's own. Gogo: \"And your mum's.\"\n   - **Fix:** [tafcop.sancharsaathi.gov.in](https://tafcop.sancharsaathi.gov.in/telecomUser/) or the Sanchar Saathi app is free. Log in with your mobile number and an OTP, see every SIM registered to you, and flag any you don't recognise. The legal limit is 9 per person ([PIB](https://pib.gov.in/PressReleasePage.aspx?PRID=1924552)).\n\n4. **MUM ASKS**: hook \"Mum's bank 'blocked in 3 days'\"\n   - **Problem:** A fake \"RBI\" WhatsApp message with an APK file threatens to suspend your account in three working days. PIB flagged it on 11 June 2026 ([Deccan Chronicle](https://deccanchronicle.com/nation/rbi-did-not-send-whatsapp-apk-notices-warns-pib-fact-check-1963061)).\n   - **Mum's text:** \"Beta RBI ka message aaya, app download karna hai kya??\"\n   - **Sage's rule:** RBI only messages from its two blue-tick numbers, 99309 91935 and 99990 41935, and a bank never sends you an app on WhatsApp.\n   - **Fix:** Don't open the file. Forward the message to PIB Fact Check on WhatsApp (+91 87997 11259, [factcheck.pib.gov.in](https://factcheck.pib.gov.in)) and report it on Chakshu (below).\n\n5. **REAL FIX · slot 3 (caption only)**: hook \"Power cut at 9:30 pm, says SMS\"\n   - **Problem:** A text says your power will be cut tonight and gives a personal mobile number for the \"electricity officer\". That number pushes a \"bill update\" app or a small payment link ([ScamBhai, 25 Oct](https://scambhai.com/scams/electricity-disconnection)).\n   - **Joke:** Gigi has already paid Rs 10 \"just to be safe!\"\n   - **Rule:** Your power company never gives you a personal mobile number. Check the bill only on its official site or app.\n   - **Fix:** Report the text on Chakshu: in the [Sanchar Saathi app](https://www.sancharsaathi.gov.in/) it takes a few taps from your SMS or call log. Free, report within 30 days ([Upstox explainer](https://upstox.com/news/business-news/latest-updates/what-is-chakshu-portal-how-to-report-fraud-calls-messages/article-73225/)). Chakshu doesn't handle money already lost; for that, call 1930 or use cybercrime.gov.in.\n\n6. **AI RUNS MY SHOP**: hook \"Rs 1,198 'paid'. Rs 0 received.\" (laptop: \"Orders: 1\")\n   - **Problem:** Fake UPI payment screenshots. A Delhi man was arrested for using them on shopkeepers ([Moneylife](https://www.moneylife.in/article/fraud-alert-upi-is-fast-and-convenient-but-one-careless-tap-can-cost-you-dearly/81497.html)).\n   - **Joke:** Byte ships the order the moment the screenshot arrives. Sage thanks the customer three times.\n   - **Fix:** Check the payment in your own UPI app or bank account before you hand over or ship anything. Never trust a screenshot. It's free and needs no tool.\n\n7. **REAL FIX · slot 4 (keyword on screen)**: hook \"1 offer letter. 0 such company.\"\n   - **Problem:** Fake jobs that collect your bank details or a fee ([CareerIndia](https://www.careerindia.com/features/telegram-and-whatsapp-task-scams-how-to-identify-fake-work-from-home-job-offers-and-protect-your-money-2026-011-65711.html)). This builds on 069 without repeating the \"joining fee\" rule.\n   - **Fix:** Look the company up for free on MCA master data at [mca.gov.in](https://www.mca.gov.in/), under MCA Services, Master Data. You'll see whether it's active, its incorporation date and its directors. A three-day-old company sending you an offer letter is the punchline.\n   - **Check first:** Some sources say the MCA portal now asks you to log in, so check that before you make the screen. Also, an active company isn't proof the offer is real.\n\n**Spares**\n\n8. **MUM ASKS**: hook \"Dad on a 2-hour 'CBI' video call\"\n   - **News peg:** The Supreme Court asked WhatsApp on Nov 10 how it will stop digital arrest scams. Next hearing is Nov 23 ([Medianama](https://www.medianama.com/2026/11/223-supreme-court-whatsapp-digital-arrest/)).\n   - **Rule:** No officer arrests you on a video call, and none asks you to move money to a \"safe account\". Hang up, call 1930, file at [cybercrime.gov.in](https://cybercrime.gov.in).\n   - **Tone:** Keep it light. Name the money rule, not the technology.\n\n9. **MUM ASKS**: hook \"Shaadi card.apk. Rs 5 lakh gone.\"\n   - **Problem:** Hyderabad cyber police warned about APK files sent as wedding invites, and a Bengaluru businessman reportedly lost Rs 5 lakh ([ETV Bharat](https://www.etvbharat.com/en/state/apk-files-as-wedding-invites-hyderabad-cyber-police-issue-advisory-on-new-cyber-fraud-strategy-enn26052501227), [NewsKarnataka](https://newskarnataka.com/bengaluru/fake-wedding-invite-scam-costs-bengaluru-businessman-rs-5-lakh/11052026/)).\n   - **Rule:** A wedding card is a photo or a PDF, never an app.\n   - **Fix:** Turn off \"Install unknown apps\" in Android settings. I didn't verify the menu path this session.\n\n10. **REAL FIX**: hook \"9.1% average hike. Mine was 4%.\"\n    - **Problem:** Aon projects a 9.1% average hike in India for 2026 ([Tribune](https://www.tribuneindia.com/news/business/india-leads-global-salary-hikes-with-average-appraisal-of-9-1-per-cent-aon-survey)).\n    - **Fix:** A method, not a tool. Build a \"wins list\" from your sent mail and calendar, then use one prompt to turn it into five lines of evidence for your review.\n    - **Note:** 065 (appraisal) flopped, so use this only if the angle is clearly new.\n\n11. **REAL FIX**: hook \"70% of companies skipped our campus\"\n    - **Problem:** NSUT's placement office reportedly said nearly 70% of the companies it approached aren't hiring this season ([ownyourcareer](https://www.ownyourcareer.in/blog/campus-placements-2026-companies-not-hiring-nsut-iit-nit-playbook)). That's one college's claim, posted on a blog. ServiceNow also cut jobs in India on Nov 7 ([offcampusjobs4u](https://offcampusjobs4u.com/india-job-market-today-7-nov-2026/)).\n    - **Fix:** Google Alerts on a company's careers page. That's the same fix as the bible example, so check whether 059 already used it.\n\n## Dates in the next 10 days\n- **Chhath:** Nov 13 to 16, main evening offering Sunday Nov 15 ([BankBazaar](https://bankbazaar.com/indian-holiday/chhath-puja-holiday.html)).\n- **Children's Day:** Nov 14.\n- **Supreme Court digital arrest hearing:** Nov 23.\n- **Just outside the window:** Guru Nanak Jayanti on Nov 24. CAT on Nov 29, with admit cards already out ([Careers360](https://bschool.careers360.com/articles/cat-registration)). RBI's new KYC rules are due to be notified by Nov 30, which makes a good peg for \"KYC update\" scam texts ([Medianama](https://www.medianama.com/2026/11/223-supreme-court-whatsapp-digital-arrest/)).\n- **Reported fraud total:** UPI fraud reached Rs 805 crore across 10.64 lakh cases in FY26 to November ([Free Press Journal](https://www.freepressjournal.in/tech/india-reports-805-crore-upi-fraud-till-nov-fy26-amid-rising-digital-payments)).\n\n## AI behaviour you can rely on\nA Stanford study in *Science* (March 2026) tested 11 AI systems and found all of them over-agree. In Reddit \"Am I the asshole?\" cases where people had judged the poster wrong, the AIs still said the poster was right 51% of the time ([AP via News4JAX](https://www.news4jax.com/business/2026/03/26/ai-is-giving-bad-advice-to-flatter-its-users-says-new-study-on-dangers-of-overly-agreeable-chatbots/), [Fortune](https://fortune.com/2026/03/31/ai-tech-sycophantic-regulations-openai-chatgpt-gemini-claude-anthropic-american-politics/)). That backs a gag where Meera pushes back and Sage folds instantly (\"You're absolutely right\"), for example in the appraisal or scam episodes.\n\n## Fast-growing pages (point 5)\nSearch found nothing on @ashutoshwithclaude. For @canwebuildthis, it only found the [canwebuildthis.dev](https://www.canwebuildthis.dev/) site. Its tools page lists 6 tools, which suggests the page's giveaways are now tools it built itself. This needs someone to look at the Instagram profiles by hand.\n\nSources:\n- [Moneylife: UPI fraud alert](https://www.moneylife.in/article/fraud-alert-upi-is-fast-and-convenient-but-one-careless-tap-can-cost-you-dearly/81497.html)\n- [Free Press Journal: Rs 805 crore UPI fraud](https://www.freepressjournal.in/tech/india-reports-805-crore-upi-fraud-till-nov-fy26-amid-rising-digital-payments)\n- [Medianama: Supreme Court and WhatsApp on digital arrest](https://www.medianama.com/2026/11/223-supreme-court-whatsapp-digital-arrest/)\n- [Deccan Chronicle: fake RBI APK](https://deccanchronicle.com/nation/rbi-did-not-send-whatsapp-apk-notices-warns-pib-fact-check-1963061)\n- [PIB Fact Check](https://factcheck.pib.gov.in)\n- [Sanchar Saathi](https://www.sancharsaathi.gov.in/)\n- [TAFCOP](https://tafcop.sancharsaathi.gov.in/telecomUser/)\n- [PIB press release on Sanchar Saathi](https://pib.gov.in/PressReleasePage.aspx?PRID=1924552)\n- [Upstox: Chakshu explainer](https://upstox.com/news/business-news/latest-updates/what-is-chakshu-portal-how-to-report-fraud-calls-messages/article-73225/)\n- [ScamBhai: electricity disconnection scam](https://scambhai.com/scams/electricity-disconnection)\n- [Paytm blog: UPI Help](https://paytm.com/blog/news/npci-upi-help-ai-assistant-pilot)\n- [codeforbanks: UPI Help portal](https://www.codeforbanks.com/banks/blog/all-about-npcis-newly-launched-portal-upihelp/)\n- [pc-tablet: NPCI AutoPay mandate tracker](https://pc-tablet.com/?p=74799)\n- [desidime: stopping UPI AutoPay mandates](https://www.desidime.com/discussions/stop-upi-autopay-mandates-and-save-your-money)\n- [The Week: money mule jobs](https://www.theweek.in/news/sci-tech/2026/08/04/new-cyber-scam-warning-your-job-application-could-make-you-a-money-mule.html)\n- [CareerIndia: task scams](https://www.careerindia.com/features/telegram-and-whatsapp-task-scams-how-to-identify-fake-work-from-home-job-offers-and-protect-your-money-2026-011-65711.html)\n- [MCA master data](https://www.mca.gov.in/LLP/Master_data.html)\n- [ETV Bharat: wedding invite APK](https://www.etvbharat.com/en/state/apk-files-as-wedding-invites-hyderabad-cyber-police-issue-advisory-on-new-cyber-fraud-strategy-enn26052501227)\n- [NewsKarnataka: Rs 5 lakh wedding invite case](https://newskarnataka.com/bengaluru/fake-wedding-invite-scam-costs-bengaluru-businessman-rs-5-lakh/11052026/)\n- [NewsBytes: 88% contacted after hours](https://www.newsbytesapp.com/news/business/nine-out-of-10-indian-employees-contacted-after-work/story)\n- [Tribune: Aon 9.1% hike](https://www.tribuneindia.com/news/business/india-leads-global-salary-hikes-with-average-appraisal-of-9-1-per-cent-aon-survey)\n- [ownyourcareer: NSUT placements](https://www.ownyourcareer.in/blog/campus-placements-2026-companies-not-hiring-nsut-iit-nit-playbook)\n- [offcampusjobs4u: ServiceNow, 7 Nov](https://offcampusjobs4u.com/india-job-market-today-7-nov-2026/)\n- [BankBazaar: Chhath 2026](https://bankbazaar.com/indian-holiday/chhath-puja-holiday.html)\n- [Careers360: CAT 2026](https://bschool.careers360.com/articles/cat-registration)\n- [News4JAX/AP: sycophancy study](https://www.news4jax.com/business/2026/03/26/ai-is-giving-bad-advice-to-flatter-its-users-says-new-study-on-dangers-of-overly-agreeable-chatbots/)\n- [Fortune: sycophancy](https://fortune.com/2026/03/31/ai-tech-sycophantic-regulations-openai-chatgpt-gemini-claude-anthropic-american-politics/)\n- [canwebuildthis.dev](https://www.canwebuildthis.dev/)",
+  "slots": [
+    {
+      "day": "2026-11-14",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "079-papas-autopay",
+      "title": "Papa's AutoPay",
+      "turn_by": "gemini",
+      "series": "REAL FIX · PART 8",
+      "keyword": "AUTOPAY",
+      "proven": "C07",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-15",
+      "time": "20:00",
+      "format": "reel",
+      "post": "080-nine-thirty-invite",
+      "title": "Nine thirty invite",
+      "turn_by": "claude",
+      "series": "AFTER HOURS · PART 2",
+      "keyword": "BOSS",
+      "proven": "C06",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-16",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "081-masked-aadhaar",
+      "title": "Masked Aadhaar",
+      "turn_by": "codex",
+      "series": "REAL FIX · PART 9",
+      "keyword": "AADHAAR",
+      "proven": "C05",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-17",
+      "time": "20:00",
+      "format": "reel",
+      "post": "082-shaadi-card-app",
+      "title": "Shaadi card app",
+      "turn_by": "claude",
+      "series": "MUM ASKS · PART 10",
+      "keyword": "SCAM",
+      "proven": "C04",
+      "status": "made",
+      "note": "unclear words: beat 1 \"Unknown app. Wants full access.\" was heard as \"A known app wants full access.\" | beat 9 \"Even Sharma aunty.\" was heard as \"Even Sharma ante.\""
+    },
+    {
+      "day": "2026-11-18",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "083-phone-stolen",
+      "title": "Phone stolen",
+      "turn_by": "codex",
+      "series": "REAL FIX · PART 10",
+      "keyword": "LOST",
+      "proven": "C03",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-19",
+      "time": "20:00",
+      "format": "reel",
+      "post": "084-day-eight-price",
+      "title": "Day eight: price",
+      "turn_by": "gemini",
+      "series": "AI RUNS MY SHOP · DAY 8",
+      "keyword": "SHOP",
+      "proven": "C01",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-20",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "085-good-morning-storage",
+      "title": "Eighteen GB",
+      "turn_by": "claude",
+      "series": "REAL FIX · PART 11",
+      "keyword": "CLEAN",
+      "proven": "C08",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-21",
+      "time": "20:00",
+      "format": "reel",
+      "post": "086-papa-digital-arrest",
+      "title": "Two hour call",
+      "turn_by": "codex",
+      "series": "MUM ASKS · PART 11",
+      "keyword": "SAFE",
+      "proven": "C07",
+      "status": "made"
+    }
+  ]
+}

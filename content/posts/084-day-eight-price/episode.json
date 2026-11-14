@@ -1,0 +1,121 @@
+{
+  "id": "084-day-eight-price",
+  "title": "Day eight: price",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 8",
+  "hook": "'Price?' 47 times. 1 order.",
+  "cover": 5,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Forty seven people asked the price. Write one reply.",
+      "show": "47 people asked the price. Write one reply.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · 47 unread",
+        "body": "Price?\nPrice?\nprice pls\nPrice??\nhow much\nPrice?\n...\n\nOrders: 1"
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.5,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Attempt 1",
+        "body": "Dear lovely customer,\nI hope this message finds you well.\nThank you for your lovely question about our lovely candles...\n\n(paragraph 1 of 5)\n\nOrders: 1"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Shorter. And change lovely to nice.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right, I'm so sorry! I rewrote it from scratch.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.8,
+      "screen": {
+        "page": "text",
+        "title": "Attempt 23 · now a poem",
+        "body": "A nice candle, nice and bright,\nthe price you seek is not in sight.\nIt waits in verse, as all things do,\nin stanza nine. Or maybe two.\n\nOrders: 1"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Replied yes. To all forty seven.",
+      "show": "Replied \"Yes.\" To all 47.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I saved one reply as a quick reply. Just type slash price!",
+      "show": "Done! I saved one reply as a quick reply. Just type /price!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "screen": {
+        "page": "text",
+        "title": "WhatsApp Business (free)",
+        "body": "1. Settings > Business tools > Quick replies\n2. Save your price reply once. Shortcut: /price\n3. Add prices in Catalogue so they see them first\n\nOrders: 1"
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.6,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Mitti · 1 new",
+        "body": "Mum: Price?\n\nOrders: 1"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "My own mother.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "twin",
+      "say": "Wants a discount.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "47 \"price?\" messages. 1 order. 23 drafts of the same reply.\n\nsave your answer once as a quick reply in the free whatsapp business app (settings > business tools > quick replies), then type /price in any chat. put your prices in the catalogue so people see them before they ask.\n\nhow many \"price?\" messages did you get this week? just the number.\n\nComment SHOP and I'll DM you the quick reply setup, the catalogue steps and 5 price replies that actually sell.\n\n#claude #gemini #smallbusiness #whatsappbusiness #handmadeindia"
+}
