@@ -613,5 +613,157 @@
       }
     ],
     "tip": "Check your Photos or Gallery app for a WhatsApp folder too. Deleting files in WhatsApp's own storage tool is the cleanest way, because it removes them in one place."
+  },
+  "PASSBOOK": {
+    "title": "Is your PF really deposited? The 10-minute passbook check",
+    "intro": "Your payslip shows what was cut. Your EPFO passbook shows what actually arrived. You can check it yourself, free, without asking anyone.",
+    "steps": [
+      "Find your UAN (12 digits) on your payslip, or ask HR for it.",
+      "First time? Activate your UAN on the EPFO member portal with the mobile number registered with EPFO.",
+      "Log in at passbook.epfindia.gov.in with your UAN and password, then pick the member ID for your current employer.",
+      "Check that every month has both an employee share and an employer share, and match them against your payslips.",
+      "A month missing for a long time? Raise a grievance at epfigms.gov.in and keep the reference number. The UMANG app shows the passbook too."
+    ],
+    "links": [
+      {
+        "name": "EPFO Member Passbook",
+        "url": "https://passbook.epfindia.gov.in"
+      },
+      {
+        "name": "EPFO Member Portal (activate UAN)",
+        "url": "https://unifiedportal-mem.epfindia.gov.in"
+      },
+      {
+        "name": "EPFO Grievance Portal (EPFiGMS)",
+        "url": "https://epfigms.gov.in"
+      },
+      {
+        "name": "UMANG",
+        "url": "https://web.umang.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Payslip vs passbook table",
+        "text": "I'll paste the PF figures from my payslips and the entries from my EPFO passbook for the same months. Make a simple table with these columns: month, PF on payslip, employee share in passbook, employer share in passbook. Mark any month that is missing or doesn't match. Do not guess any number I didn't give you."
+      },
+      {
+        "name": "Polite note to HR",
+        "text": "Write a short, polite message to my HR team about my PF for these months: [months]. My payslips show it deducted, but my EPFO passbook doesn't show the deposit yet. Ask when it will be credited. Under 80 words, friendly, no blame."
+      },
+      {
+        "name": "Explain my passbook",
+        "text": "Here is a line from my EPFO passbook: [paste, remove your UAN]. Explain in plain words what each column means. If you are not sure what a column means, say so instead of guessing."
+      }
+    ],
+    "tip": "Deposits can take a few weeks to show, so look for months that stay missing. If your company runs its own PF trust, the EPFO passbook may not show your balance. Ask HR for the trust's statement instead."
+  },
+  "CODE": {
+    "title": "Lock your WhatsApp in 2 minutes, before someone asks for 'the code'",
+    "intro": "The 6-digit WhatsApp code is the key to your account. Anyone who asks for it, even from a friend's or relative's number, is trying to log in as you and ask your contacts for money.",
+    "steps": [
+      "The family rule: never send the 6-digit WhatsApp code to anyone, even if a known number asks for it.",
+      "Open WhatsApp > Settings > Account > Two-step verification > Turn on.",
+      "Set a 6-digit PIN only you know (not 123456 or a birthday), and add an email so you can reset it.",
+      "If a friend asks you for a code, phone them on a normal call first. Their WhatsApp may already have been taken.",
+      "If your account is taken, open WhatsApp and verify your number again on your own phone, warn your contacts not to send money to messages in your name, and report it at 1930 or cybercrime.gov.in."
+    ],
+    "links": [
+      {
+        "name": "WhatsApp Help Center",
+        "url": "https://faq.whatsapp.com"
+      },
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "url": "https://cybercrime.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Family group message",
+        "text": "Write a short WhatsApp message for my family group in simple Hinglish. Explain two things: never send the 6-digit WhatsApp code to anyone, even a relative's number, and how to turn on two-step verification (Settings, Account, Two-step verification). Under 60 words, warm, not scary."
+      },
+      {
+        "name": "Step by step for Papa",
+        "text": "Explain to my 65-year-old father, one tiny step at a time, how to turn on two-step verification in WhatsApp. First ask which phone he has and wait for the answer before giving any steps."
+      },
+      {
+        "name": "Is this message a trick?",
+        "text": "Here is a message I got: [paste, remove personal details]. Does it ask me for a code, PIN, OTP or money? List any warning signs in plain words. If you can't be sure, tell me to call the person on a normal call to check."
+      }
+    ],
+    "tip": "Your PIN and the 6-digit code are both yours alone. WhatsApp itself may ask for your PIN now and then to check it's you, and that is normal. A person asking for either one is not."
+  },
+  "PASSWORD": {
+    "title": "Find your leaked passwords, free, in 10 minutes",
+    "intro": "If one password opens 14 apps, one leak opens all 14. Your phone can already tell you which of your saved passwords have shown up in data leaks.",
+    "steps": [
+      "On Android or Chrome, open passwords.google.com and sign in.",
+      "Tap Password Checkup > Check passwords. Fix Compromised first, then Reused, then Weak.",
+      "On iPhone, open the Passwords app (Settings > Passwords on older versions) and look under Security for leaked and reused passwords.",
+      "Change the leaked ones first, starting with your email, because email can reset everything else.",
+      "Turn on 2-Step Verification for your Google account at myaccount.google.com/security."
+    ],
+    "links": [
+      {
+        "name": "Google Password Manager",
+        "url": "https://passwords.google.com"
+      },
+      {
+        "name": "Google Account security",
+        "url": "https://myaccount.google.com/security"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "My change-first list",
+        "text": "I'll list the apps and sites I use, with no passwords. Sort them into the order I should change passwords in, starting with accounts that can reset others, like email. Just the list, one line each."
+      },
+      {
+        "name": "A passphrase I'll remember",
+        "text": "Explain how to make a long passphrase from 4 random everyday words that I can remember. Give me the method and one example that I must not use. Never ask me for my real password."
+      },
+      {
+        "name": "Is this login alert real?",
+        "text": "I got this 'new sign-in' alert: [paste, remove personal details]. Tell me how to check it safely by opening the app or website myself, not by tapping any link in the message."
+      }
+    ],
+    "tip": "Never type a real password into any AI chat. The checkers above run inside your own account."
+  },
+  "UNDO": {
+    "title": "The reply-all rescue: 30 seconds to unsend",
+    "intro": "Gmail gives you only 5 seconds to undo a send by default. One setting makes every email wait 30 seconds, so you can catch the wrong 'To' line before anyone sees it.",
+    "steps": [
+      "In Gmail on a computer, click the gear > See all settings.",
+      "In the General tab, find Undo Send and choose 30 seconds.",
+      "Scroll to the bottom and click Save Changes.",
+      "In Outlook on the web, go to Settings > Mail > Compose and reply > Undo send, and move the slider to the maximum.",
+      "For any angry or private email, write it first and add the To line last."
+    ],
+    "links": [
+      {
+        "name": "Gmail Help",
+        "url": "https://support.google.com/mail"
+      },
+      {
+        "name": "Microsoft Support",
+        "url": "https://support.microsoft.com"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Before I send",
+        "text": "Read this email before I send it: [paste]. Tell me in 3 lines: who it seems written for, anything that would embarrass me if the whole office read it, and one calmer line I could use instead. Don't rewrite the rest."
+      },
+      {
+        "name": "The short sorry",
+        "text": "I sent an email to the wrong group by mistake. Write a 2-line, calm follow-up saying 'please ignore the earlier email, sent in error'. No long apology, and no 'I hope this email finds you well'."
+      },
+      {
+        "name": "Reply-all check",
+        "text": "Before I reply-all, here are the roles of everyone on this thread: [paste roles, not names]. Should this reply go to everyone or to one person? Answer in one line."
+      }
+    ],
+    "tip": "Undo only works while the email is still waiting. Once the timer runs out it has gone, so send a two-line 'please ignore' rather than a long apology."
   }
 }

@@ -1,0 +1,121 @@
+{
+  "id": "090-two-hundred-candles",
+  "title": "Two hundred candles",
+  "cast": "committee",
+  "series": "AI RUNS MY SHOP · DAY 9",
+  "hook": "200 candles by Friday. 0 questions asked.",
+  "cover": 4,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "A wedding planner wants two hundred candles by Friday. Reply.",
+      "show": "A wedding planner wants 200 candles by Friday. Reply.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Wedding planner",
+        "body": "Hi! 200 candles for return gifts by Friday. Can you do?\n\nOrders: 0"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Confirmed.",
+      "shot": "codex",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.2
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.3,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Wedding planner",
+        "body": "Hi! 200 candles for return gifts by Friday. Can you do?\n\nMitti: Yes, confirmed!\n\nOrders: 1",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Which color? Which city?",
+      "show": "Which colour? Which city?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Not in the message.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Before we begin, may I ask four questions? First, how are you feeling?",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Three questions. One message.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.7
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Quick reply: /bulk",
+        "body": "Yes, we'd love to make your 200!\n3 quick things:\n1. Date and city?\n2. Colour?\n3. Name tags, yes or no?\nPrice right after.\n\nOrders: 1 (pending)"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! Sent it. I also promised free delivery!",
+      "shot": "gemini",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.4,
+      "screen": {
+        "page": "text",
+        "title": "Mitti · Wedding planner",
+        "body": "Date: Friday. That's tomorrow.\nColour: you decide.\nLoved the free delivery!\n\nOrders: 1 (pending)"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Tomorrow.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "200 candles by friday. byte said yes before anyone asked which city.\n\na bulk order needs three answers in one message: date and city, colour, name tags. send the price right after, and save it as a quick reply in the free whatsapp business app (settings, business tools, quick replies) so every big enquiry takes one tap.\n\n299 or 349 a candle, for 200?\n\nComment SHOP and I'll DM you the bulk order quick reply, the WhatsApp Business setup steps and 3 prompts to price a big order.\n\n#codex #aitools #smallbusiness #candlebusiness #weddingseason"
+}

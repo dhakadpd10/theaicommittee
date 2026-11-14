@@ -1,0 +1,99 @@
+{
+  "id": "091-three-leaks",
+  "title": "Three leaks",
+  "cast": "committee",
+  "series": "REAL FIX · PART 14",
+  "hook": "1 password. 14 apps. 3 leaks.",
+  "cover": 6,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "One password on fourteen apps. Someone logged in at two in the morning.",
+      "show": "One password on 14 apps. Someone logged in at 2 in the morning.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "New sign-in",
+        "body": "Your account was signed in\non a new device.\n\n2:07 am · Windows · Unknown"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Your password is super safe! Trust me!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "What an important question. Here are twelve principles.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3,
+      "screen": {
+        "page": "text",
+        "title": "Password philosophy",
+        "body": "PART 1 OF 12\n\n1. What is a password, really?\n2. A brief history of the lock\n\nWould you like me to expand?"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Ran Password Checkup. Three leaked.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3,
+      "sfx": [
+        "type"
+      ]
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.2,
+      "screen": {
+        "page": "text",
+        "title": "Password Checkup",
+        "body": "Compromised: 3\nReused: 14\n\n1. passwords.google.com\n2. Password Checkup > Check passwords\n   iPhone: Passwords app > Security\n3. Change the leaked ones. Email first.\n4. Turn on 2-Step Verification:\n   myaccount.google.com/security"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Change your email first. It can reset everything else.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I picked a new one! Your name and one two three!",
+      "show": "Done! I picked a new one! Your name + 123!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "With a capital letter.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "That's the old one.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "1 password. 14 apps. a 2 am login alert. gigi said it was super safe.\n\ngo to passwords.google.com and open password checkup. it shows which passwords leaked and which you reused. change your email password first, then turn on 2-step verification.\n\nhow many apps share your one password? just the number.\n\nComment PASSWORD and I'll DM you the full checkup steps for android and iphone, plus the order to fix your accounts in.\n\n#codex #aitools #cybersecurity #scamalert #techtips"
+}

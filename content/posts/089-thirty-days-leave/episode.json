@@ -1,0 +1,107 @@
+{
+  "id": "089-thirty-days-leave",
+  "title": "Leave became thirty",
+  "cast": "committee",
+  "series": "REAL FIX · PART 13",
+  "hook": "1 typo fix. My 3 days leave became 30.",
+  "cover": 4,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Fix one typo in my leave mail. Three days off. Cousin's wedding.",
+      "show": "Fix one typo in my leave mail. 3 days off. Cousin's wedding.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Leave mail",
+        "body": "Dear Sir,\nI need 3 days leave for my cousin's wedding.\nPls aprove."
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.6,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Attempt 1",
+        "body": "Dear Sir,\nI hope this email finds you well.\nAllow me to delve into my request for 3 days of leave for my cousin's wedding.\nKindly approve."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Just the typo.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right. I'm so sorry.",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Love it! I also added warm wishes for his whole family!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "Attempt 19 · Version history",
+        "body": "14 changes. You asked for 1.\n\n- Pls aprove.\n+ I hope this email finds you well.\n+ Allow me to delve into my request.\n- 3 days\n+ Leave: 30 days\n+ Warm wishes to your whole family!"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Fourteen changes. You asked for one.",
+      "show": "14 changes. You asked for 1.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.5,
+      "screen": {
+        "page": "text",
+        "title": "Fix only the typo",
+        "body": "1. Ask: Fix only the typo. Change nothing else.\n2. Google Docs: File > Version history > Name current version. Paste the reply.\n3. File > Version history > See version history. Tick Show changes.\n4. Undo anything you didn't ask for.\n\nComment FIX for the steps"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Would you like me to make it shorter?",
+      "shot": "claude",
+      "mood": "small",
+      "pre": 0.5
+    },
+    {
+      "who": "meera",
+      "say": "No.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "asked for 1 typo fix. 19 attempts later my 3 days leave said 30.\n\nask \"fix only the typo. change nothing else.\" then in google docs, name the current version, paste the reply and open file > version history > see version history. every changed word is highlighted.\n\nmost attempts you've needed for one fix? just the number.\n\nComment FIX and I'll DM you the exact version history steps and 3 prompts that change only what you ask.\n\n#codex #aitools #officelife #corporatelife #emailtips"
+}
