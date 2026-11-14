@@ -1,0 +1,108 @@
+{
+  "id": "087-pf-passbook",
+  "title": "PF passbook",
+  "cast": "committee",
+  "series": "REAL FIX · PART 12",
+  "hook": "8 months of PF cut. Is it really there?",
+  "cover": 7,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Eight months of PF cut from my salary. Is it actually there?",
+      "show": "8 months of PF cut from my salary. Is it actually there?",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "codex",
+      "say": "Payslip says deducted. So yes.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Thank you for trusting me with something so personal.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.2
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.5,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Your PF: a gentle guide",
+        "body": "PART 1 OF 6\nYour Feelings About Provident Fund\n\nPART 2 OF 6\nA Gentle Conversation With HR\n\nWould you like me to expand?"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Check it yourself! Every PF payment is online for free!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.2
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.4,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Check your PF yourself (free)",
+        "body": "1. Find your UAN on your payslip.\n2. Log in at passbook.epfindia.gov.in\n   (first time? activate your UAN on the EPFO member portal)\n3. Every month needs an employee AND an employer entry.\n4. An older month missing? Raise a grievance at epfigms.gov.in"
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "PF passbook",
+        "body": "Mar 2026   Employee + Employer   OK\nApr 2026   Employee + Employer   OK\nMay 2026   Employee + Employer   OK\nJun 2026   Employee + Employer   OK\nJul 2026   MISSING\nAug 2026   Employee + Employer   OK\nSep 2026   Employee + Employer   OK\nOct 2026   Employee + Employer   OK",
+        "stamp": "MISSING"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also shared your passbook in the office group!",
+      "shot": "gemini",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "With HR tagged.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.8
+    },
+    {
+      "who": "meera",
+      "say": "Of course she did.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "8 months of pf cut from my salary. the committee checked. one of them shared my passbook with the office.\n\nyour pf has a free passbook. log in at passbook.epfindia.gov.in with your UAN (it's on your payslip) and check that every month has an employee and an employer entry.\nan older month missing? raise a grievance at epfigms.gov.in.\n\ndid you know your PF has a passbook? yes or no.\n\nComment PASSBOOK and I'll DM you the full steps with the official links, plus what to write if a month is missing.\n\n#gemini #aitools #salary #epfo #officelife"
+}

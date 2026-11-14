@@ -1,0 +1,108 @@
+{
+  "id": "093-reply-all",
+  "title": "Reply all",
+  "cast": "committee",
+  "series": "REAL FIX · PART 15",
+  "hook": "Reply-all to 412 people. 5 seconds to undo.",
+  "cover": 8,
+  "musicStop": 9,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "I just replied all to four hundred twelve people. Five seconds to undo.",
+      "show": "I just replied all to 412 people. 5 seconds to undo.",
+      "shot": "wide",
+      "mood": "shock",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Re: Appraisal forms",
+        "body": "To: All Staff (412)\n\nthis appraisal form is a joke\n\nMessage sent.   UNDO  5"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Oh no. First, how are you feeling? I hope this email finds you well.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.2,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Re: Appraisal forms",
+        "body": "To: All Staff (412)\n\nthis appraisal form is a joke",
+        "stamp": "SENT"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Next time, easy! Gmail can wait thirty seconds before it sends!",
+      "show": "Next time, easy! Gmail can wait 30 seconds before it sends!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.4,
+      "screen": {
+        "page": "text",
+        "title": "Undo Send: 30 seconds",
+        "body": "1. Gmail on a computer: gear > See all settings\n2. General > Undo Send > 30 seconds\n3. Scroll down > Save Changes\n4. Outlook web: Settings > Mail > Compose and reply > Undo send\n\nComment UNDO for the steps"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Recalled.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "It's not recalled.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "codex",
+      "say": "Not recalled.",
+      "shot": "codex",
+      "mood": "worried",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also replied all that you turned it on!",
+      "shot": "gemini",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "Boss replied too.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "replied all to 412 people. the undo button gave her 5 seconds. the committee used all of them.\n\ngmail's undo send is set to 5 seconds by default. gear > see all settings > general > undo send > 30 seconds, then save changes at the bottom.\n\nyour undo send right now: 5, 10, 20 or 30?\n\nComment UNDO and I'll DM you the 30 second undo setup for gmail and outlook, step by step.\n\n#gemini #aitools #officelife #emailtips #corporatelife"
+}

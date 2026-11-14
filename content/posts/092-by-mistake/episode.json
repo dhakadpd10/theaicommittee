@@ -1,0 +1,97 @@
+{
+  "id": "092-by-mistake",
+  "title": "Five thousand back",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 13",
+  "hook": "Rs 5,000 came by mistake. Send it back?",
+  "cover": 2,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum got five thousand by mistake. Now some man wants it back.",
+      "show": "Mum got Rs 5,000 by mistake. Now some man wants it back.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta kisi ne galti se 5000 bhej diye, SMS aaya. Ab call karke wapas maang raha hai. Bhej doon?"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Spoofed credit SMS. Social engineering.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.2
+    },
+    {
+      "who": "gemini",
+      "say": "Returning it is so kind! Send it now!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Arre, that text is a neighbour shouting, I left sweets. Check the door first.",
+      "show": "Arre, that text is a neighbour shouting \"I left sweets!\" Check the door first.",
+      "shot": "claude",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "screen": {
+        "page": "text",
+        "title": "One rule",
+        "body": "Never send money back because of an SMS or a call.\n\n1. Open your own bank app. Check the balance.\n2. Nothing there? A text is not money.\n3. Money really came? Tell your bank, not the caller.\n4. Report it: 1930 or cybercrime.gov.in"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "So open your bank app. If nothing came, nothing goes back.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "I sent it to Mum.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.4,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta kisi ne galti se 5000 bhej diye, SMS aaya. Ab call karke wapas maang raha hai. Bhej doon?\n\nBank app me kuch nahi aaya.\nAb usse 5000 maangu?"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Mum's invoicing him now.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "rs 5,000 \"credited\" by mistake, then a stranger calls asking for it back. mum nearly sent it.\n\na credit sms is not money. open your own bank app and check the balance: if nothing came, nothing goes back.\nif money really did arrive, tell your bank, never the caller. report the number at 1930 or cybercrime.gov.in.\n\nwhich scam should mum ask about next? one word.\n\nComment SCAM and I'll DM you the never-send-it-back card for your parents: the 4 checks before returning any money, and how to report it at 1930 and cybercrime.gov.in.\n\n#claude #gemini #scamalert #desimom #upi"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "088-the-code",
+  "title": "The six digit code",
+  "cast": "committee",
+  "series": "MUM ASKS · PART 12",
+  "hook": "6 digits. Mum's WhatsApp gone.",
+  "cover": 2,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum says aunty sent her a code by mistake. She wants it back.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Sharma aunty ne galti se 6 number ka code bhej diya, wapas maang rahi hai. Bhej doon?"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "OTP relay. Account takeover.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "It's just a number! Totally harmless!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "That code is Mum's house key. Aunty didn't drop it. A stranger is asking for it.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "Don't send it. Turn on two step verification.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.4,
+      "screen": {
+        "page": "text",
+        "title": "For Mum",
+        "body": "1. Never send the WhatsApp code. Not even to aunty. Call her instead.\n2. WhatsApp > Settings > Account > Two-step verification > Turn on.\n3. Pick a 6 digit PIN only you know.\n4. Lost money? Call 1930 or go to cybercrime.gov.in"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Sending this to Mum.",
+      "shot": "meera",
+      "mood": "calm",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta Sharma aunty ne galti se 6 number ka code bhej diya, wapas maang rahi hai. Bhej doon?\n\nHo gaya beta. PIN 123456 rakha, yaad rahega."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Her new PIN is one two three four five six.",
+      "show": "Her new PIN is 123456.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "twin",
+      "say": "Same as Mrs Sharma.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "a 6 digit code from 'sharma aunty'. one reply and mum's whatsapp belongs to a stranger.\n\nnever send your whatsapp code to anyone, even a friend. call them instead.\nthen lock it: settings > account > two-step verification > turn on, and pick a PIN only you know.\n\nwhich scam should mum ask about next? one word.\n\nComment CODE and I'll DM you the 4 step lock for mum's whatsapp, the 1930 helpline and a message to forward to the family group.\n\n#claude #gemini #scamalert #desimom #cybersafety"
+}

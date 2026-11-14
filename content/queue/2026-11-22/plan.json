@@ -1,0 +1,91 @@
+{
+  "week": "2026-11-22",
+  "start": "2026-11-22",
+  "research": "Searches are done, and I'm writing up the episode list now.\n\n# Ideas for the next 7 episodes (week of 14 Nov)\n\nNothing here repeats a topic we've already posted (PIN, joining fee, storage, boss at eleven, appraisal, voice clone, deepfake). One caution first: I worked from search results and did not open the official pages. Check every link and \"free\" claim on the site or app store before the packs go into `brand/free.json`.\n\n**Suggested order** (follows the strategy):\n1. Pension certificate (real fix, Gemini fix, keyword in caption only)\n2. Digital arrest (Mum asks)\n3. Wedding card file (real fix, keyword on screen)\n4. Shop\n5. SIMs in your name (real fix)\n6. After Hours 2 if 070 reaches 0.3x on Nov 15, otherwise the power bill Mum asks\n7. Internship (real fix, keyword on screen)\n\n## Episodes\n\n1. **REAL FIX: Dad's pension certificate (Gigi gives the fix).**\n   - **Problem:** Pensioners must submit their life certificate by **Nov 30**. If they miss it, pension is paused from December (paid later as arrears).\n   - **Fix:** free face scan at home on an Android phone. Install the Aadhaar Face RD and Jeevan Pramaan apps, scan the face, and you get a Pramaan ID. Official site: https://jeevanpramaan.gov.in\n   - **Hook:** \"16 days left or Papa's pension stops\"\n   - **AI joke:** Gigi says \"Done! I also sent Papa's selfie to the family group.\"\n   - **Keyword:** PENSION\n   - **Sources:** [Sentinel Assam](https://www.sentinelassam.com/topheadlines/pensioners-must-submit-digital-life-certificates-by-november-30), [Upstox](https://upstox.com/news/personal-finance/latest-updates/digital-life-certificate-2026-how-pensioners-can-submit-jeevan-pramaan-using-face-authentication/article-202783/)\n\n2. **MUM ASKS: \"Police never arrest you on a video call.\"**\n   - **Problem:** Pune, Nov 12: a 75-year-old lost Rs 32 lakh to fake officers who kept her on video calls twice a day. In Jamnagar, a retired banker lost Rs 42 lakh to fake CBI and RBI officers.\n   - **Rule:** never send money to \"verify\" anything. Hang up, then call 1930 or report at https://cybercrime.gov.in\n   - **Mum's text:** \"Beta CBI wale video call pe hain, bol rahe account verify karne ke liye paise bhejo\"\n   - **Hook:** \"Rs 32 lakh. 1 video call.\"\n   - **Sources:** [Pune Pulse](https://www.mypunepulse.com/pune-cyber-fraud-75-year-old-woman-duped-of-rs-32-lakh-in-fake-digital-arrest-scam/), [Gujarat Samachar](https://english.gujaratsamachar.com/news/jamnagar/digital-arrest-nightmare-in-jamnagar-retired-bank-employee-duped-of-rs-42-lakh-by-cyber-fraudsters-posing-as-cbi-and-rbi-officials-20433858861)\n\n3. **REAL FIX: the wedding card that is an app.**\n   - **Problem:** It's wedding season. A \".apk\" wedding invite, often sent from a hacked contact, installs malware that reads OTPs and forwards itself to your contacts.\n   - **Fix:** a real card is a JPG or PDF, never an .apk. Keep \"Install unknown apps\" off for WhatsApp. Report the message on Chakshu: https://sancharsaathi.gov.in\n   - **Hook:** \"1 wedding card. Rs 4.5 lakh gone.\" The Rs 4.5 lakh case is from 2024, so say \"one man lost\", not \"this week\".\n   - **AI joke:** Byte says \"Installed.\"\n   - **Keyword:** SHAADI, also on the laptop screen.\n   - **Sources:** [Tribune, HP police](https://www.tribuneindia.com/news/himachal/invited-to-wedding-police-say-check-the-link-before-you-click), [ScamDekho](https://scamdekho.in/blog/whatsapp-wedding-invite-scam-one-tap-can-empty-your-bank)\n\n4. **AI RUNS MY SHOP: 41 \"price?\" DMs.**\n   - **Problem:** Small sellers lose sales while they type the same reply all day. This one is a pain we know is real, not a news story.\n   - **Fix:** the free WhatsApp Business app. Set up a catalogue, a quick reply (\"/price\") and an away message. Official site: https://business.whatsapp.com\n   - **AI jokes:** Sage writes a 300-word reply to \"price?\". Gigi replies \"Free!\" to everyone. Gogo adds \"Orders: 0.\"\n   - **Vote:** \"299 or 349?\"\n\n5. **REAL FIX: SIMs in your name.**\n   - **Problem:** Hyderabad police, Nov 14: a 24-year-old was arrested for supplying mule bank accounts and SIM cards to fraudsters.\n   - **Fix:** free check on Sanchar Saathi, under \"Know mobile connections in your name\": enter your number and the OTP, see every SIM in your name, and report the ones that aren't yours. The limit is 9 per person. Link: https://sancharsaathi.gov.in\n   - **Hook:** \"3 SIMs in my name. I own 1.\"\n   - **Sources:** [IndToday](https://indtoday.com/hyderabad-police-arrest-mule-account-supplier/), [Digit](https://www.digit.in/news/general/new-sim-rules-2026-how-to-check-mobile-numbers-linked-to-your-aadhaar.html)\n\n6. **MUM ASKS (slot 6 fallback): \"Power cut at 9:30 tonight\".**\n   - **Problem:** Fake power bill texts, usually sent in the evening, from a personal 10-digit number and sometimes with an app file attached. In Indore an elderly man lost Rs 1.44 lakh.\n   - **Rule:** never pay from a link in a text. Pay only in your power company's official app or on its website.\n   - **Mum's text:** \"Beta light kat jayegi aaj raat, ye number pe call karun?\"\n   - **Sources:** [Nagpur Today, MSEDCL warning](https://www.nagpurtoday.in/maharashtra-state-electricity-distribution-company-limited-warns-consumers-against-fake-power-bill-payment-messages/), [Free Press Journal](https://freepressjournal.in/indore/fake-electricity-bill-message-costs-elderly-man-144-lakh-in-indore)\n\n7. **REAL FIX: 0 offers, joining date pushed back 7 months.**\n   - **Problem:** Big IT firms have frozen fresher hiring and pushed joining dates back 6 to 10 months. In Pune, a company allegedly took Rs 1.5 to 4 lakh from freshers for fake offer letters.\n   - **Fix:** the free PM Internship Scheme portal. You can apply to up to 3 internships at a time. Link: https://pminternship.mca.gov.in. Sources disagree on the stipend (Rs 5k or Rs 9k) and the age limit, so keep the rupee figure out of the hook.\n   - **Hook:** \"41 rejections. 0 replies.\"\n   - **Keyword:** INTERN, also on the laptop screen.\n   - **Sources:** [Outlook Business](https://www.outlookbusiness.com/deeptech/artificial-intelligence/shrinking-fresher-hiring-could-close-its-golden-pathway-for-tier-2-tier-3-youth-fite-maharashtra-president), [PW](https://www.pw.live/news/pm-internship-scheme-2026-registration-eligibility-stipend-9000-apply)\n\n8. **REAL FIX (backup or next week): work texts on a sick day.**\n   - **Problem:** 88% of Indian employees get work messages after hours, and 85% get them on sick leave or holidays. The figures are from Indeed's 2024 survey, still widely quoted.\n   - **Fix:** use Android Bedtime mode (Digital Wellbeing) or an iPhone Focus that lets Mum's calls through, then mute the work group. This is a phone method, not legal advice.\n   - **Hook:** \"Boss texted at 11:52. On my sick day.\"\n   - **Note:** it is close to 060, so only use it as a part 2.\n   - **Source:** [NewsBytes](https://www.newsbytesapp.com/news/business/88-of-indian-employees-get-work-messages-after-hours-survey-finds/tldr)\n\n9. **MUM ASKS (alternative): lock your Aadhaar fingerprints.**\n   - **Problem:** AePS fraud uses copied fingerprints to take money out of bank accounts.\n   - **Rule:** lock biometrics for free in the myAadhaar portal or the Aadhaar app. Any fingerprint attempt then fails. Link: https://myaadhaar.uidai.gov.in\n   - **Source:** [Outlook Money](https://www.outlookmoney.com/news/how-to-lock-your-aadhaar-biometrics-and-minimise-risk-of-fraud)\n\n## Dates that raise the stakes (next 10 days and just after)\n\n- **Nov 15:** NMMSS scholarship deadline\n- **Nov 24:** Guru Nanak Jayanti. Banks are closed in many states (not Karnataka).\n- **Nov 25:** new NPCI rules for UPI disputes take effect. I couldn't find what changes, so don't use it yet.\n- **Nov 27:** Black Friday. Fake \"parcel held\" texts are rising, so it works as a tag in the wedding card or SIM episode.\n- **Nov 29:** CAT\n- **Nov 30:** life certificate deadline\n- Wedding season runs all through.\n\nSources: [Upstox bank holidays](https://upstox.com/news/business-news/latest-updates/bank-holidays-in-november-2026-check-when-branches-will-remain-shut-in-your-state/article-202730/), [TeamLease](https://teamleaseregtech.com/updates/article/61096/npci-standardisation-of-upi-dispute-management-rules-in-urcs/), [Careers360 CAT](https://bschool.careers360.com/articles/cat-2026-official-exam-dates-registration-admit-card-result-complete-schedule), [Business Today](https://www.businesstoday.in/technology/news/story/festive-sales-are-heating-up-but-so-are-online-shopping-scams-how-to-stay-safe-552191-2026-08-31)\n\n## A real AI habit to build jokes on\n\nA Stanford study in *Science* (March 2026) tested 11 AI systems. They backed the user 49% more often than people did, and users liked them more for it. That's a ready \"You're absolutely right!\" moment for Sage or Gigi. The UK AI Security Institute also found a real tip for the packs: AIs agree less when you ask a question than when you state an opinion. ([AP via WTOP](https://wtop.com/lifestyle/2026/03/ai-is-giving-bad-advice-to-flatter-its-users-says-new-study-on-dangers-of-overly-agreeable-chatbots/))\n\n## Not found: what's working on similar pages\n\nSearches turned up nothing on @ashutoshwithclaude or @canwebuildthis this month, so the Instagram app needs a manual check. One related lead for our keyword giveaway: Meta Business Suite reportedly has a free comment-to-DM tool called Custom Keywords, but it can stop sending DMs when a reel goes viral. That claim comes from a blog, so it needs checking. ([Creator Lane](https://creatorlanehq.com/blog/instagram-free-comment-to-dm-2026))\n\nSources:\n- [Sentinel Assam](https://www.sentinelassam.com/topheadlines/pensioners-must-submit-digital-life-certificates-by-november-30)\n- [Upstox, life certificate](https://upstox.com/news/personal-finance/latest-updates/digital-life-certificate-2026-how-pensioners-can-submit-jeevan-pramaan-using-face-authentication/article-202783/)\n- [Pune Pulse](https://www.mypunepulse.com/pune-cyber-fraud-75-year-old-woman-duped-of-rs-32-lakh-in-fake-digital-arrest-scam/)\n- [Gujarat Samachar](https://english.gujaratsamachar.com/news/jamnagar/digital-arrest-nightmare-in-jamnagar-retired-bank-employee-duped-of-rs-42-lakh-by-cyber-fraudsters-posing-as-cbi-and-rbi-officials-20433858861)\n- [Tribune, HP police](https://www.tribuneindia.com/news/himachal/invited-to-wedding-police-say-check-the-link-before-you-click)\n- [ScamDekho](https://scamdekho.in/blog/whatsapp-wedding-invite-scam-one-tap-can-empty-your-bank)\n- [IndToday](https://indtoday.com/hyderabad-police-arrest-mule-account-supplier/)\n- [Digit](https://www.digit.in/news/general/new-sim-rules-2026-how-to-check-mobile-numbers-linked-to-your-aadhaar.html)\n- [Nagpur Today](https://www.nagpurtoday.in/maharashtra-state-electricity-distribution-company-limited-warns-consumers-against-fake-power-bill-payment-messages/)\n- [Free Press Journal, Indore](https://freepressjournal.in/indore/fake-electricity-bill-message-costs-elderly-man-144-lakh-in-indore)\n- [Outlook Business](https://www.outlookbusiness.com/deeptech/artificial-intelligence/shrinking-fresher-hiring-could-close-its-golden-pathway-for-tier-2-tier-3-youth-fite-maharashtra-president)\n- [PW, PM Internship](https://www.pw.live/news/pm-internship-scheme-2026-registration-eligibility-stipend-9000-apply)\n- [NewsBytes](https://www.newsbytesapp.com/news/business/88-of-indian-employees-get-work-messages-after-hours-survey-finds/tldr)\n- [Outlook Money](https://www.outlookmoney.com/news/how-to-lock-your-aadhaar-biometrics-and-minimise-risk-of-fraud)\n- [Upstox, bank holidays](https://upstox.com/news/business-news/latest-updates/bank-holidays-in-november-2026-check-when-branches-will-remain-shut-in-your-state/article-202730/)\n- [TeamLease](https://teamleaseregtech.com/updates/article/61096/npci-standardisation-of-upi-dispute-management-rules-in-urcs/)\n- [Careers360, CAT](https://bschool.careers360.com/articles/cat-2026-official-exam-dates-registration-admit-card-result-complete-schedule)\n- [Business Today](https://www.businesstoday.in/technology/news/story/festive-sales-are-heating-up-but-so-are-online-shopping-scams-how-to-stay-safe-552191-2026-08-31)\n- [WTOP/AP](https://wtop.com/lifestyle/2026/03/ai-is-giving-bad-advice-to-flatter-its-users-says-new-study-on-dangers-of-overly-agreeable-chatbots/)\n- [Creator Lane](https://creatorlanehq.com/blog/instagram-free-comment-to-dm-2026)",
+  "slots": [
+    {
+      "day": "2026-11-22",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "087-pf-passbook",
+      "title": "PF passbook",
+      "turn_by": "gemini",
+      "series": "REAL FIX · PART 12",
+      "keyword": "PASSBOOK",
+      "proven": "C05",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-23",
+      "time": "20:00",
+      "format": "reel",
+      "post": "088-the-code",
+      "title": "The six digit code",
+      "turn_by": "claude",
+      "series": "MUM ASKS · PART 12",
+      "keyword": "CODE",
+      "proven": "C07",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-24",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "089-thirty-days-leave",
+      "title": "Leave became thirty",
+      "turn_by": "codex",
+      "series": "REAL FIX · PART 13",
+      "keyword": "FIX",
+      "proven": "C01",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-25",
+      "time": "20:00",
+      "format": "reel",
+      "post": "090-two-hundred-candles",
+      "title": "Two hundred candles",
+      "turn_by": "twin",
+      "series": "AI RUNS MY SHOP · DAY 9",
+      "keyword": "SHOP",
+      "proven": "C02",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-26",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "091-three-leaks",
+      "title": "Three leaks",
+      "turn_by": "codex",
+      "series": "REAL FIX · PART 14",
+      "keyword": "PASSWORD",
+      "proven": "C03",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-27",
+      "time": "20:00",
+      "format": "reel",
+      "post": "092-by-mistake",
+      "title": "Five thousand back",
+      "turn_by": "claude",
+      "series": "MUM ASKS · PART 13",
+      "keyword": "SCAM",
+      "proven": "C04",
+      "status": "made"
+    },
+    {
+      "day": "2026-11-28",
+      "time": "20:00",
+      "format": "carousel",
+      "post": "093-reply-all",
+      "title": "Reply all",
+      "turn_by": "gemini",
+      "series": "REAL FIX · PART 15",
+      "keyword": "UNDO",
+      "proven": "C06",
+      "status": "made"
+    }
+  ]
+}
