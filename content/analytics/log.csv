@@ -534,3 +534,38 @@ date,post,format,title,turn_by,published_at,views,reach,likes,comments,saved,sha
 2026-11-13,068-thirty-seven-orders,reel,Day six: screenshots,gemini,2026-11-11T14:31:23.098Z,210,170,1,0,0,0,1,10882,,AI RUNS MY SHOP · DAY 6
 2026-11-13,069-joining-fee,reel,The joining fee,claude,2026-11-12T14:31:58.464Z,1252,1018,10,0,1,0,11,13861,,REAL FIX · PART 3
 2026-11-13,003-ninety-two-percent,reel,Ninety-two percent,gemini,2026-10-18T14:31:46.199Z,2132,1397,24,0,0,0,24,16870,,
+2026-11-14,004-meeting-summary,reel,The meeting,gemini,2026-10-19T03:30:52.797Z,1080,763,20,0,0,6,26,16068,,
+2026-11-14,006-holiday-call,reel,Quick holiday call,gemini,2026-10-20T04:27:13.275Z,1491,1090,6,0,0,0,6,14685,,
+2026-11-14,005-sound-casual,reel,Sound casual,codex,2026-10-20T08:31:03.937Z,170,136,0,0,0,0,0,11433,,
+2026-11-14,007-be-honest,reel,Be honest,codex,2026-10-20T14:31:03.145Z,303,201,2,0,0,0,2,17630,,
+2026-11-14,008-tidy-laptop,reel,Tidy my laptop,codex,2026-10-21T03:32:17.540Z,1525,1099,15,0,3,1,19,15411,,
+2026-11-14,009-what-to-cook,reel,What's for dinner,gemini,2026-10-21T14:31:06.028Z,1646,1110,18,0,1,4,23,18018,,
+2026-11-14,010-good-deal,reel,Is this a deal,gemini,2026-10-22T03:31:47.229Z,1889,1342,8,0,0,0,8,14575,,
+2026-11-14,011-cancel-plans,reel,Cancel politely,claude,2026-10-22T14:32:06.447Z,2231,1387,39,0,1,0,40,21781,,
+2026-11-14,012-explain-my-job,reel,Explain my job,codex,2026-10-23T03:31:05.686Z,1456,1121,6,0,0,0,6,14708,,
+2026-11-14,013-copied-caption,reel,Who copied me,gemini,2026-10-23T14:31:51.254Z,1839,1236,20,0,3,0,24,16936,,
+2026-11-14,014-split-the-bill,reel,Split the bill,codex,2026-10-24T03:31:05.867Z,1962,1440,24,0,2,0,26,14640,,
+2026-11-14,015-one-joke,reel,One joke,claude,2026-10-24T14:32:05.409Z,1831,1294,10,2,1,0,13,16725,,
+2026-11-14,016-reply-all,reel,Just my manager,gemini,2026-10-25T03:31:18.491Z,1574,1083,7,0,1,0,8,15935,,
+2026-11-14,018-self-appraisal,reel,Sound confident,claude,2026-10-26T03:30:55.482Z,1670,1301,7,0,2,2,11,14989,,
+2026-11-14,019-uncle-birthday,reel,"Happy birthday, uncle",gemini,2026-10-26T14:31:07.034Z,2012,1280,6,0,0,0,6,17778,,
+2026-11-14,020-train-home,reel,Cheapest train,codex,2026-10-27T03:31:43.842Z,1572,1066,17,0,0,0,17,17820,,
+2026-11-14,021-is-it-monday,reel,Is it Monday,gemini,2026-10-27T14:31:25.643Z,684,515,5,0,1,0,6,12982,,
+2026-11-14,044-absolutely-right,reel,Absolutely right,claude,2026-10-28T14:31:19.586Z,1805,1193,3,0,1,5,10,16905,,"SAME PROMPT, 3 AIS"
+2026-11-14,046-mum-asks-prompt,reel,Mum asks: prompt,claude,2026-10-29T03:31:18.975Z,294,229,0,0,0,0,0,13067,,MUM ASKS · PART 1
+2026-11-14,052-mum-asks-made-up,reel,Mum asks: made up,claude,2026-11-02T15:41:28.510Z,210,175,0,0,0,0,0,10604,,MUM ASKS · PART 3
+2026-11-14,053-one-typo,reel,Just one typo,gemini,2026-11-05T15:25:49.036Z,436,296,2,0,0,0,2,16525,,"SAME PROMPT, 3 AIS"
+2026-11-14,059-take-my-job,reel,Take my job,codex,2026-10-30T14:31:00.501Z,322,281,1,0,0,0,1,9083,,"SAME PROMPT, 3 AIS"
+2026-11-14,058-voice-clone,reel,Mum asks: voice clone,twin,2026-10-31T14:31:26.059Z,211,179,1,0,1,0,2,9796,,MUM ASKS · PART 5
+2026-11-14,060-boss-at-eleven,reel,Boss at eleven,claude,2026-11-01T15:02:23.883Z,2107,1484,8,0,0,0,8,17372,,"SAME PROMPT, 3 AIS"
+2026-11-14,062-boss-gift,reel,Gift for the boss,claude,2026-11-03T15:03:33.035Z,611,456,1,0,0,0,1,12472,,"SAME PROMPT, 3 AIS"
+2026-11-14,064-deepfake,reel,Mum asks: fake video,claude,2026-11-04T14:31:56.562Z,326,268,2,0,0,0,2,10785,,MUM ASKS · PART 7
+2026-11-14,063-diwali-wishes,reel,Diwali wishes,codex,2026-11-06T14:31:05.004Z,256,180,0,0,0,0,0,13359,,"SAME PROMPT, 3 AIS"
+2026-11-14,061-mum-asks-agent,reel,Mum asks: agent,claude,2026-11-07T14:31:11.030Z,151,132,0,0,0,0,0,6634,,MUM ASKS · PART 6
+2026-11-14,065-we-will-see,reel,Appraisal on Monday,gemini,2026-11-08T14:31:00.312Z,154,128,0,0,1,0,1,10054,,REAL FIX · PART 1
+2026-11-14,066-pin-to-receive,reel,Mum asks: the PIN,claude,2026-11-09T17:27:54.971Z,1422,1010,16,0,1,0,17,15786,,MUM ASKS · PART 8
+2026-11-14,067-storage-full,reel,Storage full,codex,2026-11-10T14:31:33.164Z,1351,952,6,0,2,2,10,14829,,REAL FIX · PART 2
+2026-11-14,068-thirty-seven-orders,reel,Day six: screenshots,gemini,2026-11-11T14:31:23.098Z,210,170,1,0,0,0,1,10977,,AI RUNS MY SHOP · DAY 6
+2026-11-14,069-joining-fee,reel,The joining fee,claude,2026-11-12T14:31:58.464Z,1264,1029,10,0,1,0,11,13945,,REAL FIX · PART 3
+2026-11-14,070-sixty-three-messages,reel,Day one of leave,codex,2026-11-13T16:15:23.943Z,162,130,0,0,0,0,0,11227,,AFTER HOURS · PART 1
+2026-11-14,003-ninety-two-percent,reel,Ninety-two percent,gemini,2026-10-18T14:31:46.199Z,2132,1397,24,0,0,0,24,16870,,
