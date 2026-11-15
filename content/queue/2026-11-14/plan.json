@@ -27,7 +27,10 @@
       "series": "AFTER HOURS · PART 2",
       "keyword": "BOSS",
       "proven": "C06",
-      "status": "made"
+      "status": "made",
+      "attempts": 1,
+      "error": "Instagram GET /17841415815597561/media: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.",
+      "last_try": "2026-11-15T17:03:00.824Z"
     },
     {
       "day": "2026-11-16",
