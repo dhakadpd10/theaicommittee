@@ -28,6 +28,16 @@ function slotOn(cfg, day, slot) {
   return { ...slot, format: slot.format[((n % k) + k) % k] };
 }
 
+// the hook of the first post after `day`: one already queued (made/published) or one in this batch (batch = [{day, hook}])
+function nextHook(day, batch = []) {
+  const later = batch.filter((b) => b.day > day && b.hook).map((b) => ({ day: b.day, hook: b.hook }));
+  for (const { plan: q } of allPlans()) for (const s of q.slots || []) if (s.day > day && ['made', 'published'].includes(s.status)) {
+    try { later.push({ day: s.day, hook: JSON.parse(fs.readFileSync(P('content/posts', s.post, 'episode.json'), 'utf8')).hook }); } catch {}
+  }
+  later.sort((a, b) => a.day.localeCompare(b.day));
+  return later[0]?.hook || null;
+}
+
 function lastQueuedDay() {
   let last = null;
   for (const { plan } of allPlans()) for (const s of plan.slots) if (/^\d{4}-\d{2}-\d{2}$/.test(s.day) && !['skip', 'missed', 'failed'].includes(s.status) && (!last || s.day > last)) last = s.day;
@@ -158,7 +168,7 @@ async function writeEpisode(id, idea) {
   const check = (v) => [...validateEpisode({ ...v, id }), ...(cta && !String(v.caption || '').includes(cta) ? [`the caption must have this line before the hashtags: "${cta}<what they get, in a few words: ${pack.title}>."`] : [])];
   let ep = await askJSON({
     system: SYSTEM(), effort: 'high', validate: check,
-    prompt: `Write episode.json for this episode. Set "next" to a tease of tomorrow's part in 8 to 46 characters (it shows over the quiet ending as "PART N+1 TOMORROW"); tomorrow's hook is in the idea as "tomorrow" (if it is null, tease the next real problem in the same spirit). Follow the show bible's rules and format exactly.\n\nThe idea:\n${JSON.stringify(idea, null, 2)}\n\nTwo finished episodes that rendered well (copy their rhythm and length, not their jokes):\n${examples()}\n\nReturn episode.json only (with "id": "${id}" and the caption inside).`,
+    prompt: `Write episode.json for this episode. Set "next" to the hook of the next post on the page, given in the idea as "tomorrow" (copy it, or shorten it to 46 characters without changing what it says); it shows over the quiet ending as "NEXT UP · REAL FIX". If "tomorrow" is null, tease the next real problem in the same spirit. Follow the show bible's rules and format exactly.\n\nThe idea:\n${JSON.stringify(idea, null, 2)}\n\nTwo finished episodes that rendered well (copy their rhythm and length, not their jokes):\n${examples()}\n\nReturn episode.json only (with "id": "${id}" and the caption inside).`,
   });
   ep.id = id; fs.mkdirSync(dir, { recursive: true }); writeJSON(path.join(dir, 'episode.json'), ep);
   let bad = voiceCheck(dir);
@@ -209,7 +219,7 @@ async function run({ start, days, force = false } = {}) {
   const slots = [], problems = [], posts = [];
   let n = nextNumber();
   for (let i = 0; i < plan.episodes.length; i++) {
-    const idea = { ...plan.episodes[i], tomorrow: plan.episodes[i + 1]?.hook || null }, { day, slot } = open[i];
+    const idea = { ...plan.episodes[i], tomorrow: nextHook(open[i].day, open.map((o, k) => ({ day: o.day, hook: plan.episodes[k]?.hook }))) }, { day, slot } = open[i];
     const id = `${String(n++).padStart(3, '0')}-${idea.slug}`;
     try {
       const made = await writeEpisode(id, idea);

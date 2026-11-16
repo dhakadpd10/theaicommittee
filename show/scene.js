@@ -555,10 +555,11 @@ function hookCard(a) {
   if (!TL.hook || a <= 0) return;
   hud.save(); hud.globalAlpha = a; hud.textAlign = 'center'; hud.textBaseline = 'middle';
   const y = 1290;
-  if (TL.series) {
-    hud.font = '800 30px InterXB'; const tw = hud.measureText(TL.series).width + 44;
+  const tagText = (TL.series || '').replace(/\s*·\s*(PART|DAY)\s*\d+$/, '');
+  if (tagText) {
+    hud.font = '800 30px InterXB'; const tw = hud.measureText(tagText).width + 44;
     rr(hud, W / 2 - tw / 2, y - 76, tw, 52, 26); hud.fillStyle = '#E0805F'; hud.fill();
-    hud.fillStyle = '#FFFFFF'; hud.fillText(TL.series, W / 2, y - 50);
+    hud.fillStyle = '#FFFFFF'; hud.fillText(tagText, W / 2, y - 50);
   }
   hud.font = '800 64px InterXB';
   const lines = wrap(hud, TL.hook, 880), lh = 78;
@@ -569,10 +570,10 @@ function hookCard(a) {
   hud.restore();
 }
 
-// the tease: over the last 2.4 seconds, tomorrow's part, so the viewer has a reason to follow
+// the tease: over the last 2.4 seconds, the hook of the next post on the page, so the viewer has a reason to follow
 function nextCard(a) {
   if (!TL.next || a <= 0) return;
-  const m = (TL.series || '').match(/^(.*PART )(\d+)$/), tag = m ? `${m[1]}${+m[2] + 1} TOMORROW` : 'PART 2 TOMORROW';
+  const tag = 'NEXT UP · ' + ((TL.series || 'REAL FIX').replace(/\s*·\s*(PART|DAY)\s*\d+$/, ''));
   hud.save(); hud.globalAlpha = a; hud.textAlign = 'center'; hud.textBaseline = 'middle';
   const y = 1240;
   hud.font = '800 34px InterXB'; const tw = hud.measureText(tag).width + 52;
