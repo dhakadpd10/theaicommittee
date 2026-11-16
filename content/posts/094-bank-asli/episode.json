@@ -1,0 +1,110 @@
+{
+  "id": "094-bank-asli",
+  "title": "The helpline number",
+  "cast": "committee",
+  "series": "REAL FIX · PART 21",
+  "hook": "1 app away from emptying Mum's account",
+  "cover": 2,
+  "musicStop": 9,
+  "next": "Papa's Rs 500 challan SMS",
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum found her bank helpline online. The man says install an app.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2
+    },
+    {
+      "who": "gemini",
+      "say": "Found the official number! I also sent it to Mum!",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "send"
+      ]
+    },
+    {
+      "who": "twin",
+      "say": "Top result. Same man.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "Brilliant.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. Tell her to hang up. The real number is on her card.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.2,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Fake bank helpline?",
+        "body": "1. Hang up.\n2. Turn the card over. Call that number.\n3. A bank never asks you to install an app or share your screen.\n4. Money gone? Call 1930 or go to cybercrime.gov.in"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Block that man.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Blocked. And every bank number.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Card ke peeche wala number lagaya.\nBank bola humne koi call nahi kiya.\nBhaiya ka phone ab band hai."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She saved the card number as Real Bank.",
+      "show": "She saved the card number as REAL BANK.",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.9
+    },
+    {
+      "who": "twin",
+      "say": "Ours is Fake Bank.",
+      "show": "Ours is FAKE BANK.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum called the top search result for her bank. the man on the line wanted her to install one app.\n\nthe real helpline is printed on the back of your card and inside your bank's own app. no bank ever asks you to install an app or share your screen.\nmoney already gone? call 1930 or report on cybercrime.gov.in.\n\nwould your parents call the top search result? yes or no.\n\nComment HELPLINE and I'll DM you the 4 step fake helpline check and a ready message to send your parents.\n\nPart 22 tomorrow: Papa's Rs 500 challan SMS. Follow so you don't miss it.\n\n#claude #aitools #scamalert #desimom #cybersafety"
+}

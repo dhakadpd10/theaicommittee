@@ -765,5 +765,114 @@
       }
     ],
     "tip": "Undo only works while the email is still waiting. Once the timer runs out it has gone, so send a two-line 'please ignore' rather than a long apology."
+  },
+  "HELPLINE": {
+    "title": "The real bank helpline, and what to do if an app was installed",
+    "intro": "Scammers put fake customer care numbers on search results, maps and social posts. The real number is already in your wallet. Send this to your parents.",
+    "steps": [
+      "Never take a bank or wallet helpline number from a search result, a map listing or a social media post.",
+      "Turn the debit or credit card over: the number printed on the back is the real one. It is also inside your bank's official app.",
+      "A real bank never asks you to install a screen sharing or support app, and never asks for your PIN, OTP, CVV or full card number. If anyone does, hang up.",
+      "If an app was already installed: switch off mobile data and Wi-Fi, uninstall the app, then call the number on the back of the card and ask them to block the card and UPI.",
+      "If money moved, call 1930 straight away or file a complaint at cybercrime.gov.in. Report the scam number on Chakshu in Sanchar Saathi.",
+      "Afterwards, change the banking app password and UPI PIN on your own phone."
+    ],
+    "links": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "url": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Sanchar Saathi (Chakshu)",
+        "url": "https://sancharsaathi.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "The family message",
+        "text": "Write a short WhatsApp message in simple Hinglish for my parents. Include these rules: the real bank number is on the back of the card; never call a number found on Google; no bank ever asks you to install an app; if unsure, hang up and call me. Under 60 words, warm, not scary."
+      },
+      {
+        "name": "Is this call real?",
+        "text": "I will describe a call or message from someone who says they are from my bank. List every red flag as a short bullet, then give me the one safe next step. Do not tell me it is safe unless there are zero red flags. Here it is: [paste]"
+      },
+      {
+        "name": "The wallet card",
+        "text": "Make a small card my parents can keep in their wallet. 4 lines maximum, big simple words: 'Bank calls me? I hang up and call the number on my card. I never install an app for anyone. Cyber fraud helpline: 1930.'"
+      }
+    ],
+    "tip": "Today, save the number from the back of Mum's card in her phone as 'BANK ASLI', before she ever needs to search for it."
+  },
+  "CHALLAN": {
+    "title": "Is this challan real? Check it yourself in 2 minutes, free",
+    "intro": "Fake challan SMS and WhatsApp messages copy the government look, add a deadline and send a link or an app file. The real check is free and needs only your vehicle details.",
+    "steps": [
+      "Don't tap the link in the message, and never install an app file (APK) sent by SMS or WhatsApp.",
+      "Type echallan.parivahan.gov.in into your browser yourself.",
+      "Open Get Challan Details and search by vehicle number, challan number or DL number. For a vehicle number search it may ask for the last digits of the chassis or engine number from your RC.",
+      "If a real challan shows up, pay it only on that site. Some cities use their own traffic police site; reach it from the official police website, never from a link in a message.",
+      "Report the fake SMS on Chakshu in the Sanchar Saathi app or at sancharsaathi.gov.in. If money already went, call 1930 or report on cybercrime.gov.in."
+    ],
+    "links": [
+      {
+        "name": "e-Challan (Parivahan)",
+        "url": "https://echallan.parivahan.gov.in"
+      },
+      {
+        "name": "Sanchar Saathi (Chakshu)",
+        "url": "https://sancharsaathi.gov.in"
+      },
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "url": "https://cybercrime.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Fake challan check",
+        "text": "Check this message for signs of a fake traffic challan: [paste]. List each red flag in one line (the link's address, a deadline threat, an app file, the payment method). Then remind me to check it myself on echallan.parivahan.gov.in. Do not tell me it is real."
+      },
+      {
+        "name": "Warn the family group",
+        "text": "Write a 4-line message for my family WhatsApp group: fake challan SMS are going around; never tap the link or install an app; check on echallan.parivahan.gov.in yourself with the vehicle number; call 1930 if money is lost. Calm, simple English with a few Hindi words."
+      }
+    ],
+    "tip": "Real Parivahan pages end in parivahan.gov.in. Anything with extra words, a dash or a .com in the address is not the government."
+  },
+  "TASK": {
+    "title": "The 'like videos, earn money' job: spot it and get out in 5 minutes",
+    "intro": "It starts with Rs 50 to 150 really paid for liking videos or rating hotels. Then come 'VIP' or 'prepaid' tasks that need a deposit, and that money does not come back.",
+    "steps": [
+      "The rule: if a job asks you to pay, deposit or top up to earn, or to unlock your earnings, it is a scam. Real employers pay you. They never charge you.",
+      "Stop replying. Do not send more money to 'release' what you are owed. That is how small losses become big ones.",
+      "Lost money? Call 1930 or report on cybercrime.gov.in as soon as possible, with screenshots, UPI IDs and transaction details.",
+      "Report the number that messaged you on Chakshu in the Sanchar Saathi app or at sancharsaathi.gov.in, then block it and leave the group.",
+      "Looking for real work? Use company careers pages or the free government portal at ncs.gov.in."
+    ],
+    "links": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "url": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Sanchar Saathi (Chakshu)",
+        "url": "https://sancharsaathi.gov.in"
+      },
+      {
+        "name": "National Career Service",
+        "url": "https://www.ncs.gov.in"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "Job message checker",
+        "text": "Here is a job message I received: [paste]. Answer in 5 lines: 1) Does it ever ask me to pay, deposit or top up? 2) Is the pay far too high for the work? 3) Is it only on WhatsApp or Telegram? 4) Is there a real company I can find on its own website? 5) Your verdict in one word. Be blunt. Do not reassure me."
+      },
+      {
+        "name": "Warn a younger cousin",
+        "text": "Write a short, friendly message to my 19-year-old cousin explaining the 'like videos and earn' task scam: the first small payment is bait, then they ask for a deposit. Include the rule 'real jobs never charge you' and the helpline 1930. Under 70 words, no lecturing."
+      }
+    ],
+    "tip": "The first Rs 150 is paid on purpose. It is the hook, not a salary."
   }
 }
