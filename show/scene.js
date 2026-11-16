@@ -569,6 +569,24 @@ function hookCard(a) {
   hud.restore();
 }
 
+// the tease: over the last 2.4 seconds, tomorrow's part, so the viewer has a reason to follow
+function nextCard(a) {
+  if (!TL.next || a <= 0) return;
+  const m = (TL.series || '').match(/^(.*PART )(\d+)$/), tag = m ? `${m[1]}${+m[2] + 1} TOMORROW` : 'PART 2 TOMORROW';
+  hud.save(); hud.globalAlpha = a; hud.textAlign = 'center'; hud.textBaseline = 'middle';
+  const y = 1240;
+  hud.font = '800 34px InterXB'; const tw = hud.measureText(tag).width + 52;
+  rr(hud, W / 2 - tw / 2, y - 86, tw, 60, 30); hud.fillStyle = '#E0805F'; hud.fill();
+  hud.fillStyle = '#FFFFFF'; hud.fillText(tag, W / 2, y - 56);
+  hud.font = '800 60px InterXB';
+  const lines = wrap(hud, TL.next, 880), lh = 74;
+  const bw = Math.max(...lines.map((l) => hud.measureText(l).width)) + 72, bh = lines.length * lh + 36;
+  rr(hud, W / 2 - bw / 2, y, bw, bh, 26); hud.fillStyle = 'rgba(255,248,238,0.95)'; hud.fill();
+  hud.fillStyle = '#1F1A17'; lines.forEach((l, i) => hud.fillText(l, W / 2, y + 18 + lh / 2 + i * lh));
+  hud.font = '800 34px InterXB'; hud.fillStyle = '#FFFFFF'; hud.fillText('Follow so you don\'t miss it', W / 2, y + bh + 50);
+  hud.restore();
+}
+
 // ---------- shots ----------
 const MEERA_HEAD = () => v3(-0.35, 2.08, -0.5);
 const DABBA_FACE = v3(0.82, 1.4, 0.36);
@@ -760,6 +778,7 @@ function renderAt(t) {
     subtitle(b.text, prog(t, b.vo - 0.12, b.vo), b.who);
   }
   hookCard(window.__cover ? 1 : 1 - prog(t, 3.0, 3.4));
+  if (!window.__cover) nextCard(prog(t, TL.DUR - 2.6, TL.DUR - 2.2));
   // fade in / out of the whole reel
   const fade = Math.max(1 - prog(t, 0, 0.25), prog(t, TL.DUR - 0.5, TL.DUR));
   if (fade > 0) { hud.fillStyle = `rgba(0,0,0,${fade})`; hud.fillRect(0, 0, W, H); }

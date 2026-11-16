@@ -138,7 +138,7 @@ Proven ideas bank:
 ${proven}
 
 Idea bank:\n${ideas}\n\nResearch notes:\n${notes || 'none'}\n\nDo NOT repeat these recent episodes:\n${recentTitles().join('\n') || 'none'}\n
-Use the series in the show bible and the mix in this week's strategy (default for 7: 4 REAL FIX, 2 MUM ASKS, 1 AI RUNS MY SHOP or one new series test). Number the parts and days on from the last episodes of each series. Every episode starts from a real problem that hurts (in "problem"), rests on a TRUE behaviour of real AI assistants (in "true_behaviour"; no random disasters), and carries a fix that really works and is free (in "fix", with its official link in "fix_source" when there is one). Only use fixes from the research notes or ones you are certain of. Vary who delivers the turn, and let a different member be the useful one sometimes. Follow the experiment in the latest learnings.
+Every episode is REAL FIX (since 16 Nov 2026 the other series are retired): REAL FIX · PART N, numbered on from the last part. Family, office, scam and phone problems all fit inside REAL FIX as long as the fix really works. Number the parts and days on from the last episodes of each series. Every episode starts from a real problem that hurts (in "problem"), rests on a TRUE behaviour of real AI assistants (in "true_behaviour"; no random disasters), and carries a fix that really works and is free (in "fix", with its official link in "fix_source" when there is one). Only use fixes from the research notes or ones you are certain of. Vary who delivers the turn, and let a different member be the useful one sometimes. Follow the experiment in the latest learnings.
 Every episode also gives something away: a "keyword" that people comment to get the full fix by DM. A comment has to feel worth it: the pack names the free tool or feature, links to it and lists the steps, then the prompts. Reuse a pack that fits (${Object.entries(packs).map(([k, p]) => `${k}: ${p.title}`).join('; ')}) or add at most 4 new ones in "new_packs". A new pack must be genuinely useful on its own: "steps" (2 to 6 short strings), "links" (official https links only, [{name, url}]) and real prompts someone can paste into any AI assistant; correct and safe, no financial, medical or legal advice, no invented facts.
 Reply with JSON only:
 {"episodes":[{"slug":"zero-interviews","proven":"C05","title":"Zero interviews","series":"REAL FIX · PART 1","hook":"87 applications. 0 interviews.","problem":"Meera has applied to 87 jobs on the big job sites and heard nothing","true_behaviour":"Claude writes a five-part essay on resilience; Gemini cheerfully applies to 40 more jobs for her","fix":"Codex: jobs go up on the company's own careers page first; a Google Alert for the company name plus careers catches them days earlier","fix_source":"https://www.google.com/alerts","escalation":"...","ending":"...","turn_by":"codex","keyword":"JOBS"}],"new_packs":{"JOBS":{"title":"...","intro":"...","steps":["...","..."],"links":[{"name":"Google Alerts","url":"https://www.google.com/alerts"}],"prompts":[{"name":"...","text":"..."}],"tip":"..."}}}`,
@@ -158,7 +158,7 @@ async function writeEpisode(id, idea) {
   const check = (v) => [...validateEpisode({ ...v, id }), ...(cta && !String(v.caption || '').includes(cta) ? [`the caption must have this line before the hashtags: "${cta}<what they get, in a few words: ${pack.title}>."`] : [])];
   let ep = await askJSON({
     system: SYSTEM(), effort: 'high', validate: check,
-    prompt: `Write episode.json for this episode. Follow the show bible's rules and format exactly.\n\nThe idea:\n${JSON.stringify(idea, null, 2)}\n\nTwo finished episodes that rendered well (copy their rhythm and length, not their jokes):\n${examples()}\n\nReturn episode.json only (with "id": "${id}" and the caption inside).`,
+    prompt: `Write episode.json for this episode. Set "next" to a tease of tomorrow's part in 8 to 46 characters (it shows over the quiet ending as "PART N+1 TOMORROW"); tomorrow's hook is in the idea as "tomorrow" (if it is null, tease the next real problem in the same spirit). Follow the show bible's rules and format exactly.\n\nThe idea:\n${JSON.stringify(idea, null, 2)}\n\nTwo finished episodes that rendered well (copy their rhythm and length, not their jokes):\n${examples()}\n\nReturn episode.json only (with "id": "${id}" and the caption inside).`,
   });
   ep.id = id; fs.mkdirSync(dir, { recursive: true }); writeJSON(path.join(dir, 'episode.json'), ep);
   let bad = voiceCheck(dir);
@@ -187,23 +187,29 @@ async function run({ start, days, force = false } = {}) {
   const launch = readJSON(P('content/queue/launch/plan.json'), null);
   if (launch && !launch.start) { log('the launch posts have no dates yet: run the Launch workflow first'); return { skipped: true }; }
   const last = lastQueuedDay();
-  start = start || (last && last >= today ? addDays(last, 1) : addDays(today, 1));
+  start = start || addDays(today, 1); // from tomorrow: empty slots anywhere ahead get filled (16 Nov 2026), not only days after the last queued one
+  void last;
   days = days || ((6 - dow(start) + 7) % 7) + 1 || 8; // up to and including the next Saturday
   if (days === 1) days = 8; // a Saturday start plans through the following Saturday
-  const week = start; const qdir = P('content/queue', week);
-  if (!force && fs.existsSync(path.join(qdir, 'plan.json'))) { log(`${week} already planned`); return { week, skipped: true }; }
-  const perDay = cfg.slots.length, count = days * perDay;
-  log(`planning ${days} days from ${start}: ${count} episodes`);
+  let week = start; for (let k = 2; fs.existsSync(path.join(P('content/queue', week), 'plan.json')); k++) week = `${start}-${k}`; // a second plan for the same start gets its own folder
+  const qdir = P('content/queue', week); void force;
+  const perDay = cfg.slots.length, taken = new Set();
+  for (const { plan: q } of allPlans()) for (const s of q.slots || []) if (['made', 'published', 'manual', 'manual-needed'].includes(s.status)) taken.add(`${s.day} ${s.time}`);
+  const open = [];
+  for (let k = 0; k < days; k++) { const day = addDays(start, k); for (const sl of cfg.slots) if (!taken.has(`${day} ${sl.time}`)) open.push({ day, slot: slotOn(cfg, day, sl) }); }
+  const count = open.length;
+  if (!count) { log(`nothing to plan: every slot from ${start} for ${days} days is taken`); return { skipped: true }; }
+  log(`planning ${count} empty slots in ${days} days from ${start}`);
 
   await learn().catch((e) => log('learning skipped:', e.message));
   const notes = await research(count).catch((e) => { log('research skipped:', e.message); return ''; });
-  const formats = Array.from({ length: count }, (_, i) => slotOn(cfg, addDays(start, Math.floor(i / perDay)), cfg.slots[i % perDay]).format);
+  const formats = open.map((o) => o.slot.format);
   const plan = await planWeek(count, notes, formats);
   if (plan.new_packs && Object.keys(plan.new_packs).length) { const packs = PACKS(); for (const [k, p] of Object.entries(plan.new_packs)) if (!packs[k]) packs[k] = p; writeJSON(P('brand/free.json'), packs); log('new free packs:', Object.keys(plan.new_packs).join(', ')); }
   const slots = [], problems = [], posts = [];
   let n = nextNumber();
   for (let i = 0; i < plan.episodes.length; i++) {
-    const idea = plan.episodes[i], day = addDays(start, Math.floor(i / perDay)), slot = slotOn(cfg, day, cfg.slots[i % perDay]);
+    const idea = { ...plan.episodes[i], tomorrow: plan.episodes[i + 1]?.hook || null }, { day, slot } = open[i];
     const id = `${String(n++).padStart(3, '0')}-${idea.slug}`;
     try {
       const made = await writeEpisode(id, idea);

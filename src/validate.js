@@ -18,7 +18,8 @@ function validateEpisode(e) {
   if (!e.beats[0].say) p.push('beat 0 must be a spoken line (the story starts in the first second, no card or silence first)');
   if (typeof e.hook !== 'string' || e.hook.trim().length < 8 || e.hook.length > 46) p.push('hook must be the on-screen headline for the first 3 seconds, 8 to 46 characters');
   if (e.series !== undefined && (typeof e.series !== 'string' || e.series.length > 26 || e.series !== e.series.toUpperCase())) p.push('series must be a short UPPER CASE tag like "MUM ASKS · PART 2" (26 characters max)');
-  if (/^SAME PROMPT/.test(e.series || '')) p.push('the "same prompt, 3 AIs" series is retired: use REAL FIX, MUM ASKS or AI RUNS MY SHOP');
+  if (!/^REAL FIX · PART \d+$/.test(e.series || '')) p.push('series must be "REAL FIX · PART N": since 16 Nov 2026 every episode is REAL FIX (the other series are retired)');
+  if (typeof e.next !== 'string' || e.next.trim().length < 8 || e.next.length > 46) p.push('next must tease tomorrow\'s part in 8 to 46 characters ("Your boss reads your WhatsApp?"); it shows over the quiet ending with "PART N+1 TOMORROW"');
   if (/^REAL FIX/.test(e.series || '') && !/\d/.test(e.hook || '')) p.push('a REAL FIX hook needs a number with the tension ("87 applications. 0 interviews.")');
   const speakers = new Set(spoken.map((b) => b.who).filter((w) => w !== 'meera' && w !== 'twin'));
   if (speakers.size < 2) p.push('at least two of codex, claude and gemini must speak');

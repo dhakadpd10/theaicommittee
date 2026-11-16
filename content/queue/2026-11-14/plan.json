@@ -54,8 +54,8 @@
       "series": "MUM ASKS · PART 10",
       "keyword": "SCAM",
       "proven": "C04",
-      "status": "made",
-      "note": "unclear words: beat 1 \"Unknown app. Wants full access.\" was heard as \"A known app wants full access.\" | beat 9 \"Even Sharma aunty.\" was heard as \"Even Sharma ante.\""
+      "status": "skip",
+      "note": "set aside 16 Nov 2026: series retired, REAL FIX only"
     },
     {
       "day": "2026-11-18",
@@ -79,7 +79,8 @@
       "series": "AI RUNS MY SHOP · DAY 8",
       "keyword": "SHOP",
       "proven": "C01",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 16 Nov 2026: series retired, REAL FIX only"
     },
     {
       "day": "2026-11-20",
@@ -103,7 +104,8 @@
       "series": "MUM ASKS · PART 11",
       "keyword": "SAFE",
       "proven": "C07",
-      "status": "made"
+      "status": "skip",
+      "note": "set aside 16 Nov 2026: series retired, REAL FIX only"
     }
   ]
 }

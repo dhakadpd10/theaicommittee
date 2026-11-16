@@ -36,6 +36,9 @@ Random disasters with no real-life source ("deleted your account", "sent it to t
 
 ## The series (every episode belongs to one)
 
+**Since 16 Nov 2026 there is ONE series: REAL FIX.** MUM ASKS and AI RUNS MY SHOP are retired (they averaged about 200 views against 1,250 to 1,420 for REAL FIX). Family, office, scam and phone problems all go inside REAL FIX. Every episode ends with a tease of tomorrow's part (`"next"`), shown as "PART N+1 TOMORROW" over the quiet ending and repeated in the caption ("Part N+1 tomorrow: <next>. Follow so you don't miss it."), so people have a reason to follow.
+
+
 A series gives people a reason to follow: there is a part 2. Rotate them, never the same series twice in a row. One reel a day, 20:00 IST.
 
 | series | `series` tag | what it is | why people share it | caption question |
