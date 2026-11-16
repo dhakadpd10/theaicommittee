@@ -1,48 +1,51 @@
-I can't write files in this session, so `brand/strategy.md` isn't saved yet. Paste this in. It comes to about 290 words.
+I don't have a file tool in this session, so `brand/strategy.md` isn't saved yet. Here is the content to paste in (about 290 words).
 
 ```markdown
-# Strategy for the week of 2026-11-14
+# Strategy for the week of 2026-11-16
 
 Judge posts by follows, keyword comments, shares and saves per 1,000 reach. Plan from the day-2 read, and rank only at 7 days. Every line here is a lead, not a rule.
 
 ## Make more of
-- REAL FIX at 4 a week. It has every share and most of the saves since the reset.
-- Single-rule money and loss topics in the 066, 069 and 067 shape: "a PIN is never needed to receive money", "real jobs don't charge a joining fee", "your phone is about to lose your photos".
-- Mum asks only as a "never do this" money rule.
-- One Gemini real fix to close last week's split (1 vs 2 so far). Then stop tracking who delivers the fix.
-- Run `/ig-profile` before tonight's post. 4,475 non-follower reach brought 0 net follows.
+- Single-rule money and loss fixes in the 066, 069 and 067 shape: "a PIN is never needed to receive money", "real jobs never charge a fee", "your photos are about to go".
+- Family money rules inside REAL FIX: Mum's text on the laptop, with a "never do this" rule as the fix.
+- Run `/ig-profile` before tonight. 4,475 reach brought 0 net follows.
 
 ## Stop
-- Posting outside 20:00 IST (070 at 21:45, 066 at 22:57). If an episode isn't ready, skip the slot.
-- Mum asks that explain an AI word or an AI threat. Prompt, made up, agent, voice clone and fake video went 5 of 5 low.
-- Comparing multiples across audits. Use views and cluster.
-- Rewriting hooks on reels that already reach 1,000. Fix the payoff.
+- MUM ASKS and AI RUNS MY SHOP as series (retired 16 Nov).
+- AI-word and AI-threat explainers (5 of 5 low).
+- Posting off 20:00 IST.
+- Teasing "PART N+1 TOMORROW" before tomorrow's episode is rendered.
+- Tracking who delivers the fix. Rotate Byte, Sage and Gigi.
+- Reading 079 until its 0 views are checked in the app.
 
 ## The mix
 | series | posts |
 |---|---|
-| REAL FIX | 4 |
-| MUM ASKS | 1 or 2 |
-| AI RUNS MY SHOP | 1 |
-| AFTER HOURS · PART 2 (test) | 0 or 1 |
+| REAL FIX | 7 |
+| new series test | 0 |
 
-Order: real fix, mum asks, real fix, shop, real fix, slot 6, real fix. Slot 6 is AFTER HOURS 2 only if 070 is at 0.3x or above on Nov 15. Otherwise it is a second money-rule Mum asks.
+Spread the topics: 2 family money, 2 job or work, 2 phone or something you own, 1 bills or landlord. Never the same topic twice in a row. Number parts from the last one that actually aired.
 
 ## Hooks
-- Reuse: a digit plus money, a job or something you own at stake, such as "Rs 4,000 gone in 1 OTP" or "Boss texted at 11:47 pm". A digit alone isn't enough: 068 "37 orders" and 070 "63 messages" landed low.
-- Drop: "Mum asked me...", "I asked 3 AIs...", hooks without a digit, and AI-explainer or tech-threat framing.
+- Reuse: a digit plus money, a job or something you own at stake, such as "Rs 4,000 gone in 1 OTP" or "Boss texted at 11:47 pm".
+- Drop: "Mum asked me...", "I asked 3 AIs...", digit-only counts with nothing to lose ("37 orders", "63 messages"), and AI-explainer framing.
 
 ## Length and endings
-Aim for about 24 s. Put the problem in the first line and the fix on the laptop by 10 s. End on a short line, then a 2.4 s meera-hold, with the music cut before the turn.
+Aim for about 24 s. Put the problem in the first line and the fix on the laptop by 10 s. End on a short line, then a 2.4 s meera-hold carrying "PART N+1 TOMORROW", with the music cut before the turn.
 
 ## One experiment
-Keyword on screen (still n=0). In real fix posts 2 and 4, the laptop's fix page ends with "Comment WORD for the steps". Posts 1 and 3 keep the keyword in the caption only, and the Gemini fix goes in one of them. Keep the caption shape the same. At 7 days, compare keyword comments and follows per 1,000 reach. Log keyword comments from day one.
+Keyword on screen. Posts 2, 4 and 6 end the laptop fix page with "Comment WORD for the steps". Posts 1, 3, 5 and 7 keep it in the caption only. Keep the caption shape the same. At 7 days, compare keyword comments and follows per 1,000 reach. Log keyword comments from day one.
 ```
 
-**What changed from last week, and why:**
-- **The test slot is now conditional.** 070 is under a day old, and no post since the reset has changed cluster after day 1. So AFTER HOURS 2 runs only if 070 reads 0.3x or above on Nov 15. Otherwise the slot goes to a money-rule Mum asks, as the audit asked.
-- **Real fix stays at 4, not 5.** The bible says never the same series twice in a row, and 7 slots with 4 real fixes need 3 other posts between them.
-- **Mum asks now has a topic rule** ("never do this" money only), based on the 5 of 5 split.
-- **New hook note:** a digit alone isn't enough. Last week's hook rule only asked for a digit plus stakes.
+**Where I went against the brief, and why:**
+- **The mix is 7 of 7 REAL FIX, not three series.** The bible retired MUM ASKS and AI RUNS MY SHOP today (16 Nov). The audit's "slot 6 = money-rule Mum asks" now becomes a family money topic inside REAL FIX. The bible's old "never the same series twice in a row" line can't apply with one series, so I turned it into "never the same topic twice in a row".
+- **No test slot this week.** AFTER HOURS 2 failed its 0.3x gate. With every slot needed for the daily part chain, a new test would also break the "PART N+1 TOMORROW" promise.
+- **"Skip the slot if not ready" is replaced by "don't tease until it's rendered".** Now that every reel promises tomorrow's part, a skipped slot breaks a promise viewers just saw.
+- **The Gemini experiment is closed.** The audit found the turn isn't a lever, and the strategy allows one experiment. The keyword split now runs across three posts instead of two, so it should read faster.
 
-If you want, I can write the day-by-day calendar and the engagement list for `~/.claude/instagram/plan.md` next.
+**Before tonight's post (not in the file):**
+- Check 079 in the app.
+- Confirm whether a Nov 15 post went out.
+- Settle the part number, since aired parts may be 1 to 3 while 079 says 8.
+
+If you want, I can write the day-by-day plan and the engagement list for `~/.claude/instagram/plan.md` next.

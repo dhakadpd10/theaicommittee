@@ -1,0 +1,113 @@
+{
+  "id": "096-task-job",
+  "title": "Paid to like",
+  "cast": "committee",
+  "series": "REAL FIX · PART 23",
+  "hook": "Rs 150 for 3 likes. Now pay Rs 5,000?",
+  "cover": 8,
+  "musicStop": 10,
+  "next": "Light cut at 9:30 pm, says this SMS",
+  "beats": [
+    {
+      "who": "meera",
+      "say": "A part time job paid me to like three videos. Now they want five thousand rupees.",
+      "show": "A part time job paid me to like 3 videos. Now they want Rs 5,000.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Task Group",
+        "body": "Congrats! VIP task unlocked\nDeposit Rs 5,000\nGet Rs 6,500 back in 1 hour"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I liked forty more videos and joined the VIP group!",
+      "show": "Done! I liked 40 more videos and joined the VIP group!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.2
+    },
+    {
+      "who": "twin",
+      "say": "With your number.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.5
+    },
+    {
+      "who": "codex",
+      "say": "Real jobs never charge you.",
+      "shot": "codex-push",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "screen": {
+        "page": "text",
+        "title": "Real jobs never charge you",
+        "body": "1. Pay to earn = scam.\n2. Stop. Don't pay to 'unlock'.\n3. Report the number on Chakshu (sancharsaathi.gov.in).\n4. Money gone? Call 1930."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "And the money they sent me?",
+      "shot": "meera",
+      "mood": "calm",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Bait.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.6
+    },
+    {
+      "who": "meera",
+      "say": "Sage, tell them no. One line.",
+      "shot": "meera",
+      "mood": "tired",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Four paragraphs, with headings, and a gentle apology.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "type"
+      ]
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "Re: VIP task",
+        "body": "Dear Task Team,\nI hope this message finds you well.\n\n1. A Gentle Introduction\nI am so sorry to bother you...\n\n2. My Decision\n3. Why\n4. A Heartfelt Apology",
+        "stamp": "DRAFT"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Best paying job I've had all year.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "rs 150 for 3 likes. then a vip task: pay rs 5,000, get rs 6,500 back in an hour.\n\nreal jobs never charge you. if a job asks you to deposit, top up or pay to unlock your earnings, stop replying and report the number on chakshu (sancharsaathi.gov.in). money already gone? call 1930 or report on cybercrime.gov.in at once.\n\nhow many part time job messages did you get this week? just the number.\n\nComment TASK and I'll DM you the 4 red flags of a task scam, the Chakshu and 1930 steps, and a one line reply that ends the chat.\n\nPart 24 tomorrow: Light cut at 9:30 pm, says this SMS. Follow so you don't miss it.\n\n#codex #aitools #scamalert #jobsearch #parttimejob"
+}

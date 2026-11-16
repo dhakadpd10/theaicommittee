@@ -1,0 +1,109 @@
+{
+  "id": "095-challan-sms",
+  "title": "The challan SMS",
+  "cast": "committee",
+  "series": "REAL FIX · PART 22",
+  "hook": "Rs 500 challan. Pay in 24 hours.",
+  "cover": 3,
+  "musicStop": 8,
+  "next": "Rs 150 for liking 3 videos",
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Papa got a challan SMS. Pay five hundred rupees in a day, install this app.",
+      "show": "Papa got a challan SMS. Pay Rs 500 in a day, install this app.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "SMS to Papa",
+        "body": "Rs 500 traffic challan pending.\nPay in 24 hrs or your licence will be blocked.\nInstall: eChallan_Pay.apk"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "That sounds urgent. You're absolutely right to pay it quickly.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "I never said we're paying.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right. It's fake. I'm so sorry.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Don't tap it! Type the e challan site yourself, then the scooter number!",
+      "show": "Don't tap it! Type the e-challan site yourself, then the scooter number!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3.2,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Fake challan SMS?",
+        "body": "1. Don't tap. No app files, ever.\n2. Type echallan.parivahan.gov.in yourself.\n3. Get Challan Details, then the vehicle number.\n4. Report the SMS on Chakshu (Sanchar Saathi).\n\nComment CHALLAN for the steps"
+      }
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "echallan.parivahan.gov.in",
+        "body": "Papa's scooter: 0 pending challans",
+        "stamp": "CLEAR"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also told the family group Papa's in trouble!",
+      "shot": "gemini",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "And the colony group.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.8
+    },
+    {
+      "who": "meera",
+      "say": "Papa's hiding the scooter.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "papa got a rs 500 challan sms with an app to install. his scooter hasn't left the gate since diwali.\n\nnever tap a challan link or install an app file from an sms. type echallan.parivahan.gov.in yourself, open get challan details, enter the vehicle number, and pay only there if it's real.\n\nwhich step did you not know? just the number.\n\nComment CHALLAN and I'll DM you the exact steps, the official links and a message to forward to your parents.\n\nPart 23 tomorrow: Rs 150 for liking 3 videos. Follow so you don't miss it.\n\n#claude #gemini #scamalert #echallan #cybersafety"
+}
