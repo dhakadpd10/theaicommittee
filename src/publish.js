@@ -30,6 +30,7 @@ async function run({ dryRun = false } = {}) {
       if (due > now) continue;
       if (now - due > LATE_LIMIT_H * 3600000) { s.status = 'missed'; changed = true; log('missed', s.post); continue; }
       if (s.last_try && now - new Date(s.last_try) < RETRY_MIN * 60000) continue;
+      if (s.format !== 'reel' && require('./plan').reelsOnly(cfg)) { s.status = 'skip'; s.note = 'reels only until 10K followers (19 Nov 2026)'; changed = true; log('held carousel', s.post); continue; }
       if (postedToday >= cfg.limits.max_posts_per_day) { log('daily post limit reached'); continue; }
       const dir = `content/posts/${s.post}`; const caption = readText(P(dir, 'caption.txt')).trim();
       try {

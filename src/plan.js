@@ -22,7 +22,14 @@ ${readText(P('brand/learnings.md'))}`;
 const POSTS = () => P('content/posts');
 const allPlans = () => { const q = P('content/queue'); return fs.existsSync(q) ? fs.readdirSync(q).map((w) => ({ w, plan: readJSON(path.join(q, w, 'plan.json'), null) })).filter((x) => x.plan) : []; };
 // a slot whose format is a list rotates through it day by day from cfg.alternate_from (e.g. ["carousel", "reel"])
+// 19 Nov 2026 (Prashant): reels every day, no carousels, until the account has 10,000 followers
+function reelsOnly(cfg) {
+  const until = Number(cfg.reels_only_until_followers) || 0; if (!until) return false;
+  const rows = readText(P('content/analytics/followers.csv')).trim().split('\n').slice(1).map((l) => Number(l.split(',')[1])).filter((n) => n >= 0);
+  return !rows.length || rows[rows.length - 1] < until;
+}
 function slotOn(cfg, day, slot) {
+  if (reelsOnly(cfg)) return { ...slot, format: 'reel' };
   if (!Array.isArray(slot.format)) return slot;
   const n = Math.round((Date.parse(day) - Date.parse(cfg.alternate_from || day)) / 86400000), k = slot.format.length;
   return { ...slot, format: slot.format[((n % k) + k) % k] };
@@ -282,4 +289,4 @@ function finish(week) {
   writeJSON(f, plan); fs.writeFileSync(P('content/queue', week, 'problems.txt'), [...new Set(problems)].join('\n'));
 }
 
-module.exports = { run, finish, lastQueuedDay };
+module.exports = { run, finish, lastQueuedDay, reelsOnly };

@@ -23,11 +23,13 @@ function carouselDay(post) {
   node([path.join(__dirname, 'audio.js'), dir]);
   const r = await render.open(dir);
   await r.cover(path.join(dir, 'cover.jpg'));
-  const times = comic.moments(r.TL), stills = [];
-  for (const t of times) { const f = path.join(dir, 'stills', `c${t.toFixed(2)}.jpg`); await r.still(t, f); stills.push(f); }
-  const cfg = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config', 'agent.json'), 'utf8'));
-  const n = await comic.build(dir, r.TL, stills, cfg.handle);
-  console.log(`cover + ${n} slides`);
+  if (noReel || process.argv.includes('--slides')) { // comic-strip slides only for carousel posts (reels only until 10K followers, 19 Nov 2026)
+    const times = comic.moments(r.TL), stills = [];
+    for (const t of times) { const f = path.join(dir, 'stills', `c${t.toFixed(2)}.jpg`); await r.still(t, f); stills.push(f); }
+    const cfg = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config', 'agent.json'), 'utf8'));
+    const n = await comic.build(dir, r.TL, stills, cfg.handle);
+    console.log(`cover + ${n} slides`);
+  } else console.log('cover (no slides: reel post)');
   if (!noReel) { await r.reel(path.join(dir, 'reel.mp4'), path.join(dir, 'audio.wav')); console.log('reel done'); }
   await r.close();
   console.log(`made ${path.basename(dir)} in ${((Date.now() - t0) / 60000).toFixed(1)} min${/CHECK THESE WORDS/.test(v) ? ' (with words to check)' : ''}`);

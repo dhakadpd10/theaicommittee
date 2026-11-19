@@ -36,13 +36,13 @@
     "max_posts_per_day": 4,
     "max_auto_replies_per_run": 40
   },
-  "alternate_from": "2026-11-14",
-  "slots_note": "13 Nov 2026 (Prashant): quality over volume. One post a day at 20:00 IST, alternating carousel and reel from 14 Nov (opposite to @theprashant.ai), every post a proven idea remade in clay.",
   "paused": {
     "on": false,
     "note": "Set on to true to stop the daily planner."
   },
   "daily": true,
   "approval": "auto",
-  "daily_note": "19 Nov 2026 (Prashant): every morning find what is viral right now and remake it in our style with the original icon cast; one reel a day at 20:00 IST, posted fully automatically (approval: auto merges the day's reel; set \"approval\": \"pr\" to review it first)."
+  "daily_note": "19 Nov 2026 (Prashant): every morning find what is viral right now and remake it in our style with the original icon cast; one reel a day at 20:00 IST, posted fully automatically (approval: auto merges the day's reel; set \"approval\": \"pr\" to review it first).",
+  "reels_only_until_followers": 10000,
+  "reels_only_note": "19 Nov 2026 (Prashant): no carousels; one reel every day until the account reaches 10,000 followers (checked against content/analytics/followers.csv). Then decide whether to bring carousels back."
 }
