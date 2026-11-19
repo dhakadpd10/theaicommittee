@@ -1,0 +1,94 @@
+{
+  "id": "097-bank-uncle",
+  "title": "The bank uncle",
+  "cast": "committee",
+  "series": "MUM VS AI · PART 1",
+  "hook": "Scammer called Mum 6 times today",
+  "cover": 3,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "A fake bank man has called Mum six times today. You three take the next call.",
+      "show": "A fake bank man has called Mum 6 times today. You three take the next call.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.8,
+      "screen": {
+        "page": "text",
+        "title": "Incoming: Bank KYC",
+        "body": "Ma'am, your account closes tonight.\nTell me the OTP."
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Error. Madam not found.",
+      "show": "Error. Ma'am not found.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Hi! Before any codes, can I ask how you're feeling? Your job sounds really stressful.",
+      "shot": "claude-push",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. I've written you a five page plan for a calmer career.",
+      "show": "I'm so sorry. I've written you a 5-page plan for a calmer career.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I turned it into a podcast. And sent it to his manager!",
+      "shot": "gemini",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "Twelve episodes.",
+      "show": "12 episodes.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.7
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.6,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta bank wale uncle ne phir call kiya.\nBol rahe hain sirf orange wale se baat karenge.\nKeh rahe the pehli baar kisi ne pucha kaise ho."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "He's back. He only wants Claude.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "a fake bank man called mum 6 times today. so we let the AIs pick up.\n\nwho should take mum's next scam call: codex, claude or gemini?\n\n#claude #gemini #scamalert #desimom #indianparents"
+}
