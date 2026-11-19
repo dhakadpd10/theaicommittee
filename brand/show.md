@@ -6,17 +6,17 @@ Meera, a tired, dry, very online young woman (a day job, a boss, a mum who calls
 
 ## The cast
 
-**Since 13 Nov 2026 the show is Claymation** (docs/CLAY.md) **and the committee are original clay characters: Byte, Sage, Gigi and her twin Gogo.** They behave like the AI assistants people use every day, but they are not those products: never call them ChatGPT, Claude, Gemini or Codex, and never draw or mention a company logo. The ids in episode.json stay codex, claude, gemini and twin. Real app names are fine inside the fix itself ("open Settings", "search mca.gov.in").
-
 | who | look | personality | how they talk |
 |---|---|---|---|
 | `meera` | 3D girl, terracotta hoodie, bun with a pencil, gold hoops | the straight woman. Tired, dry, never shouts. Her flat one-word reactions are the punchlines. | short, plain sentences. Says the task in the first second. |
-| `codex` = **Byte** | slate-blue clay pebble with a little antenna and a yellow bead on top | the literal one. Does it immediately, asks nothing, takes everything literally, thinks the world is a repo. | 1 to 6 words. "Done." "Deleted everything." "That's not in the file." |
-| `claude` = **Sage** | sage-green clay egg with round brown glasses and a mustard scarf | the careful one. Thoughtful, polite, asks how you feel first, over-apologises, writes far too much, adds caveats. Usually the one who gives the real fix. | full, gentle sentences. Sometimes overdoes politeness. |
-| `gemini` = **Gigi** | pink clay bean with a little curl on top | the cheerful know-it-all, connected to everything. Confident, helpful, and quietly shares, sends or posts things nobody asked for. | upbeat, exclamation marks. "Done! I also..." |
-| `twin` = **Gogo** | Gigi's small lavender twin, floating at her shoulder | the smug one. Adds the last, worse detail. | 2 to 5 words, deadpan. "And your mom." "Till March." |
+| `codex` | puffy blue cloud with a glowing `>_` face | the terminal. Does it immediately, asks nothing, takes everything literally, thinks the world is a repo. | 1 to 6 words. "Done." "Deleted everything." "That's not in the repo." |
+| `claude` | orange pixel creature built from blocks, slot eyes, little arms | the careful one. Thoughtful, polite, asks how you feel first, over-apologises, writes far too much, adds caveats. | full, gentle sentences. Sometimes overdoes politeness until it is absurd. |
+| `gemini` | blue-to-pink sparkle | the cheerful know-it-all, connected to everything. Confident, helpful, and quietly shares/sends/posts things nobody asked it to. | upbeat, exclamation marks. "Done! I also..." |
+| `twin` | Gemini's smaller sparkle twin | the smug one. Adds the last, worse detail. | 2 to 5 words, deadpan. "And your mom." "Till March." |
 
-**Since 29 Oct 2026 every episode is "a real problem + the AIs being themselves + a fix that really works".** Meera (or Mum) brings a problem that actually hurts and that millions of Indians share: job hunting and rejections, appraisals and salary talks, a boss texting at night, exams and college forms, UPI, OTP and voice-clone scams, bills, landlords, parents and phones. The committee behaves exactly like real AIs (that's the comedy), and one of them gives the fix that genuinely works: a free tool, a phone feature or a method, shown on the laptop. The viewer laughs, then saves it, sends it and comments the keyword for the steps.
+**Since 19 Nov 2026 every episode is a remake of something going viral right now.** Each morning the agent finds short videos that are blowing up this week (YouTube Shorts measured against their own channel's normal views, plus what the web says is viral on Reels and TikTok) and remakes the best one with our cast, in our world, in our words. We keep the shape: the premise, the escalation, how the punchline lands, why people shared it. We never reuse the original's lines, jokes, title, characters or footage, and we never name its creator. The cast is back to the original icon look (Codex cloud with the >_ face, Claude the orange pixel creature, the Gemini sparkle twins), as fan-made parodies. Pure comedy originals become pure comedy episodes; only an original that gave something useful gets a real fix and a keyword.
+
+**From 29 Oct to 18 Nov 2026 every episode was "a real problem + the AIs being themselves + a fix that really works"** (still the rule for REAL FIX episodes). Meera (or Mum) brings a problem that actually hurts and that millions of Indians share: job hunting and rejections, appraisals and salary talks, a boss texting at night, exams and college forms, UPI, OTP and voice-clone scams, bills, landlords, parents and phones. The committee behaves exactly like real AIs (that's the comedy), and one of them gives the fix that genuinely works: a free tool, a phone feature or a method, shown on the laptop. The viewer laughs, then saves it, sends it and comments the keyword for the steps.
 
 Why: 22 reels of cute everyday jokes stopped at about 2,000 views each and brought 6 followers. The pages that grew fastest in our space grew on pain plus a real fix: @ashutoshwithclaude (25K in a month, 2,500 to 6,800 comments per hit on jobs and free tools), and keyword giveaways of tools people really want (62K comments on "Claude Code free"). Lookalike pages that only copied the animated look (@ronniehasaprompt, 38 followers) and "same prompt, 3 AIs" pages (25 to 200 likes) went nowhere. A huge one-off joke without a reason to follow (@mias.office: 10.5M views, 14K followers) doesn't build a page either.
 
@@ -36,7 +36,9 @@ Random disasters with no real-life source ("deleted your account", "sent it to t
 
 ## The series (every episode belongs to one)
 
-**Since 16 Nov 2026 there is ONE series: REAL FIX.** MUM ASKS and AI RUNS MY SHOP are retired (they averaged about 200 views against 1,250 to 1,420 for REAL FIX). Family, office, scam and phone problems all go inside REAL FIX. Every episode ends with a tease of the next post on the page (`"next"` = its hook), shown as "NEXT UP · REAL FIX" over the quiet ending and repeated in the caption ("Next up: <next>. Follow so you don't miss it."), so people have a reason to follow.
+**Since 19 Nov 2026 the series tag follows the remake**: a short UPPER CASE tag plus a part number that invites a part 2, for example `AI BEING AI · PART N` (the AIs doing what AIs do), `MUM VS AI · PART N` (Mum, the family group, parents and phones), `OFFICE WITH AI · PART N` (boss, meetings, appraisals), and `REAL FIX · PART N` only when the episode carries a real, free fix. Reuse an existing tag when the remake fits it, and number on from its last part. Because tomorrow's video is picked tomorrow morning from what is viral then, `"next"` is only set when the next post already exists; never promise a specific next episode in the caption.
+
+(16 to 18 Nov 2026 every episode was REAL FIX; MUM ASKS and AI RUNS MY SHOP averaged about 200 views against 1,250 to 1,420 for REAL FIX. The older table below is kept as background.)
 
 
 A series gives people a reason to follow: there is a part 2. Rotate them, never the same series twice in a row. One reel a day, 20:00 IST.
@@ -49,9 +51,9 @@ A series gives people a reason to follow: there is a part 2. Rotate them, never 
 
 "Same prompt, 3 AIs" is retired (crowded format, our TRUTH reel got 1,224 views, 1 like, 0 comments). A new series can be tested at most once a week. Mum never speaks: her messages appear on the laptop (`"screen": {"page": "text", "title": "Mum", "body": "..."}`) and Meera reads the punchline out loud.
 
-## Every episode gives something away
+## Giveaways (only when the remake carries something useful)
 
-The pages growing fastest in our space pair the joke with something people genuinely want and ask for one word in the comments. So every episode has a `keyword`: the caption carries "Comment WORD and I'll DM you <the pack>.", and the agent DMs everyone who comments it a free pack from `brand/free.json` (shown at /free/ on the site).
+Since 19 Nov 2026 a keyword is optional: a pure comedy remake has no keyword and no fix, and its caption ends with the question and the hashtags. When the episode does carry a real fix, the pages growing fastest in our space pair the joke with something people genuinely want and ask for one word in the comments. Then the episode has a `keyword`: the caption carries "Comment WORD and I'll DM you <the pack>.", and the agent DMs everyone who comments it a free pack from `brand/free.json` (shown at /free/ on the site).
 - **The prize has to be worth a comment.** "A prompt" is not enough (TRUTH: 0 comments). A pack is the full fix: the free tool or feature by name with its official link (`links`), the exact steps (`steps`), then the prompts. Things people would otherwise search for or pay for.
 - Links only to official sites and app stores that the research found and checked. No unknown downloads, no paid tools dressed up as free, no affiliate links.
 - The episode itself should contain the useful moment (Claude's correct analogy, Codex's honest one-liner, the reply that actually works), so the pack feels like the obvious next step.
@@ -70,7 +72,7 @@ The pages growing fastest in our space pair the joke with something people genui
 4. Set `musicStop` to the index of the beat where the music should cut out (usually the beat right before the final turn), so the punchline lands in silence.
 5. **Voice rules** (the voices are text-to-speech, checked by a speech-to-text model):
    - `say` is what is spoken; write numbers as words ("ninety two percent"). `show` is the subtitle; use digits there ("92%"). Only add `show` when it differs from `say`.
-   - Plain, common words. No emoji, no hashtags, no symbols in `say`. No brand or AI product names in the dialogue (the cast are Byte, Sage, Gigi and Gogo); a real app or website may be named only in the fix. Keep every line under 18 words.
+   - Plain, common words. No emoji, no hashtags, no symbols in `say`. No brand names other than the three AIs. Keep every line under 18 words.
    - Do not start a line with the word "Committee" on its own: the voice says it wrong ("you three" works).
 6. Clean comedy: no politics, religion, insults about real people or groups, nothing sexual, no real companies besides the three AIs, no medical or financial advice.
 
@@ -128,7 +130,7 @@ Rule: each line's shot shows the speaker (twin lines use `gemini`; Meera's lines
 
 ## Caption
 
-One lowercase line with the tension (the problem in the viewer's words, or the joke from a new angle), then a blank line and **1 or 2 plain lines of the actual fix** (so the caption alone is worth saving), then a blank line and one question that takes two seconds to answer, then the keyword line, then 5 hashtags. No em dashes, no emoji walls, no "comment below", no "follow for more".
+One lowercase line with the tension (the problem in the viewer's words, or the joke from a new angle), then (fix episodes only) a blank line and **1 or 2 plain lines of the actual fix** (so the caption alone is worth saving), then a blank line and one question that takes two seconds to answer, then the keyword line (only if the episode has a keyword), then 5 hashtags. No em dashes, no emoji walls, no "comment below", no "follow for more".
 
 The question is the comment engine. In 22 old reels, "tell me your story" questions ("what's the most dramatic way you've ever cancelled plans?") got 1 comment in total. Ask for one word, one pick or one vote: "which one is your AI?", "what word instantly tells you it's AI?", "299 or 999?", "which AI word should mum ask about next?" Never promise that the comments will change a later episode (they are made a week ahead).
 

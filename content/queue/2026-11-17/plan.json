@@ -28,7 +28,8 @@
       "series": "REAL FIX · PART 22",
       "keyword": "CHALLAN",
       "proven": "C03",
-      "status": "made"
+      "status": "skip",
+      "note": "19 Nov 2026: clay look retired; daily viral remakes with the original cast take this slot"
     },
     {
       "day": "2026-11-21",
@@ -40,7 +41,8 @@
       "series": "REAL FIX · PART 23",
       "keyword": "TASK",
       "proven": "C05",
-      "status": "made"
+      "status": "skip",
+      "note": "19 Nov 2026: clay look retired; daily viral remakes with the original cast take this slot"
     }
   ]
 }

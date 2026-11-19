@@ -1,6 +1,6 @@
-// Every Saturday: plans the coming week (from the day after the last queued episode up to the next Saturday),
-// one reel a day: learn from the numbers -> research what's current -> pick the episodes -> write them -> check every line by ear.
-// Rendering happens next, in parallel cloud jobs (show/make.js), then the week goes to Prashant as a pull request (his Saturday OK).
+// Every morning (19 Nov 2026, Prashant: "every single day before creating a reel"): find what is going viral right now
+// (src/viral.js) -> remake the best one in our style with our cast -> check every line by ear. Saturdays also learn from the numbers.
+// Rendering happens next in the cloud (show/make.js); with config "approval": "auto" the day's reel is merged and posts by itself.
 // node src/cli.js plan [--start YYYY-MM-DD] [--days N] [--force]
 const fs = require('fs');
 const path = require('path');
@@ -111,24 +111,36 @@ Return 8 to 12 short bullets, each a possible episode for one of our series (say
 
 // ---------- 3. pick the week ----------
 const PACKS = () => readJSON(P('brand/free.json'), {});
-function planWeek(count, notes, formats = []) {
+function planWeek(count, viral, formats = []) {
   const ideas = readText(P('brand/ideas.md')); const packs = PACKS();
-  const proven = readText(P('brand/proven.md')), bank = [...proven.matchAll(/^\| (C\d\d) \|/gm)].map((m) => m[1]);
+  const proven = readText(P('brand/proven.md'));
+  const urls = new Set((viral.tube || []).map((r) => r.url));
+  const bare = (u) => String(u || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+  const inWeb = (u) => !!bare(u) && String(viral.web || '').includes(bare(u).slice(0, 40));
+  const usedUrls = new Set((viral.used || []).map((u) => u.url));
   return askJSON({
     system: SYSTEM(), effort: 'high',
     validate: (v) => {
       const e = []; if (!Array.isArray(v.episodes) || v.episodes.length !== count) return [`episodes must have exactly ${count} entries`];
       v.episodes.forEach((x, i) => {
         if (!x.slug || !/^[a-z0-9-]{3,40}$/.test(x.slug)) e.push(`episodes[${i}].slug must be lowercase-dash, 3 to 40 characters`);
-        if (!x.title || !x.problem || !x.escalation || !x.ending || !x.series || !x.hook || !x.true_behaviour || !x.fix) e.push(`episodes[${i}] needs title, series, hook, true_behaviour, problem, fix, escalation and ending`);
+        if (!x.title || !x.premise || !x.escalation || !x.ending || !x.series || !x.hook || !x.true_behaviour) e.push(`episodes[${i}] needs title, series, hook, premise, true_behaviour, escalation and ending`);
         if (/^SAME PROMPT/.test(x.series || '')) e.push(`episodes[${i}]: "same prompt" is retired`);
+        const src = x.source || {};
+        if (!/^https:\/\/\S+$/.test(src.url || '') || !src.creator || !src.numbers || !src.what_happens || !src.why_it_worked || !src.our_twist) e.push(`episodes[${i}].source needs url, creator, numbers, what_happens, why_it_worked and our_twist (the viral video this remakes)`);
+        else if (!urls.has(src.url) && !inWeb(src.url)) e.push(`episodes[${i}].source.url must be one of today's research finds (a YouTube result or a link written in the web notes), not from memory`);
+        else if (usedUrls.has(src.url)) e.push(`episodes[${i}].source.url was already remade before; pick another`);
+        if (src.url && v.episodes.some((y, k) => k !== i && y.source?.url === src.url)) e.push(`episodes[${i}]: two episodes remake the same video`);
+        const copied = require('./viral').copiedPhrase([x.title, x.hook, x.premise, x.ending].join(' '), { ...((viral.tube || []).find((r) => r.url === src.url) || {}), what_happens: src.what_happens });
+        if (copied) e.push(`episodes[${i}] reuses the source's words ("${copied}"): remake the shape in our own words`);
         if (/^REAL FIX/.test(x.series || '') && !/\d/.test(x.hook || '')) e.push(`episodes[${i}].hook: a REAL FIX hook needs a number with the tension`);
         if (x.fix_source && !/^https:\/\/\S+$/.test(x.fix_source)) e.push(`episodes[${i}].fix_source must be one https link`);
         if (!['codex', 'claude', 'gemini', 'twin'].includes(x.turn_by)) e.push(`episodes[${i}].turn_by must be codex, claude, gemini or twin`);
-        if (!bank.includes(x.proven)) e.push(`episodes[${i}].proven must be the id of the proven idea it remakes (${bank.join(', ')})`);
-        else if (i && v.episodes[i - 1].proven === x.proven) e.push(`episodes ${i - 1} and ${i} remake the same proven idea; never two in a row`);
-        const pack = packs[x.keyword] || (v.new_packs || {})[x.keyword];
-        if (!/^[A-Z]{3,12}$/.test(x.keyword || '') || !pack) e.push(`episodes[${i}].keyword must be an existing pack (${Object.keys(packs).join(', ')}) or a key of new_packs`);
+        if (x.keyword !== undefined && x.keyword !== null) { // a freebie only when the remake really carries something useful
+          const pack = packs[x.keyword] || (v.new_packs || {})[x.keyword];
+          if (!/^[A-Z]{3,12}$/.test(x.keyword || '') || !pack) e.push(`episodes[${i}].keyword must be an existing pack (${Object.keys(packs).join(', ')}), a key of new_packs, or null`);
+          if (!x.fix) e.push(`episodes[${i}] has a keyword, so it needs the real "fix" the pack gives away`);
+        }
       });
       for (const [k, p] of Object.entries(v.new_packs || {})) {
         if (!/^[A-Z]{3,12}$/.test(k) || packs[k]) e.push(`new_packs.${k}: a new UPPER CASE keyword that is not already used`);
@@ -140,18 +152,36 @@ function planWeek(count, notes, formats = []) {
       const slugs = v.episodes.map((x) => x.slug); if (new Set(slugs).size !== slugs.length) e.push('every slug must be different');
       return e;
     },
-    prompt: `Plan the next ${count} episodes (one is posted each day at 20:00 IST; neighbouring days must feel different: different series, problem and member delivering the turn).
+    prompt: `Plan the next ${count} episode${count > 1 ? 's' : ''} (one reel a day at 20:00 IST). Each one REMAKES a short video that is going viral right now (Prashant, 19 Nov 2026: every day, find what is viral and remake it in our own funny style).
 
-Quality over volume (Prashant, 13 Nov 2026): every episode REMAKES one proven idea from the bank below in our clay style with our own cast and words (set "proven" to its id). Pick the entries with the biggest numbers most often, and make each remake more useful than the original. Posting format per episode, in order: ${formats.map((x, i) => `${i}: ${x}`).join(', ') || 'all reels'}. A carousel episode is posted as an 8 to 10 slide comic strip of its frames, so it must read without sound: the hook frame, the problem, the members' true-to-life answers, then the fix steps on the laptop.
+How to choose: take the find with the strongest signal (outlier multiple = views divided by that channel's normal views; above 3x is a real signal; then views per hour; big comment counts), that our committee can play naturally: AI assistants behaving the way real AIs do, in a moment everyone recognises. Never remake the same creator two days running.
+How to remake: keep the SHAPE (the premise, the escalation, how the punchline lands, why people shared it) and move it into our world: Meera at her desk, the committee (Codex, Claude, Gemini and the twin) on the table, Mum on the laptop when it fits. Our own words, our own jokes, our characters' personalities. Never reuse the source's lines, jokes, title, characters or footage, and never mention the source creator in the episode or caption. Make it funnier than the original for our audience (young Indians and their parents; Hinglish touches like "arre", "beta", "yaar" are welcome in Mum's texts and the caption).
+Follow the original's kind of post: pure comedy stays pure comedy (no keyword, keyword: null). Only when the original gave something useful (a tool, a tip, a fix) does ours carry a real, free, working fix with a keyword pack.
+Series tag: a short UPPER CASE tag that fits the episode and invites a part 2, e.g. "AI BEING AI · PART N", "MUM VS AI · PART N", "OFFICE WITH AI · PART N", "REAL FIX · PART N" (only for fix episodes). Number on from earlier parts of the same tag.
+Posting format per episode, in order: ${formats.map((x, i) => `${i}: ${x}`).join(', ') || 'all reels'}.
 
-Proven ideas bank:
+TODAY'S VIRAL RESEARCH
+Ranked YouTube Shorts from the last few days (outlier = views / the channel's median; top_comments say why people loved it):
+${JSON.stringify(viral.tube || [], null, 1)}
+
+Viral finds from the web this week:
+${viral.web || 'none'}
+
+Already remade (never again): ${(viral.used || []).map((u) => u.url).join(' ') || 'none'}
+
+What has worked before (background only):
 ${proven}
 
-Idea bank:\n${ideas}\n\nResearch notes:\n${notes || 'none'}\n\nDo NOT repeat these recent episodes:\n${recentTitles().join('\n') || 'none'}\n
-Every episode is REAL FIX (since 16 Nov 2026 the other series are retired): REAL FIX · PART N, numbered on from the last part. Family, office, scam and phone problems all fit inside REAL FIX as long as the fix really works. Number the parts and days on from the last episodes of each series. Every episode starts from a real problem that hurts (in "problem"), rests on a TRUE behaviour of real AI assistants (in "true_behaviour"; no random disasters), and carries a fix that really works and is free (in "fix", with its official link in "fix_source" when there is one). Only use fixes from the research notes or ones you are certain of. Vary who delivers the turn, and let a different member be the useful one sometimes. Follow the experiment in the latest learnings.
-Every episode also gives something away: a "keyword" that people comment to get the full fix by DM. A comment has to feel worth it: the pack names the free tool or feature, links to it and lists the steps, then the prompts. Reuse a pack that fits (${Object.entries(packs).map(([k, p]) => `${k}: ${p.title}`).join('; ')}) or add at most 4 new ones in "new_packs". A new pack must be genuinely useful on its own: "steps" (2 to 6 short strings), "links" (official https links only, [{name, url}]) and real prompts someone can paste into any AI assistant; correct and safe, no financial, medical or legal advice, no invented facts.
+Idea bank:
+${ideas}
+
+Do NOT repeat these recent episodes:
+${recentTitles().join('\n') || 'none'}
+
+Every episode rests on a TRUE behaviour of real AI assistants (in "true_behaviour"; no random disasters). Vary who delivers the turn. Follow the experiment in the latest learnings.
+If an episode has a keyword, reuse a pack that fits (${Object.entries(packs).map(([k, p]) => `${k}: ${p.title}`).join('; ')}) or add one in "new_packs" (title, intro, 2 to 6 "steps", official https "links" [{name, url}], real "prompts" [{name, text}], "tip"); correct and safe, no financial, medical or legal advice.
 Reply with JSON only:
-{"episodes":[{"slug":"zero-interviews","proven":"C05","title":"Zero interviews","series":"REAL FIX · PART 1","hook":"87 applications. 0 interviews.","problem":"Meera has applied to 87 jobs on the big job sites and heard nothing","true_behaviour":"Claude writes a five-part essay on resilience; Gemini cheerfully applies to 40 more jobs for her","fix":"Codex: jobs go up on the company's own careers page first; a Google Alert for the company name plus careers catches them days earlier","fix_source":"https://www.google.com/alerts","escalation":"...","ending":"...","turn_by":"codex","keyword":"JOBS"}],"new_packs":{"JOBS":{"title":"...","intro":"...","steps":["...","..."],"links":[{"name":"Google Alerts","url":"https://www.google.com/alerts"}],"prompts":[{"name":"...","text":"..."}],"tip":"..."}}}`,
+{"episodes":[{"slug":"one-line-email","title":"One line email","series":"AI BEING AI · PART 1","hook":"I asked for ONE line","premise":"Meera asks for a one-line reply to her boss","true_behaviour":"Claude writes five paragraphs with headings; Gemini sends it to the whole team","escalation":"...","ending":"...","turn_by":"twin","keyword":null,"source":{"url":"https://www.youtube.com/shorts/...","creator":"...","numbers":"2.1M views in 2 days, 9x the channel's normal","what_happens":"...","why_it_worked":"...","our_twist":"..."}}],"new_packs":{}}`,
   });
 }
 
@@ -168,7 +198,7 @@ async function writeEpisode(id, idea) {
   const check = (v) => [...validateEpisode({ ...v, id }), ...(cta && !String(v.caption || '').includes(cta) ? [`the caption must have this line before the hashtags: "${cta}<what they get, in a few words: ${pack.title}>."`] : [])];
   let ep = await askJSON({
     system: SYSTEM(), effort: 'high', validate: check,
-    prompt: `Write episode.json for this episode. Set "next" to the hook of the next post on the page, given in the idea as "tomorrow" (copy it, or shorten it to 46 characters without changing what it says); it shows over the quiet ending as "NEXT UP · REAL FIX". If "tomorrow" is null, tease the next real problem in the same spirit. Follow the show bible's rules and format exactly.\n\nThe idea:\n${JSON.stringify(idea, null, 2)}\n\nTwo finished episodes that rendered well (copy their rhythm and length, not their jokes):\n${examples()}\n\nReturn episode.json only (with "id": "${id}" and the caption inside).`,
+    prompt: `Write episode.json for this episode. It remakes the viral video in "source": keep its shape and why it worked, but every line, joke and visual is ours (never reuse its words). Set "series" and "hook" from the idea. If the idea gives "tomorrow" (the hook of the next post already made), set "next" to it (shortened to 46 characters at most); otherwise leave "next" out, because tomorrow's video is chosen tomorrow morning from what is viral then. Set "keyword" only if the idea has one. Follow the show bible's rules and format exactly.\n\nThe idea:\n${JSON.stringify(idea, null, 2)}\n\nTwo finished episodes that rendered well (copy their rhythm and length, not their jokes):\n${examples()}\n\nReturn episode.json only (with "id": "${id}" and the caption inside).`,
   });
   ep.id = id; fs.mkdirSync(dir, { recursive: true }); writeJSON(path.join(dir, 'episode.json'), ep);
   let bad = voiceCheck(dir);
@@ -196,11 +226,13 @@ async function run({ start, days, force = false } = {}) {
   if (cfg.paused?.on) { log(`paused in config/agent.json: ${cfg.paused.note || ''}`); return { skipped: true }; }
   const launch = readJSON(P('content/queue/launch/plan.json'), null);
   if (launch && !launch.start) { log('the launch posts have no dates yet: run the Launch workflow first'); return { skipped: true }; }
-  const last = lastQueuedDay();
-  start = start || addDays(today, 1); // from tomorrow: empty slots anywhere ahead get filled (16 Nov 2026), not only days after the last queued one
-  void last;
-  days = days || ((6 - dow(start) + 7) % 7) + 1 || 8; // up to and including the next Saturday
-  if (days === 1) days = 8; // a Saturday start plans through the following Saturday
+  if (cfg.daily) { // 19 Nov 2026: one reel a day, researched and written that same morning
+    start = start || today; days = days || 1;
+  } else {
+    start = start || addDays(today, 1); // from tomorrow: empty slots anywhere ahead get filled (16 Nov 2026), not only days after the last queued one
+    days = days || ((6 - dow(start) + 7) % 7) + 1 || 8; // up to and including the next Saturday
+    if (days === 1) days = 8; // a Saturday start plans through the following Saturday
+  }
   let week = start; for (let k = 2; fs.existsSync(path.join(P('content/queue', week), 'plan.json')); k++) week = `${start}-${k}`; // a second plan for the same start gets its own folder
   const qdir = P('content/queue', week); void force;
   const perDay = cfg.slots.length, taken = new Set();
@@ -211,10 +243,14 @@ async function run({ start, days, force = false } = {}) {
   if (!count) { log(`nothing to plan: every slot from ${start} for ${days} days is taken`); return { skipped: true }; }
   log(`planning ${count} empty slots in ${days} days from ${start}`);
 
-  await learn().catch((e) => log('learning skipped:', e.message));
-  const notes = await research(count).catch((e) => { log('research skipped:', e.message); return ''; });
+  // the audit and strategy are a weekly job (Saturdays, or the first run after a week without one), not a daily one
+  const lastAudit = (readText(P('brand/learnings.md')).match(/## Week of (\d{4}-\d{2}-\d{2})/) || [])[1];
+  if (!cfg.daily || dow(today) === 6 || !lastAudit || lastAudit < addDays(today, -7)) await learn().catch((e) => log('learning skipped:', e.message));
+  const viral = await require('./viral').find(SYSTEM());
+  if (!viral.tube.length && !String(viral.web || '').trim()) throw new Error('no viral research today (YouTube and web search both empty); nothing to remake');
+  const notes = [viral.tube.length ? `YouTube outliers:\n${viral.tube.map((r) => `- ${r.outlier ?? '?'}x · ${r.views} views · ${r.creator} · ${r.title} · ${r.url}`).join('\n')}` : '', viral.web ? `Web finds:\n${viral.web}` : ''].filter(Boolean).join('\n\n');
   const formats = open.map((o) => o.slot.format);
-  const plan = await planWeek(count, notes, formats);
+  const plan = await planWeek(count, viral, formats);
   if (plan.new_packs && Object.keys(plan.new_packs).length) { const packs = PACKS(); for (const [k, p] of Object.entries(plan.new_packs)) if (!packs[k]) packs[k] = p; writeJSON(P('brand/free.json'), packs); log('new free packs:', Object.keys(plan.new_packs).join(', ')); }
   const slots = [], problems = [], posts = [];
   let n = nextNumber();
@@ -224,8 +260,9 @@ async function run({ start, days, force = false } = {}) {
     try {
       const made = await writeEpisode(id, idea);
       posts.push(id);
-      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, series: idea.series, keyword: idea.keyword, proven: idea.proven, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
-      log('written', id);
+      slots.push({ day, time: slot.time, format: slot.format, post: id, title: idea.title, turn_by: idea.turn_by, series: idea.series, keyword: idea.keyword || null, remakes: idea.source, status: 'made', ...(made.unclear ? { note: `unclear words: ${made.unclear}` } : {}) });
+      require('./viral').markUsed([{ ...idea.source, post: id }]);
+      log('written', id, 'remaking', idea.source?.url);
     } catch (e) { problems.push(`${day} ${slot.time} ${idea.title}: ${e.message.split('\n')[0]}`); log('FAILED', day, e.message); }
   }
   writeJSON(path.join(qdir, 'plan.json'), { week, start, research: notes, slots });

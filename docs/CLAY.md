@@ -1,3 +1,5 @@
+**Retired 19 Nov 2026:** Prashant brought back the original icon cast and smooth 3D look (git revert of the clay part of commit c9ee2da). Kept for reference.
+
 # The clay look (13 Nov 2026)
 
 Prashant's call: both pages are Claymation. The AI Committee is drawn in our own three.js world, turned to plasticine in code:

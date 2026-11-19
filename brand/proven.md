@@ -1,5 +1,7 @@
 # Proven ideas bank (The AI Committee)
 
+**Since 19 Nov 2026 this is background only:** every morning the agent remakes something viral that day (src/viral.js). These entries show what kinds of shapes worked before.
+
 Prashant's rule (13 Nov 2026): **we don't invent formats, we remake ones that already hit big**, in our clay style, with our own cast and words. Every episode names one entry below (`"proven": "C05"`). Remake the shape of the idea; never copy another creator's script, jokes or characters. Lookalikes fail: the @canwebuildthis copy @ronniehasaprompt had 38 followers.
 
 Numbers are likes (L), comments (C) or views (V) on public posts seen between 16 Oct and 13 Nov 2026.
@@ -22,5 +24,5 @@ Numbers are likes (L), comments (C) or views (V) on public posts seen between 16
 1. **The pain is real and shared by millions of Indians:** jobs, salary, exams, scams, parents and phones, office life.
 2. **The AI behaviour is true:** the viewer says "mine does that" (see "The one rule: it must be TRUE" in brand/show.md).
 3. **The fix really works:** it is shown on the laptop as 2 to 4 short steps, and the pack behind the keyword has the full steps and official links.
-4. **Clay style** (docs/CLAY.md) with the original clay cast (brand/show.md).
+4. Our cast and look (brand/show.md: since 19 Nov 2026 the original icon cast, not clay).
 5. Never use the same entry twice in 7 days, and never the same entry two posts in a row.

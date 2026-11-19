@@ -13,7 +13,8 @@
       "series": "REAL FIX · PART 12",
       "keyword": "PASSBOOK",
       "proven": "C05",
-      "status": "made"
+      "status": "skip",
+      "note": "19 Nov 2026: clay look retired; daily viral remakes with the original cast take this slot"
     },
     {
       "day": "2026-11-23",
@@ -38,7 +39,8 @@
       "series": "REAL FIX · PART 13",
       "keyword": "FIX",
       "proven": "C01",
-      "status": "made"
+      "status": "skip",
+      "note": "19 Nov 2026: clay look retired; daily viral remakes with the original cast take this slot"
     },
     {
       "day": "2026-11-25",
@@ -63,7 +65,8 @@
       "series": "REAL FIX · PART 14",
       "keyword": "PASSWORD",
       "proven": "C03",
-      "status": "made"
+      "status": "skip",
+      "note": "19 Nov 2026: clay look retired; daily viral remakes with the original cast take this slot"
     },
     {
       "day": "2026-11-27",
@@ -88,7 +91,8 @@
       "series": "REAL FIX · PART 15",
       "keyword": "UNDO",
       "proven": "C06",
-      "status": "made"
+      "status": "skip",
+      "note": "19 Nov 2026: clay look retired; daily viral remakes with the original cast take this slot"
     }
   ]
 }
