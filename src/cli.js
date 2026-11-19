@@ -72,5 +72,10 @@ const NEEDS_CLAUDE = ['plan', 'engage'];
     const cp = require('./crosspost');
     console.log('Facebook Reels:       ', cp.hasFB() ? 'yes (FB_PAGE_ID + FB_PAGE_TOKEN)' : 'not set up (optional)');
     console.log('YouTube Shorts:       ', cp.hasYT() ? 'yes (YT_CLIENT_ID + YT_CLIENT_SECRET + YT_REFRESH_TOKEN)' : 'not set up (optional)');
+    if (!process.env.YOUTUBE_API_KEY) console.log('Viral research key:    NO (YOUTUBE_API_KEY missing: research uses web search only)');
+    else { // one small search, read-only (about 100 of the 10,000 free daily units)
+      try { const r = await require('./viral').fromYouTube({ queries: 1, perQuery: 10 }); console.log(`OK   Viral research (YouTube): ${r.length} Shorts ranked; top: ${r[0] ? `${r[0].views} views, ${r[0].outlier ?? '?'}x, ${r[0].title.slice(0, 60)}` : 'none above 20K views for this query'}`); }
+      catch (e) { console.log(`FAIL Viral research (YouTube): ${e.message}`); }
+    }
   } else { console.log(require('fs').readFileSync(__filename, 'utf8').split('\n').slice(1, 13).join('\n')); process.exit(cmd ? 1 : 0); }
 })().catch((e) => { console.error('ERROR:', e.message); process.exit(1); });
