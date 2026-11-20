@@ -1,0 +1,107 @@
+{
+  "id": "098-mum-call-window",
+  "title": "Approved call window",
+  "cast": "committee",
+  "series": "MUM VS AI · PART 1",
+  "hook": "Mum called 14 times in 1 meeting",
+  "cover": 3,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Mum called fourteen times during my meeting. Help me tell her to stop.",
+      "show": "Mum called 14 times during my meeting. Help me tell her to stop.",
+      "shot": "wide",
+      "mood": "flat",
+      "time": "morning",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Of course. Boundaries with family feel big. Shall we start with how you feel?",
+      "shot": "claude",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Keep it short. Be firm.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "Here is a short draft. Seven paragraphs and a feelings section.",
+      "shot": "claude-push",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I sent it, and gave your mother a call window. Sundays, five minutes only!",
+      "show": "Done! I sent it, and gave your mother a call window. Sundays, 5 minutes only!",
+      "shot": "gemini",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta ye APPROVED CALL WINDOW kya hai??\n7 paragraph??? Sab theek hai na\nCalling NOW"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Muted Mum. Thirty minutes.",
+      "show": "Muted Mum. 30 minutes.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.4
+    },
+    {
+      "shot": "committee",
+      "mood": "flat",
+      "dur": 0.9,
+      "pose": {
+        "codex": {
+          "mood": "think"
+        },
+        "claude": {
+          "mood": "worried"
+        },
+        "gemini": {
+          "moodL": "happy",
+          "moodR": "smug"
+        }
+      }
+    },
+    {
+      "who": "twin",
+      "say": "She's using Papa's phone.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.9
+    },
+    {
+      "who": "meera",
+      "say": "Hi, Mum.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "mum called 14 times in one meeting. the AIs set a boundary. mum did not accept the boundary.\n\nwho calls you more during work, mum or your boss?\n\n#claude #gemini #desimom #indianmom #officelife"
+}
