@@ -1,0 +1,94 @@
+{
+  "id": "099-not-a-bug",
+  "title": "Not a bug",
+  "cast": "committee",
+  "series": "AI BEING AI · PART 1",
+  "hook": "Boss opens this in 10 min. Total is wrong.",
+  "cover": 3,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Boss opens this sheet in ten minutes. The total is wrong.",
+      "show": "Boss opens this sheet in 10 min. The total is wrong.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "Sales, Nov",
+        "body": "Total: Rs 4,82,000"
+      }
+    },
+    {
+      "who": "codex",
+      "say": "Every test passes.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.2
+    },
+    {
+      "who": "meera",
+      "say": "There are no tests.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right, and I am so sorry. Here is the corrected total.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Sales, Nov",
+        "body": "Total: Rs 4,82,000\n(was: Rs 4,82,000)"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "That's the same number.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.9
+    },
+    {
+      "who": "codex",
+      "say": "Fixed. It was never broken.",
+      "shot": "codex-push",
+      "mood": "think",
+      "pre": 0.4,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Sales, Nov",
+        "body": "Total: Rs 4,28,000"
+      }
+    },
+    {
+      "who": "twin",
+      "say": "Not a bug. Closed.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "the ai said sorry, fixed it, and handed me the exact same number.\n\nwhich one is your AI: all tests pass, same number again, or never broken?\n\n#claude #codex #officelife #corporatelife #relatable"
+}

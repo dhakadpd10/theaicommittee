@@ -2,6 +2,164 @@
 
 Newest week on top. The weekly planner adds an entry every time it plans, from `content/analytics/log.csv`.
 
+## Week of 2026-11-21
+
+- **The sample is still too small for a pattern, and this week the data broke before the episodes could be judged.** Three of the last five rows have 0 views. The two that reached anyone have our weakest watch times since 061.
+  - **Sample.** 42 rows from Oct 18 to Nov 19, of which 39 are readable. New since the 11-16 audit:
+    - 094, 4 days old.
+    - 097, 2 days old.
+    - Two more zero rows: 081 (Nov 16) and 083 (Nov 18).
+    - 079 is now 7 days old and still at 0.
+  - **The zero rows are not a lag.** Four things mark them as a publish or pull failure, or reels that are live but restricted, not episode results:
+    - 079 (Nov 14), 081 (Nov 16) and 083 (Nov 18) fall every other day.
+    - They alternate with the two posts that did reach people (094 on Nov 17, 097 on Nov 19).
+    - They are the only three rows with `follows` = 0 instead of null, so they come from a different data path.
+    - All three are REAL FIX parts 8 to 10, from the same production batch.
+    - Confidence: high that these rows are unusable. Medium that the cause is the pipeline rather than the reels.
+  - **Missing days.** There is no row for Nov 15 (flagged last audit, still missing) or Nov 20 (possibly too new for the pull).
+  - **Median.** The given 684 counts the three zeros: it is the 21st of 42 posts. The median of the 39 readable posts is **1,080** (004), so the given multiples run about 1.6x high. For example, 011 is 2.07x, not 3.26x.
+    - Multiples below use 1,080.
+    - Compare views or cluster across weeks, never multiples. This is the third audit in a row where the median moved under old posts.
+  - **Still missing, eighth audit running:** hold at 3s, non-follower share and Insights follows.
+  - **Episode files.** I did not have them this session. Topics and hooks below are read from titles and slugs.
+
+- **Top 5, bottom 5, sends and follows. The top five have not changed. The two newest posts are the two lowest readable posts on the account.**
+  - **Top 5 by outlier multiple** (unchanged for four audits; average watch 17.7s, 0 shares between them):
+
+    | post | multiple | views | format | watch |
+    |---|---|---|---|---|
+    | 011 "Cancel politely" | 2.07x | 2,231 | old | 21.8s |
+    | 003 "Ninety-two percent" | 1.97x | 2,132 | old | 16.9s |
+    | 060 "Boss at eleven" | 1.95x | 2,109 | new | 17.3s |
+    | 019 "Happy birthday, uncle" | 1.86x | 2,012 | old | 17.8s |
+    | 014 "Split the bill" | 1.82x | 1,962 | old | 14.6s |
+
+  - **Bottom 5, readable only** (average watch 8.1s; 4 of 5 are new format):
+
+    | post | multiple | views | series | watch |
+    |---|---|---|---|---|
+    | 097 "The bank uncle" | 0.11x | 121 | MUM VS AI 1, 2 days old | 8.7s |
+    | 094 "The helpline number" | 0.11x | 124 | REAL FIX 21 | 7.4s |
+    | 022 "The standup" | 0.13x | 136 | old | 7.8s |
+    | 061 "Mum asks: agent" | 0.14x | 151 | MUM ASKS 6 | 6.6s |
+    | 065 "Appraisal on Monday" | 0.14x | 154 | REAL FIX 1 | 10.1s |
+
+  - **Sends.** Still 20 shares in total: 004 (6), 044 (5), 009 (4), 067 (2), 018 (2) and 008 (1).
+    - The last share was 067 on Nov 10.
+    - The 8 rows since then (5 readable) have 0 shares.
+  - **Follows since Oct 30** (ranked first, as asked):
+    - +1 on 066 and +1 on 062.
+    - −1 on 067, and −1 on 083, a 0-view row, so that unfollow cannot belong to the reel.
+    - 0 on everything else.
+    - Net 0 across 20 rows and 7,102 reach. There is nothing to rank.
+  - **Saves, comments and keyword comments:**
+    - Saves: 7 since the reset (097 adds 1).
+    - Comments: still only the 2 on 015 (Oct 24).
+    - Keyword comments: 0, ever.
+  - Confidence: high on the counts. None on any ranking drawn from them.
+
+- **What separates top from bottom is the same two clusters. Watch time at the seed is the best guess for which one a reel lands in.**
+  - **Clusters.** 19 posts land at 1,265 to 2,231 views, 004 sits alone at 1,080, and 19 posts land at 121 to 684. Nothing has ever landed between 685 and 1,079.
+  - **Watch time.** The high cluster averages 16.3s and the low cluster 11.2s. The top five average 17.7s and the bottom five 8.1s.
+  - **A sharper reading.** Low-cluster reels are not unseen. They reach 100 to 515 people, nearly all strangers to an account of about 10 followers.
+    - So every reel seems to get a similar small cold seed. The high cluster is a second push that stops near 1,000 to 1,500 reach.
+    - If the seeds are alike, the watch-time gap is the episode, not the audience.
+    - Medium-low confidence. Only hold at 3s on the seed would prove it.
+  - **094 (7.4s) and 097 (8.7s)** are two of the four lowest watch times in 39 posts, alongside 061 (6.6s) and 022 (7.8s). People left both early, so the first seconds are the suspect.
+  - **The day-2 read holds again.**
+    - 070 went from 142 to 143 reach over six days.
+    - 066, 067 and 069 are unchanged.
+    - No post has changed cluster after day 1 (about 13 tracked). Medium confidence.
+  - **The money-rule lead is weaker.** 094 (by its slug, "use the real bank helpline") and 097 (a bank caller) are both money-safety topics, and both landed low.
+    - Readable money-rule titles now split 2 high (066, 069) and 2 low.
+    - Three more (079, 081, 083) cannot be read.
+    - Low confidence.
+  - **Ruled out:**
+    - Turn: Claude delivered both new lows and is 3 of 9 in the high cluster since the reset, so it is not a lever. The strategy says stop tracking it.
+    - Day and time: all five recent rows went out at 20:01 IST, so there is nothing to read.
+
+- **Series against series, and the new format against the old: 22 days of "pain plus fix" has not beaten the old jokes on any goal metric except saves, and that edge is 7 saves.**
+
+  | series | n | median views | high cluster | shares | notes |
+  |---|---|---|---|---|---|
+  | old "Hey committee" | 20 | 1,573 (1.46x) | 14 of 20 | 13 | 15 saves |
+  | SAME PROMPT (retired) | 6 | 524 | 2 | 5 (all 044) | |
+  | MUM ASKS (retired) | 6 | 253 | 1 (066) | 0 | |
+  | REAL FIX | 4 readable, plus 3 zero rows | 710 | 2 (067, 069) | 2 | |
+  | AI RUNS MY SHOP | 1 | 210 | 0 | 0 | |
+  | AFTER HOURS | 1 | 179 | 0 | 0 | |
+  | MUM VS AI | 1 | 121 | 0 | 0 | first remake-era post, 2 days old |
+
+  - **Since Oct 30** (17 readable posts):
+    - Median 256 views (0.24x).
+    - 4 of 17 in the high cluster.
+    - None in the 6 rows since 069 on Nov 12 (3 readable).
+  - **Per 1k reach, old against new:**
+
+    | metric | old | new |
+    |---|---|---|
+    | shares | 0.68 | 0.28 |
+    | saves | 0.78 | 0.99 |
+    | comments | 0.10 | 0 |
+
+  - **The reach slide began on Oct 27 under the old format,** so this does not prove the new format caused it. Still, nothing in the new format has made up for the lost reach.
+  - **The Nov 19 move back to pure-comedy remakes fits this evidence.** It is untested: n=1, and 097 is low.
+  - **The keyword-on-screen experiment cannot be read.**
+    - Both caption-only arms (081, 083) are zero rows.
+    - The on-screen arm is 094: 111 reach, 0 comments. I did not verify this in its file.
+    - 097 fell under the Nov 19 rule, where a keyword is optional.
+    - Close it as inconclusive.
+  - **Part numbers.** REAL FIX aired as 1, 2 and 3, then 8, 9 and 10 (if they aired at all), then 21. Someone following from 069 saw "Part 3", then "Part 21".
+    - High confidence on the numbers.
+    - Medium confidence that they come from the production queue rather than from what aired.
+  - Confidence: medium that the old format beat what shipped since. Low on every per-series number.
+
+- **Views without follows is still a profile problem, but this week the first problem is distribution.**
+  - **What the method says.** No views means a hook problem. Zero views on a published reel means it either did not publish or is not eligible to be recommended. That comes before both the hook and the profile.
+  - **Conversion since Oct 30:**
+    - 9,459 views and 7,102 reach.
+    - +2 gross follows: 0.21 per 1k views, about 40 times below the benchmark pages.
+    - Net 0.
+  - **The four reels that travelled** (060, 066, 067, 069) still have 0 net follows from 4,476 reach. By the method's definition, that is a profile problem.
+    - There is still no record that `/ig-profile` has run. This is the sixth audit asking.
+  - **But nothing has travelled in the 8 days since 069,** so the profile is not what capped this week.
+  - **Order of fixes:**
+    1. Get posts live and eligible.
+    2. Fix the first seconds.
+    3. Fix the profile.
+  - Confidence: medium on the order. High that the zero rows must be explained before anything else is read.
+
+- **STOP, DO MORE, and before the next audit.**
+  - **STOP: reading 079, 081 or 083 as results.** Also stop posting from the batch they came from until one of them is confirmed live in the app. High confidence.
+  - **STOP: numbering parts from the production queue.** Number from the last aired part:
+    - The next REAL FIX is PART 4 if the zero rows never aired.
+    - The next MUM VS AI is PART 2.
+    - The bible already rules out promising a specific next episode, so drop any "PART N+1 TOMORROW" tease.
+    - High confidence on the facts. Low on how much it cost us with an audience this small.
+  - **STOP: the keyword-on-screen experiment.** It is inconclusive, with n=1 in one arm and 0 comments everywhere. Medium confidence.
+  - **STOP: treating "a single money rule" as the safe topic.** It now splits 2 high and 2 low. Low confidence.
+  - **STOP: full audits on this data.** Run the next one only when two things are in hand:
+    - The zero rows are explained.
+    - The three screenshots below exist.
+  - **DO MORE: check two things in the Instagram app today.**
+    - Check that 079, 081 and 083 are on the grid.
+    - Open Account Status in the app settings and check whether the account's content can be recommended to non-followers.
+    - If it cannot, that explains the 0s and the 100-reach seeds better than any episode change would. High confidence this is the first check. The result is unknown.
+  - **DO MORE: take three retention screenshots by hand.** Hold at 3s is still the one number that would grade a hook.
+    - 060, our best post since the reset.
+    - 094, our worst watch time since 061.
+    - 097, the first remake.
+  - **DO MORE: give the remakes a clean week.**
+    - Post one a day at 20:00 IST.
+    - Number each part from what actually aired.
+    - Read each post by cluster at day 2.
+    - A fair bar is to beat the reset's 4 of 17 in the high cluster: at least 2 of the first 7 remakes above 1,000 views. That is a planning gate, not a verdict. Low confidence.
+  - **DO MORE: front-load the stakes.** State the problem in the first line and get to the first AI reaction by about 3s.
+    - Aim for an average watch above 14s: the low cluster sits at 11.2s and the high cluster at 16.3s.
+    - Run `/ig-profile`. It costs nothing and is six audits overdue.
+  - **For `/ig-plan`:** schedule only episodes that are rendered and confirmed publishable, with part numbers from what aired.
+  - **For `/ig-viral`:** favour originals whose first 3 seconds already carry the stakes. Seed watch time is the only grade this account has.
+
 ## Week of 2026-11-16
 
 - **There is almost no new evidence this week, and the one new reel has a data problem. Most of this entry repeats the 11-14 read with one more day of age. Fix the data before running another full audit.**
