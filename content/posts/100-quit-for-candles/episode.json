@@ -1,0 +1,99 @@
+{
+  "id": "100-quit-for-candles",
+  "title": "Telling Mum",
+  "cast": "committee",
+  "series": "MUM VS AI · PART 2",
+  "hook": "Quitting my job. 1 text to Mum.",
+  "cover": 8,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "I'm quitting my job for candles. One text to Mum. Help.",
+      "show": "I'm quitting my job for candles. 1 text to Mum. Help.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "What a brave dream. Your joy matters. Tell her.",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Quit my job. Candles. Goodbye.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Sent! I also attached your salary slip, for context!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Me: Quit job. Candles. Bye.\n[salary_slip.pdf]\n\nCandle?? Beta engineering ke chaar saal ka kya hoga. Sharma aunty ki beti abroad hai."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "She's upset.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.5
+    },
+    {
+      "who": "claude",
+      "say": "You're absolutely right. Keep the job. Candles can be a hobby.",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.2
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.2,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Me: Quit job. Candles. Bye.\n[salary_slip.pdf]\n\nCandle?? Beta engineering ke chaar saal ka kya hoga. Sharma aunty ki beti abroad hai.\n\nTheek hai. Job bhi karo, candle bhi bechna. Weekend pe."
+      }
+    },
+    {
+      "who": "claude",
+      "say": "She is also absolutely right.",
+      "shot": "claude-push",
+      "mood": "small",
+      "pre": 0.8
+    },
+    {
+      "who": "twin",
+      "say": "Two jobs now.",
+      "show": "2 jobs now.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "told mum i'm quitting my job for candles. claude agreed with me, then with her. now i have 2 jobs.\n\nwhat did your parents want you to be? one word.\n\n#claude #gemini #desimom #indianparents #smallbusiness"
+}
