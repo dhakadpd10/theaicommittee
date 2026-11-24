@@ -1,0 +1,107 @@
+{
+  "id": "100-one-word-slide",
+  "title": "Just one word",
+  "cast": "committee",
+  "series": "AI BEING AI · PART 1",
+  "hook": "Boss needs 1 word. 90 seconds left.",
+  "cover": 5,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Boss needs one word for the slide title. Ninety seconds.",
+      "show": "Boss needs 1 word for the slide title. 90 seconds.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "night",
+      "pre": 0.2
+    },
+    {
+      "who": "codex",
+      "say": "Done.",
+      "shot": "codex",
+      "mood": "happy",
+      "pre": 0.3,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Slide 1",
+        "body": "Word"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Not the word word.",
+      "show": "Not the word \"word\".",
+      "shot": "wide",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "claude",
+      "say": "Before I begin, how are you feeling about the slide?",
+      "shot": "claude",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "claude",
+      "say": "Here are forty seven options, in three tiers, with a table.",
+      "show": "Here are 47 options, in 3 tiers, with a table.",
+      "shot": "claude-push",
+      "mood": "happy",
+      "pre": 0.2,
+      "sfx": [
+        "type"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Slide title: 47 options",
+        "body": "A quick note on tone first.\n\nTier 1: Bold (16)\nTier 2: Balanced (15)\nTier 3: Safe (16)\n\nCaveats apply to all 47.\nWould you like me to expand?"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also made a fourteen slide deck and a podcast. Shared both with your boss!",
+      "show": "Done! I also made a 14-slide deck and a podcast. Shared both with your boss!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "twin",
+      "say": "With music.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "sfx": [
+        "send"
+      ],
+      "screen": {
+        "page": "text",
+        "title": "Boss",
+        "body": "Loved the podcast. One every Monday?"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Every Monday.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "boss needed one word. the AIs sent a deck, a podcast and now a weekly job.\n\nwhich one is your AI: the literal one, the table one or the podcast one?\n\n#claude #gemini #officelife #corporatelife #workmemes"
+}
