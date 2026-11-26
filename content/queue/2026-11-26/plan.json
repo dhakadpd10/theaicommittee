@@ -20,7 +20,10 @@
         "why_it_worked": "Everyone who uses these tools has hit the limit at the worst moment and switched to another AI. Comments pile on with true jokes: Gemini hands you 20,000 bugs, Codex laughs in the corner, and everyone argues about which AI they switch to. That is the exact rivalry our cast plays.",
         "our_twist": "We move it from coding to a client call with a clock, so non-developers feel it too. Codex is out of limit as well (the weekly one). Gemini has no limit but redoes everything and adds a podcast. Claude returns at reset and has forgotten everything. The dry twist is that the podcast is the bit the client liked."
       },
-      "status": "made"
+      "status": "made",
+      "attempts": 1,
+      "error": "video not on the site yet: https://dhakadpd10.github.io/theaicommittee/media/posts/101-usage-limit/reel.mp4",
+      "last_try": "2026-11-26T16:11:48.838Z"
     }
   ]
 }
