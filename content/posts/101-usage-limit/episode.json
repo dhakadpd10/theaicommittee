@@ -1,0 +1,94 @@
+{
+  "id": "101-usage-limit",
+  "title": "Usage limit",
+  "cast": "committee",
+  "series": "OFFICE WITH AI · PART 2",
+  "hook": "Call in 8 minutes. Claude hit its limit.",
+  "cover": 5,
+  "musicStop": 6,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Client call in eight minutes. Claude, finish my slides.",
+      "show": "Client call in 8 minutes. Claude, finish my slides.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. I've hit my limit. Back at ten past three, I promise.",
+      "show": "I'm so sorry. I've hit my limit. Back at 3:10, I promise.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.2
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 1.6,
+      "screen": {
+        "page": "text",
+        "title": "Claude",
+        "body": "Usage limit reached.\nResets 3:10 pm"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "The call is at three. Codex?",
+      "show": "The call is at 3. Codex?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.4
+    },
+    {
+      "who": "codex",
+      "say": "Limit reached. Back Monday.",
+      "shot": "codex",
+      "mood": "normal",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I redid all twelve slides from scratch. And sent the client a podcast!",
+      "show": "Done! I redid all 12 slides from scratch. And sent the client a podcast!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "twin",
+      "say": "Forty minutes long.",
+      "show": "40 minutes long.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.6
+    },
+    {
+      "card": "3:10 pm",
+      "dur": 1.6
+    },
+    {
+      "who": "claude",
+      "say": "I'm back! Lovely to meet you. What are we working on today?",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.4
+    },
+    {
+      "who": "meera",
+      "say": "Client wants episode two.",
+      "show": "Client wants episode 2.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "client call in 8 minutes, claude hit its limit, codex is out till monday, and the only AI left made a podcast.\n\nwhich AI do you switch to when yours hits the limit?\n\n#claude #gemini #officelife #worklife #deadlines"
+}
