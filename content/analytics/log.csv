@@ -917,3 +917,26 @@ date,post,format,title,turn_by,published_at,views,reach,likes,comments,saved,sha
 2026-11-25,098-mum-call-window,reel,Approved call window,twin,2026-11-20T14:31:49.822Z,484,365,5,0,0,0,5,11856,,MUM VS AI · PART 1
 2026-11-25,099-not-a-bug,reel,Not a bug,codex,2026-11-21T14:31:30.050Z,222,153,0,0,0,0,0,20586,,AI BEING AI · PART 1
 2026-11-25,100-quit-for-candles,reel,Telling Mum,twin,2026-11-24T19:00:56.254Z,146,125,1,0,0,0,1,8358,,MUM VS AI · PART 2
+2026-11-26,021-is-it-monday,reel,Is it Monday,gemini,2026-10-27T14:31:25.643Z,684,515,5,0,1,0,6,12982,,
+2026-11-26,044-absolutely-right,reel,Absolutely right,claude,2026-10-28T14:31:19.586Z,1805,1193,3,0,1,5,10,16905,,"SAME PROMPT, 3 AIS"
+2026-11-26,046-mum-asks-prompt,reel,Mum asks: prompt,claude,2026-10-29T03:31:18.975Z,294,229,0,0,0,0,0,13067,,MUM ASKS · PART 1
+2026-11-26,052-mum-asks-made-up,reel,Mum asks: made up,claude,2026-11-02T15:41:28.510Z,210,175,0,0,0,0,0,10604,,MUM ASKS · PART 3
+2026-11-26,053-one-typo,reel,Just one typo,gemini,2026-11-05T15:25:49.036Z,436,296,2,0,0,0,2,16525,,"SAME PROMPT, 3 AIS"
+2026-11-26,059-take-my-job,reel,Take my job,codex,2026-10-30T14:31:00.501Z,322,281,1,0,0,0,1,9083,,"SAME PROMPT, 3 AIS"
+2026-11-26,058-voice-clone,reel,Mum asks: voice clone,twin,2026-10-31T14:31:26.059Z,211,179,1,0,1,0,2,9796,,MUM ASKS · PART 5
+2026-11-26,060-boss-at-eleven,reel,Boss at eleven,claude,2026-11-01T15:02:23.883Z,2109,1485,8,0,0,0,8,17346,,"SAME PROMPT, 3 AIS"
+2026-11-26,062-boss-gift,reel,Gift for the boss,claude,2026-11-03T15:03:33.035Z,611,456,1,0,0,0,1,12472,,"SAME PROMPT, 3 AIS"
+2026-11-26,064-deepfake,reel,Mum asks: fake video,claude,2026-11-04T14:31:56.562Z,326,268,2,0,0,0,2,10785,,MUM ASKS · PART 7
+2026-11-26,063-diwali-wishes,reel,Diwali wishes,codex,2026-11-06T14:31:05.004Z,256,180,0,0,0,0,0,13359,,"SAME PROMPT, 3 AIS"
+2026-11-26,061-mum-asks-agent,reel,Mum asks: agent,claude,2026-11-07T14:31:11.030Z,151,132,0,0,0,0,0,6611,,MUM ASKS · PART 6
+2026-11-26,065-we-will-see,reel,Appraisal on Monday,gemini,2026-11-08T14:31:00.312Z,154,128,0,0,1,0,1,10054,,REAL FIX · PART 1
+2026-11-26,066-pin-to-receive,reel,Mum asks: the PIN,claude,2026-11-09T17:27:54.971Z,1424,1011,16,0,1,0,17,15749,,MUM ASKS · PART 8
+2026-11-26,067-storage-full,reel,Storage full,codex,2026-11-10T14:31:33.164Z,1351,952,6,0,2,2,10,14829,,REAL FIX · PART 2
+2026-11-26,068-thirty-seven-orders,reel,Day six: screenshots,gemini,2026-11-11T14:31:23.098Z,210,170,1,0,0,0,1,10977,,AI RUNS MY SHOP · DAY 6
+2026-11-26,069-joining-fee,reel,The joining fee,claude,2026-11-12T14:31:58.464Z,1265,1029,10,0,1,0,11,13949,,REAL FIX · PART 3
+2026-11-26,070-sixty-three-messages,reel,Day one of leave,codex,2026-11-13T16:15:23.943Z,179,143,0,0,0,0,0,11678,,AFTER HOURS · PART 1
+2026-11-26,094-bank-asli,reel,The helpline number,claude,2026-11-17T14:31:21.241Z,124,111,0,0,0,0,0,7331,,REAL FIX · PART 21
+2026-11-26,097-bank-uncle,reel,The bank uncle,claude,2026-11-19T14:31:01.625Z,126,111,0,0,1,0,1,8530,,MUM VS AI · PART 1
+2026-11-26,098-mum-call-window,reel,Approved call window,twin,2026-11-20T14:31:49.822Z,484,365,5,0,0,0,5,11856,,MUM VS AI · PART 1
+2026-11-26,099-not-a-bug,reel,Not a bug,codex,2026-11-21T14:31:30.050Z,222,153,0,0,0,0,0,20586,,AI BEING AI · PART 1
+2026-11-26,100-quit-for-candles,reel,Telling Mum,twin,2026-11-24T19:00:56.254Z,157,135,1,0,0,0,1,8129,,MUM VS AI · PART 2
