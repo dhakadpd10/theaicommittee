@@ -2,6 +2,159 @@
 
 Newest week on top. The weekly planner adds an entry every time it plans, from `content/analytics/log.csv`.
 
+## Week of 2026-11-28
+
+- **The sample is still too small to support a pattern, and the week's data has gaps that make most of it unreadable. The one clear finding is that nothing has travelled for 15 days, whatever the episode did.**
+  - **Sample.** There are 46 rows from Oct 18 to Nov 26, and 43 of them can be read.
+    - New since the 11-21 audit: 098 (Nov 20, 7 days old), 099 (Nov 21, 6 days), 100 (Nov 24, 2.5 days) and 101 (Nov 26, under a day).
+    - 101 cannot be ranked. Its next-day follow number may not be in yet either.
+  - **The zero rows are unchanged.** 079, 081 and 083 still show 0 views at 9 to 13 days old.
+    - There is no record that anyone checked them in the app.
+    - There is also no record of the Account Status check.
+    - They stay excluded.
+  - **Missing days.** There are no rows for Nov 15, 22, 23 or 25. So 3 of the 7 days in the 11-21 week plan have no post in the data.
+  - **Off slot.** 100 went out at 00:30 IST on Nov 25 and 101 at 21:51 IST. 098 and 099 were on time at 20:01.
+  - **Part numbers.**
+    - 097 and 098 are both tagged `MUM VS AI · PART 1`.
+    - `OFFICE WITH AI · PART 2` (101) aired, but there is no part 1 in the data. Either part 1 aired on a missing day, or the queue is numbering parts again.
+  - **The median sits in an empty gap, so outlier multiples are noise on this account.**
+    - The given 526 is the 23rd of 46 rows, counting the zeros. The true median of 46 rows is 505.
+    - The median of the 43 readable posts is **611** (062). It was 1,080 last week.
+    - Four new low posts moved it from the high cluster's floor to the low cluster's top. Every multiple below is about 77% higher than last week with no new views. 011 went from 2.07x to 3.65x on the same 2,231 views.
+    - Multiples below use 611. Compare views or clusters across weeks, never multiples.
+  - **Still missing, ninth audit running:** hold at 3s, non-follower share and Insights follows.
+  - **Episode files and `log.md`.** I did not read either this session. Hooks, lengths and topics below come from titles and slugs only. I could not check the length experiment's arms (18 to 21s vs 26 to 29s) against the real durations.
+  - Confidence: high that this data cannot rank episodes or series.
+
+- **Top 5, bottom 5, sends and follows. The top five have not changed in five audits. The newest posts sit at the low cluster's top, but none has crossed over.**
+  - **Top 5 by outlier multiple** (average watch 17.7s, 0 shares between them):
+
+    | post | multiple | views | format | watch |
+    |---|---|---|---|---|
+    | 011 "Cancel politely" | 3.65x | 2,231 | old | 21.8s |
+    | 003 "Ninety-two percent" | 3.49x | 2,132 | old | 16.9s |
+    | 060 "Boss at eleven" | 3.45x | 2,109 | new | 17.3s |
+    | 019 "Happy birthday, uncle" | 3.29x | 2,012 | old | 17.8s |
+    | 014 "Split the bill" | 3.21x | 1,962 | old | 14.6s |
+
+  - **Bottom 5, readable only** (average watch 8.1s). 100 "Telling Mum" is sixth at 0.26x (157 views, 8.1s).
+
+    | post | multiple | views | series | watch |
+    |---|---|---|---|---|
+    | 094 "The helpline number" | 0.20x | 124 | REAL FIX 21 | 7.3s |
+    | 097 "The bank uncle" | 0.21x | 126 | MUM VS AI 1 | 8.5s |
+    | 022 "The standup" | 0.22x | 136 | old | 7.8s |
+    | 061 "Mum asks: agent" | 0.25x | 151 | MUM ASKS 6 | 6.6s |
+    | 065 "Appraisal on Monday" | 0.25x | 154 | REAL FIX 1 | 10.1s |
+
+  - **The remakes:**
+
+    | post | multiple | views | reach | watch | note |
+    |---|---|---|---|---|---|
+    | 101 | 0.86x | 526 | 350 | 18.4s | under a day old |
+    | 098 | 0.79x | 484 | 365 | 11.9s | |
+    | 099 | 0.36x | 222 | 153 | 20.6s | |
+    | 100 | 0.26x | 157 | 135 | 8.1s | |
+    | 097 | 0.21x | 126 | 111 | 8.5s | |
+
+    - 101 and 098 are the two best posts since 069, but both are still inside the low cluster.
+  - **Sends.** There are still 20 shares in total: 004 (6), 044 (5), 009 (4), 067 (2), 018 (2) and 008 (1).
+    - The last share was 067 on Nov 10.
+    - The 12 rows since then (9 readable) have 0 shares.
+  - **Follows since Oct 30** (ranked first, as asked):
+    - +1 on 066 and +1 on 062.
+    - −1 on 067, and −1 on 083, a zero-view row.
+    - 0 on all four remakes.
+    - Net 0 from 10,854 views and 8,110 reach. Gross +2 is 0.18 per 1k views. There is still nothing to rank.
+  - **Saves and comments.** The remakes have 1 save (097) and 0 comments. Keyword comments are 0, ever.
+  - Confidence: high on the counts. None on any ranking drawn from them.
+
+- **What separates top from bottom is still the cluster, but watch time no longer predicts it. That points at distribution, not the episode.**
+  - **Clusters.**
+    - 19 posts land at 1,265 to 2,231 views, and 004 sits alone at 1,080.
+    - 23 readable posts land at 124 to 684.
+    - Nothing has ever landed between 685 and 1,079.
+  - **Watch time now overlaps across the clusters.**
+    - The high cluster averages 16.3s and the low cluster 11.8s.
+    - But 4 low-cluster posts beat the high cluster's slowest post (069, 13.9s): 099 (20.6s), 101 (18.4s), 007 (17.6s) and 053 (16.5s).
+    - 099 is our second-best watch time ever, behind only 011. It reached 153 people.
+    - So last audit's lead, "if the seeds are alike, the watch-time gap is the episode", does not hold for this week's best-held reels. If 099 is a short-arm reel (18 to 21s), its 20.6s means people watched to the end or replayed.
+    - Medium-low confidence: one post, watch time is noisy at about 150 reach, and the length is not checked.
+  - **The stall started in the same week as the zero rows.**
+    - From Oct 30 to Nov 12, 4 of 14 posts landed high (060, 066, 067, 069).
+    - Since Nov 13, 0 of 7 readable posts have landed high, plus 3 rows at 0 views.
+    - In that time, series, turn, topic, watch time (7.3s to 20.6s) and slot all varied. The reach never went above 365.
+    - Something that does not change from episode to episode best explains this. An account-level limit on recommendations is the leading suspect, and it is unchecked.
+    - Medium-low confidence. It fits the data but nobody has verified it.
+  - **Mum-led posts hold people less.**
+    - The 9 Mum-led posts since Oct 29 (MUM ASKS and MUM VS AI) average 10.6s watch, and 1 of 9 landed high (066).
+    - The other 13 readable posts since the reset average 13.6s, and 3 of 13 landed high.
+    - All 3 MUM VS AI posts sit at 8.1 to 11.9s.
+    - Low-medium confidence. This comes from titles, and the samples are small.
+  - **Checked last, nothing to read:**
+    - **Day and time.** 101 was off slot and is the best remake. 099 was on slot and sits low.
+    - **Length.** Cannot be grouped without the files.
+    - **Replies to comments.** Not applicable, with 0 comments.
+    - **Hook formula.** Not checked, because `log.md` was not read.
+
+- **Series against series, and the new format against the old. The remakes went back to pure comedy, the old format's shape, and still landed 0 of 5 high. So the format change is not what is capping reach right now.**
+
+  | series | n | median views | high cluster | shares | watch |
+  |---|---|---|---|---|---|
+  | old "Hey committee" | 20 | 1,573 | 14 of 20 (004 between) | 13 | |
+  | SAME PROMPT (retired) | 6 | 524 | 2 | 5 (all 044) | |
+  | REAL FIX | 4 readable, plus 3 zero rows | 710 | 2 (067, 069) | 2 | |
+  | MUM ASKS (retired) | 6 | 253 | 1 (066) | 0 | |
+  | MUM VS AI | 3 | 157 | 0 | 0 | 8.1 to 11.9s |
+  | AI BEING AI | 1 | 222 | 0 | 0 | 20.6s |
+  | OFFICE WITH AI | 1 | 526 (under a day) | 0 | 0 | 18.4s |
+  | AI RUNS MY SHOP / AFTER HOURS | 1 each | 210 / 179 | 0 | 0 | |
+
+  - **Per 1k reach, old against new (since Oct 30):**
+
+    | metric | old | new |
+    |---|---|---|
+    | shares | 0.68 | 0.25 |
+    | saves | 0.78 | 0.86 |
+    | comments | 0.10 | 0 |
+
+    - The new format's one edge, saves, has shrunk again.
+  - **Planning gate missed on the data in hand.** The gate was at least 2 of 7 remakes above 1,000 views. So far it is 0 of 3 for the 11-21 week, or 0 of 5 counting 097 and 098.
+    - Do not read this as a verdict on remakes. No format has cleared 685 views since Nov 12.
+  - **Length experiment: unreadable.** The long arms were slots 2, 3 and 5 (Nov 22, 23 and 25), which are exactly the missing days. What aired may be short arm only.
+  - Confidence: medium that the old format beat what shipped since the reset. Low on every per-series number. Medium-low that format is not the current cap.
+
+- **Views without follows is still a profile problem in principle, but the first problem is distribution.**
+  - **By the method's own test:** low views with good hold is not a hook problem, and low views on every kind of episode is not an episode problem.
+  - **The profile problem stands, but it is not binding right now.** The four reels that travelled (060, 066, 067, 069) brought 0 net follows from 4,477 reach, which is a profile problem by definition. But nothing has travelled in 15 days, so the profile is not what is holding the account back right now.
+  - **`/ig-profile`.** There is still no record that it has run. This is the seventh audit asking.
+  - **Account Status.** Still unchecked, the second audit asking.
+  - **Order of fixes, unchanged:**
+    1. Get posts live and eligible.
+    2. Fix the first seconds.
+    3. Fix the profile.
+  - Confidence: medium on the order.
+
+- **STOP, DO MORE, and before the next audit.**
+  - **STOP: reading outlier multiples on this account.** Both clusters stay apart and the median sits in the empty gap between them. The median moved from 1,080 to 611 in a week. Rank by cluster, views, shares and follows. High confidence.
+  - **STOP: treating seed watch time as the episode's grade on its own.** 099 (20.6s) and 101 (18.4s) held people and still got 150 to 350 reach. Medium-low confidence.
+  - **STOP: skipping days and posting off slot during an experiment.** Three missing days removed the length experiment's long arm. 100 at 00:30 IST blurs next-day follows. High confidence that this cost us the experiment.
+  - **STOP: duplicate or skipped part numbers.** 097 and 098 are both MUM VS AI 1. OFFICE WITH AI 2 aired without part 1 in the data. Number from what aired, and check the tag before posting. High confidence on the facts.
+  - **STOP: MUM VS AI for one week.** It has 3 of 3 low with the account's weakest watch times. Give its slot to OFFICE WITH AI so no tag runs twice in a row: AI, OFFICE, AI, OFFICE, AI, OFFICE, REAL FIX. Low-medium confidence. Revisit once distribution is fixed.
+  - **STOP: full audits on this data.** This is the second audit running with the same blockers. Run the next one only after the in-app checks below.
+  - **DO MORE: open Account Status in the app today**, before tonight's post.
+    - Check whether the account's content can be recommended to non-followers, and check that 079, 081 and 083 are on the grid.
+    - The stall, the zero rows and the 111 to 365 reach range all point at this first.
+    - High confidence that this check comes first. Its result is unknown.
+  - **DO MORE: the shape of 099 and 101.** Those AI BEING AI and OFFICE WITH AI remakes held 20.6s and 18.4s, our best since 011. Keep them in the mix and judge them again once reach is not capped. Low confidence (n=2, and 101 is under a day).
+  - **DO MORE: take retention screenshots by hand** for 099 and 101 (high hold, low reach) against 100 (8.1s), plus the outstanding 060, 094 and 097. Read the real durations of 099, 100 and 101 from their files, so watch time can be graded as a share of length.
+  - **DO MORE: re-check 101 at day 2.** It is at 526 views and 350 reach at under a day. No post has changed cluster after day 1 (about 13 tracked), so expect it to stay low. If it crosses 1,000, that breaks the pattern and needs a note.
+  - **For `/ig-plan`:**
+    - Schedule only rendered, publishable episodes, at 20:00 IST every day, with parts numbered from what aired.
+    - Rerun the length experiment as designed, because its long arm never aired.
+    - Use OFFICE WITH AI in the MUM slot.
+  - **For `/ig-viral`:** keep favouring originals with the stakes in the first 3 seconds, and add "AI doing exactly what AIs do" at work and with code (the 099 and 101 shape). Drop Mum and parent premises for a week.
+
 ## Week of 2026-11-21
 
 - **The sample is still too small for a pattern, and this week the data broke before the episodes could be judged.** Three of the last five rows have 0 views. The two that reached anyone have our weakest watch times since 061.
