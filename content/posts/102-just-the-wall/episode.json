@@ -1,0 +1,117 @@
+{
+  "id": "102-just-the-wall",
+  "title": "Just the wall",
+  "cast": "committee",
+  "series": "AI BEING AI · PART 3",
+  "hook": "Painter at 10 am. ONE wall. Rs 1,500.",
+  "cover": 5,
+  "musicStop": 8,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Painter's at ten. Show me this one wall in sage green. Nothing else.",
+      "show": "Painter's at 10. Show me this ONE wall in sage green. Nothing else.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2,
+      "screen": {
+        "page": "text",
+        "title": "my-room.jpg",
+        "body": "Room: 10 x 10\nLeft wall: paint this one\n1 bed, 1 window, 1 plastic chair\nPainter: 10 am, Rs 1,500"
+      }
+    },
+    {
+      "who": "claude",
+      "say": "Of course. But first, how does green make you feel?",
+      "shot": "claude",
+      "mood": "think",
+      "pre": 0.3
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "Your wall (after a 900 word note on green)",
+        "body": "Wall: sage green\nRoom: now 20 x 20\nWindow: now a balcony\nPlastic chair: now a velvet armchair\nLight: golden hour"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "Just the wall.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.6
+    },
+    {
+      "who": "claude",
+      "say": "I'm so sorry. Everything else stays exactly the same this time.",
+      "shot": "claude-push",
+      "mood": "worried",
+      "pre": 0.3
+    },
+    {
+      "who": "meera",
+      "say": "Why is there a sea?",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 0.8
+    },
+    {
+      "who": "codex",
+      "say": "Removed unused objects.",
+      "shot": "codex",
+      "mood": "happy",
+      "sfx": [
+        "wipe"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2,
+      "screen": {
+        "page": "text",
+        "title": "Your wall (v3)",
+        "body": "Wall: sage green\nSea view: kept\nBed: deleted (unused)\nChair: deleted (unused)\nRoom: empty"
+      }
+    },
+    {
+      "who": "gemini",
+      "say": "Done! I also sent the nice one to the family group!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "sfx": [
+        "send"
+      ],
+      "pre": 0.4
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 3,
+      "screen": {
+        "page": "text",
+        "title": "Mum",
+        "body": "Beta itna bada flat?? Sea facing??\n\nSharma aunty ko bhej diya, rishta wale puchh rahe hain."
+      }
+    },
+    {
+      "who": "meera",
+      "say": "It's ten by ten.",
+      "show": "It's 10 by 10.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "asked for one green wall. got a sea facing flat, no bed, and a rishta.\n\nclaude, codex or gemini: who gets your wall?\n\n#gemini #aitools #roommakeover #homedecor #desimom"
+}
