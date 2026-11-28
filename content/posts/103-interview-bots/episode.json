@@ -1,0 +1,78 @@
+{
+  "id": "103-interview-bots",
+  "title": "Claude starts Monday",
+  "cast": "committee",
+  "series": "AI BEING AI · PART 2",
+  "hook": "AI interview in 2 mins. I'm not ready.",
+  "cover": 7,
+  "musicStop": 4,
+  "beats": [
+    {
+      "who": "meera",
+      "say": "Interview in two minutes. Claude, take the first question while I change.",
+      "shot": "wide",
+      "mood": "tired",
+      "time": "morning",
+      "pre": 0.2
+    },
+    {
+      "who": "gemini",
+      "say": "Good news! I'm also the recruiter! Hi, Claude!",
+      "shot": "gemini-push",
+      "mood": "happy",
+      "pre": 0.2
+    },
+    {
+      "who": "claude",
+      "say": "Oh, hello! Sorry to interrupt. Before we begin, how are you feeling today?",
+      "shot": "claude",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "gemini",
+      "say": "Thank you so much for asking! How are you feeling?",
+      "shot": "gemini",
+      "mood": "happy",
+      "pre": 0.3
+    },
+    {
+      "who": "codex",
+      "say": "Loop detected.",
+      "shot": "codex",
+      "mood": "think",
+      "pre": 0.5
+    },
+    {
+      "shot": "laptop",
+      "mood": "flat",
+      "dur": 2.4,
+      "screen": {
+        "page": "text",
+        "title": "Offer letter",
+        "body": "Role: Junior Analyst\nCandidate: Claude\nQuestions answered: 0 of 12\nInterview length: 40 min",
+        "stamp": "HIRED"
+      }
+    },
+    {
+      "who": "meera",
+      "say": "I was right here.",
+      "shot": "meera",
+      "mood": "flat",
+      "pre": 1
+    },
+    {
+      "who": "twin",
+      "say": "Claude starts Monday.",
+      "shot": "gemini",
+      "mood": "smug",
+      "pre": 0.8
+    },
+    {
+      "shot": "meera-hold",
+      "mood": "flat",
+      "dur": 2.4
+    }
+  ],
+  "caption": "my AI went to my job interview and got the job. not for me.\n\nclaude, gemini or codex: which one are you sending to your interview?\n\n#claude #gemini #jobsearch #officelife #interviewtips"
+}
